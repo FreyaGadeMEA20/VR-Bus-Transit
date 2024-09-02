@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1730112235106608553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197635470177285242}
+  - component: {fileID: 3917640268414648606}
+  m_Layer: 0
+  m_Name: Spawn Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &197635470177285242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730112235106608553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3917640268414648606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730112235106608553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c417e078ac0259145afce1909a4d6d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefabs:
+  - {fileID: 2337237763980227453, guid: bf62f7993aa505d43b7a99355e55aff0, type: 3}
+  - {fileID: 5292738344939402828, guid: 77e4a46599b0a684ba83c67846c890e4, type: 3}
+  - {fileID: 9175130481727050268, guid: 724f64a8a05abd646a7526fc2cd0b99e, type: 3}
+  - {fileID: 9183089006378784242, guid: deec6672bd056bb49b12aee289bdd9da, type: 3}
+  - {fileID: 2337237763980227453, guid: 2e7861ae5053d994ba4207dad8289e11, type: 3}
+  - {fileID: 2337237763980227453, guid: f62a0c02e8f4e9c44ab624238cf01ae4, type: 3}
+  - {fileID: 5292738344939402828, guid: a1a249a538414584f8d727e74345c1ff, type: 3}
+  - {fileID: 5292738344939402828, guid: fe2a6b38206425045a724d9a2b18dd04, type: 3}
+  - {fileID: 9175130481727050268, guid: bc9b07d0ab2d0564f9a35926a9d8a50a, type: 3}
+  - {fileID: 9175130481727050268, guid: 8441da9f7b41d9646be4c1720609735d, type: 3}
+  - {fileID: 9183089006378784242, guid: c40b296c6e359544e91760096cf24375, type: 3}
+  - {fileID: 9183089006378784242, guid: 84e785ef0cb62d64bb6ef3120dfcf167, type: 3}
+  busPrefab: {fileID: 7407063518324850902, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+  waypoints: {fileID: 0}
+  spawnIntervalMin: 1
+  spawnIntervalMax: 3
+  routeIndex: 0
+  busSpawnDelay: 3
+  busRouteIndex: 0
+  hasSpawnedBus: 0
+  canSpawnBus: 0
+  doSpawnCars: 1
+  maxActiveCars: 15
+  currentActiveCars: 0
