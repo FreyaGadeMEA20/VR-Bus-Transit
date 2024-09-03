@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+cypress_.TGA filter=lfs diff=lfs merge=lfs -text
+fbx.FBX filter=lfs diff=lfs merge=lfs -text
+tx_cadillac_ATS_normal.TGA filter=lfs diff=lfs merge=lfs -text
+cypress_.obj filter=lfs diff=lfs merge=lfs -text
+cypress_.max filter=lfs diff=lfs merge=lfs -text
+cypress_.fbx filter=lfs diff=lfs merge=lfs -text
+1.wav filter=lfs diff=lfs mergs=lfs -text
+2.wav filter=lfs diff=lfs mergs=lfs -text
+3.wav filter=lfs diff=lfs mergs=lfs -text
+c17884a4710cffbe54c18467a7408065a74f82bb filter=lfs diff=lfs merge=lfs -text
+1656fe25c7d1de541c0fad4cbce47b7e220a0c2c filter=lfs diff=lfs merge=lfs -text
+088259d077bf551ac9ce73797294839603dac674 filter=lfs diff=lfs merge=lfs -text
