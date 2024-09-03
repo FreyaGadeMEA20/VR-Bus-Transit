@@ -10,7 +10,7 @@ public class WaypointMover : MonoBehaviour
     public CarSpawner carSpawner;
     public WaypointClass waypointClass;
 
-    public BusGameManager busGameManager;
+    public GameManager busGameManager;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float safeDistance = 2f;
@@ -82,7 +82,7 @@ public class WaypointMover : MonoBehaviour
         waypoints = GameObject.Find("Waypoints").GetComponent<Waypoints>();
         carSpawner = GameObject.Find("Spawn Manager").GetComponent<CarSpawner>();
 
-        busGameManager = GameObject.Find("GameManager").GetComponent<BusGameManager>();
+        busGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         busGameManager.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
 
         StartCoroutine(GiveSelf());
