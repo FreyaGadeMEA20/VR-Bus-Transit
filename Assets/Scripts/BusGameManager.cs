@@ -4,21 +4,27 @@ using UnityEngine;
 
 public class BusGameManager : MonoBehaviour
 {
-    public enum ProjectType {
-        SUI,
-        MED8
+    /* The bus is set to have two different states
+     *  - Bus Arriving is to keep track of the players actions before they reach the bus stop
+     *      - Checking their phone, arriving at information signs, arriving at bus stop, checking in
+     *  - Bus Driving is to keep track of the bus' movement after it has been told to begin driving
+     *      - Checked in, stop button pressed, waiting on player
+     */
+    public enum BusState {
+        BUS_ARRIVING,
+        BUS_DRIVING
     }
-    [SerializeField] ProjectType type;
+    [SerializeField] BusState type; // reference to the state
 
-    // Define the possible states
+    // The different states the 
     public enum GameState
     {
-        SCHOOL,
-        PHONE,
-        SIGN,
-        BUS,
-        WAIT,
-        STOP,
+        AT_SCHOOL,
+        CHECKED_PHONE,
+        LOOKED_AT_SIGN,
+        BUS_STATE,
+        WAIT_FOR_PLAYER,
+        STOP_BUTTON_PRESSED,
     }
 
     // Current state of the game
@@ -67,11 +73,11 @@ public class BusGameManager : MonoBehaviour
     {
         // Set the initial state
         switch(type){
-            case ProjectType.SUI:
-                currentState = GameState.STOP;
+            case BusState.BUS_DRIVING:
+                currentState = GameState.STOP_BUTTON_PRESSED;
                 break;
-            case ProjectType.MED8:
-                currentState = GameState.SCHOOL;
+            case BusState.BUS_ARRIVING:
+                currentState = GameState.AT_SCHOOL;
                 break;                
         }
         //StartCoroutine(fade());
@@ -82,38 +88,38 @@ public class BusGameManager : MonoBehaviour
     {
         // Check for state transitions
         switch(type){
-            case ProjectType.SUI:
+            case BusState.BUS_DRIVING:
                 switch (currentState){
-                    case GameState.WAIT:
+                    case GameState.WAIT_FOR_PLAYER:
                         UpdateWaitState();
                         break;
-                    case GameState.BUS:
+                    case GameState.BUS_STATE:
                         driveAllowed = false;
                         busStopped = false;
                         break;
-                    case GameState.STOP:
+                    case GameState.STOP_BUTTON_PRESSED:
                         UpdateStopState();
                         break;
                 }
                 break;
-            case ProjectType.MED8:
+            case BusState.BUS_ARRIVING:
                 switch (currentState) {
-                    case GameState.SCHOOL:
+                    case GameState.AT_SCHOOL:
                         // Handle SCHOOL state logic
                         UpdateSchoolState();
                         break;
 
-                    case GameState.PHONE:
+                    case GameState.CHECKED_PHONE:
                         // Handle PHONE state logic
                         UpdatePhoneState();
                         break;
 
-                    case GameState.SIGN:
+                    case GameState.LOOKED_AT_SIGN:
                         // Handle SIGN state logic
                         UpdateSignState();
                         break;
 
-                    case GameState.BUS:
+                    case GameState.BUS_STATE:
                         // Handle BUS state logic
                         UpdateBusState();
                         break;
@@ -137,7 +143,7 @@ public class BusGameManager : MonoBehaviour
                 if (countdownTimer <= 0f) {
                     // Countdown finished, do something
                     Debug.Log("Countdown finished");
-                    currentState = GameState.PHONE;
+                    currentState = GameState.CHECKED_PHONE;
                     SignBeam.SetActive(true);
                     // Reset the countdown timer
                     //countdownTimer = 3f;
@@ -161,7 +167,7 @@ public class BusGameManager : MonoBehaviour
                 if (countdownTimer <= 0f) {
                     // Countdown finished, do something
                     Debug.Log("Countdown finished");
-                    currentState = GameState.SIGN;
+                    currentState = GameState.LOOKED_AT_SIGN;
                     SignBeam.SetActive(false);
                     StopBeam.SetActive(true);
                     // Reset the countdown timer
@@ -190,7 +196,7 @@ public class BusGameManager : MonoBehaviour
                 if (countdownTimer <= 0f) {
                     // Countdown finished, do something
                     Debug.Log("Countdown finished");
-                    currentState = GameState.BUS;
+                    currentState = GameState.BUS_STATE;
 
                     busDeath.SetActive(false);
                     // Reset the countdown timer
@@ -215,27 +221,17 @@ public class BusGameManager : MonoBehaviour
     void UpdateBusState(){
         if (!carSpawer.canSpawnBus)
             carSpawer.canSpawnBus = true;
-            type = ProjectType.SUI;
-            currentState = GameState.BUS;
+            type = BusState.BUS_DRIVING;
+            currentState = GameState.BUS_STATE;
 
         if(hasCheckedIn)
         {
             WaypointMover wp = GameObject.FindWithTag("Bus").transform.parent.gameObject.GetComponent<WaypointMover>();
-
-            //StartCoroutine(screenFader.FadeOutAndReloadScene());
-            //wp.hasCheckedIn = true;
-
-            //screenFader.FadeOut();
         }
 
         // Let the cars move again from the sign as the player has crossed the street
     }
 
-    //public void FadeOutRL(){
-    //    StartCoroutine(screenFader.FadeOutAndReloadScene());
-    //}
-
-    
     bool IsGameObjectVisibleInViewport(GameObject gameObject)
     {
         if(!gameObject.activeSelf) {
@@ -281,7 +277,7 @@ public class BusGameManager : MonoBehaviour
     }
 
     IEnumerator Drive(){
-        currentState = GameState.BUS;
+        currentState = GameState.BUS_STATE;
         animationPlayed = false;
 
         yield return new WaitForSeconds(2);
@@ -303,13 +299,13 @@ public class BusGameManager : MonoBehaviour
             return;
         
         if(!hasCheckedIn){
-            currentState = GameState.WAIT;
+            currentState = GameState.WAIT_FOR_PLAYER;
         }
     }
 
     public void StopBus(){
         busStopped = true;
-        currentState = GameState.STOP;
+        currentState = GameState.STOP_BUTTON_PRESSED;
     }
 
     public void GetWPM(WaypointMover wpm, DoorController door){
