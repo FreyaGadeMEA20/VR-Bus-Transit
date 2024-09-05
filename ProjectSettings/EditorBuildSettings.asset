@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Assets/TRAFFIC/Traffic Scene.unity
     guid: 5f2ce598ee973924daf97c5aa44dd6d2
   - enabled: 1
-    path: Assets/Scenes/Environment.unity
+    path: Assets/Scenes/MED8 Final Scene.unity
     guid: 75ee9a15eedaaed4c902faad5ec1d9b5
   - enabled: 0
-    path: Assets/Scenes/Spatial User Interface.unity
+    path: Assets/Scenes/Old/Spatial User Interface.unity
     guid: d4a1982bff03fe54daea6cb3e8682893
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b3c63e108e9869746804389f0cafc55e, type: 2}
