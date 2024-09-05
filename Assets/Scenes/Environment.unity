@@ -11897,6 +11897,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1704b702c1596c449b14f7481c09defd, type: 3}
   m_PrefabInstance: {fileID: 381700154}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &382002511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6633208650126409810, guid: cee4825f8b7139d41a93d6f04935cd13, type: 3}
+  m_PrefabInstance: {fileID: 518613887}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &386217730
 GameObject:
   m_ObjectHideFlags: 0
@@ -14464,7 +14469,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6633208650126409810, guid: cee4825f8b7139d41a93d6f04935cd13, type: 3}
       propertyPath: m_Name
-      value: Beam
+      value: SignBeam
       objectReference: {fileID: 0}
     - target: {fileID: 6633208650126409810, guid: cee4825f8b7139d41a93d6f04935cd13, type: 3}
       propertyPath: m_IsActive
@@ -24438,6 +24443,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d1180ac6fa40cec4a9899a21e392429a, type: 3}
   m_PrefabInstance: {fileID: 928531404}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &929842778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6633208650126409810, guid: cee4825f8b7139d41a93d6f04935cd13, type: 3}
+  m_PrefabInstance: {fileID: 1485676693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &931887551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31361,6 +31371,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200215959}
   m_Mesh: {fileID: -462981019419857548, guid: cf697e82f1b481d49ab4be0d043f4311, type: 3}
+--- !u!114 &1200789552 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3917640268414648606, guid: f38de1a30a6807e459308c2d843d474e, type: 3}
+  m_PrefabInstance: {fileID: 1830826892}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c417e078ac0259145afce1909a4d6d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1202827680
 GameObject:
   m_ObjectHideFlags: 0
@@ -38066,6 +38087,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1925526272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1457427421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3535473601529558972, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3, type: 3}
+  m_PrefabInstance: {fileID: 1427760077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1463230162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38516,7 +38542,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6633208650126409810, guid: cee4825f8b7139d41a93d6f04935cd13, type: 3}
       propertyPath: m_Name
-      value: Beam (1)
+      value: BusSignBeam
       objectReference: {fileID: 0}
     - target: {fileID: 6633208650126409810, guid: cee4825f8b7139d41a93d6f04935cd13, type: 3}
       propertyPath: m_IsActive
@@ -70426,19 +70452,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b7b67c4df57e1449f9a39003fd8927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
   currentState: 0
-  phone: {fileID: 0}
-  SignScript: {fileID: 0}
-  SignBeam: {fileID: 0}
-  BusStopScript: {fileID: 0}
-  StopBeam: {fileID: 0}
-  carSpawer: {fileID: 0}
-  busDeath: {fileID: 0}
-  HasCheckedIn: 0
-  DriveAllowed: 0
-  BusStopped: 0
-  firstTime: 1
+  phone: {fileID: 1457427421}
+  Bus: {fileID: 0}
+  SignScript: {fileID: 4812074889421644271}
+  SignBeam: {fileID: 382002511}
+  BusStopScript: {fileID: 1755005774916110665}
+  StopBeam: {fileID: 929842778}
+  carSpawer: {fileID: 1200789552}
+  busDeath: {fileID: 862337703}
 --- !u!1 &6950717251495515046
 GameObject:
   m_ObjectHideFlags: 0

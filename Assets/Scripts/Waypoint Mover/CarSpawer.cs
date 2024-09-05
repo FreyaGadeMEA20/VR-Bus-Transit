@@ -103,7 +103,7 @@ public class CarSpawner : MonoBehaviour
         //Debug.Log("Car Spawned: " + newCar.name + " at " + startWaypoint.position + " with index " + routeIndex);
 
         WaypointMover waypointMover = newCar.GetComponent<WaypointMover>();
-        waypointMover.entityType = "Car";
+        waypointMover.entityType = WaypointMover.EntityTypes.Car;
 
         if (waypointMover != null){
             waypointMover.waypoints = waypoints;
@@ -126,7 +126,7 @@ public class CarSpawner : MonoBehaviour
         GameObject newBus = Instantiate(busPrefab, startWaypoint.position, startWaypoint.rotation);
 
         WaypointMover waypointMover = newBus.GetComponent<WaypointMover>();
-        waypointMover.entityType = "Bus";
+        waypointMover.entityType = WaypointMover.EntityTypes.Bus;
 /* 
         TeleportationArea TP = GameObject.FindWithTag("TeleportArea").GetComponent<TeleportationArea>();
         MeshCollider busFloor = GameObject.FindWithTag("BusFloor").GetComponent<MeshCollider>();

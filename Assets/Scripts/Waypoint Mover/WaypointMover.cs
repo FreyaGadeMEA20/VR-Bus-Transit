@@ -26,7 +26,11 @@ public class WaypointMover : MonoBehaviour
 
     public int routeIndex;
 
-    public string entityType;
+    public enum EntityTypes {
+        Car,
+        Bus
+    }
+    public EntityTypes entityType = EntityTypes.Car;
 
     public bool hasCheckedIn = false;
 
@@ -50,7 +54,7 @@ public class WaypointMover : MonoBehaviour
                 case MovementState.Waiting:
                     //carSpawner.doSpawnCars = false;
                     // Let the cars go again when the waypoint is no longer a waiting point
-                    if (entityType == "Car" && waypointClass.isWaitingPoint == true){
+                    if (entityType == EntityTypes.Car && waypointClass.isWaitingPoint == true){
                         //Debug.Log("SM Waiting point: "+ currentWaypoint.name);
                         yield return new WaitUntil(() => waypointClass.isWaitingPoint == false);
                         //Debug.Log("Car is no longer at a waiting point");
@@ -82,8 +86,10 @@ public class WaypointMover : MonoBehaviour
         waypoints = GameObject.Find("Waypoints").GetComponent<Waypoints>();
         carSpawner = GameObject.Find("Spawn Manager").GetComponent<CarSpawner>();
 
-        busController = GameObject.Find("BusController").GetComponent<BusController>();
-        busController.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
+        if (entityType == EntityTypes.Bus){
+            busController = GameObject.Find("BusController").GetComponent<BusController>();
+            busController.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
+        }
 
         StartCoroutine(GiveSelf());
 
@@ -169,15 +175,15 @@ public class WaypointMover : MonoBehaviour
                     rb.constraints = RigidbodyConstraints.FreezePosition & RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
                 } */
 
-                if (waypointClass.isBusStop && entityType == "Bus" && (busController.BusStopped || busController.firstTime)){
+                if (waypointClass.isBusStop && entityType == EntityTypes.Bus && (busController.BusStopped || busController.firstTime)){
                     currentMovementState = MovementState.Waiting;
                     rb.constraints = RigidbodyConstraints.FreezePosition & RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
-                } else if (waypointClass.isBusStop && entityType == "Bus"){
+                } else if (waypointClass.isBusStop && entityType == EntityTypes.Bus){
                     Debug.Log(":)");
                 }
 
                 // if a car is at a waiting point, wait
-                if (waypointClass.isWaitingPoint && entityType == "Car"){
+                if (waypointClass.isWaitingPoint && entityType == EntityTypes.Car){
                     //Debug.Log("Car is at a waiting point, waiting...");
                     //Debug.Log("WAITING Waiting point: "+ currentWaypoint.name);
                     currentMovementState = MovementState.Waiting;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -165,11 +166,16 @@ public class GameManager : MonoBehaviour
     void UpdateBusState(){
         if (!carSpawer.canSpawnBus)
             carSpawer.canSpawnBus = true;
-            currentState = GameState.BUS_STATE;
 
-        if(Bus.HasCheckedIn)
-        {
-            WaypointMover wp = GameObject.FindWithTag("Bus").transform.parent.gameObject.GetComponent<WaypointMover>();
+        try {
+            Bus = GameObject.Find("BusController").GetComponent<BusController>(); 
+            if(Bus.HasCheckedIn)
+            {
+                WaypointMover wp = GameObject.FindWithTag("Bus").transform.parent.gameObject.GetComponent<WaypointMover>();
+            }
+            currentState = GameState.BUS_STATE;
+        } catch (NullReferenceException e){
+            Debug.LogWarning(e+"Bus has not spawned");
         }
 
         // Let the cars move again from the sign as the player has crossed the street
