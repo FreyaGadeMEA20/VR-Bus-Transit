@@ -5,14 +5,14 @@ using UnityEngine;
 public class StopScript : MonoBehaviour
 {
     public BusScreenController busScreenController;
-    [SerializeField] GameManager busGameManager;
+    [SerializeField] BusController busController;
 
     void Start(){
-        busGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        busController = GameObject.Find("BusController").GetComponent<BusController>();
     }
 
     public void StopButton(){
-        busGameManager.StopBus();
+        busController.StopBus();
         busScreenController.ApplyStopTexture();
     }
 }

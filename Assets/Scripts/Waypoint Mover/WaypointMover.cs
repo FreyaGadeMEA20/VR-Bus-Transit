@@ -10,7 +10,7 @@ public class WaypointMover : MonoBehaviour
     public CarSpawner carSpawner;
     public WaypointClass waypointClass;
 
-    public GameManager busGameManager;
+    public BusController busController;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float safeDistance = 2f;
@@ -58,8 +58,8 @@ public class WaypointMover : MonoBehaviour
                         break;
                     }
 
-                    if(busGameManager.firstTime){
-                        busGameManager.firstTime = false;
+                    if(busController.firstTime){
+                        busController.firstTime = false;
                     }
 
                     yield return new WaitUntil(() => hasCheckedIn == true);
@@ -82,8 +82,8 @@ public class WaypointMover : MonoBehaviour
         waypoints = GameObject.Find("Waypoints").GetComponent<Waypoints>();
         carSpawner = GameObject.Find("Spawn Manager").GetComponent<CarSpawner>();
 
-        busGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        busGameManager.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
+        busController = GameObject.Find("BusController").GetComponent<BusController>();
+        busController.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
 
         StartCoroutine(GiveSelf());
 
@@ -169,7 +169,7 @@ public class WaypointMover : MonoBehaviour
                     rb.constraints = RigidbodyConstraints.FreezePosition & RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
                 } */
 
-                if (waypointClass.isBusStop && entityType == "Bus" && (busGameManager.BusStopped || busGameManager.firstTime)){
+                if (waypointClass.isBusStop && entityType == "Bus" && (busController.BusStopped || busController.firstTime)){
                     currentMovementState = MovementState.Waiting;
                     rb.constraints = RigidbodyConstraints.FreezePosition & RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
                 } else if (waypointClass.isBusStop && entityType == "Bus"){
