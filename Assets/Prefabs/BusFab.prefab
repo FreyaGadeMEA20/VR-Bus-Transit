@@ -3720,7 +3720,7 @@ GameObject:
   - component: {fileID: 1850163252479042898}
   m_Layer: 9
   m_Name: BusFab
-  m_TagString: Car
+  m_TagString: Bus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5081,10 +5081,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4790136166927669510, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8714684595882652758, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6827174078448678626, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4705737561886094340}
   m_SourcePrefab: {fileID: 100100000, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
+--- !u!1 &2035423150230668887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6827174078448678626, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
+  m_PrefabInstance: {fileID: 4792314016954003637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4705737561886094340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035423150230668887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f48c761b7ffb4cab9bf640f2df391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Blaatlys: {fileID: 0}
+  audioSource: {fileID: 0}
+  godkendtClip: {fileID: 8300000, guid: cdce391c17d8e044aa28c5479b10aae9, type: 3}
+  afvistClip: {fileID: 8300000, guid: 30b57bca1aec758408778f9146bc017e, type: 3}
+  checkedIn_GodRejse: {fileID: 2100000, guid: 17dba9a39d642414e91c569bda54f6c4, type: 2}
+  checkedIn_alreadyCheckedIn: {fileID: 2100000, guid: 11539ac96ad81c34897a23ab6459924e, type: 2}
+  checkedOut_GodRejse: {fileID: 2100000, guid: 9cb28d097fe0c874cb7ee6f2ba32d2a0, type: 2}
+  checkedOut_alreadyCheckedOut: {fileID: 2100000, guid: 6633335496e8f9a4b96a7703741084fa, type: 2}
+  ScreenText: {fileID: 0}
+  checkIndStander: 0
+  Bus: {fileID: 0}
 --- !u!4 &8492099995748346879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3988016389306063690, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
@@ -5220,10 +5252,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5636767533889702238, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3833088300176434371, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6654732634701990258, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2675404806892461474}
   m_SourcePrefab: {fileID: 100100000, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
+--- !u!1 &1127355669448294793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6654732634701990258, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
+  m_PrefabInstance: {fileID: 6052679640552671483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2675404806892461474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127355669448294793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f48c761b7ffb4cab9bf640f2df391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Blaatlys: {fileID: 0}
+  audioSource: {fileID: 0}
+  godkendtClip: {fileID: 8300000, guid: cdce391c17d8e044aa28c5479b10aae9, type: 3}
+  afvistClip: {fileID: 8300000, guid: 30b57bca1aec758408778f9146bc017e, type: 3}
+  checkedIn_GodRejse: {fileID: 2100000, guid: 17dba9a39d642414e91c569bda54f6c4, type: 2}
+  checkedIn_alreadyCheckedIn: {fileID: 2100000, guid: 11539ac96ad81c34897a23ab6459924e, type: 2}
+  checkedOut_GodRejse: {fileID: 2100000, guid: 9cb28d097fe0c874cb7ee6f2ba32d2a0, type: 2}
+  checkedOut_alreadyCheckedOut: {fileID: 2100000, guid: 6633335496e8f9a4b96a7703741084fa, type: 2}
+  ScreenText: {fileID: 0}
+  checkIndStander: 0
+  Bus: {fileID: 0}
 --- !u!4 &7073558963502321769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3590816371135977618, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
@@ -5351,10 +5415,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4790136166927669510, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8714684595882652758, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6827174078448678626, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4049462026821862684}
   m_SourcePrefab: {fileID: 100100000, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
+--- !u!1 &377658951075793859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6827174078448678626, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
+  m_PrefabInstance: {fileID: 6594193958235979041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4049462026821862684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377658951075793859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f48c761b7ffb4cab9bf640f2df391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Blaatlys: {fileID: 3684618345258981102}
+  audioSource: {fileID: 1865287649308425751}
+  godkendtClip: {fileID: 8300000, guid: cdce391c17d8e044aa28c5479b10aae9, type: 3}
+  afvistClip: {fileID: 8300000, guid: 30b57bca1aec758408778f9146bc017e, type: 3}
+  checkedIn_GodRejse: {fileID: 2100000, guid: 17dba9a39d642414e91c569bda54f6c4, type: 2}
+  checkedIn_alreadyCheckedIn: {fileID: 2100000, guid: 11539ac96ad81c34897a23ab6459924e, type: 2}
+  checkedOut_GodRejse: {fileID: 2100000, guid: 9cb28d097fe0c874cb7ee6f2ba32d2a0, type: 2}
+  checkedOut_alreadyCheckedOut: {fileID: 2100000, guid: 6633335496e8f9a4b96a7703741084fa, type: 2}
+  ScreenText: {fileID: 0}
+  checkIndStander: 0
+  Bus: {fileID: 0}
+--- !u!82 &1865287649308425751 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4783277230335525686, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
+  m_PrefabInstance: {fileID: 6594193958235979041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &3684618345258981102 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 7539356365733637071, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
+  m_PrefabInstance: {fileID: 6594193958235979041}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7843880431021237867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3988016389306063690, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
@@ -5490,10 +5596,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5636767533889702238, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3833088300176434371, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6654732634701990258, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1748520708651935626}
   m_SourcePrefab: {fileID: 100100000, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
+--- !u!1 &4610459527104617402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6654732634701990258, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
+  m_PrefabInstance: {fileID: 7179292585125368520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1748520708651935626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4610459527104617402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f48c761b7ffb4cab9bf640f2df391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Blaatlys: {fileID: 0}
+  audioSource: {fileID: 0}
+  godkendtClip: {fileID: 8300000, guid: cdce391c17d8e044aa28c5479b10aae9, type: 3}
+  afvistClip: {fileID: 8300000, guid: 30b57bca1aec758408778f9146bc017e, type: 3}
+  checkedIn_GodRejse: {fileID: 2100000, guid: 17dba9a39d642414e91c569bda54f6c4, type: 2}
+  checkedIn_alreadyCheckedIn: {fileID: 2100000, guid: 11539ac96ad81c34897a23ab6459924e, type: 2}
+  checkedOut_GodRejse: {fileID: 2100000, guid: 9cb28d097fe0c874cb7ee6f2ba32d2a0, type: 2}
+  checkedOut_alreadyCheckedOut: {fileID: 2100000, guid: 6633335496e8f9a4b96a7703741084fa, type: 2}
+  ScreenText: {fileID: 0}
+  checkIndStander: 0
+  Bus: {fileID: 0}
 --- !u!4 &5941616695214459482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3590816371135977618, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}

@@ -87,7 +87,8 @@ public class WaypointMover : MonoBehaviour
         carSpawner = GameObject.Find("Spawn Manager").GetComponent<CarSpawner>();
 
         if (entityType == EntityTypes.Bus){
-            busController = GameObject.Find("BusController").GetComponent<BusController>();
+            busController = this.GetComponent<BusController>();
+//            busController = GameObject.Find("BusController").GetComponent<BusController>();
             busController.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
         }
 
