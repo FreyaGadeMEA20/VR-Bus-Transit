@@ -151,6 +151,7 @@ public class WaypointMover : MonoBehaviour
             if (waypoints.doLoop == false && currentWaypoint == null){
                 Destroy(gameObject);
                 carSpawner.DecrementActiveCars();
+                Debug.Log("No waypoints left, destroying object");
                 return;
             }
 
