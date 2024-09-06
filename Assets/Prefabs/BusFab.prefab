@@ -4035,8 +4035,8 @@ MonoBehaviour:
   rearWheels:
   - {fileID: 2779981817868966626}
   - {fileID: 2871405666039922326}
-  acceleration: 1000
-  maxSteering: 20
+  acceleration: 500
+  maxSteering: 40
   breakingForce: 300
 --- !u!1 &7467207215343391894
 GameObject:
