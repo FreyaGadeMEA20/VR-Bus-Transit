@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Movement;
 
 public class BusController : MonoBehaviour
 {
     DoorController doors;
     BusScreenController screens;
-    WaypointMover WPM;
 
+    WaypointMover WPM;
+    public Movement.VehicleMovement vehicleMovement;
+
+    // What is the state of the bus
+    // NOT BASED ON THE VEHICLE MOVEMENT, ONLY FOR WAITING AT STOPS
     public enum BusState {
         DRIVING,
         WAIT,
@@ -42,12 +47,13 @@ public class BusController : MonoBehaviour
     void Start()
     {
         busState = BusState.STOP_BUTTON_PRESSED;
+        vehicleMovement = GetComponent<VehicleMovement>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        vehicleMovement.ApplyForces(1,1,false);
     }
 
     public void StopNextStop(){
@@ -58,7 +64,7 @@ public class BusController : MonoBehaviour
 
     }
 
-        void UpdateWaitState(){
+    void UpdateWaitState(){
         if (!animationPlayed && doors != null)
             StartCoroutine(PlayOpenAnim());
 

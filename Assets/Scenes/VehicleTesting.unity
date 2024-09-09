@@ -219,6 +219,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BusFab
       objectReference: {fileID: 0}
+    - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: maxSteering
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934084248644710605, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

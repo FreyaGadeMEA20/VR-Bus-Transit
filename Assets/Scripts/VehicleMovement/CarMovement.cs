@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace VehicleMovement{
+namespace Movement{
 public class CarMovement : VehicleMovement
 {
 

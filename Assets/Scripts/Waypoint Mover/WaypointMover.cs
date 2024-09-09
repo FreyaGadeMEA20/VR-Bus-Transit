@@ -6,11 +6,17 @@ using UnityEngine.UIElements;
 
 public class WaypointMover : MonoBehaviour
 {
+    // Waypoint navigator
     public Waypoints waypoints;
     public CarSpawner carSpawner;
     public WaypointClass waypointClass;
 
+    // Reference to the bus
     public BusController busController;
+    
+    //Movement of the vehicle
+    public Movement.VehicleMovement vehicleMovement;
+
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float safeDistance = 2f;
@@ -47,8 +53,11 @@ public class WaypointMover : MonoBehaviour
         while(true){
             switch (currentMovementState){
                 case MovementState.Moving:
-                    rb.constraints = RigidbodyConstraints.FreezePositionY & RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
+                    //rb.constraints = RigidbodyConstraints.FreezePositionY & RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
                     //carSpawner.doSpawnCars = true;
+                    
+                    vehicleMovement.Move(1,0,0);
+                    
                     break;
 
                 case MovementState.Waiting:
