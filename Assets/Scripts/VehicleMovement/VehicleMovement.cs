@@ -33,16 +33,14 @@ namespace Movement{
         }
 
         void FixedUpdate(){
-
             Move(currentAcceleration, currentSteering, currentBreakForce);
         }
 
         public void ApplyForces(float speed, float steering, bool breaking){
             currentAcceleration = speed * acceleration;
             currentSteering = steering * maxSteering;
-            currentBreakForce = breaking ? breakingForce : 0f;
             
-            Move(currentAcceleration, currentSteering, currentBreakForce);
+            currentBreakForce = breaking ? breakingForce : 0f;
         }
 
         /// <summary>
@@ -52,9 +50,8 @@ namespace Movement{
         /// <param name="steering">The steering angle of the vehicle.</param>
         
         public void Move(float speed, float steering, float breakF){
-            Debug.Log("Accelerating: "+speed);
             Debug.Log("Steering: "+steering);
-            Debug.Log("Breaking: "+currentBreakForce);
+            Debug.Log("Breaking: "+breakF);
             foreach (WheelCollider wheel in frontWheels){
                 wheel.steerAngle = steering;
                 //wheel.motorTorque = currentAcceleration;
@@ -62,7 +59,9 @@ namespace Movement{
             }
 
             foreach (WheelCollider wheel in rearWheels){
-                wheel.motorTorque = speed;
+                
+                Debug.Log("Accelerating: "+speed);
+                wheel.motorTorque = currentAcceleration;
                 wheel.brakeTorque = breakF;
             }
         }

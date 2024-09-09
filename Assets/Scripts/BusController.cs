@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Movement;
+using System;
 
 public class BusController : MonoBehaviour
 {
@@ -43,17 +44,56 @@ public class BusController : MonoBehaviour
 
     public bool HasCheckedIn;
 
+    float speed = 0;
+    bool startDriving = true;
+
     // Start is called before the first frame update
     void Start()
     {
         busState = BusState.STOP_BUTTON_PRESSED;
         vehicleMovement = GetComponent<VehicleMovement>();
+        doors = GetComponent<DoorController>();
+        screens = GetComponent<BusScreenController>();
+        
     }
 
-    // Update is called once per frame
+    void Update(){
+        switch(busState){
+            case BusState.DRIVING:
+                UpdateDriveState();
+                break;
+            case BusState.WAIT:
+                UpdateWaitState();
+                break;
+            case BusState.STOP_BUTTON_PRESSED:
+                UpdateStopState();
+                break;
+        }
+    }
+
+    private void UpdateDriveState()
+    {
+        
+    }
+
     void FixedUpdate()
     {
-        vehicleMovement.ApplyForces(1,1,false);
+        vehicleMovement.ApplyForces(speed,0,false);
+        if(startDriving){
+            startDriving = false;
+            StartCoroutine(IncrementSpeed());
+        }
+
+        if (driveAllowed && busState == BusState.DRIVING){
+            vehicleMovement.ApplyForces(1,1,false);
+        }
+    }
+
+    IEnumerator IncrementSpeed(){
+        while(speed < 1){
+            speed += 0.1f;
+            yield return new WaitForSeconds(0.25f);
+        }
     }
 
     public void StopNextStop(){
@@ -68,7 +108,7 @@ public class BusController : MonoBehaviour
         if (!animationPlayed && doors != null)
             StartCoroutine(PlayOpenAnim());
 
-        if(hasCheckedIn)
+        if (hasCheckedIn)
             StartCoroutine(Drive());
     }
 
@@ -91,7 +131,8 @@ public class BusController : MonoBehaviour
 
         driveAllowed = true;
 
-        WPM.hasCheckedIn = true;
+        busState = BusState.DRIVING;
+        //WPM.hasCheckedIn = true;
     }
 
     void UpdateStopState(){
@@ -106,6 +147,7 @@ public class BusController : MonoBehaviour
         }
     }
 
+    
     public void StopBus(){
         busStopped = true;
         busState = BusState.STOP_BUTTON_PRESSED;
@@ -114,6 +156,6 @@ public class BusController : MonoBehaviour
     public void GetWPM(WaypointMover wpm, DoorController door){
         WPM = wpm;
 
-        doors = door;
+        //doors = door;
     }
 }
