@@ -3892,6 +3892,7 @@ GameObject:
   - component: {fileID: -1948107393492139474}
   - component: {fileID: 3180045749670647010}
   - component: {fileID: 8934084248644710605}
+  - component: {fileID: 34822317978520090}
   - component: {fileID: 6926448354235404981}
   - component: {fileID: 1850163252479042898}
   - component: {fileID: 7776536689084422545}
@@ -3978,6 +3979,7 @@ MonoBehaviour:
   carSpawner: {fileID: 0}
   waypointClass: {fileID: 0}
   busController: {fileID: 0}
+  vehicleMovement: {fileID: 0}
   moveSpeed: 10
   rotationSpeed: 5
   safeDistance: 2
@@ -3986,6 +3988,33 @@ MonoBehaviour:
   entityType: 0
   hasCheckedIn: 0
   currentMovementState: 0
+--- !u!54 &34822317978520090
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7407063518324850902}
+  serializedVersion: 4
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &6926448354235404981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4012,6 +4041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9052b0ad300da99418d109dad3724809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vehicleMovement: {fileID: 0}
   busState: 0
   DriveAllowed: 0
   BusStopped: 0
@@ -4036,7 +4066,7 @@ MonoBehaviour:
   - {fileID: 2779981817868966626}
   - {fileID: 2871405666039922326}
   acceleration: 500
-  maxSteering: 40
+  maxSteering: 45
   breakingForce: 300
 --- !u!1 &7467207215343391894
 GameObject:

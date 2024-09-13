@@ -48,7 +48,6 @@ public class WaypointMover : MonoBehaviour
     [SerializeField] private MovementState currentMovementState;
     Rigidbody rb;
 
-
     private IEnumerator MovementSM(){
         while(true){
             switch (currentMovementState){
@@ -98,7 +97,7 @@ public class WaypointMover : MonoBehaviour
         if (entityType == EntityTypes.Bus){
             busController = this.GetComponent<BusController>();
 //            busController = GameObject.Find("BusController").GetComponent<BusController>();
-            busController.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
+            //busController.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
         }
 
         StartCoroutine(GiveSelf());

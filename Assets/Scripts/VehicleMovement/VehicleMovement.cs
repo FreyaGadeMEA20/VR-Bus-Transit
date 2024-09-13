@@ -6,6 +6,21 @@ using UnityEngine;
 namespace Movement{
     public class VehicleMovement : MonoBehaviour
     {
+        [Header("VEHICLE TYPE AND ITS PROPERTIES")]
+        public EntityTypes entityType = EntityTypes.Car;
+        public enum EntityTypes {
+            Car,
+            Bus
+        }
+
+        public MovementState currentMovementState = MovementState.Moving;
+        public enum MovementState{
+            Moving,
+            Waiting
+        }
+
+        [SerializeField] private BusController busController;
+
         [Header("WHEELS")]
         [SerializeField] WheelCollider[] frontWheels;
         [SerializeField] WheelCollider[] rearWheels;
@@ -14,22 +29,66 @@ namespace Movement{
         [SerializeField] float acceleration = 1000f;
         [SerializeField] float maxSteering = 20f;
         [SerializeField] float breakingForce = 300f;
+        float currentAcceleration = 0f;
+        float currentBreakForce = 0f;
+        float currentSteering = 0f;
 
-        [Header("CURRENT MOVEMENT VARIABLES")]
-        [SerializeField] float currentAcceleration = 0f;
-        [SerializeField] float currentBreakForce = 0f;
-        [SerializeField] float currentSteering = 0f;
+        [Header("NAVIGATION AND COLLISSION")]
+        [SerializeField] RouteManager waypoints;
+        Route currentRoute;
+        [SerializeField] int currentRouteIndex;
+        Waypoint currentWaypoint;
+        [SerializeField] GameObject waypointDetector;
+        [SerializeField] float safeDistance = 2f;
+        
 
         // Start is called before the first frame update
         void Start()
         {
-            
+            waypoints = GameObject.Find("Vehicle Route Manager").GetComponent<RouteManager>();
+            //carSpawner = GameObject.Find("Spawn Manager").GetComponent<CarSpawner>();
+
+            currentRoute = waypoints.routes[currentRouteIndex];
+            if (entityType == EntityTypes.Bus){
+                busController = this.GetComponent<BusController>();
+            } 
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
+        private IEnumerator MovementSM(){
+            while(true){
+                switch (currentMovementState){
+                    case MovementState.Moving:
+                        //Move(1,0,0);
+
+                        Debug.Log("Applying Forces");
+                        ApplyForces(1,0,false);
+                        
+                        break;
+
+                    case MovementState.Waiting:
+                        //carSpawner.doSpawnCars = false;
+                        // Let the cars go again when the waypoint is no longer a waiting point
+                        if (entityType == EntityTypes.Car && currentWaypoint.STOP_VEHICLE == true){
+                            yield return new WaitUntil(() => currentWaypoint.STOP_VEHICLE == false);
+                            currentMovementState = MovementState.Moving;
+                            break;
+                        }
+
+                        /* if(busController.firstTime){
+                            busController.firstTime = false;
+                        } 
+
+                        yield return new WaitUntil(() => hasCheckedIn == true);
+                        Debug.Log("Bus has checked in");
+                        hasCheckedIn = false;
+                        */
+
+                        currentMovementState = MovementState.Moving;
+                        break;
+                }
+
+                yield return null;
+            }
         }
 
         void FixedUpdate(){

@@ -9,7 +9,6 @@ public class BusController : MonoBehaviour
     DoorController doors;
     BusScreenController screens;
 
-    WaypointMover WPM;
     public Movement.VehicleMovement vehicleMovement;
 
     // What is the state of the bus
@@ -153,9 +152,9 @@ public class BusController : MonoBehaviour
         busState = BusState.STOP_BUTTON_PRESSED;
     }
 
-    public void GetWPM(WaypointMover wpm, DoorController door){
+    /* public void GetWPM(WaypointMover wpm, DoorController door){
         WPM = wpm;
 
         //doors = door;
-    }
+    } */
 }
