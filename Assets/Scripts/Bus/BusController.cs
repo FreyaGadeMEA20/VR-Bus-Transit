@@ -9,7 +9,6 @@ public class BusController : MonoBehaviour
     DoorController doors;
     BusScreenController screens;
 
-    WaypointMover WPM;
     public Movement.VehicleMovement vehicleMovement;
 
     // What is the state of the bus
@@ -44,8 +43,11 @@ public class BusController : MonoBehaviour
 
     public bool HasCheckedIn;
 
-    float speed = 0;
+    [Range(-1,1)] [SerializeField] float speed = 0;
+    [Range(-1,1)] [SerializeField] float steering = 0;
+    [SerializeField] bool brake = true;
     bool startDriving = true;
+    bool stopDriving = true;
 
     // Start is called before the first frame update
     void Start()
@@ -73,25 +75,32 @@ public class BusController : MonoBehaviour
 
     private void UpdateDriveState()
     {
-        
+        if(startDriving){
+            startDriving = false;
+            brake = false;
+            StartCoroutine(IncrementSpeed());
+        }
     }
 
     void FixedUpdate()
     {
-        vehicleMovement.ApplyForces(speed,0,false);
-        if(startDriving){
-            startDriving = false;
-            StartCoroutine(IncrementSpeed());
-        }
-
-        if (driveAllowed && busState == BusState.DRIVING){
-            vehicleMovement.ApplyForces(1,1,false);
-        }
+        vehicleMovement.ApplyForces(speed,steering,brake);
     }
 
     IEnumerator IncrementSpeed(){
+        stopDriving = true;
         while(speed < 1){
-            speed += 0.1f;
+            speed += 0.25f;
+            yield return new WaitForSeconds(0.25f);
+        }
+    }
+
+    IEnumerator DecrementSpeed(){
+        startDriving = true;
+        while(speed > 0.1){
+            speed -= 0.25f;
+            if(speed < 0) // Prevent unintentional negative speed
+                speed = 0;
             yield return new WaitForSeconds(0.25f);
         }
     }
@@ -105,11 +114,16 @@ public class BusController : MonoBehaviour
     }
 
     void UpdateWaitState(){
+        if(stopDriving){
+            stopDriving = false;
+            brake = true;   
+            StartCoroutine(DecrementSpeed());
+        }
         if (!animationPlayed && doors != null)
             StartCoroutine(PlayOpenAnim());
 
         if (hasCheckedIn)
-            StartCoroutine(Drive());
+            StartCoroutine(CloseDoorsAndDrive());
     }
 
     IEnumerator PlayOpenAnim(){
@@ -120,7 +134,7 @@ public class BusController : MonoBehaviour
         yield return new WaitForSeconds(1);
     }
 
-    IEnumerator Drive(){
+    IEnumerator CloseDoorsAndDrive(){
         animationPlayed = false;
 
         yield return new WaitForSeconds(2);
@@ -132,7 +146,6 @@ public class BusController : MonoBehaviour
         driveAllowed = true;
 
         busState = BusState.DRIVING;
-        //WPM.hasCheckedIn = true;
     }
 
     void UpdateStopState(){
@@ -141,6 +154,8 @@ public class BusController : MonoBehaviour
 
         if(!busStopped)
             return;
+
+        // Add logic to stop the bus
         
         if(!hasCheckedIn){
             busState = BusState.WAIT;
@@ -153,9 +168,9 @@ public class BusController : MonoBehaviour
         busState = BusState.STOP_BUTTON_PRESSED;
     }
 
-    public void GetWPM(WaypointMover wpm, DoorController door){
+    /* public void GetWPM(WaypointMover wpm, DoorController door){
         WPM = wpm;
 
         //doors = door;
-    }
+    } */
 }

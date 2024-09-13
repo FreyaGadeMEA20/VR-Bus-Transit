@@ -48,7 +48,6 @@ public class WaypointMover : MonoBehaviour
     [SerializeField] private MovementState currentMovementState;
     Rigidbody rb;
 
-
     private IEnumerator MovementSM(){
         while(true){
             switch (currentMovementState){
@@ -56,7 +55,7 @@ public class WaypointMover : MonoBehaviour
                     //rb.constraints = RigidbodyConstraints.FreezePositionY & RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
                     //carSpawner.doSpawnCars = true;
                     
-                    vehicleMovement.Move(1,0,0);
+                    //vehicleMovement.Move(1,0,0);
                     
                     break;
 
@@ -98,7 +97,7 @@ public class WaypointMover : MonoBehaviour
         if (entityType == EntityTypes.Bus){
             busController = this.GetComponent<BusController>();
 //            busController = GameObject.Find("BusController").GetComponent<BusController>();
-            busController.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
+            //busController.GetWPM(this.GetComponent<WaypointMover>(), this.GetComponent<DoorController>());
         }
 
         StartCoroutine(GiveSelf());
