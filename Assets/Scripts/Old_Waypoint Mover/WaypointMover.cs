@@ -55,7 +55,7 @@ public class WaypointMover : MonoBehaviour
                     //rb.constraints = RigidbodyConstraints.FreezePositionY & RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
                     //carSpawner.doSpawnCars = true;
                     
-                    vehicleMovement.Move(1,0,0);
+                    //vehicleMovement.Move(1,0,0);
                     
                     break;
 

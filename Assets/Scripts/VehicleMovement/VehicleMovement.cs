@@ -29,6 +29,10 @@ namespace Movement{
         [SerializeField] float acceleration = 1000f;
         [SerializeField] float maxSteering = 20f;
         [SerializeField] float breakingForce = 300f;
+        [Range(0,1)][SerializeField] float wayPointAcc = 0f;
+        [Range(0,1)][SerializeField] float wayPointSteer = 0f;
+        [SerializeField] bool WaypointBreak = false;
+
         float currentAcceleration = 0f;
         float currentBreakForce = 0f;
         float currentSteering = 0f;
@@ -62,7 +66,7 @@ namespace Movement{
                     case MovementState.Moving:
                         //Move(1,0,0);
 
-                        Debug.Log("Applying Forces");
+                        //Debug.Log("Applying Forces");
                         //ApplyForces(1,0,false);
                         
                         break;
@@ -95,14 +99,20 @@ namespace Movement{
         }
 
         void FixedUpdate(){
-            Move(currentAcceleration, currentSteering, currentBreakForce);
+            Move();
+            switch(currentMovementState){
+            case MovementState.Moving:
+                //MoveTowardsWaypoint();
+                //RotateTowardsWaypoint();
+                break;
+        }
         }
 
         public void ApplyForces(float speed, float steering, bool breaking){
-            currentAcceleration = speed * acceleration;
-            currentSteering = steering * maxSteering;
+            currentAcceleration = (speed * wayPointAcc) * acceleration;
+            currentSteering = (steering * wayPointSteer) * maxSteering;
             
-            currentBreakForce = breaking ? breakingForce : 0f;
+            currentBreakForce = (breaking || WaypointBreak) ? breakingForce : 0f;
         }
 
         /// <summary>
@@ -111,16 +121,16 @@ namespace Movement{
         /// <param name="speed">The speed at which the vehicle should move.</param>
         /// <param name="steering">The steering angle of the vehicle.</param>
         
-        public void Move(float speed, float steering, float breakF){
+        public void Move(){
             foreach (WheelCollider wheel in frontWheels){
-                wheel.steerAngle = steering;
+                wheel.steerAngle = currentSteering;
+                wheel.brakeTorque = currentBreakForce;
                 //wheel.motorTorque = currentAcceleration;
-                wheel.brakeTorque = breakF;
             }
 
             foreach (WheelCollider wheel in rearWheels){
                 wheel.motorTorque = currentAcceleration;
-                wheel.brakeTorque = breakF;
+                wheel.brakeTorque = currentBreakForce;
             }
         }
     }
