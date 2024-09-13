@@ -43,8 +43,11 @@ public class BusController : MonoBehaviour
 
     public bool HasCheckedIn;
 
-    float speed = 0;
+    [Range(-1,1)] [SerializeField] float speed = 0;
+    [Range(-1,1)] [SerializeField] float steering = 0;
+    [SerializeField] bool brake = true;
     bool startDriving = true;
+    bool stopDriving = true;
 
     // Start is called before the first frame update
     void Start()
@@ -77,20 +80,33 @@ public class BusController : MonoBehaviour
 
     void FixedUpdate()
     {
-        vehicleMovement.ApplyForces(speed,0,false);
-        if(startDriving){
-            startDriving = false;
-            StartCoroutine(IncrementSpeed());
-        }
+        if(busState == BusState.DRIVING){
+            vehicleMovement.ApplyForces(speed,steering,brake);
+            if(startDriving){
+                startDriving = false;
+                StartCoroutine(IncrementSpeed());
+            }
 
-        if (driveAllowed && busState == BusState.DRIVING){
-            vehicleMovement.ApplyForces(1,1,false);
+            if (driveAllowed && busState == BusState.DRIVING){
+                vehicleMovement.ApplyForces(1,1,brake);
+            }
         }
     }
 
     IEnumerator IncrementSpeed(){
+        stopDriving = true;
         while(speed < 1){
             speed += 0.1f;
+            yield return new WaitForSeconds(0.25f);
+        }
+    }
+
+    IEnumerator DecrementSpeed(){
+        startDriving = true;
+        while(speed > 0.1){
+            speed -= 0.2f;
+            if(speed < 0)
+                speed = 0;
             yield return new WaitForSeconds(0.25f);
         }
     }
@@ -104,6 +120,11 @@ public class BusController : MonoBehaviour
     }
 
     void UpdateWaitState(){
+        vehicleMovement.ApplyForces(speed,steering,brake);
+        if(stopDriving){
+            stopDriving = false;
+            StartCoroutine(DecrementSpeed());
+        }
         if (!animationPlayed && doors != null)
             StartCoroutine(PlayOpenAnim());
 
@@ -135,6 +156,7 @@ public class BusController : MonoBehaviour
     }
 
     void UpdateStopState(){
+        vehicleMovement.ApplyForces(speed,steering,brake);
         if(firstTime)
             return;
 

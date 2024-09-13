@@ -52,6 +52,8 @@ namespace Movement{
             if (entityType == EntityTypes.Bus){
                 busController = this.GetComponent<BusController>();
             } 
+
+            StartCoroutine(MovementSM());
         }
 
         private IEnumerator MovementSM(){
@@ -61,7 +63,7 @@ namespace Movement{
                         //Move(1,0,0);
 
                         Debug.Log("Applying Forces");
-                        ApplyForces(1,0,false);
+                        //ApplyForces(1,0,false);
                         
                         break;
 
@@ -74,6 +76,7 @@ namespace Movement{
                             break;
                         }
 
+                        // TODO: Implement bus checking in
                         /* if(busController.firstTime){
                             busController.firstTime = false;
                         } 
@@ -109,8 +112,6 @@ namespace Movement{
         /// <param name="steering">The steering angle of the vehicle.</param>
         
         public void Move(float speed, float steering, float breakF){
-            Debug.Log("Steering: "+steering);
-            Debug.Log("Breaking: "+breakF);
             foreach (WheelCollider wheel in frontWheels){
                 wheel.steerAngle = steering;
                 //wheel.motorTorque = currentAcceleration;
@@ -118,8 +119,6 @@ namespace Movement{
             }
 
             foreach (WheelCollider wheel in rearWheels){
-                
-                Debug.Log("Accelerating: "+speed);
                 wheel.motorTorque = currentAcceleration;
                 wheel.brakeTorque = breakF;
             }

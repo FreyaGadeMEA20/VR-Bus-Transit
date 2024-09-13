@@ -165,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.963211
+      value: 18.9
       objectReference: {fileID: 0}
     - target: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -173,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.822764
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -218,6 +218,10 @@ PrefabInstance:
     - target: {fileID: 7407063518324850902, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_Name
       value: BusFab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: breakingForce
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 8934084248644710605, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_Enabled
@@ -444,7 +448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &330000030
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &624848457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &683519925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1335487027068179806, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
@@ -1547,7 +1557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &895547385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6837923175918223840, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
@@ -2274,7 +2286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &1063173593
 GameObject:
   m_ObjectHideFlags: 1
@@ -2341,7 +2355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1204994032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2479,7 +2493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &1383663860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,7 +2580,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &1506714827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,7 +2627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &1569124964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,7 +2674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrafficState: 0
   waypointType: 0
+  STOP_VEHICLE: 0
 --- !u!1 &1624991556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,13 +2763,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624991556}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18032408, y: -0.46861613, z: 0.078502215, w: 0.86123145}
-  m_LocalPosition: {x: 22.65, y: 16.71, z: -17.1}
+  m_LocalRotation: {x: 0.19247203, y: -0.28480604, z: 0.04042135, w: 0.938193}
+  m_LocalPosition: {x: 83.54, y: 34.98, z: -19.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 22.593, y: -57.522, z: -2.097}
+  m_LocalEulerAnglesHint: {x: 22.593, y: -34.192, z: -2.097}
 --- !u!114 &1624991560
 MonoBehaviour:
   m_ObjectHideFlags: 0
