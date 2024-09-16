@@ -99,15 +99,19 @@ namespace Movement{
         }
 
         void FixedUpdate(){
-            Move();
+            // Current movement state keeps track of whether it is supposed to listen for waypoints, or be stopped
             switch(currentMovementState){
-            case MovementState.Moving:
-                //MoveTowardsWaypoint();
-                //RotateTowardsWaypoint();
-                break;
-        }
+                case MovementState.Moving:
+                    //MoveTowardsWaypoint();
+                    //RotateTowardsWaypoint();
+                    
+                    break;
+            }
+            // After the program has checked where it is in accordance to its surroundings, it will apply the forces to the wheels
+            Move();
         }
 
+        // Possible TODO: Seperate the forces, and change how the steering is applied to the vehicle
         public void ApplyForces(float speed, float steering, bool breaking){
             currentAcceleration = (speed * wayPointAcc) * acceleration;
             currentSteering = (steering * wayPointSteer) * maxSteering;
@@ -116,18 +120,16 @@ namespace Movement{
         }
 
         /// <summary>
-        /// Moves the vehicle by setting the speed and steering.
+        /// Moves the vehicle by the internal forces applied to the wheels
         /// </summary>
-        /// <param name="speed">The speed at which the vehicle should move.</param>
-        /// <param name="steering">The steering angle of the vehicle.</param>
-        
         public void Move(){
+            // Apply forces to the front wheels
             foreach (WheelCollider wheel in frontWheels){
                 wheel.steerAngle = currentSteering;
                 wheel.brakeTorque = currentBreakForce;
                 //wheel.motorTorque = currentAcceleration;
             }
-
+            // Apply forces to the rear wheels
             foreach (WheelCollider wheel in rearWheels){
                 wheel.motorTorque = currentAcceleration;
                 wheel.brakeTorque = currentBreakForce;

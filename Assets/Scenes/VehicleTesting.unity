@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1850163252479042898, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2465773093328708836, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_Convex
       value: 0
@@ -218,6 +222,10 @@ PrefabInstance:
     - target: {fileID: 7407063518324850902, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_Name
       value: BusFab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: wayPointAcc
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: breakingForce
