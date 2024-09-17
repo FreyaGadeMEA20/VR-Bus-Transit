@@ -2,23 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Movement{
-    [System.Serializable]
-    public class Route{
-        public List<Waypoint> waypoints = new List<Waypoint>();
-        
-        public bool doLoop = true;
-    }
-    
+namespace Movement {
     public class RouteManager : MonoBehaviour
     {
-        public List<Route> routes = new List<Route>();
-    
-        [Range(0f, 2f)]
-        [SerializeField] private float waypointSize = 1f;
+        VehicleMovement controller;
+        public Waypoint currentWaypoint;
 
-        
-        private void OnDrawGizmos()
+        private void Awake()
+        {
+            controller = GetComponent<VehicleMovement>();
+        }
+
+        void Start(){
+            controller.SetDestination(currentWaypoint.GetPosition());
+        }
+
+        void Update(){
+            if(controller.ReachedDestination){
+                currentWaypoint = currentWaypoint.nextWaypoint;
+                controller.SetDestination(currentWaypoint.GetPosition());
+            }
+        }
+        /* private void OnDrawGizmos()
         {
             foreach (var route in routes)
             {
@@ -33,17 +38,17 @@ namespace Movement{
 
                 Gizmos.DrawWireSphere(route.waypoints[route.waypoints.Count-1].transform.position, waypointSize);
 
-                if (route.doLoop) Gizmos.DrawLine(route.waypoints[route.waypoints.Count - 1].transform.position, route.waypoints[0].transform.position);
+                //if (route.doLoop) Gizmos.DrawLine(route.waypoints[route.waypoints.Count - 1].transform.position, route.waypoints[0].transform.position);
             }
-        }
+        } */
 
-        public Waypoint GetNextWaypoint(Waypoint currentWaypoint, int routeIndex)
+        /* public Waypoint GetNextWaypoint(Waypoint currentWaypoint, int routeIndex)
         {
             Route route = routes[routeIndex];
 
             if (currentWaypoint == null)
             {
-                return route.waypoints[0];
+                //return route.waypoints[0];
             }
 
             int currentIndex = route.waypoints.IndexOf(currentWaypoint);
@@ -59,6 +64,6 @@ namespace Movement{
             }
 
             return null;
-        }
+        } */
     }
 }

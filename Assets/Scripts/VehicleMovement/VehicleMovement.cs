@@ -38,9 +38,12 @@ namespace Movement{
         float currentSteering = 0f;
 
         [Header("NAVIGATION AND COLLISSION")]
-        [SerializeField] RouteManager waypoints;
-        Route currentRoute;
-        [SerializeField] int currentRouteIndex;
+        Vector3 destination;
+        bool reachedDestination{
+            get{return ReachedDestination;}
+            set{ReachedDestination = value;}
+        }
+        public bool ReachedDestination = false;
         Waypoint currentWaypoint;
         [SerializeField] GameObject waypointDetector;
         [SerializeField] float safeDistance = 2f;
@@ -49,10 +52,10 @@ namespace Movement{
         // Start is called before the first frame update
         void Start()
         {
-            waypoints = GameObject.Find("Vehicle Route Manager").GetComponent<RouteManager>();
+            //waypoints = GameObject.Find("Vehicle Route Manager").GetComponent<RouteManager>();
             //carSpawner = GameObject.Find("Spawn Manager").GetComponent<CarSpawner>();
 
-            currentRoute = waypoints.routes[currentRouteIndex];
+            //currentRoute = waypoints.routes[currentRouteIndex];
             if (entityType == EntityTypes.Bus){
                 busController = this.GetComponent<BusController>();
             } 
@@ -134,6 +137,10 @@ namespace Movement{
                 wheel.motorTorque = currentAcceleration;
                 wheel.brakeTorque = currentBreakForce;
             }
+        }
+
+        public void SetDestination(Vector3 destination){
+            this.destination = destination;
         }
     }
 }
