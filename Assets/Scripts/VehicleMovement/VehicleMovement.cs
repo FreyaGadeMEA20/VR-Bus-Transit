@@ -69,6 +69,22 @@ namespace Movement{
                     case MovementState.Moving:
                         //Move(1,0,0);
 
+                        bool shouldBranch = false;
+                        // currentWaypoint.branches
+                        if (currentWaypoint.branches != null && currentWaypoint.branches.Count > 0){
+                            if(entityType == EntityTypes.Bus){
+                                shouldBranch = false;//
+                            } else {
+                                shouldBranch = Random.Range(0f,1f) <= currentWaypoint.branchRatio ? true : false;
+                            }
+                        }
+
+                        if(shouldBranch){
+                            currentWaypoint = currentWaypoint.branches[Random.Range(0, currentWaypoint.branches.Count)];
+                        } else {
+                            // continue moving towards the waypoint here
+                            // remember to reverse if dead end
+                        }
                         //Debug.Log("Applying Forces");
                         //ApplyForces(1,0,false);
                         
