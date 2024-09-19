@@ -450,8 +450,7 @@ MonoBehaviour:
   TrafficState: 0
   STOP_VEHICLE: 0
   width: 1
-  branches:
-  - {fileID: 1355783583}
+  branches: []
   branchRatio: 0.5
 --- !u!4 &113867761
 Transform:
@@ -479,7 +478,7 @@ GameObject:
   - component: {fileID: 142405760}
   - component: {fileID: 142405759}
   m_Layer: 0
-  m_Name: Waypoint 32
+  m_Name: SideDrive Waypoint 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -497,8 +496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 1198626471}
-  previousWaypoint: {fileID: 1355783583}
+  nextWaypoint: {fileID: 1355783583}
+  previousWaypoint: {fileID: 1198626471}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -551,7 +550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 398617107}
   previousWaypoint: {fileID: 1371804867}
-  waypointType: 0
+  waypointType: 1
   TrafficState: 0
   STOP_VEHICLE: 0
   width: 1
@@ -619,22 +618,21 @@ Transform:
   - {fileID: 113867761}
   - {fileID: 694006839}
   - {fileID: 602223260}
+  - {fileID: 1482217635}
+  - {fileID: 1951897818}
+  - {fileID: 519706628}
+  - {fileID: 1198626472}
   - {fileID: 142405760}
   - {fileID: 1355783584}
-  - {fileID: 1198626472}
-  - {fileID: 519706628}
-  - {fileID: 1951897818}
-  - {fileID: 1482217635}
-  - {fileID: 1646836762}
-  - {fileID: 929084987}
-  - {fileID: 889006623}
-  - {fileID: 1542312958}
-  - {fileID: 2088926439}
-  - {fileID: 1315036212}
-  - {fileID: 319928867}
-  - {fileID: 651618702}
   - {fileID: 1239211241}
-  - {fileID: 1085826253}
+  - {fileID: 651618702}
+  - {fileID: 319928867}
+  - {fileID: 1315036212}
+  - {fileID: 2088926439}
+  - {fileID: 1542312958}
+  - {fileID: 889006623}
+  - {fileID: 929084987}
+  - {fileID: 1646836762}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &186599808
@@ -752,7 +750,7 @@ GameObject:
   - component: {fileID: 319928867}
   - component: {fileID: 319928866}
   m_Layer: 0
-  m_Name: Waypoint 28
+  m_Name: School Waypoint 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,8 +768,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 651618701}
-  previousWaypoint: {fileID: 1315036211}
+  nextWaypoint: {fileID: 1315036211}
+  previousWaypoint: {fileID: 651618701}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -1080,7 +1078,7 @@ GameObject:
   - component: {fileID: 519706628}
   - component: {fileID: 519706627}
   m_Layer: 0
-  m_Name: Waypoint 11
+  m_Name: SideDrive Waypoint 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1098,8 +1096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 1951897817}
-  previousWaypoint: {fileID: 1198626471}
+  nextWaypoint: {fileID: 1198626471}
+  previousWaypoint: {fileID: 1951897817}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -2079,7 +2077,7 @@ GameObject:
   - component: {fileID: 651618702}
   - component: {fileID: 651618701}
   m_Layer: 0
-  m_Name: Waypoint 29
+  m_Name: School Waypoint 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2097,8 +2095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 1239211240}
-  previousWaypoint: {fileID: 319928866}
+  nextWaypoint: {fileID: 319928866}
+  previousWaypoint: {fileID: 1239211240}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -2383,7 +2381,7 @@ GameObject:
   - component: {fileID: 889006623}
   - component: {fileID: 889006622}
   m_Layer: 0
-  m_Name: Waypoint 24
+  m_Name: School Waypoint 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2401,8 +2399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 1542312957}
-  previousWaypoint: {fileID: 929084986}
+  nextWaypoint: {fileID: 929084986}
+  previousWaypoint: {fileID: 1542312957}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -3117,7 +3115,7 @@ GameObject:
   - component: {fileID: 929084987}
   - component: {fileID: 929084986}
   m_Layer: 0
-  m_Name: Waypoint 23
+  m_Name: School Waypoint 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3135,8 +3133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 889006622}
-  previousWaypoint: {fileID: 1646836761}
+  nextWaypoint: {fileID: 1646836761}
+  previousWaypoint: {fileID: 889006622}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -3258,7 +3256,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987860784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3365,58 +3363,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1085826252
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1085826253}
-  - component: {fileID: 1085826254}
-  m_Layer: 0
-  m_Name: Waypoint 31
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1085826253
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085826252}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.001689851, y: 0.6929372, z: 0.0016240919, w: 0.7209941}
-  m_LocalPosition: {x: 108.8, y: 0, z: 51.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 159311591}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1085826254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085826252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 0}
-  previousWaypoint: {fileID: 1239211240}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
-  branches: []
-  branchRatio: 0.5
 --- !u!1 &1092453647
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,7 +3551,7 @@ GameObject:
   - component: {fileID: 1198626472}
   - component: {fileID: 1198626471}
   m_Layer: 0
-  m_Name: Waypoint 10
+  m_Name: SideDrive Waypoint 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3623,8 +3569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 519706627}
-  previousWaypoint: {fileID: 142405759}
+  nextWaypoint: {fileID: 142405759}
+  previousWaypoint: {fileID: 519706627}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -3722,7 +3668,7 @@ GameObject:
   - component: {fileID: 1239211241}
   - component: {fileID: 1239211240}
   m_Layer: 0
-  m_Name: Waypoint 30
+  m_Name: School Waypoint 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3740,8 +3686,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 1085826254}
-  previousWaypoint: {fileID: 651618701}
+  nextWaypoint: {fileID: 651618701}
+  previousWaypoint: {fileID: 1951897817}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -3757,7 +3703,7 @@ Transform:
   m_GameObject: {fileID: 1239211239}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0016898506, y: 0.6929372, z: 0.0016240915, w: 0.7209941}
-  m_LocalPosition: {x: 108.799995, y: 0, z: 51.4}
+  m_LocalPosition: {x: 111.4, y: 0, z: 47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3774,7 +3720,7 @@ GameObject:
   - component: {fileID: 1315036212}
   - component: {fileID: 1315036211}
   m_Layer: 0
-  m_Name: Waypoint 27
+  m_Name: School Waypoint 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3792,8 +3738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 319928866}
-  previousWaypoint: {fileID: 2088926438}
+  nextWaypoint: {fileID: 2088926438}
+  previousWaypoint: {fileID: 319928866}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -3924,7 +3870,7 @@ GameObject:
   - component: {fileID: 1355783584}
   - component: {fileID: 1355783583}
   m_Layer: 0
-  m_Name: Waypoint 9
+  m_Name: SideDrive Waypoint 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3942,13 +3888,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 142405759}
-  previousWaypoint: {fileID: 0}
+  nextWaypoint: {fileID: 694006838}
+  previousWaypoint: {fileID: 142405759}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
   width: 1
-  branches: []
+  branches:
+  - {fileID: 694006838}
   branchRatio: 0.5
 --- !u!4 &1355783584
 Transform:
@@ -4068,7 +4015,7 @@ GameObject:
   - component: {fileID: 1482217635}
   - component: {fileID: 1482217634}
   m_Layer: 0
-  m_Name: Waypoint 13
+  m_Name: SideDrive Waypoint 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4086,8 +4033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 0}
-  previousWaypoint: {fileID: 1951897817}
+  nextWaypoint: {fileID: 1951897817}
+  previousWaypoint: {fileID: 152836515}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -4224,7 +4171,7 @@ GameObject:
   - component: {fileID: 1542312958}
   - component: {fileID: 1542312957}
   m_Layer: 0
-  m_Name: Waypoint 25
+  m_Name: School Waypoint 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4242,8 +4189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 2088926438}
-  previousWaypoint: {fileID: 889006622}
+  nextWaypoint: {fileID: 889006622}
+  previousWaypoint: {fileID: 2088926438}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -4465,7 +4412,7 @@ GameObject:
   - component: {fileID: 1646836762}
   - component: {fileID: 1646836761}
   m_Layer: 0
-  m_Name: Waypoint 22
+  m_Name: School Waypoint 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4483,8 +4430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 929084986}
-  previousWaypoint: {fileID: 0}
+  nextWaypoint: {fileID: 142405759}
+  previousWaypoint: {fileID: 929084986}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -4824,7 +4771,7 @@ GameObject:
   - component: {fileID: 1951897818}
   - component: {fileID: 1951897817}
   m_Layer: 0
-  m_Name: Waypoint 12
+  m_Name: SideDrive Waypoint 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4842,8 +4789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 1482217634}
-  previousWaypoint: {fileID: 519706627}
+  nextWaypoint: {fileID: 519706627}
+  previousWaypoint: {fileID: 1482217634}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0
@@ -4860,7 +4807,7 @@ Transform:
   m_GameObject: {fileID: 1951897816}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000038734528, y: 0.9998607, z: 0.0023434449, w: -0.016526727}
-  m_LocalPosition: {x: 127.9, y: 0, z: 64.5}
+  m_LocalPosition: {x: 127.9, y: 0, z: 58.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4963,7 +4910,7 @@ GameObject:
   - component: {fileID: 2088926439}
   - component: {fileID: 2088926438}
   m_Layer: 0
-  m_Name: Waypoint 26
+  m_Name: School Waypoint 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4981,8 +4928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 1315036211}
-  previousWaypoint: {fileID: 1542312957}
+  nextWaypoint: {fileID: 1542312957}
+  previousWaypoint: {fileID: 1315036211}
   waypointType: 0
   TrafficState: 0
   STOP_VEHICLE: 0

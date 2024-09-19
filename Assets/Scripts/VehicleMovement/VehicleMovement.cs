@@ -4,6 +4,9 @@ using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/// Parts taken from: https://github.com/unity-car-tutorials/Unity-CarTutorialProject-CSharp-Gotow/blob/master/Assets/GotowTutorialCSharp/Scripts/Car%20Control/AICar_Script.cs 
+/// Parts taken from: https://www.youtube.com/watch?v=MXCZ-n5VyJc 
+
 namespace Movement{
     public class VehicleMovement : MonoBehaviour
     {
@@ -82,22 +85,7 @@ namespace Movement{
                     case MovementState.Moving:
                         //Move(1,0,0);
 
-                        bool shouldBranch = false;
-                        // currentWaypoint.branches
-                        if (currentWaypoint.branches != null && currentWaypoint.branches.Count > 0){
-                            if(entityType == EntityTypes.Bus){
-                                shouldBranch = false;//
-                            } else {
-                                shouldBranch = Random.Range(0f,1f) <= currentWaypoint.branchRatio ? true : false;
-                            }
-                        }
-
-                        if(shouldBranch){
-                            currentWaypoint = currentWaypoint.branches[Random.Range(0, currentWaypoint.branches.Count)];
-                        } else {
-                            // continue moving towards the waypoint here
-                            // remember to reverse if dead end
-                        }
+                        
                         //Debug.Log("Applying Forces");
                         //ApplyForces(1,0,false);
                         
@@ -226,12 +214,52 @@ namespace Movement{
 		// this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
 		// next in the list.
 		if ( RelativeWaypointPosition.magnitude < 20 ) {
-            if(direction == 1){
-                currentWaypoint = currentWaypoint.nextWaypoint;
-			} else if (direction == -1){
-                currentWaypoint = currentWaypoint.previousWaypoint;
+            switch(currentWaypoint.waypointType){
+                case Waypoint.WaypointType.BusStop:
+
+                    break;
+                case Waypoint.WaypointType.TrafficLight:
+                    switch(currentWaypoint.TrafficState){
+                        case Waypoint.TrafficLightState.Red:
+                            currentMovementState = MovementState.Waiting;
+                            break;
+                        case Waypoint.TrafficLightState.Green:
+                            currentMovementState = MovementState.Moving;
+                            break;
+                    }
+                    break;
+                case Waypoint.WaypointType.Nothing:
+                    if (currentWaypoint.nextWaypoint == null){
+                        reachedDestination = true;
+                    } else {
+                        currentWaypoint = currentWaypoint.nextWaypoint;
+                    }
+                    break;
+            }
+            bool shouldBranch = false;
+            // currentWaypoint.branches
+            if (currentWaypoint.branches != null && currentWaypoint.branches.Count > 0){
+                Debug.Log("Branching");
+                if(entityType == EntityTypes.Bus){
+                    shouldBranch = true;//
+                } else {
+                    shouldBranch = Random.Range(0f,1f) <= currentWaypoint.branchRatio ? true : false;
+                }
             }
 
+            if(shouldBranch){
+                Debug.Log("Branched");
+                currentWaypoint = currentWaypoint.branches[Random.Range(0, currentWaypoint.branches.Count)];
+            } else {
+                if(direction == 1){
+                    currentWaypoint = currentWaypoint.nextWaypoint;
+                } else if (direction == -1){
+                    currentWaypoint = currentWaypoint.previousWaypoint;
+                }
+            }
+
+            
+            Debug.Log("Waypoint Reached");
 			/* if ( currentWaypoint >= waypoints.Count ) {
 				currentWaypoint = 0;
 			} */
