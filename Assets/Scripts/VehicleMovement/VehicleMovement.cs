@@ -39,10 +39,10 @@ namespace Movement{
         [SerializeField] float currentSteering = 0f;
 
         public float[] GearRatio;
-	    public int CurrentGear = 0;
+        public int CurrentGear = 0;
         public float EngineTorque = 600.0f;
-	    public float MaxEngineRPM = 3000.0f;
-	    public float MinEngineRPM = 1000.0f;
+        public float MaxEngineRPM = 3000.0f;
+        public float MinEngineRPM = 1000.0f;
         float EngineRPM = 0.0f;
 
         [Header("NAVIGATION AND COLLISSION")]
