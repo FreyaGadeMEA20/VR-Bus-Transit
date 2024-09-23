@@ -135,6 +135,24 @@ namespace Movement{
                     break;
                 case MovementState.Waiting:
                     WaypointBreak = true;
+                    switch(currentWaypoint.waypointType){
+                        case Waypoint.WaypointType.BusStop:
+                            // Add logic to tell the bus that it is at a bus stop
+                            // - Open doors and set state
+                            break;
+                        case Waypoint.WaypointType.TrafficLight:
+                            switch(currentWaypoint.TrafficState){
+                                case Waypoint.TrafficLightState.Red:
+                                    break;
+                                case Waypoint.TrafficLightState.Green:
+                                    currentMovementState = MovementState.Moving;
+                                    WaypointBreak = false;
+                                    break;
+                            }
+                            break;
+                        case Waypoint.WaypointType.Nothing:
+                            break;
+                    }
                     break;
             }
             // After the program has checked where it is in accordance to its surroundings, it will apply the forces to the wheels
@@ -231,18 +249,23 @@ namespace Movement{
                             currentMovementState = MovementState.Waiting;
                             break;
                         case Waypoint.TrafficLightState.Green:
-                            currentMovementState = MovementState.Moving;
+                            AdvanceToNextWaypoint();
                             break;
                     }
                     break;
                 case Waypoint.WaypointType.Nothing:
-                    if (currentWaypoint.nextWaypoint == null){
-                        reachedDestination = true;
-                    } else {
-                        currentWaypoint = currentWaypoint.nextWaypoint;
-                    }
+                    AdvanceToNextWaypoint();
                     break;
             }
+            Debug.Log("Waypoint Reached");
+			/* if ( currentWaypoint >= waypoints.Count ) {
+				currentWaypoint = 0;
+			} */
+		}
+		
+	}
+
+        public void AdvanceToNextWaypoint(){
             bool shouldBranch = false;
             // currentWaypoint.branches
             if (currentWaypoint.branches != null && currentWaypoint.branches.Count > 0){
@@ -253,7 +276,6 @@ namespace Movement{
                     shouldBranch = Random.Range(0f,1f) <= currentWaypoint.branchRatio ? true : false;
                 }
             }
-
             if(shouldBranch){
                 Debug.Log("Branched");
                 currentWaypoint = currentWaypoint.branches[Random.Range(0, currentWaypoint.branches.Count)];
@@ -264,15 +286,7 @@ namespace Movement{
                     currentWaypoint = currentWaypoint.previousWaypoint;
                 }
             }
-
-            
-            Debug.Log("Waypoint Reached");
-			/* if ( currentWaypoint >= waypoints.Count ) {
-				currentWaypoint = 0;
-			} */
-		}
-		
-	}
+        }
 
         public void SetDestination(Vector3 destination){
             this.destination = destination;
