@@ -68,14 +68,14 @@ public class WaypointEditorWindow : EditorWindow
             }
             if(GUILayout.Button("Assign as Traffic Light"))
             {
-                //Selection.activeGameObject.GetComponent<Waypoint>().waypointType = Waypoint.WaypointType.TrafficLight;
+                Selection.activeGameObject.GetComponent<Waypoint>().waypointType = Waypoint.WaypointType.TrafficLight;
             }
             //if(GUILayout.Button("Assign as Turn"))
             //{
                 //Selection.activeGameObject.GetComponent<Waypoint>().waypointType = Waypoint.WaypointType.Turn;
             //}
             if(GUILayout.Button("Assign as Bus Stop")){
-                //Selection.activeGameObject.GetComponent<Waypoint>().waypointType = Waypoint.WaypointType.BusStop;
+                Selection.activeGameObject.GetComponent<Waypoint>().waypointType = Waypoint.WaypointType.BusStop;
             }
         }
     }

@@ -133,6 +133,9 @@ namespace Movement{
                     //audio.pitch = Mathf.Abs(EngineRPM) + 1;
                     // limit audio                    
                     break;
+                case MovementState.Waiting:
+                    WaypointBreak = true;
+                    break;
             }
             // After the program has checked where it is in accordance to its surroundings, it will apply the forces to the wheels
             Move();
@@ -216,9 +219,13 @@ namespace Movement{
 		if ( RelativeWaypointPosition.magnitude < 20 ) {
             switch(currentWaypoint.waypointType){
                 case Waypoint.WaypointType.BusStop:
+                    currentMovementState = MovementState.Waiting;
 
+                    // Add logic to tell the bus that it is at a bus stop
+                    // - Open doors and set state
                     break;
                 case Waypoint.WaypointType.TrafficLight:
+                    Debug.Log("Traffic light reached");
                     switch(currentWaypoint.TrafficState){
                         case Waypoint.TrafficLightState.Red:
                             currentMovementState = MovementState.Waiting;
