@@ -160,34 +160,34 @@ namespace Movement{
         }
 
         void  ShiftGears (){
-		// this funciton shifts the gears of the vehcile, it loops through all the gears, checking which will make
-		// the engine RPM fall within the desired range. The gear is then set to this "appropriate" value.
-		int AppropriateGear = CurrentGear;
+            // this funciton shifts the gears of the vehcile, it loops through all the gears, checking which will make
+            // the engine RPM fall within the desired range. The gear is then set to this "appropriate" value.
+            int AppropriateGear = CurrentGear;
 
-		if ( EngineRPM >= MaxEngineRPM ) {
-			for (int i= 0; i < GearRatio.Length; i ++ ) {
-				if ( rearWheels[0].rpm * GearRatio[i] < MaxEngineRPM ) {
-					AppropriateGear = i;
-					break;
-				}
-			}
-			
-			CurrentGear = AppropriateGear;
-		}
-		
-		if ( EngineRPM <= MinEngineRPM ) {
-			AppropriateGear = CurrentGear;
-			
-			for ( int j= GearRatio.Length - 1; j >= 0; j -- ) {
-				if ( rearWheels[0].rpm * GearRatio[j] > MinEngineRPM ) {
-					AppropriateGear = j;
-					break;
-				}
-			}
-			
-			CurrentGear = AppropriateGear;
-		}
-	}
+            if ( EngineRPM >= MaxEngineRPM ) {
+                for (int i= 0; i < GearRatio.Length; i ++ ) {
+                    if ( rearWheels[0].rpm * GearRatio[i] < MaxEngineRPM ) {
+                        AppropriateGear = i;
+                        break;
+                    }
+                }
+                
+                CurrentGear = AppropriateGear;
+            }
+            
+            if ( EngineRPM <= MinEngineRPM ) {
+                AppropriateGear = CurrentGear;
+                
+                for ( int j= GearRatio.Length - 1; j >= 0; j -- ) {
+                    if ( rearWheels[0].rpm * GearRatio[j] > MinEngineRPM ) {
+                        AppropriateGear = j;
+                        break;
+                    }
+                }
+                
+                CurrentGear = AppropriateGear;
+            }
+        }
 
         // Possible TODO: Seperate the forces, and change how the steering is applied to the vehicle
         public void ApplyForces(float speed, float steering, bool breaking){
@@ -202,74 +202,73 @@ namespace Movement{
         /// </summary>
         public void Move(){
             // Apply forces to the front wheels
-            foreach (WheelCollider wheel in frontWheels){
+            foreach (WheelCollider wheel in frontWheels) {
                 wheel.steerAngle = maxSteering * wayPointSteer;
                 wheel.brakeTorque = currentBreakForce;
-                //wheel.motorTorque = currentAcceleration;
             }
             // Apply forces to the rear wheels
-            foreach (WheelCollider wheel in rearWheels){
+            foreach (WheelCollider wheel in rearWheels) {
                 wheel.motorTorque = EngineTorque / GearRatio[CurrentGear] * wayPointAcc;
                 wheel.brakeTorque = currentBreakForce;
             }
         }
 
         void NavigateTowardsWaypoint (){
-		// now we just find the relative position of the waypoint from the car transform,
-		// that way we can determine how far to the left and right the waypoint is.
-		Vector3 RelativeWaypointPosition = transform.InverseTransformPoint( new Vector3(
-                                                                                    currentWaypoint.GetPosition().x, 
-                                                                                    transform.position.y, 
-                                                                                    currentWaypoint.GetPosition().z ) );
-		
-		// by dividing the horizontal position by the magnitude, we get a decimal percentage of the turn angle that we can use to drive the wheels
-		wayPointSteer = RelativeWaypointPosition.x / RelativeWaypointPosition.magnitude;
-		
-		// now we do the same for torque, but make sure that it doesn't apply any engine torque when going around a sharp turn...
-		if ( Mathf.Abs( wayPointSteer ) < 0.5f ) {
-			wayPointAcc = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs( wayPointSteer );
-		}else{
-			wayPointAcc = 0.0f;
-		}
-		
-		// this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
-		// next in the list.
-		if ( RelativeWaypointPosition.magnitude < 20 ) {
-            switch(currentWaypoint.waypointType){
-                case Waypoint.WaypointType.BusStop:
-                    currentMovementState = MovementState.Waiting;
-
-                    // Add logic to tell the bus that it is at a bus stop
-                    // - Open doors and set state
-                    break;
-                case Waypoint.WaypointType.TrafficLight:
-                    Debug.Log("Traffic light reached");
-                    switch(currentWaypoint.TrafficState){
-                        case Waypoint.TrafficLightState.Red:
-                            currentMovementState = MovementState.Waiting;
-                            break;
-                        case Waypoint.TrafficLightState.Green:
-                            AdvanceToNextWaypoint();
-                            break;
-                    }
-                    break;
-                case Waypoint.WaypointType.Nothing:
-                    AdvanceToNextWaypoint();
-                    break;
+            // now we just find the relative position of the waypoint from the car transform,
+            // that way we can determine how far to the left and right the waypoint is.
+            Vector3 RelativeWaypointPosition =
+                        transform.InverseTransformPoint( new Vector3 (
+                                                                    currentWaypoint.GetPosition().x, 
+                                                                    transform.position.y, 
+                                                                    currentWaypoint.GetPosition().z
+                                                                )
+                                                        );
+            
+            // by dividing the horizontal position by the magnitude, we get a decimal percentage of the turn angle that we can use to drive the wheels
+            wayPointSteer = RelativeWaypointPosition.x / RelativeWaypointPosition.magnitude;
+            
+            // now we do the same for torque, but make sure that it doesn't apply any engine torque when going around a sharp turn...
+            if ( Mathf.Abs( wayPointSteer ) < 0.5f ) {
+                wayPointAcc = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs( wayPointSteer );
+            }else{
+                wayPointAcc = 0.0f;
             }
-            Debug.Log("Waypoint Reached");
-			/* if ( currentWaypoint >= waypoints.Count ) {
-				currentWaypoint = 0;
-			} */
-		}
-		
-	}
+            
+            // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
+            // next in the list.
+            if ( RelativeWaypointPosition.magnitude < 20 ) {
+                switch(currentWaypoint.waypointType) {
+                    case Waypoint.WaypointType.BusStop:
+                        currentMovementState = MovementState.Waiting;
+
+                        // Add logic that tells it that it ahs to continue from the bus stop
+
+                        // Add logic to tell the bus that it is at a bus stop
+                        // - Open doors and set state
+                        break;
+                    case Waypoint.WaypointType.TrafficLight:
+                        Debug.Log("Traffic light reached");
+                        switch(currentWaypoint.TrafficState){
+                            case Waypoint.TrafficLightState.Red:
+                                currentMovementState = MovementState.Waiting;
+                                break;
+                            case Waypoint.TrafficLightState.Green:
+                                AdvanceToNextWaypoint();
+                                break;
+                        }
+                        break;
+                    case Waypoint.WaypointType.Nothing:
+                        AdvanceToNextWaypoint();
+                        break;
+                }
+                //Debug.Log("Waypoint Reached");
+            }
+        }
 
         public void AdvanceToNextWaypoint(){
             bool shouldBranch = false;
             // currentWaypoint.branches
             if (currentWaypoint.branches != null && currentWaypoint.branches.Count > 0){
-                Debug.Log("Branching");
                 if(entityType == EntityTypes.Bus){
                     shouldBranch = true;//
                 } else {
