@@ -20,7 +20,7 @@ public class BusController : MonoBehaviour
     }
     [SerializeField] BusState busState;
 
-    bool animationPlayed = false;
+    bool doorsOpen = false;
 
     private bool driveAllowed{
         get{return DriveAllowed;}
@@ -78,31 +78,11 @@ public class BusController : MonoBehaviour
         if(startDriving){
             startDriving = false;
             brake = false;
-            StartCoroutine(IncrementSpeed());
         }
     }
 
     void FixedUpdate()
     {
-        vehicleMovement.ApplyForces(speed,steering,brake);
-    }
-
-    IEnumerator IncrementSpeed(){
-        stopDriving = true;
-        while(speed < 1){
-            speed += 0.25f;
-            yield return new WaitForSeconds(0.25f);
-        }
-    }
-
-    IEnumerator DecrementSpeed(){
-        startDriving = true;
-        while(speed > 0.1){
-            speed -= 0.25f;
-            if(speed < 0) // Prevent unintentional negative speed
-                speed = 0;
-            yield return new WaitForSeconds(0.25f);
-        }
     }
 
     public void StopNextStop(){
@@ -117,25 +97,26 @@ public class BusController : MonoBehaviour
         if(stopDriving){
             stopDriving = false;
             brake = true;   
-            StartCoroutine(DecrementSpeed());
         }
-        if (!animationPlayed && doors != null)
-            StartCoroutine(PlayOpenAnim());
 
-        if (hasCheckedIn)
-            StartCoroutine(CloseDoorsAndDrive());
+        if (!doorsOpen && doors != null)
+            StartCoroutine(BusStopAnimations());
     }
 
-    IEnumerator PlayOpenAnim(){
+    IEnumerator BusStopAnimations(){
         doors.OpenDoors();
 
-        animationPlayed = true;
+        doorsOpen = true;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(15);
+
+        // add a check to see if player is within a certain distance, if so, wait another 6 seconds or smt
+
+        StartCoroutine(CloseDoorsAndDrive());
     }
 
     IEnumerator CloseDoorsAndDrive(){
-        animationPlayed = false;
+        doorsOpen = false;
 
         yield return new WaitForSeconds(2);
         
@@ -146,18 +127,16 @@ public class BusController : MonoBehaviour
         driveAllowed = true;
 
         busState = BusState.DRIVING;
+        vehicleMovement.AdvanceToNextWaypoint();
     }
 
     void UpdateStopState(){
-        if(firstTime)
-            return;
-
         if(!busStopped)
             return;
 
         // Add logic to stop the bus
         
-        if(!hasCheckedIn){
+        if(vehicleMovement.ReachedDestination) {
             busState = BusState.WAIT;
         }
     }
@@ -165,12 +144,7 @@ public class BusController : MonoBehaviour
     
     public void StopBus(){
         busStopped = true;
+        Debug.Log("Bus stopped");
         busState = BusState.STOP_BUTTON_PRESSED;
     }
-
-    /* public void GetWPM(WaypointMover wpm, DoorController door){
-        WPM = wpm;
-
-        //doors = door;
-    } */
 }

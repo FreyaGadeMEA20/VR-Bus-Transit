@@ -17,12 +17,12 @@ namespace Movement {
             controller.SetDestination(currentWaypoint.GetPosition());
         }
 
-        void Update(){
+        /* void Update(){
             if(controller.ReachedDestination){
                 currentWaypoint = currentWaypoint.nextWaypoint;
                 controller.SetDestination(currentWaypoint.GetPosition());
             }
-        }
+        } */
         /* private void OnDrawGizmos()
         {
             foreach (var route in routes)

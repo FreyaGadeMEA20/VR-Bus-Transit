@@ -122,6 +122,7 @@ namespace Movement{
             // Current movement state keeps track of whether it is supposed to listen for waypoints, or be stopped
             switch(currentMovementState){
                 case MovementState.Moving:
+                    WaypointBreak = false;
                     rb.drag = rb.velocity.magnitude / 250;
                     NavigateTowardsWaypoint();
                     //MoveTowardsWaypoint();
@@ -134,23 +135,28 @@ namespace Movement{
                     // limit audio                    
                     break;
                 case MovementState.Waiting:
-                    WaypointBreak = true;
                     switch(currentWaypoint.waypointType){
                         case Waypoint.WaypointType.BusStop:
+                                if(entityType == EntityTypes.Bus && !reachedDestination){
+                                    reachedDestination = true;
+                                    WaypointBreak = true;
+                                    busController.StopBus();
+                                }
                             // Add logic to tell the bus that it is at a bus stop
                             // - Open doors and set state
                             break;
                         case Waypoint.WaypointType.TrafficLight:
                             switch(currentWaypoint.TrafficState){
                                 case Waypoint.TrafficLightState.Red:
+                                    WaypointBreak = true;
                                     break;
                                 case Waypoint.TrafficLightState.Green:
                                     currentMovementState = MovementState.Moving;
-                                    WaypointBreak = false;
                                     break;
                             }
                             break;
                         case Waypoint.WaypointType.Nothing:
+                            currentMovementState = MovementState.Moving;
                             break;
                     }
                     break;
@@ -189,19 +195,12 @@ namespace Movement{
             }
         }
 
-        // Possible TODO: Seperate the forces, and change how the steering is applied to the vehicle
-        public void ApplyForces(float speed, float steering, bool breaking){
-            currentAcceleration = wayPointAcc * acceleration * EngineRPM;
-            currentSteering = wayPointSteer * maxSteering;
-            
-            currentBreakForce = (breaking || WaypointBreak) ? breakingForce : 0f;
-        }
-
         /// <summary>
         /// Moves the vehicle by the internal forces applied to the wheels
         /// </summary>
         public void Move(){
             // Apply forces to the front wheels
+            currentBreakForce = WaypointBreak ? breakingForce : 0f;
             foreach (WheelCollider wheel in frontWheels) {
                 wheel.steerAngle = maxSteering * wayPointSteer;
                 wheel.brakeTorque = currentBreakForce;
