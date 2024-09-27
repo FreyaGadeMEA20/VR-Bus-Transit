@@ -11,55 +11,59 @@ namespace Movement{
     public class VehicleMovement : MonoBehaviour
     {
         [Header("VEHICLE TYPE AND ITS PROPERTIES")]
-        public EntityTypes entityType = EntityTypes.Car;
+        // Is it a car or a bus? Important for checking bus stop, and turning
+        public EntityTypes entityType = EntityTypes.Car; 
         public enum EntityTypes {
             Car,
             Bus
         }
 
+        // The current state of the vehicle. Whether it is moving or waiting
         public MovementState currentMovementState = MovementState.Moving;
         public enum MovementState{
             Moving,
-            Waiting
+            WaitingAtPoint,
+            WaitingBehind,
         }
 
-        [SerializeField] private BusController busController;
+        Rigidbody rb; // The rigidbody of the vehicle
 
+        [SerializeField] private BusController busController; // reference to the bus controller (doors, stop button, screen)
+
+        // Wheel references
         [Header("WHEELS")]
         [SerializeField] WheelCollider[] frontWheels;
         [SerializeField] WheelCollider[] rearWheels;
 
+        // ALl of the variables that are used to control the movement of the vehicle
         [Header("MOVEMENT VARIABLES")]
-        [SerializeField] float acceleration = 1000f;
-        [SerializeField] float maxSteering = 20f;
-        [SerializeField] float breakingForce = 300f;
-        /* [Range(0,1)] */[SerializeField] float wayPointAcc = 0f;
-        [Range(-1,1)][SerializeField] float wayPointSteer = 0f;
-        [SerializeField] bool WaypointBreak = false;
+        [SerializeField] float maxSteering = 45f; // The maximum steering angle of the vehicle
+        [SerializeField] float breakingForce = 300f; // The breaking force of the vehicle. I.e. how powerful the breaks are
+        [SerializeField] float acceleration = 0f; // The acceleration of the vehicle
+        [Range(-1,1)][SerializeField] float steering = 0f; //how much it is steering
+        [SerializeField] bool breaks = false; // Whether or not the vehicle is breaking
+        [SerializeField] float currentBreakForce = 0f; // The current break force of the vehicle. Checks the above, as breaks are not a bool, but a value
 
-        [SerializeField] float currentAcceleration = 0f;
-        [SerializeField] float currentBreakForce = 0f;
-        [SerializeField] float currentSteering = 0f;
+        public float[] GearRatio; // The gear ratio of the vehicle
+        public int CurrentGear = 0; // The current gear of the vehicle
+        public float EngineTorque = 600.0f; // The engine torque of the vehicle
+        public float MaxEngineRPM = 3000.0f; // The maximum engine RPM of the vehicle
+        public float MinEngineRPM = 1000.0f; // The minimum engine RPM of the vehicle
+        float EngineRPM = 0.0f; // The current engine RPM of the vehicle
 
-        public float[] GearRatio;
-        public int CurrentGear = 0;
-        public float EngineTorque = 600.0f;
-        public float MaxEngineRPM = 3000.0f;
-        public float MinEngineRPM = 1000.0f;
-        float EngineRPM = 0.0f;
-
+        // Variables for controlling navigation and collision
         [Header("NAVIGATION AND COLLISSION")]
-        Vector3 destination;
-        bool reachedDestination{
-            get{return ReachedDestination;}
-            set{ReachedDestination = value;}
+        public bool ReachedBusStop = false; // Variable to control whether or not it has reached the bus stop
+        bool reachedBusStop{
+            get{return ReachedBusStop;}
+            set{ReachedBusStop = value;}
         }
-        public bool ReachedDestination = false;
-        RouteManager routeManager;
-        [SerializeField] Waypoint currentWaypoint;
-        
-        int direction = 1;
-        Rigidbody rb;
+        RouteManager routeManager; // The base reference to its starting waypoint
+        [SerializeField] Waypoint currentWaypoint; // The current waypoint, in which it navigates towards
+        int direction = 1; // Control which waypoint to navigate towards. Might be removed in the future
+
+        [SerializeField] GameObject raycastOrigin; // The collision detectors of the vehicle
+        bool vehicleInfront = false; // The vehicle infront of the current vehicle
 
         // Start is called before the first frame update
         void Start()
@@ -74,12 +78,12 @@ namespace Movement{
             } 
 
             routeManager = GetComponent<RouteManager>();
-            currentWaypoint = routeManager.currentWaypoint;
+            //currentWaypoint = routeManager.currentWaypoint;
 
             //StartCoroutine(MovementSM());
         }
 
-        private IEnumerator MovementSM(){
+        /* private IEnumerator MovementSM(){
             while(true){
                 switch (currentMovementState){
                     case MovementState.Moving:
@@ -91,7 +95,7 @@ namespace Movement{
                         
                         break;
 
-                    case MovementState.Waiting:
+                    case MovementState.WaitingAtPoint:
                         //carSpawner.doSpawnCars = false;
                         // Let the cars go again when the waypoint is no longer a waiting point
                         if (entityType == EntityTypes.Car && currentWaypoint.STOP_VEHICLE == true){
@@ -108,7 +112,7 @@ namespace Movement{
                         yield return new WaitUntil(() => hasCheckedIn == true);
                         Debug.Log("Bus has checked in");
                         hasCheckedIn = false;
-                        */
+                        
 
                         currentMovementState = MovementState.Moving;
                         break;
@@ -116,13 +120,17 @@ namespace Movement{
 
                 yield return null;
             }
-        }
+        } */
 
         void FixedUpdate(){
             // Current movement state keeps track of whether it is supposed to listen for waypoints, or be stopped
             switch(currentMovementState){
                 case MovementState.Moving:
-                    WaypointBreak = false;
+                    if(CheckIfCar()){
+                        breaks = true;
+                        break;
+                    }
+                    breaks = false;
                     rb.drag = rb.velocity.magnitude / 250;
                     NavigateTowardsWaypoint();
                     //MoveTowardsWaypoint();
@@ -134,12 +142,12 @@ namespace Movement{
                     //audio.pitch = Mathf.Abs(EngineRPM) + 1;
                     // limit audio                    
                     break;
-                case MovementState.Waiting:
+                case MovementState.WaitingAtPoint:
                     switch(currentWaypoint.waypointType){
                         case Waypoint.WaypointType.BusStop:
-                                if(entityType == EntityTypes.Bus && !reachedDestination){
-                                    reachedDestination = true;
-                                    WaypointBreak = true;
+                                if(entityType == EntityTypes.Bus && !reachedBusStop){
+                                    reachedBusStop = true;
+                                    breaks = true;
                                     busController.StopBus();
                                 }
                             // Add logic to tell the bus that it is at a bus stop
@@ -148,7 +156,7 @@ namespace Movement{
                         case Waypoint.WaypointType.TrafficLight:
                             switch(currentWaypoint.TrafficState){
                                 case Waypoint.TrafficLightState.Red:
-                                    WaypointBreak = true;
+                                    breaks = true;
                                     break;
                                 case Waypoint.TrafficLightState.Green:
                                     currentMovementState = MovementState.Moving;
@@ -200,14 +208,14 @@ namespace Movement{
         /// </summary>
         public void Move(){
             // Apply forces to the front wheels
-            currentBreakForce = WaypointBreak ? breakingForce : 0f;
+            currentBreakForce = breaks ? breakingForce : 0f;
             foreach (WheelCollider wheel in frontWheels) {
-                wheel.steerAngle = maxSteering * wayPointSteer;
+                wheel.steerAngle = maxSteering * steering;
                 wheel.brakeTorque = currentBreakForce;
             }
             // Apply forces to the rear wheels
             foreach (WheelCollider wheel in rearWheels) {
-                wheel.motorTorque = EngineTorque / GearRatio[CurrentGear] * wayPointAcc;
+                wheel.motorTorque = EngineTorque / GearRatio[CurrentGear] * acceleration;
                 wheel.brakeTorque = currentBreakForce;
             }
         }
@@ -224,32 +232,23 @@ namespace Movement{
                                                         );
             
             // by dividing the horizontal position by the magnitude, we get a decimal percentage of the turn angle that we can use to drive the wheels
-            wayPointSteer = RelativeWaypointPosition.x / RelativeWaypointPosition.magnitude;
+            steering = RelativeWaypointPosition.x / RelativeWaypointPosition.magnitude;
             
             // now we do the same for torque, but make sure that it doesn't apply any engine torque when going around a sharp turn...
-            if ( Mathf.Abs( wayPointSteer ) < 0.5f ) {
-                wayPointAcc = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs( wayPointSteer );
+            if ( Mathf.Abs( steering ) < 0.5f ) {
+                acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs( steering );
             }else{
-                wayPointAcc = 0.0f;
+                acceleration = 0.0f;
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
             // next in the list.
             if ( RelativeWaypointPosition.magnitude < 20 ) {
                 switch(currentWaypoint.waypointType) {
-                    case Waypoint.WaypointType.BusStop:
-                        currentMovementState = MovementState.Waiting;
-
-                        // Add logic that tells it that it ahs to continue from the bus stop
-
-                        // Add logic to tell the bus that it is at a bus stop
-                        // - Open doors and set state
-                        break;
                     case Waypoint.WaypointType.TrafficLight:
-                        Debug.Log("Traffic light reached");
                         switch(currentWaypoint.TrafficState){
                             case Waypoint.TrafficLightState.Red:
-                                currentMovementState = MovementState.Waiting;
+                                currentMovementState = MovementState.WaitingAtPoint;
                                 break;
                             case Waypoint.TrafficLightState.Green:
                                 AdvanceToNextWaypoint();
@@ -286,8 +285,25 @@ namespace Movement{
             }
         }
 
-        public void SetDestination(Vector3 destination){
-            this.destination = destination;
+        bool CheckIfCar(){
+            // Send signal to the vehicle behind that it is safe to move
+            RaycastHit hit;
+            Debug.DrawRay(raycastOrigin.transform.position, raycastOrigin.transform.forward * 7, Color.yellow);
+            if (Physics.Raycast(raycastOrigin.transform.position, raycastOrigin.transform.forward, out hit))
+            {
+                // Check if the hit object is a vehicle
+                VehicleMovement vehicle = hit.collider.GetComponent<VehicleMovement>();
+                if (vehicle != null && vehicle.gameObject != this.gameObject)
+                {
+                    Debug.Log(this.gameObject + " see " + vehicle.gameObject);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public void SetDestination(Waypoint destination){
+            this.currentWaypoint = destination;
         }
     }
 }

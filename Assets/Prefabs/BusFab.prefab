@@ -543,6 +543,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.211794, y: 4.4886804, z: 0.2606516}
   m_Center: {x: -5.679, y: 1.7443398, z: -0.3696742}
+--- !u!1 &1315358656677010875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2981615346106716118}
+  m_Layer: 9
+  m_Name: Stopped Raycaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2981615346106716118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315358656677010875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 2.677, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4986369306879578584}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1316553526436478504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3891,11 +3922,11 @@ GameObject:
   - component: {fileID: 4986369306879578584}
   - component: {fileID: -1948107393492139474}
   - component: {fileID: 3180045749670647010}
-  - component: {fileID: 8934084248644710605}
   - component: {fileID: 34822317978520090}
   - component: {fileID: 6926448354235404981}
   - component: {fileID: 1850163252479042898}
   - component: {fileID: 7776536689084422545}
+  - component: {fileID: 3481685594001589083}
   m_Layer: 9
   m_Name: BusFab
   m_TagString: Bus
@@ -3919,6 +3950,7 @@ Transform:
   - {fileID: 3828788715187291001}
   - {fileID: 669754900542495438}
   - {fileID: 7805486682764083736}
+  - {fileID: 2981615346106716118}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &-1948107393492139474
@@ -3963,31 +3995,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 8
   m_Center: {x: 0, y: -3, z: 20}
---- !u!114 &8934084248644710605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7407063518324850902}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c536442c48d5a4fb82b4327ac1ef0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: {fileID: 0}
-  carSpawner: {fileID: 0}
-  waypointClass: {fileID: 0}
-  busController: {fileID: 0}
-  vehicleMovement: {fileID: 0}
-  moveSpeed: 10
-  rotationSpeed: 5
-  safeDistance: 2
-  CanMove: 1
-  routeIndex: 0
-  entityType: 0
-  hasCheckedIn: 0
-  currentMovementState: 0
 --- !u!54 &34822317978520090
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4059,15 +4066,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3e1aff86721944eb4eef10cda0c977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  entityType: 1
+  currentMovementState: 0
+  busController: {fileID: 0}
   frontWheels:
   - {fileID: 2016413012800882493}
   - {fileID: 5110196822732371090}
   rearWheels:
   - {fileID: 2779981817868966626}
   - {fileID: 2871405666039922326}
-  acceleration: 500
   maxSteering: 45
-  breakingForce: 300
+  breakingForce: 2000
+  acceleration: 50
+  steering: 0
+  breaks: 0
+  currentBreakForce: 0
+  GearRatio:
+  - 1
+  - 2
+  CurrentGear: 0
+  EngineTorque: 600
+  MaxEngineRPM: 3000
+  MinEngineRPM: 1000
+  ReachedBusStop: 0
+  currentWaypoint: {fileID: 0}
+  raycastOrigin: {fileID: 1315358656677010875}
+--- !u!114 &3481685594001589083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7407063518324850902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10207de656f299e4fa4a3247e0d98412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWaypoint: {fileID: 0}
 --- !u!1 &7467207215343391894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4917,7 +4953,7 @@ PrefabInstance:
       objectReference: {fileID: -3965462921300613182, guid: 1a674ca4b4f9bcb4782d591c529fd0ff, type: 3}
     - target: {fileID: 919132149155446097, guid: 6235b33d86aa6514a96e7226bda5de42, type: 3}
       propertyPath: m_Name
-      value: BusAnimationFinal
+      value: BusAnimator
       objectReference: {fileID: 0}
     - target: {fileID: 3947021087112904846, guid: 6235b33d86aa6514a96e7226bda5de42, type: 3}
       propertyPath: m_Materials.Array.data[0]

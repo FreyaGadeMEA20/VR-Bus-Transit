@@ -14,7 +14,7 @@ namespace Movement {
         }
 
         void Start(){
-            controller.SetDestination(currentWaypoint.GetPosition());
+            controller.SetDestination(currentWaypoint);
         }
 
         /* void Update(){

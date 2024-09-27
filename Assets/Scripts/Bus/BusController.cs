@@ -43,15 +43,8 @@ public class BusController : MonoBehaviour
 
     public bool HasCheckedIn;
 
-    [Range(-1,1)] [SerializeField] float speed = 0;
-    [Range(-1,1)] [SerializeField] float steering = 0;
-    [SerializeField] bool brake = true;
-    bool startDriving = true;
-    bool stopDriving = true;
-
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         busState = BusState.STOP_BUTTON_PRESSED;
         vehicleMovement = GetComponent<VehicleMovement>();
         doors = GetComponent<DoorController>();
@@ -59,7 +52,7 @@ public class BusController : MonoBehaviour
         
     }
 
-    void Update(){
+    void Update() {
         switch(busState){
             case BusState.DRIVING:
                 UpdateDriveState();
@@ -73,19 +66,11 @@ public class BusController : MonoBehaviour
         }
     }
 
-    private void UpdateDriveState()
-    {
-        if(startDriving){
-            startDriving = false;
-            brake = false;
-        }
+    private void UpdateDriveState() {
+        return;
     }
 
-    void FixedUpdate()
-    {
-    }
-
-    public void StopNextStop(){
+    public void StopNextStop() {
         // Update the screens so the bus will stop at next stop
         screens.ApplyStopTexture();
 
@@ -93,17 +78,12 @@ public class BusController : MonoBehaviour
 
     }
 
-    void UpdateWaitState(){
-        if(stopDriving){
-            stopDriving = false;
-            brake = true;   
-        }
-
+    void UpdateWaitState() {
         if (!doorsOpen && doors != null)
             StartCoroutine(BusStopAnimations());
     }
 
-    IEnumerator BusStopAnimations(){
+    IEnumerator BusStopAnimations() {
         doors.OpenDoors();
 
         doorsOpen = true;
@@ -115,7 +95,7 @@ public class BusController : MonoBehaviour
         StartCoroutine(CloseDoorsAndDrive());
     }
 
-    IEnumerator CloseDoorsAndDrive(){
+    IEnumerator CloseDoorsAndDrive() {
         doorsOpen = false;
 
         yield return new WaitForSeconds(2);
@@ -130,19 +110,17 @@ public class BusController : MonoBehaviour
         vehicleMovement.AdvanceToNextWaypoint();
     }
 
-    void UpdateStopState(){
+    void UpdateStopState() {
         if(!busStopped)
             return;
-
         // Add logic to stop the bus
         
-        if(vehicleMovement.ReachedDestination) {
+        if(vehicleMovement.ReachedBusStop) {
             busState = BusState.WAIT;
         }
     }
-
     
-    public void StopBus(){
+    public void StopBus() {
         busStopped = true;
         Debug.Log("Bus stopped");
         busState = BusState.STOP_BUTTON_PRESSED;
