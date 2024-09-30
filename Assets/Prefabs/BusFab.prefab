@@ -552,8 +552,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2981615346106716118}
+  - component: {fileID: 7954333537708045611}
+  - component: {fileID: 6203567833413569276}
   m_Layer: 9
-  m_Name: Stopped Raycaster
+  m_Name: Collision Detector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -568,12 +570,45 @@ Transform:
   m_GameObject: {fileID: 1315358656677010875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 2.677, z: 15}
+  m_LocalPosition: {x: 0, y: 3.16, z: 15.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4986369306879578584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7954333537708045611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315358656677010875}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.723288, y: 0.91798735, z: 10.021501}
+  m_Center: {x: 0, y: -0.041006565, z: 4.5107503}
+--- !u!114 &6203567833413569276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315358656677010875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b396544b8b0315438afd650e0775492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1316553526436478504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,7 +3956,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4986369306879578584}
   - component: {fileID: -1948107393492139474}
-  - component: {fileID: 3180045749670647010}
   - component: {fileID: 34822317978520090}
   - component: {fileID: 6926448354235404981}
   - component: {fileID: 1850163252479042898}
@@ -3929,7 +3963,7 @@ GameObject:
   - component: {fileID: 3481685594001589083}
   m_Layer: 9
   m_Name: BusFab
-  m_TagString: Bus
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3972,29 +4006,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6, y: 5.404481, z: 1}
-  m_Center: {x: 0, y: 3.2977595, z: -15.13}
---- !u!135 &3180045749670647010
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7407063518324850902}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 8
-  m_Center: {x: 0, y: -3, z: 20}
+  m_Size: {x: 6, y: 7.6961727, z: 30.689005}
+  m_Center: {x: 0, y: 4.4436054, z: -0.2854967}
 --- !u!54 &34822317978520090
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4090,7 +4103,7 @@ MonoBehaviour:
   MinEngineRPM: 1000
   ReachedBusStop: 0
   currentWaypoint: {fileID: 0}
-  raycastOrigin: {fileID: 1315358656677010875}
+  collisionDetector: {fileID: 1315358656677010875}
 --- !u!114 &3481685594001589083
 MonoBehaviour:
   m_ObjectHideFlags: 0

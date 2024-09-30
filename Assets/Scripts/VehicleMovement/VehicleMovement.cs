@@ -62,7 +62,7 @@ namespace Movement{
         [SerializeField] Waypoint currentWaypoint; // The current waypoint, in which it navigates towards
         int direction = 1; // Control which waypoint to navigate towards. Might be removed in the future
 
-        [SerializeField] GameObject raycastOrigin; // The collision detectors of the vehicle
+        [SerializeField] GameObject collisionDetector; // The collision detectors of the vehicle
         bool vehicleInfront = false; // The vehicle infront of the current vehicle
 
         // Start is called before the first frame update
@@ -145,11 +145,12 @@ namespace Movement{
                 case MovementState.WaitingAtPoint:
                     switch(currentWaypoint.waypointType){
                         case Waypoint.WaypointType.BusStop:
-                                if(entityType == EntityTypes.Bus && !reachedBusStop){
-                                    reachedBusStop = true;
-                                    breaks = true;
-                                    busController.StopBus();
-                                }
+                            Debug.Log("Bus Stop");
+                            if(entityType == EntityTypes.Bus && !reachedBusStop){
+                                reachedBusStop = true;
+                                breaks = true;
+                                busController.StopBus();
+                            }
                             // Add logic to tell the bus that it is at a bus stop
                             // - Open doors and set state
                             break;
@@ -236,9 +237,9 @@ namespace Movement{
             
             // now we do the same for torque, but make sure that it doesn't apply any engine torque when going around a sharp turn...
             if ( Mathf.Abs( steering ) < 0.5f ) {
-                acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs( steering );
-            }else{
-                acceleration = 0.0f;
+                acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering);
+            } else {
+                acceleration = .5f;
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
@@ -255,11 +256,13 @@ namespace Movement{
                                 break;
                         }
                         break;
+                    case Waypoint.WaypointType.BusStop:
+                        currentMovementState = MovementState.WaitingAtPoint;
+                        break;
                     case Waypoint.WaypointType.Nothing:
                         AdvanceToNextWaypoint();
                         break;
                 }
-                //Debug.Log("Waypoint Reached");
             }
         }
 
@@ -287,19 +290,7 @@ namespace Movement{
 
         bool CheckIfCar(){
             // Send signal to the vehicle behind that it is safe to move
-            RaycastHit hit;
-            Debug.DrawRay(raycastOrigin.transform.position, raycastOrigin.transform.forward * 7, Color.yellow);
-            if (Physics.Raycast(raycastOrigin.transform.position, raycastOrigin.transform.forward, out hit))
-            {
-                // Check if the hit object is a vehicle
-                VehicleMovement vehicle = hit.collider.GetComponent<VehicleMovement>();
-                if (vehicle != null && vehicle.gameObject != this.gameObject)
-                {
-                    Debug.Log(this.gameObject + " see " + vehicle.gameObject);
-                    return true;
-                }
-            }
-            return false;
+            return collisionDetector.GetComponent<CollisionDetector>().CheckForVehicleInfront();;
         }
 
         public void SetDestination(Waypoint destination){
