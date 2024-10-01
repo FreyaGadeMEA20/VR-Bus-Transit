@@ -7,6 +7,26 @@ namespace Movement{
     {
         public Waypoint nextWaypoint;
         public Waypoint previousWaypoint;
+        
+        public List<Waypoint> branches;
+        [Range(0f,1f)]
+        public float branchRatio = 0.5f;
+
+        public List<Waypoint> connections = new List<Waypoint>();
+
+        void Awake(){
+            if(nextWaypoint != null){
+                connections.Add(nextWaypoint);
+            }
+            //connections.Insert(0, nextWaypoint);
+            for(int i = 0; i < branches.Count; i++){
+                connections.Add(branches[i]);
+            }
+            if(previousWaypoint != null){
+                connections.Add(previousWaypoint);
+            }
+            //connections.Add(previousWaypoint);
+        }
 
         public enum WaypointType
         {
@@ -28,19 +48,9 @@ namespace Movement{
 
         public TrafficLightState TrafficState;
 
-
-        bool stop_vehicle{
-            get{return STOP_VEHICLE;}
-            set{STOP_VEHICLE = value;}
-        }
-        public bool STOP_VEHICLE;
-
         [Range(0f,5f)]
         public float width = 1f;
 
-        public List<Waypoint> branches;
-        [Range(0f,1f)]
-        public float branchRatio = 0.5f;
 
         public Vector3 GetPosition()
         {

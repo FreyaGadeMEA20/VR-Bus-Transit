@@ -159,6 +159,18 @@ PrefabInstance:
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 327899968}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busStops.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busStops.Array.data[0]
+      value: 
+      objectReference: {fileID: 2088926438}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busStops.Array.data[1]
+      value: 
+      objectReference: {fileID: 754457674}
     - target: {fileID: 4027881317506601237, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_Convex
       value: 0
@@ -284,12 +296,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 390471278}
   previousWaypoint: {fileID: 1029379476}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &56327963
 Transform:
   m_ObjectHideFlags: 0
@@ -467,12 +479,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1695412424}
   previousWaypoint: {fileID: 810896726}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &113867761
 Transform:
   m_ObjectHideFlags: 0
@@ -596,12 +608,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1422449404}
   previousWaypoint: {fileID: 1198626471}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &142405760
 Transform:
   m_ObjectHideFlags: 0
@@ -648,13 +660,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 398617107}
   previousWaypoint: {fileID: 327899968}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 1482217634}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &152836516
 Transform:
   m_ObjectHideFlags: 0
@@ -679,6 +691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 159311591}
+  - component: {fileID: 159311592}
   m_Layer: 0
   m_Name: Routes
   m_TagString: Untagged
@@ -780,6 +793,97 @@ Transform:
   - {fileID: 492100138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &159311592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159311590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95963ad39f40c1247a16641793e77db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Waypoints:
+  - {fileID: 2000091835}
+  - {fileID: 1832208022}
+  - {fileID: 565709653}
+  - {fileID: 1092453648}
+  - {fileID: 1371804867}
+  - {fileID: 194256020}
+  - {fileID: 327899968}
+  - {fileID: 152836515}
+  - {fileID: 398617107}
+  - {fileID: 708767851}
+  - {fileID: 549809757}
+  - {fileID: 1806795386}
+  - {fileID: 1095119804}
+  - {fileID: 810896726}
+  - {fileID: 1695412424}
+  - {fileID: 113867760}
+  - {fileID: 694006838}
+  - {fileID: 602223261}
+  - {fileID: 1482217634}
+  - {fileID: 1213707137}
+  - {fileID: 1951897817}
+  - {fileID: 519706627}
+  - {fileID: 1198626471}
+  - {fileID: 142405759}
+  - {fileID: 1422449404}
+  - {fileID: 1355783583}
+  - {fileID: 1272377525}
+  - {fileID: 1239211240}
+  - {fileID: 651618701}
+  - {fileID: 319928866}
+  - {fileID: 784637811}
+  - {fileID: 1315036211}
+  - {fileID: 2088926438}
+  - {fileID: 1542312957}
+  - {fileID: 889006622}
+  - {fileID: 929084986}
+  - {fileID: 1581880174}
+  - {fileID: 1646836761}
+  - {fileID: 1819804469}
+  - {fileID: 1992376315}
+  - {fileID: 1642807487}
+  - {fileID: 874441017}
+  - {fileID: 1131096328}
+  - {fileID: 1888286264}
+  - {fileID: 1881227680}
+  - {fileID: 928796571}
+  - {fileID: 1138137737}
+  - {fileID: 2121901477}
+  - {fileID: 1700026479}
+  - {fileID: 1998613468}
+  - {fileID: 474229442}
+  - {fileID: 1691348792}
+  - {fileID: 1723767579}
+  - {fileID: 1646339536}
+  - {fileID: 1893794374}
+  - {fileID: 1659638754}
+  - {fileID: 391276857}
+  - {fileID: 795631787}
+  - {fileID: 1192977156}
+  - {fileID: 749663524}
+  - {fileID: 935864080}
+  - {fileID: 1265071017}
+  - {fileID: 1062294727}
+  - {fileID: 279895296}
+  - {fileID: 1625449425}
+  - {fileID: 1591038695}
+  - {fileID: 946365944}
+  - {fileID: 277347048}
+  - {fileID: 1983878428}
+  - {fileID: 1361927206}
+  - {fileID: 1029379476}
+  - {fileID: 56327962}
+  - {fileID: 390471278}
+  - {fileID: 754457674}
+  - {fileID: 1105194022}
+  - {fileID: 1717455591}
+  - {fileID: 2059179470}
+  - {fileID: 492100139}
 --- !u!1 &186599808
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,12 +930,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &194256019
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,12 +967,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 549809757}
   previousWaypoint: {fileID: 708767851}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &194256021
 Transform:
   m_ObjectHideFlags: 0
@@ -930,13 +1034,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1700026479}
   previousWaypoint: {fileID: 946365944}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 1482217634}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &279895295
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,12 +1072,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1625449425}
   previousWaypoint: {fileID: 1062294727}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &279895297
 Transform:
   m_ObjectHideFlags: 0
@@ -1020,12 +1124,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1315036211}
   previousWaypoint: {fileID: 651618701}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &319928867
 Transform:
   m_ObjectHideFlags: 0
@@ -1072,12 +1176,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 152836515}
   previousWaypoint: {fileID: 1371804867}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &327899969
 Transform:
   m_ObjectHideFlags: 0
@@ -1230,12 +1334,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 754457674}
   previousWaypoint: {fileID: 56327962}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &390471279
 Transform:
   m_ObjectHideFlags: 0
@@ -1282,12 +1386,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 795631787}
   previousWaypoint: {fileID: 1659638754}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &391276858
 Transform:
   m_ObjectHideFlags: 0
@@ -1334,12 +1438,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 708767851}
   previousWaypoint: {fileID: 152836515}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &398617108
 Transform:
   m_ObjectHideFlags: 0
@@ -1504,12 +1608,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1691348792}
   previousWaypoint: {fileID: 1998613468}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &474229443
 Transform:
   m_ObjectHideFlags: 0
@@ -1571,14 +1675,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 2059179470}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 519706627}
   - {fileID: 1881227680}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1001 &507092536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1687,12 +1791,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1198626471}
   previousWaypoint: {fileID: 1951897817}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &519706628
 Transform:
   m_ObjectHideFlags: 0
@@ -1785,12 +1889,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &549809756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,12 +1926,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1095119804}
   previousWaypoint: {fileID: 194256020}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &549809758
 Transform:
   m_ObjectHideFlags: 0
@@ -1874,12 +1978,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1092453648}
   previousWaypoint: {fileID: 1832208022}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1.46
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1.46
 --- !u!4 &565709654
 Transform:
   m_ObjectHideFlags: 0
@@ -1941,12 +2045,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2000091835}
   previousWaypoint: {fileID: 694006838}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &624848457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2649,12 +2753,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &651618700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,12 +2790,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 319928866}
   previousWaypoint: {fileID: 1272377525}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &651618702
 Transform:
   m_ObjectHideFlags: 0
@@ -2764,12 +2868,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 602223261}
   previousWaypoint: {fileID: 1695412424}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &694006839
 Transform:
   m_ObjectHideFlags: 0
@@ -2816,12 +2920,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 194256020}
   previousWaypoint: {fileID: 398617107}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &708767852
 Transform:
   m_ObjectHideFlags: 0
@@ -2868,12 +2972,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 935864080}
   previousWaypoint: {fileID: 1192977156}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &749663525
 Transform:
   m_ObjectHideFlags: 0
@@ -2920,12 +3024,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1105194022}
   previousWaypoint: {fileID: 390471278}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &754457675
 Transform:
   m_ObjectHideFlags: 0
@@ -2972,12 +3076,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2088926438}
   previousWaypoint: {fileID: 1315036211}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &784637812
 Transform:
   m_ObjectHideFlags: 0
@@ -3029,12 +3133,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1192977156}
   previousWaypoint: {fileID: 391276857}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &795631788
 Transform:
   m_ObjectHideFlags: 0
@@ -3081,12 +3185,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 113867760}
   previousWaypoint: {fileID: 1806795386}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &810896727
 Transform:
   m_ObjectHideFlags: 0
@@ -3148,12 +3252,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &874441016
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,12 +3289,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1131096328}
   previousWaypoint: {fileID: 1642807487}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &874441018
 Transform:
   m_ObjectHideFlags: 0
@@ -3237,12 +3341,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 929084986}
   previousWaypoint: {fileID: 1542312957}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &889006623
 Transform:
   m_ObjectHideFlags: 0
@@ -3971,12 +4075,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1138137737}
   previousWaypoint: {fileID: 1881227680}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &928796572
 Transform:
   m_ObjectHideFlags: 0
@@ -4023,12 +4127,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1581880174}
   previousWaypoint: {fileID: 889006622}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &929084987
 Transform:
   m_ObjectHideFlags: 0
@@ -4090,12 +4194,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &935864078
 GameObject:
   m_ObjectHideFlags: 0
@@ -4142,12 +4246,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1265071017}
   previousWaypoint: {fileID: 749663524}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &946365943
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,12 +4283,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 277347048}
   previousWaypoint: {fileID: 1591038695}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &946365945
 Transform:
   m_ObjectHideFlags: 0
@@ -4337,12 +4441,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 56327962}
   previousWaypoint: {fileID: 1361927206}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1029379477
 Transform:
   m_ObjectHideFlags: 0
@@ -4389,12 +4493,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 279895296}
   previousWaypoint: {fileID: 1265071017}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1062294728
 Transform:
   m_ObjectHideFlags: 0
@@ -4490,12 +4594,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1371804867}
   previousWaypoint: {fileID: 565709653}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1092453649
 Transform:
   m_ObjectHideFlags: 0
@@ -4542,12 +4646,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1806795386}
   previousWaypoint: {fileID: 549809757}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1095119805
 Transform:
   m_ObjectHideFlags: 0
@@ -4594,12 +4698,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1717455591}
   previousWaypoint: {fileID: 754457674}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1105194023
 Transform:
   m_ObjectHideFlags: 0
@@ -4731,12 +4835,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1888286264}
   previousWaypoint: {fileID: 874441017}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &1131096329
 Transform:
   m_ObjectHideFlags: 0
@@ -4783,12 +4887,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2121901477}
   previousWaypoint: {fileID: 928796571}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &1138137738
 Transform:
   m_ObjectHideFlags: 0
@@ -4915,13 +5019,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 749663524}
   previousWaypoint: {fileID: 795631787}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 1819804469}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &1198626470
 GameObject:
   m_ObjectHideFlags: 0
@@ -4953,13 +5057,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 142405759}
   previousWaypoint: {fileID: 519706627}
-  waypointType: 2
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 1983878428}
   branchRatio: 0.5
+  connections: []
+  waypointType: 2
+  TrafficState: 0
+  width: 1
 --- !u!4 &1198626472
 Transform:
   m_ObjectHideFlags: 0
@@ -5071,12 +5175,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1951897817}
   previousWaypoint: {fileID: 1482217634}
-  waypointType: 1
-  TrafficState: 1
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 1
+  width: 1
 --- !u!4 &1213707138
 Transform:
   m_ObjectHideFlags: 0
@@ -5123,12 +5227,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1272377525}
   previousWaypoint: {fileID: 1272377525}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1239211241
 Transform:
   m_ObjectHideFlags: 0
@@ -5175,12 +5279,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1062294727}
   previousWaypoint: {fileID: 935864080}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1265071018
 Transform:
   m_ObjectHideFlags: 0
@@ -5227,12 +5331,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 651618701}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1272377526
 Transform:
   m_ObjectHideFlags: 0
@@ -5279,12 +5383,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 784637811}
   previousWaypoint: {fileID: 319928866}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1315036212
 Transform:
   m_ObjectHideFlags: 0
@@ -5392,12 +5496,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &1355783582
 GameObject:
   m_ObjectHideFlags: 0
@@ -5429,14 +5533,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1422449404}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 694006838}
   - {fileID: 749663524}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1355783584
 Transform:
   m_ObjectHideFlags: 0
@@ -5483,12 +5587,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1029379476}
   previousWaypoint: {fileID: 1983878428}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1361927207
 Transform:
   m_ObjectHideFlags: 0
@@ -5535,12 +5639,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 327899968}
   previousWaypoint: {fileID: 1092453648}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1371804868
 Transform:
   m_ObjectHideFlags: 0
@@ -5627,12 +5731,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1355783583}
   previousWaypoint: {fileID: 142405759}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &1422449405
 Transform:
   m_ObjectHideFlags: 0
@@ -5679,12 +5783,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1213707137}
   previousWaypoint: {fileID: 152836515}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1482217635
 Transform:
   m_ObjectHideFlags: 0
@@ -5746,12 +5850,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &1506714827
 GameObject:
   m_ObjectHideFlags: 0
@@ -5798,12 +5902,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &1542312956
 GameObject:
   m_ObjectHideFlags: 0
@@ -5835,12 +5939,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 889006622}
   previousWaypoint: {fileID: 2088926438}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1542312958
 Transform:
   m_ObjectHideFlags: 0
@@ -5902,12 +6006,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!1 &1581880173
 GameObject:
   m_ObjectHideFlags: 0
@@ -5939,12 +6043,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1646836761}
   previousWaypoint: {fileID: 929084986}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &1581880175
 Transform:
   m_ObjectHideFlags: 0
@@ -5991,12 +6095,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 946365944}
   previousWaypoint: {fileID: 1625449425}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1591038696
 Transform:
   m_ObjectHideFlags: 0
@@ -6180,12 +6284,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1591038695}
   previousWaypoint: {fileID: 279895296}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1625449426
 Transform:
   m_ObjectHideFlags: 0
@@ -6237,6 +6341,18 @@ PrefabInstance:
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1591038695}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busStops.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busStops.Array.data[0]
+      value: 
+      objectReference: {fileID: 754457674}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busStops.Array.data[1]
+      value: 
+      objectReference: {fileID: 2088926438}
     - target: {fileID: 4027881317506601237, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_Convex
       value: 0
@@ -6300,6 +6416,10 @@ PrefabInstance:
     - target: {fileID: 7407063518324850902, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_Name
       value: BusFab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407063518324850902, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: GearRatio.Array.data[2]
@@ -6436,13 +6556,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 874441017}
   previousWaypoint: {fileID: 1992376315}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 1983878428}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1642807488
 Transform:
   m_ObjectHideFlags: 0
@@ -6489,12 +6609,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1893794374}
   previousWaypoint: {fileID: 1723767579}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1646339537
 Transform:
   m_ObjectHideFlags: 0
@@ -6541,14 +6661,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1581880174}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 142405759}
   - {fileID: 874441017}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1646836762
 Transform:
   m_ObjectHideFlags: 0
@@ -6595,12 +6715,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 391276857}
   previousWaypoint: {fileID: 1893794374}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1659638755
 Transform:
   m_ObjectHideFlags: 0
@@ -6849,12 +6969,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1723767579}
   previousWaypoint: {fileID: 474229442}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1691348793
 Transform:
   m_ObjectHideFlags: 0
@@ -6901,13 +7021,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 694006838}
   previousWaypoint: {fileID: 113867760}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 1819804469}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1695412425
 Transform:
   m_ObjectHideFlags: 0
@@ -6954,12 +7074,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1998613468}
   previousWaypoint: {fileID: 277347048}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1700026480
 Transform:
   m_ObjectHideFlags: 0
@@ -7006,12 +7126,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2059179470}
   previousWaypoint: {fileID: 1105194022}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1717455592
 Transform:
   m_ObjectHideFlags: 0
@@ -7058,12 +7178,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1646339536}
   previousWaypoint: {fileID: 1691348792}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1723767580
 Transform:
   m_ObjectHideFlags: 0
@@ -7110,12 +7230,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 810896726}
   previousWaypoint: {fileID: 1095119804}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1806795387
 Transform:
   m_ObjectHideFlags: 0
@@ -7162,12 +7282,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1992376315}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1819804470
 Transform:
   m_ObjectHideFlags: 0
@@ -7214,12 +7334,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 565709653}
   previousWaypoint: {fileID: 2000091835}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1832208023
 Transform:
   m_ObjectHideFlags: 0
@@ -7266,12 +7386,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 928796571}
   previousWaypoint: {fileID: 1888286264}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1881227681
 Transform:
   m_ObjectHideFlags: 0
@@ -7318,13 +7438,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1881227680}
   previousWaypoint: {fileID: 1131096328}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 1239211240}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1888286265
 Transform:
   m_ObjectHideFlags: 0
@@ -7371,12 +7491,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1659638754}
   previousWaypoint: {fileID: 1646339536}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1893794375
 Transform:
   m_ObjectHideFlags: 0
@@ -7423,13 +7543,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 519706627}
   previousWaypoint: {fileID: 1213707137}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 1239211240}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1951897818
 Transform:
   m_ObjectHideFlags: 0
@@ -7476,12 +7596,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1361927206}
   previousWaypoint: {fileID: 0}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1983878429
 Transform:
   m_ObjectHideFlags: 0
@@ -7528,12 +7648,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1642807487}
   previousWaypoint: {fileID: 1819804469}
-  waypointType: 1
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 1
+  TrafficState: 0
+  width: 1
 --- !u!4 &1992376316
 Transform:
   m_ObjectHideFlags: 0
@@ -7580,12 +7700,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 474229442}
   previousWaypoint: {fileID: 1700026479}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &1998613469
 Transform:
   m_ObjectHideFlags: 0
@@ -7632,12 +7752,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1832208022}
   previousWaypoint: {fileID: 602223261}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &2000091836
 Transform:
   m_ObjectHideFlags: 0
@@ -7684,12 +7804,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 492100139}
   previousWaypoint: {fileID: 1717455591}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &2059179471
 Transform:
   m_ObjectHideFlags: 0
@@ -7770,12 +7890,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1542312957}
   previousWaypoint: {fileID: 784637811}
-  waypointType: 2
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 2
+  TrafficState: 0
+  width: 1
 --- !u!4 &2088926439
 Transform:
   m_ObjectHideFlags: 0
@@ -7822,14 +7942,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1138137737}
-  waypointType: 0
-  TrafficState: 0
-  STOP_VEHICLE: 0
-  width: 1
   branches:
   - {fileID: 398617107}
   - {fileID: 1700026479}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 0
+  width: 1
 --- !u!4 &2121901478
 Transform:
   m_ObjectHideFlags: 0
