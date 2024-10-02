@@ -1180,7 +1180,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &327899969
 Transform:

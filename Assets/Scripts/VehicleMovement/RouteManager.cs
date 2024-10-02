@@ -26,7 +26,7 @@ namespace Movement {
         }
 
         public void SetRoute(){
-            controller.SetDestination(currentWaypoint);
+            //controller.SetDestination(currentWaypoint);
 
             if(busStops == null){
                 return;

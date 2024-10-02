@@ -143,18 +143,19 @@ namespace Movement{
                     // limit audio                    
                     break;
                 case MovementState.WaitingAtPoint:
-                    switch(currentWaypoint.waypointType){
+                    switch(routeManager.currentWaypoint.waypointType){
                         case Waypoint.WaypointType.BusStop:
                             if(entityType == EntityTypes.Bus && !reachedBusStop){
                                 reachedBusStop = true;
                                 breaks = true;
                                 busController.StopBus();
+                                routeManager.SetRoute();
                             }
                             // Add logic to tell the bus that it is at a bus stop
                             // - Open doors and set state
                             break;
                         case Waypoint.WaypointType.TrafficLight:
-                            switch(currentWaypoint.TrafficState){
+                            switch(routeManager.currentWaypoint.TrafficState){
                                 case Waypoint.TrafficLightState.Red:
                                     breaks = true;
                                     break;
@@ -178,9 +179,9 @@ namespace Movement{
             // the engine RPM fall within the desired range. The gear is then set to this "appropriate" value.
             int AppropriateGear = CurrentGear;
 
-            if ( EngineRPM >= MaxEngineRPM ) {
-                for (int i= 0; i < GearRatio.Length; i ++ ) {
-                    if ( rearWheels[0].rpm * GearRatio[i] < MaxEngineRPM ) {
+            if (EngineRPM >= MaxEngineRPM) {
+                for (int i= 0; i < GearRatio.Length; i++) {
+                    if (rearWheels[0].rpm * GearRatio[i] < MaxEngineRPM) {
                         AppropriateGear = i;
                         break;
                     }
@@ -189,11 +190,11 @@ namespace Movement{
                 CurrentGear = AppropriateGear;
             }
             
-            if ( EngineRPM <= MinEngineRPM ) {
+            if (EngineRPM <= MinEngineRPM) {
                 AppropriateGear = CurrentGear;
                 
-                for ( int j= GearRatio.Length - 1; j >= 0; j -- ) {
-                    if ( rearWheels[0].rpm * GearRatio[j] > MinEngineRPM ) {
+                for (int j = GearRatio.Length - 1; j >= 0; j--) {
+                    if (rearWheels[0].rpm * GearRatio[j] > MinEngineRPM) {
                         AppropriateGear = j;
                         break;
                     }
@@ -225,9 +226,9 @@ namespace Movement{
             // that way we can determine how far to the left and right the waypoint is.
             Vector3 RelativeWaypointPosition =
                         transform.InverseTransformPoint( new Vector3 (
-                                                                    currentWaypoint.GetPosition().x, 
+                                                                    routeManager.currentWaypoint.GetPosition().x, 
                                                                     transform.position.y, 
-                                                                    currentWaypoint.GetPosition().z
+                                                                    routeManager.currentWaypoint.GetPosition().z
                                                                 )
                                                         );
             
@@ -244,9 +245,9 @@ namespace Movement{
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
             // next in the list.
             if ( RelativeWaypointPosition.magnitude < 20 ) {
-                switch(currentWaypoint.waypointType) {
+                switch(routeManager.currentWaypoint.waypointType) {
                     case Waypoint.WaypointType.TrafficLight:
-                        switch(currentWaypoint.TrafficState){
+                        switch(routeManager.currentWaypoint.TrafficState){
                             case Waypoint.TrafficLightState.Red:
                                 currentMovementState = MovementState.WaitingAtPoint;
                                 break;
@@ -268,23 +269,23 @@ namespace Movement{
         public void AdvanceToNextWaypoint(){
             bool shouldBranch = false;
             // currentWaypoint.branches
-            if (currentWaypoint.branches != null && currentWaypoint.branches.Count > 0){
+            if (routeManager.currentWaypoint.branches != null && routeManager.currentWaypoint.branches.Count > 0){
                 if(entityType == EntityTypes.Bus){
                     shouldBranch = true;//
                 } else {
-                    shouldBranch = Random.Range(0f,1f) <= currentWaypoint.branchRatio ? true : false;
+                    shouldBranch = Random.Range(0f,1f) <= routeManager.currentWaypoint.branchRatio ? true : false;
                 }
             }
             if (routeManager.m_Path != null){
-                currentWaypoint = routeManager.GetNextWaypoint(currentWaypoint);
+                routeManager.currentWaypoint = routeManager.GetNextWaypoint(routeManager.currentWaypoint);
             }else if(shouldBranch){
                 Debug.Log("Branched");
-                currentWaypoint = currentWaypoint.branches[Random.Range(0, currentWaypoint.branches.Count)];
+                routeManager.currentWaypoint = routeManager.currentWaypoint.branches[Random.Range(0, routeManager.currentWaypoint.branches.Count)];
             } else {
                 if(direction == 1){
-                    currentWaypoint = currentWaypoint.nextWaypoint;
+                    routeManager.currentWaypoint = routeManager.currentWaypoint.nextWaypoint;
                 } else if (direction == -1){
-                    currentWaypoint = currentWaypoint.previousWaypoint;
+                    routeManager.currentWaypoint = routeManager.currentWaypoint.previousWaypoint;
                 }
             }
         }

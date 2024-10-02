@@ -107,6 +107,7 @@ public class BusController : MonoBehaviour
         driveAllowed = true;
 
         busState = BusState.DRIVING;
+        busStopped = true;
         vehicleMovement.AdvanceToNextWaypoint();
     }
 
