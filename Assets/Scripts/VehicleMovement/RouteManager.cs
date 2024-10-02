@@ -8,7 +8,7 @@ namespace Movement {
         VehicleMovement controller;
         public Waypoint currentWaypoint;
         public List<Waypoint> busStops = new List<Waypoint>();
-        public Path m_Path = new Path();
+        public Path m_Path;
         public List<Waypoint> PATH_FOR_INSPECTOR = new List<Waypoint>();
 
         public Waypoint endDestination;
@@ -37,18 +37,35 @@ namespace Movement {
             if(endDestination == null){
                 return;
             }
-            Debug.Log(currentWaypoint +" to "+ endDestination);
+
             DetermineRoute(currentWaypoint, endDestination);
         }
 
         void DetermineRoute(Waypoint _start, Waypoint _end){
             // Djikstra's Algorithm to determine the path for the bus to follow
+            m_Path = new Path();
             m_Path = m_Waypoints.GetShortestPath(_start, _end);
             Debug.Log(m_Path.ToString());
             PATH_FOR_INSPECTOR = m_Path.waypoints;
             busStops.Add(_end);
-            busStops.Remove(_end);
+            busStops.RemoveAt(0);
         }
+
+        public Waypoint GetNextWaypoint(Waypoint currentWaypoint){
+            if(m_Path.waypoints.Count == 0){
+                //Assign new busstop as location
+                return null;
+            }
+
+            int currentIndex = m_Path.waypoints.IndexOf(currentWaypoint);
+
+            if (currentIndex < m_Path.waypoints.Count - 1)
+            {
+                return m_Path.waypoints[currentIndex + 1];
+            }
+
+            return null;
+        } 
 
         /* void Update(){
             if(controller.ReachedDestination){

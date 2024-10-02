@@ -145,7 +145,6 @@ namespace Movement{
                 case MovementState.WaitingAtPoint:
                     switch(currentWaypoint.waypointType){
                         case Waypoint.WaypointType.BusStop:
-                            Debug.Log("Bus Stop");
                             if(entityType == EntityTypes.Bus && !reachedBusStop){
                                 reachedBusStop = true;
                                 breaks = true;
@@ -276,7 +275,9 @@ namespace Movement{
                     shouldBranch = Random.Range(0f,1f) <= currentWaypoint.branchRatio ? true : false;
                 }
             }
-            if(shouldBranch){
+            if (routeManager.m_Path != null){
+                currentWaypoint = routeManager.GetNextWaypoint(currentWaypoint);
+            }else if(shouldBranch){
                 Debug.Log("Branched");
                 currentWaypoint = currentWaypoint.branches[Random.Range(0, currentWaypoint.branches.Count)];
             } else {

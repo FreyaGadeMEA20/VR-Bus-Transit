@@ -18,14 +18,15 @@ namespace Movement{
             if(nextWaypoint != null){
                 connections.Add(nextWaypoint);
             }
-            //connections.Insert(0, nextWaypoint);
+            
             for(int i = 0; i < branches.Count; i++){
                 connections.Add(branches[i]);
             }
-            if(previousWaypoint != null){
+
+            // We don't want it to drive backwards, so it does not add the previous waypoint as a connection
+            /* if(previousWaypoint != null){
                 connections.Add(previousWaypoint);
-            }
-            //connections.Add(previousWaypoint);
+            } */
         }
 
         public enum WaypointType
@@ -50,7 +51,6 @@ namespace Movement{
 
         [Range(0f,5f)]
         public float width = 1f;
-
 
         public Vector3 GetPosition()
         {
