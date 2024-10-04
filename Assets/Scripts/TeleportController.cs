@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 
 public class TeleportController : MonoBehaviour
 {
     [SerializeField] InputActionAsset actionAsset;
-    [SerializeField] UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor rayInteractor;
-    [SerializeField] UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation.TeleportationProvider provider;
+    [SerializeField] XRRayInteractor rayInteractor;
+    [SerializeField] TeleportationProvider provider;
 
     bool _isActive = false;
 
@@ -42,7 +42,7 @@ public class TeleportController : MonoBehaviour
         }
 
         if(_readyToTeleport){
-            UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation.TeleportRequest request  = new UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation.TeleportRequest(){
+            TeleportRequest request  = new TeleportRequest(){
                 destinationPosition = hit.point,
                 //destinationRotation = ,
                 //matchOrientation = ,
