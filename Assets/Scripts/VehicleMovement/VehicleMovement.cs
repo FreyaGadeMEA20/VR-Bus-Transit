@@ -224,6 +224,7 @@ namespace Movement{
         void NavigateTowardsWaypoint (){
             // now we just find the relative position of the waypoint from the car transform,
             // that way we can determine how far to the left and right the waypoint is.
+            Debug.Log(routeManager.currentWaypoint.name);
             Vector3 RelativeWaypointPosition =
                         transform.InverseTransformPoint( new Vector3 (
                                                                     routeManager.currentWaypoint.GetPosition().x, 
@@ -268,6 +269,7 @@ namespace Movement{
 
         public void AdvanceToNextWaypoint(){
             bool shouldBranch = false;
+            reachedBusStop = false;
             // currentWaypoint.branches
             if (routeManager.currentWaypoint.branches != null && routeManager.currentWaypoint.branches.Count > 0){
                 if(entityType == EntityTypes.Bus){

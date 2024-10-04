@@ -483,7 +483,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &113867761
 Transform:
@@ -612,7 +612,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &142405760
 Transform:
@@ -1681,7 +1681,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!1001 &507092536
 PrefabInstance:
@@ -1795,7 +1795,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &519706628
 Transform:
@@ -2872,7 +2872,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &694006839
 Transform:
@@ -2976,7 +2976,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &749663525
 Transform:
@@ -3027,7 +3027,7 @@ MonoBehaviour:
   branches: []
   branchRatio: 0.5
   connections: []
-  waypointType: 0
+  waypointType: 2
   TrafficState: 0
   width: 1
 --- !u!4 &754457675
@@ -3137,7 +3137,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &795631788
 Transform:
@@ -3293,7 +3293,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &874441018
 Transform:
@@ -4079,7 +4079,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &928796572
 Transform:
@@ -4719,91 +4719,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1107489775
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 32.9
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 24.9
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8391222552659086748, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -516098083770646512, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_Name
-      value: VRTransitLevel4
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 094f0b4a931e0b34cac8c6194e503c8e, type: 3}
 --- !u!1 &1131096327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,7 +4754,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1131096329
 Transform:
@@ -4891,7 +4806,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1138137738
 Transform:
@@ -5024,7 +4939,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!1 &1198626470
 GameObject:
@@ -5062,7 +4977,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 2
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1198626472
 Transform:
@@ -5231,7 +5146,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1239211241
 Transform:
@@ -5335,7 +5250,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1272377526
 Transform:
@@ -5433,8 +5348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
 --- !u!4 &1321411576
 Transform:
   m_ObjectHideFlags: 0
@@ -5539,7 +5452,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1355783584
 Transform:
@@ -5591,7 +5504,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1361927207
 Transform:
@@ -5735,7 +5648,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1422449405
 Transform:
@@ -5787,7 +5700,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1482217635
 Transform:
@@ -6047,7 +5960,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1581880175
 Transform:
@@ -6561,7 +6474,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1642807488
 Transform:
@@ -6667,7 +6580,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1646836762
 Transform:
@@ -7026,7 +6939,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1695412425
 Transform:
@@ -7286,7 +7199,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1819804470
 Transform:
@@ -7390,7 +7303,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1881227681
 Transform:
@@ -7443,7 +7356,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1888286265
 Transform:
@@ -7548,7 +7461,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1951897818
 Transform:
@@ -7600,7 +7513,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1983878429
 Transform:
@@ -7652,7 +7565,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &1992376316
 Transform:
@@ -7808,7 +7721,7 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
+  TrafficState: 1
   width: 1
 --- !u!4 &2059179471
 Transform:
@@ -7859,6 +7772,84 @@ Transform:
   - {fileID: 624848458}
   m_Father: {fileID: 1204994034}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2086867645
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 14399871246327329, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_Timeout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442311723960285074, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 920610939442000773, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666740242592447939, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_Name
+      value: VR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029510751564981713, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_ActionAssets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029510751564981713, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_ActionAssets.Array.data[0]
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 9203223106863537833, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4029510751564981713, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
 --- !u!1 &2088926437
 GameObject:
   m_ObjectHideFlags: 0
@@ -7981,7 +7972,7 @@ SceneRoots:
   - {fileID: 84834030}
   - {fileID: 536816760}
   - {fileID: 159311591}
-  - {fileID: 1107489775}
   - {fileID: 1175489578}
   - {fileID: 507092536}
   - {fileID: 131490495}
+  - {fileID: 2086867645}

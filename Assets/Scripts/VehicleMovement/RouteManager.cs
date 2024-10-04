@@ -32,6 +32,7 @@ namespace Movement {
                 return;
             }
 
+            Debug.Log(busStops[0].name);
             endDestination = busStops[0];
 
             if(endDestination == null){
@@ -47,8 +48,10 @@ namespace Movement {
             m_Path = m_Waypoints.GetShortestPath(_start, _end);
             Debug.Log(m_Path.ToString());
             PATH_FOR_INSPECTOR = m_Path.waypoints;
+            
             busStops.Add(_end);
             busStops.RemoveAt(0);
+
         }
 
         public Waypoint GetNextWaypoint(Waypoint currentWaypoint){
