@@ -46,7 +46,6 @@ namespace Movement {
             // Djikstra's Algorithm to determine the path for the bus to follow
             m_Path = new Path();
             m_Path = m_Waypoints.GetShortestPath(_start, _end);
-            Debug.Log(m_Path.ToString());
             PATH_FOR_INSPECTOR = m_Path.waypoints;
             
             busStops.Add(_end);
