@@ -68,8 +68,6 @@ namespace Movement{
         // Start is called before the first frame update
         void Start()
         {
-            //waypoints = GameObject.Find("Vehicle Route Manager").GetComponent<RouteManager>();
-            //carSpawner = GameObject.Find("Spawn Manager").GetComponent<CarSpawner>();
             rb = GetComponent<Rigidbody>();
             rb.centerOfMass = new Vector3 (rb.centerOfMass.x, -1.5f, rb.centerOfMass.z);
             //currentRoute = waypoints.routes[currentRouteIndex];

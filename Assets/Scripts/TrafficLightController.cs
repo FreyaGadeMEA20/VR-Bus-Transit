@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Movement;
 using UnityEngine;
 
 public class TrafficLightController : MonoBehaviour
@@ -25,7 +26,7 @@ public class TrafficLightController : MonoBehaviour
         public GameObject[] greenLights;
 
         public GameObject[] deathBoxes;
-        public GameObject wayPointWait;
+        public GameObject[] wayPointsToStop;
     }
 
     public TrafficLight[] lights;
@@ -35,6 +36,24 @@ public class TrafficLightController : MonoBehaviour
     {
         StartTrafficLight();
     }
+    void StartTrafficLight(){
+        foreach (var light in lights){
+            foreach(var lights in light.redLights){
+                lights.SetActive(false);
+            }
+            foreach(var lights in light.greenLights){
+                lights.SetActive(false);
+            }
+            foreach(var lights in light.yellowLights){
+                lights.SetActive(false);
+            }
+            if(light.direction == trafficLightState){
+                StartCoroutine(SwitchToLight(light, LightStates.Green));
+            } else {
+                StartCoroutine(SwitchToLight(light, LightStates.Red));
+            }
+        }
+    }
 
     IEnumerator SwitchToLight(TrafficLight light, LightStates state){
         light.state = state;
@@ -43,9 +62,12 @@ public class TrafficLightController : MonoBehaviour
             case LightStates.Red:
                 TurnOffLights(light.greenLights);
                 TurnOnLights(light.yellowLights);
-                if (light.wayPointWait != null)
+                if (light.wayPointsToStop != null)
                 {
-                    light.wayPointWait.GetComponent<WaypointClass>().isWaitingPoint = true;
+                    foreach (var wayPoint in light.wayPointsToStop)
+                    {
+                        wayPoint.GetComponent<Waypoint>().TrafficState = Waypoint.TrafficLightState.Red;
+                    }
                 }
                 yield return new WaitForSeconds(2.5f);
                 TurnOffLights(light.yellowLights);
@@ -69,9 +91,12 @@ public class TrafficLightController : MonoBehaviour
                 TurnOnLights(light.yellowLights);
 
                 yield return new WaitForSeconds(2f);
-                if (light.wayPointWait != null)
+                if (light.wayPointsToStop != null)
                 {
-                    light.wayPointWait.GetComponent<WaypointClass>().isWaitingPoint = false;
+                    foreach (var wayPoint in light.wayPointsToStop)
+                    {
+                        wayPoint.GetComponent<Waypoint>().TrafficState = Waypoint.TrafficLightState.Green;
+                    }
                 }
                 if (light.deathBoxes != null){
                     foreach (var deathBox in light.deathBoxes){
@@ -88,17 +113,7 @@ public class TrafficLightController : MonoBehaviour
         }
         
     }
-
-    void StartTrafficLight(){
-        foreach (var light in lights){
-            if(light.direction == trafficLightState){
-                StartCoroutine(SwitchToLight(light, LightStates.Green));
-            } else {
-                StartCoroutine(SwitchToLight(light, LightStates.Red));
-            }
-        }
-    }
-
+    
     void SwitchTrafficLightState(){
         switch(trafficLightState){
             case Direction.NS:
@@ -120,10 +135,5 @@ public class TrafficLightController : MonoBehaviour
         foreach (var light in lightS){
             light.SetActive(true);
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
