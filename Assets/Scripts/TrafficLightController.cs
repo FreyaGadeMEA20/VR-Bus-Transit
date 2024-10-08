@@ -34,19 +34,15 @@ public class TrafficLightController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        foreach (var light in lights){
+            TurnOffLights(light.redLights);
+            TurnOffLights(light.yellowLights);
+            TurnOffLights(light.greenLights);
+        }
         StartTrafficLight();
     }
-    void StartTrafficLight(){
+    void StartTrafficLight() {
         foreach (var light in lights){
-            foreach(var lights in light.redLights){
-                lights.SetActive(false);
-            }
-            foreach(var lights in light.greenLights){
-                lights.SetActive(false);
-            }
-            foreach(var lights in light.yellowLights){
-                lights.SetActive(false);
-            }
             if(light.direction == trafficLightState){
                 StartCoroutine(SwitchToLight(light, LightStates.Green));
             } else {
@@ -60,6 +56,7 @@ public class TrafficLightController : MonoBehaviour
 
         switch(light.state){
             case LightStates.Red:
+                yield return new WaitForSeconds(1f);
                 TurnOffLights(light.greenLights);
                 TurnOnLights(light.yellowLights);
                 if (light.wayPointsToStop != null)
@@ -69,12 +66,11 @@ public class TrafficLightController : MonoBehaviour
                         wayPoint.GetComponent<Waypoint>().TrafficState = Waypoint.TrafficLightState.Red;
                     }
                 }
-                yield return new WaitForSeconds(2.5f);
+                yield return new WaitForSeconds(4f);
                 TurnOffLights(light.yellowLights);
                 TurnOnLights(light.redLights);
 
-
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(4f);
 
                 if (light.deathBoxes != null){
                     foreach (var deathBox in light.deathBoxes){
@@ -83,14 +79,15 @@ public class TrafficLightController : MonoBehaviour
                 }
 
                 yield return new WaitForSeconds(light.timeBeforeSwitch);
-                StartTrafficLight();
                 SwitchTrafficLightState();
+                StartTrafficLight();
 
                 break;
             case LightStates.Green:
+                yield return new WaitForSeconds(5.5f);
                 TurnOnLights(light.yellowLights);
 
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(4f);
                 if (light.wayPointsToStop != null)
                 {
                     foreach (var wayPoint in light.wayPointsToStop)
@@ -113,7 +110,7 @@ public class TrafficLightController : MonoBehaviour
         }
         
     }
-    
+
     void SwitchTrafficLightState(){
         switch(trafficLightState){
             case Direction.NS:

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34216493, g: 0.4334377, b: 0.5747857, a: 1}
+  m_IndirectSpecularColor: {r: 0.34220943, g: 0.4333944, b: 0.57457393, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4066,7 +4066,7 @@ MonoBehaviour:
   - {fileID: 1983878428}
   branchRatio: 0.5
   connections: []
-  waypointType: 2
+  waypointType: 1
   TrafficState: 1
   width: 5
 --- !u!4 &1198626472
@@ -4900,7 +4900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightState: 1
   lights:
-  - timeBeforeSwitch: 15
+  - timeBeforeSwitch: 20
     state: 0
     direction: 0
     redLights:
@@ -4922,7 +4922,7 @@ MonoBehaviour:
     wayPointsToStop:
     - {fileID: 946365943}
     - {fileID: 327899967}
-  - timeBeforeSwitch: 7
+  - timeBeforeSwitch: 12
     state: 1
     direction: 1
     redLights:
