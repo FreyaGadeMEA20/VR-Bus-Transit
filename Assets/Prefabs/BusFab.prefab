@@ -595,8 +595,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.723288, y: 0.91798735, z: 10.021501}
-  m_Center: {x: 0, y: -0.041006565, z: 4.5107503}
+  m_Size: {x: 4.161272, y: 0.91798735, z: 9.993021}
+  m_Center: {x: 0.12519622, y: -0.041006565, z: 4.4965105}
 --- !u!114 &6203567833413569276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4016,7 +4016,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7407063518324850902}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 4000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4033,7 +4033,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &3481685594001589083
 MonoBehaviour:
@@ -4105,18 +4105,19 @@ MonoBehaviour:
   rearWheels:
   - {fileID: 2779981817868966626}
   - {fileID: 2871405666039922326}
-  maxSteering: 45
+  maxSteering: 55
   breakingForce: 2000
-  acceleration: 50
+  acceleration: 0
   steering: 0
   breaks: 0
   currentBreakForce: 0
   GearRatio:
   - 1
   - 2
+  - 3
   CurrentGear: 0
-  EngineTorque: 600
-  MaxEngineRPM: 3000
+  EngineTorque: 2400
+  MaxEngineRPM: 4000
   MinEngineRPM: 1000
   ReachedBusStop: 0
   currentWaypoint: {fileID: 0}
