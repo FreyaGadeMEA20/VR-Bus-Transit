@@ -542,7 +542,7 @@ namespace Polyperfect.Common
                     }
                     break;
             }
-
+            
             if (navMeshAgent)
             {
                 navMeshAgent.destination = targetPosition;
