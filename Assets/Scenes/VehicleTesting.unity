@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3424387, g: 0.4327972, b: 0.5731748, a: 1}
+  m_IndirectSpecularColor: {r: 0.34222236, g: 0.4334076, b: 0.57457036, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -152,11 +152,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 779533090}
   nextWaypoint: {fileID: 539514280}
-  width: 2.5
+  previousWaypoint: {fileID: 779533090}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &7016502
 Transform:
   m_ObjectHideFlags: 0
@@ -206,11 +209,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 1890443219}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &14730418
 Transform:
   m_ObjectHideFlags: 0
@@ -400,11 +406,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 553190162}
   nextWaypoint: {fileID: 1113475966}
-  width: 2.5
+  previousWaypoint: {fileID: 553190162}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &18886945
 Transform:
   m_ObjectHideFlags: 0
@@ -449,11 +458,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 364359386}
   nextWaypoint: {fileID: 343586301}
-  width: 2.5
+  previousWaypoint: {fileID: 364359386}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &22566152
 Transform:
   m_ObjectHideFlags: 0
@@ -640,11 +652,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1594882951}
   nextWaypoint: {fileID: 1570802299}
-  width: 2.5
+  previousWaypoint: {fileID: 1594882951}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &38363426
 Transform:
   m_ObjectHideFlags: 0
@@ -689,13 +704,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1642445034}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 1642445034}
   branches:
   - {fileID: 269048973}
   - {fileID: 2100468260}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &53865282
 Transform:
   m_ObjectHideFlags: 0
@@ -740,11 +758,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 663263859}
   nextWaypoint: {fileID: 617769227}
-  width: 2.5
+  previousWaypoint: {fileID: 663263859}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &55082131
 Transform:
   m_ObjectHideFlags: 0
@@ -841,11 +862,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1424863490}
   nextWaypoint: {fileID: 1075218982}
-  width: 2.5
+  previousWaypoint: {fileID: 1424863490}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &69521896
 Transform:
   m_ObjectHideFlags: 0
@@ -860,37 +884,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 120983775}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &77689535
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 77689536}
-  m_Layer: 0
-  m_Name: MAIN,SIDE,RIGHT
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &77689536
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77689535}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 137.1, y: 0, z: -124.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79558735 stripped
 GameObject:
@@ -1052,11 +1045,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1441595593}
   nextWaypoint: {fileID: 1618214932}
-  width: 2.5
+  previousWaypoint: {fileID: 1441595593}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &88934030
 Transform:
   m_ObjectHideFlags: 0
@@ -1101,11 +1097,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 928183849}
   nextWaypoint: {fileID: 1743626349}
-  width: 2.5
+  previousWaypoint: {fileID: 928183849}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &106046703
 Transform:
   m_ObjectHideFlags: 0
@@ -1150,11 +1149,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 140386511}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &107142846
 Transform:
   m_ObjectHideFlags: 0
@@ -1483,11 +1485,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1360240033}
   nextWaypoint: {fileID: 682794781}
-  width: 2.5
+  previousWaypoint: {fileID: 1360240033}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &122511538
 Transform:
   m_ObjectHideFlags: 0
@@ -1532,11 +1537,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1283530900}
   nextWaypoint: {fileID: 533371489}
-  width: 2.5
+  previousWaypoint: {fileID: 1283530900}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &131316475
 Transform:
   m_ObjectHideFlags: 0
@@ -1658,13 +1666,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1538977432}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 1538977432}
   branches:
   - {fileID: 811460244}
   - {fileID: 1605425245}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &133186477
 Transform:
   m_ObjectHideFlags: 0
@@ -1709,11 +1720,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 107142845}
   nextWaypoint: {fileID: 748300576}
-  width: 2.5
+  previousWaypoint: {fileID: 107142845}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &140386512
 Transform:
   m_ObjectHideFlags: 0
@@ -1810,11 +1824,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 631750197}
   nextWaypoint: {fileID: 1557055498}
-  width: 2.5
+  previousWaypoint: {fileID: 631750197}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &148669678
 Transform:
   m_ObjectHideFlags: 0
@@ -2160,11 +2177,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 564050682}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 564050682}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!1 &186599808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,6 +2241,98 @@ MonoBehaviour:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
   m_PrefabInstance: {fileID: 1745660921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &192385666
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 783720048}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -33.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68763876
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.68763876
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.16478148
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.16478148
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 26.952
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_Name
+      value: TrafficLightForPedestrians (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+--- !u!1 &192385667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 192385666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &192385668 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 192385666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &192385669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 192385666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &192385670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 192385666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &192385671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5923910272134997870, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 192385666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &192385672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8169951345797447816, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 192385666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &192385673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7491644260435661124, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 192385666}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &194256019
 GameObject:
@@ -2308,11 +2420,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 915239646}
   nextWaypoint: {fileID: 769187892}
-  width: 2.5
+  previousWaypoint: {fileID: 915239646}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &257015697
 Transform:
   m_ObjectHideFlags: 0
@@ -2357,11 +2472,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1494854882}
   nextWaypoint: {fileID: 2043343979}
-  width: 2.5
+  previousWaypoint: {fileID: 1494854882}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &269048974
 Transform:
   m_ObjectHideFlags: 0
@@ -2511,11 +2629,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1207752520}
   nextWaypoint: {fileID: 2100468260}
-  width: 2.5
+  previousWaypoint: {fileID: 1207752520}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &283107494
 Transform:
   m_ObjectHideFlags: 0
@@ -2560,11 +2681,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1531552853}
   nextWaypoint: {fileID: 2091878684}
-  width: 2.5
+  previousWaypoint: {fileID: 1531552853}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &285931553
 Transform:
   m_ObjectHideFlags: 0
@@ -2609,11 +2733,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 956119967}
   nextWaypoint: {fileID: 631750197}
-  width: 2.5
+  previousWaypoint: {fileID: 956119967}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &307832670
 Transform:
   m_ObjectHideFlags: 0
@@ -2629,6 +2756,114 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &316066441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055821657}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.57325304
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.57325304
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4139819
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4139819
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -71.671
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_Name
+      value: TrafficLightForPedestrians
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+--- !u!1 &316066442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5923910272134997870, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 316066441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &316066443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 316066441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &316066444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8169951345797447816, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 316066441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &316066445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7491644260435661124, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 316066441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &316066446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 316066441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &316066447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 316066441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &316066448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 316066441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &319419385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,11 +2893,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 617769227}
   nextWaypoint: {fileID: 1890693345}
-  width: 2.5
+  previousWaypoint: {fileID: 617769227}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &319419387
 Transform:
   m_ObjectHideFlags: 0
@@ -2759,11 +2997,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 1200413593}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &319944932
 Transform:
   m_ObjectHideFlags: 0
@@ -2966,11 +3207,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2128412876}
   nextWaypoint: {fileID: 2022989694}
-  width: 2.5
+  previousWaypoint: {fileID: 2128412876}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &343067916
 Transform:
   m_ObjectHideFlags: 0
@@ -3015,11 +3259,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 22566151}
   nextWaypoint: {fileID: 1486944573}
-  width: 2.5
+  previousWaypoint: {fileID: 22566151}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &343586302
 Transform:
   m_ObjectHideFlags: 0
@@ -3187,13 +3434,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 22566151}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches:
   - {fileID: 536526461}
   - {fileID: 1948293550}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &364359387
 Transform:
   m_ObjectHideFlags: 0
@@ -3249,11 +3499,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1181496472}
   nextWaypoint: {fileID: 1277456703}
-  width: 2.5
+  previousWaypoint: {fileID: 1181496472}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &387763235
 Transform:
   m_ObjectHideFlags: 0
@@ -3425,6 +3678,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: -93, z: 0}
+--- !u!1001 &425917506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 783720048}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -47.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.39851353
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.39851353
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.58411217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.58411217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 111.392
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &425917507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 425917506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &425917508 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 425917506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &425917509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 425917506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &425917510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 425917506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &436015875
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,11 +3792,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 713382438}
   nextWaypoint: {fileID: 1416331467}
-  width: 2.5
+  previousWaypoint: {fileID: 713382438}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &436015877
 Transform:
   m_ObjectHideFlags: 0
@@ -3503,11 +3844,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1207442320}
   nextWaypoint: {fileID: 1832968986}
-  width: 2.5
+  previousWaypoint: {fileID: 1207442320}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &436345692
 Transform:
   m_ObjectHideFlags: 0
@@ -3670,11 +4014,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 748300576}
   nextWaypoint: {fileID: 1100233745}
-  width: 2.5
+  previousWaypoint: {fileID: 748300576}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &455763102
 Transform:
   m_ObjectHideFlags: 0
@@ -3719,11 +4066,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 950480256}
   nextWaypoint: {fileID: 2092618650}
-  width: 2.5
+  previousWaypoint: {fileID: 950480256}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &458942871
 Transform:
   m_ObjectHideFlags: 0
@@ -3820,11 +4170,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1438876504}
   nextWaypoint: {fileID: 1642445034}
-  width: 2.5
+  previousWaypoint: {fileID: 1438876504}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &474658992
 Transform:
   m_ObjectHideFlags: 0
@@ -3923,13 +4276,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1622247283}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 1622247283}
   branches:
   - {fileID: 2128412876}
   - {fileID: 886563740}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &504069882
 Transform:
   m_ObjectHideFlags: 0
@@ -4022,6 +4378,95 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b747bee8478b1ed41b68123ecc0650c4, type: 3}
+--- !u!1001 &507582978
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 783720048}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.288048
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5299997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.684143
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.41436252
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.41436252
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.57297796
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.57297796
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 108.253
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &507582979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 507582978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &507582980 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 507582978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &507582981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 507582978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &507582982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 507582978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &511381315
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,12 +4496,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1305720722}
   nextWaypoint: {fileID: 1906674505}
-  width: 2.5
+  previousWaypoint: {fileID: 1305720722}
   branches:
   - {fileID: 645305833}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &511381317
 Transform:
   m_ObjectHideFlags: 0
@@ -4153,11 +4601,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1563168514}
   nextWaypoint: {fileID: 1886199376}
-  width: 2.5
+  previousWaypoint: {fileID: 1563168514}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &523055057
 Transform:
   m_ObjectHideFlags: 0
@@ -4202,11 +4653,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1422829264}
   nextWaypoint: {fileID: 1476725876}
-  width: 2.5
+  previousWaypoint: {fileID: 1422829264}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &523072976
 Transform:
   m_ObjectHideFlags: 0
@@ -4251,13 +4705,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 131316474}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 131316474}
   branches:
   - {fileID: 789363122}
   - {fileID: 458942870}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &533371490
 Transform:
   m_ObjectHideFlags: 0
@@ -4302,11 +4759,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1592669449}
   nextWaypoint: {fileID: 932383293}
-  width: 2.5
+  previousWaypoint: {fileID: 1592669449}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &536526462
 Transform:
   m_ObjectHideFlags: 0
@@ -4403,11 +4863,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 7016501}
   nextWaypoint: {fileID: 709656335}
-  width: 2.5
+  previousWaypoint: {fileID: 7016501}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &539514281
 Transform:
   m_ObjectHideFlags: 0
@@ -4452,11 +4915,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1596685200}
   nextWaypoint: {fileID: 911172247}
-  width: 2.5
+  previousWaypoint: {fileID: 1596685200}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &545454030
 Transform:
   m_ObjectHideFlags: 0
@@ -4553,11 +5019,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2141327565}
   nextWaypoint: {fileID: 18886944}
-  width: 2.5
+  previousWaypoint: {fileID: 2141327565}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &553190163
 Transform:
   m_ObjectHideFlags: 0
@@ -4602,11 +5071,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 177872840}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &564050683
 Transform:
   m_ObjectHideFlags: 0
@@ -4703,11 +5175,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 712734658}
   nextWaypoint: {fileID: 2029779163}
-  width: 2.5
+  previousWaypoint: {fileID: 712734658}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &567326342
 Transform:
   m_ObjectHideFlags: 0
@@ -4752,11 +5227,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1408538668}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 1408538668}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &576778865
 Transform:
   m_ObjectHideFlags: 0
@@ -5514,11 +5992,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 55082130}
   nextWaypoint: {fileID: 319419386}
-  width: 2.5
+  previousWaypoint: {fileID: 55082130}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &617769228
 Transform:
   m_ObjectHideFlags: 0
@@ -5534,6 +6015,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!1001 &620050438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055821657}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 57.055916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.2117004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.1466812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1466812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69172585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.69172585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 203.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &620050439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 620050438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &620050440 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 620050438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &620050441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 620050438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &620050442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 620050438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &631750196
 GameObject:
   m_ObjectHideFlags: 0
@@ -5563,11 +6129,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 307832669}
   nextWaypoint: {fileID: 148669677}
-  width: 2.5
+  previousWaypoint: {fileID: 307832669}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &631750198
 Transform:
   m_ObjectHideFlags: 0
@@ -5612,13 +6181,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 2043109524}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches:
   - {fileID: 930398748}
   - {fileID: 1441595593}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &644969394
 Transform:
   m_ObjectHideFlags: 0
@@ -5663,11 +6235,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1666173896}
   nextWaypoint: {fileID: 1622247283}
-  width: 2.5
+  previousWaypoint: {fileID: 1666173896}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &645305834
 Transform:
   m_ObjectHideFlags: 0
@@ -5816,11 +6391,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1446787596}
   nextWaypoint: {fileID: 55082130}
-  width: 2.5
+  previousWaypoint: {fileID: 1446787596}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &663263860
 Transform:
   m_ObjectHideFlags: 0
@@ -5865,12 +6443,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 122511537}
   nextWaypoint: {fileID: 1448594467}
-  width: 2.5
+  previousWaypoint: {fileID: 122511537}
   branches:
   - {fileID: 1283530900}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &682794782
 Transform:
   m_ObjectHideFlags: 0
@@ -6045,11 +6626,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 539514280}
   nextWaypoint: {fileID: 1292476624}
-  width: 2.5
+  previousWaypoint: {fileID: 539514280}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &709656336
 Transform:
   m_ObjectHideFlags: 0
@@ -6094,11 +6678,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2043343979}
   nextWaypoint: {fileID: 567326341}
-  width: 2.5
+  previousWaypoint: {fileID: 2043343979}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &712734659
 Transform:
   m_ObjectHideFlags: 0
@@ -6174,11 +6761,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 779533160}
   nextWaypoint: {fileID: 436015876}
-  width: 2.5
+  previousWaypoint: {fileID: 779533160}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &713382439
 Transform:
   m_ObjectHideFlags: 0
@@ -6228,11 +6818,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1565632795}
   nextWaypoint: {fileID: 1126113705}
-  width: 2.5
+  previousWaypoint: {fileID: 1565632795}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &744297846
 Transform:
   m_ObjectHideFlags: 0
@@ -6277,12 +6870,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 140386511}
   nextWaypoint: {fileID: 455763101}
-  width: 2.5
+  previousWaypoint: {fileID: 140386511}
   branches:
   - {fileID: 38363425}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &748300577
 Transform:
   m_ObjectHideFlags: 0
@@ -6436,11 +7032,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1113475966}
   nextWaypoint: {fileID: 1167882419}
-  width: 2.5
+  previousWaypoint: {fileID: 1113475966}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &756352908
 Transform:
   m_ObjectHideFlags: 0
@@ -6485,11 +7084,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 257015696}
   nextWaypoint: {fileID: 1508581002}
-  width: 2.5
+  previousWaypoint: {fileID: 257015696}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &769187893
 Transform:
   m_ObjectHideFlags: 0
@@ -6534,11 +7136,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 978290707}
   nextWaypoint: {fileID: 7016501}
-  width: 2.5
+  previousWaypoint: {fileID: 978290707}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &779533091
 Transform:
   m_ObjectHideFlags: 0
@@ -6583,13 +7188,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 713382438}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches:
   - {fileID: 1217827823}
   - {fileID: 1408538668}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &779533161
 Transform:
   m_ObjectHideFlags: 0
@@ -6605,6 +7213,109 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &783720046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 783720048}
+  - component: {fileID: 783720047}
+  m_Layer: 0
+  m_Name: MAINSTREET,SIDE,RIGHT (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &783720047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783720046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd468e6c3e89e1b408044bed69909a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trafficLightState: 1
+  lights:
+  - timeBeforeSwitch: 20
+    state: 0
+    direction: 0
+    redLights:
+    - {fileID: 1072428595}
+    - {fileID: 425917510}
+    - {fileID: 507582982}
+    - {fileID: 192385673}
+    yellowLights:
+    - {fileID: 1072428594}
+    - {fileID: 192385672}
+    - {fileID: 425917509}
+    - {fileID: 507582981}
+    greenLights:
+    - {fileID: 1072428593}
+    - {fileID: 192385671}
+    - {fileID: 425917507}
+    - {fileID: 507582979}
+    deathBoxes: []
+    wayPointsToStop:
+    - {fileID: 113867759}
+    - {fileID: 795631786}
+  - timeBeforeSwitch: 12
+    state: 1
+    direction: 1
+    redLights:
+    - {fileID: 1072428592}
+    - {fileID: 192385670}
+    - {fileID: 1936623949}
+    - {fileID: 1984620583}
+    - {fileID: 889206049}
+    yellowLights:
+    - {fileID: 1072428591}
+    - {fileID: 192385669}
+    - {fileID: 1936623948}
+    - {fileID: 1984620582}
+    - {fileID: 889206048}
+    greenLights:
+    - {fileID: 1072428589}
+    - {fileID: 192385667}
+    - {fileID: 1936623946}
+    - {fileID: 1984620580}
+    - {fileID: 889206046}
+    deathBoxes: []
+    wayPointsToStop:
+    - {fileID: 1422449403}
+    - {fileID: 645305832}
+    - {fileID: 1622247282}
+    - {fileID: 713382437}
+    - {fileID: 436015875}
+--- !u!4 &783720048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783720046}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 151.2, y: 11.58, z: -9.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1072428590}
+  - {fileID: 192385668}
+  - {fileID: 425917508}
+  - {fileID: 1936623947}
+  - {fileID: 1984620581}
+  - {fileID: 889206047}
+  - {fileID: 507582980}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &784637810
 GameObject:
   m_ObjectHideFlags: 0
@@ -6686,11 +7397,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2092618650}
   nextWaypoint: {fileID: 890427801}
-  width: 2.5
+  previousWaypoint: {fileID: 2092618650}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &789363123
 Transform:
   m_ObjectHideFlags: 0
@@ -6792,11 +7506,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2064981741}
   nextWaypoint: {fileID: 1083541972}
-  width: 2.5
+  previousWaypoint: {fileID: 2064981741}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &801190829
 Transform:
   m_ObjectHideFlags: 0
@@ -6893,11 +7610,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1890693345}
   nextWaypoint: {fileID: 856098047}
-  width: 2.5
+  previousWaypoint: {fileID: 1890693345}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &811460245
 Transform:
   m_ObjectHideFlags: 0
@@ -6942,11 +7662,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1906674505}
   nextWaypoint: {fileID: 928183849}
-  width: 2.5
+  previousWaypoint: {fileID: 1906674505}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &823222784
 Transform:
   m_ObjectHideFlags: 0
@@ -7144,12 +7867,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 811460244}
   nextWaypoint: {fileID: 1605425245}
-  width: 2.5
+  previousWaypoint: {fileID: 811460244}
   branches:
   - {fileID: 1538977432}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &856098048
 Transform:
   m_ObjectHideFlags: 0
@@ -7246,11 +7972,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1456627870}
   nextWaypoint: {fileID: 1305720722}
-  width: 2.5
+  previousWaypoint: {fileID: 1456627870}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &864905515
 Transform:
   m_ObjectHideFlags: 0
@@ -7364,11 +8093,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1167882419}
   nextWaypoint: {fileID: 1448137734}
-  width: 2.5
+  previousWaypoint: {fileID: 1167882419}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &884419163
 Transform:
   m_ObjectHideFlags: 0
@@ -7413,11 +8145,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 911172247}
   nextWaypoint: {fileID: 1851926174}
-  width: 2.5
+  previousWaypoint: {fileID: 911172247}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &886563741
 Transform:
   m_ObjectHideFlags: 0
@@ -7485,6 +8220,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: -0.269, y: -33.991, z: 0}
+--- !u!1001 &889206045
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 783720048}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 56.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31.429993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &889206046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 889206045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &889206047 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 889206045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &889206048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 889206045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &889206049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 889206045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &890427800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,11 +8334,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 789363122}
   nextWaypoint: {fileID: 1884482234}
-  width: 2.5
+  previousWaypoint: {fileID: 789363122}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &890427802
 Transform:
   m_ObjectHideFlags: 0
@@ -7589,11 +8412,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 545454029}
   nextWaypoint: {fileID: 886563740}
-  width: 2.5
+  previousWaypoint: {fileID: 545454029}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &911172248
 Transform:
   m_ObjectHideFlags: 0
@@ -7638,11 +8464,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2091878684}
   nextWaypoint: {fileID: 257015696}
-  width: 2.5
+  previousWaypoint: {fileID: 2091878684}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &915239647
 Transform:
   m_ObjectHideFlags: 0
@@ -7687,13 +8516,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1570802299}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 1570802299}
   branches:
   - {fileID: 915239646}
   - {fileID: 285931552}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &924007893
 Transform:
   m_ObjectHideFlags: 0
@@ -7738,11 +8570,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 823222783}
   nextWaypoint: {fileID: 106046702}
-  width: 2.5
+  previousWaypoint: {fileID: 823222783}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &928183850
 Transform:
   m_ObjectHideFlags: 0
@@ -7943,11 +8778,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 1974506925}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &930398749
 Transform:
   m_ObjectHideFlags: 0
@@ -7992,12 +8830,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 536526461}
   nextWaypoint: {fileID: 1948293550}
-  width: 2.5
+  previousWaypoint: {fileID: 536526461}
   branches:
   - {fileID: 22566151}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &932383294
 Transform:
   m_ObjectHideFlags: 0
@@ -8146,11 +8987,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1923930860}
   nextWaypoint: {fileID: 458942870}
-  width: 2.5
+  previousWaypoint: {fileID: 1923930860}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &950480257
 Transform:
   m_ObjectHideFlags: 0
@@ -8200,11 +9044,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1424634762}
   nextWaypoint: {fileID: 307832669}
-  width: 2.5
+  previousWaypoint: {fileID: 1424634762}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &956119968
 Transform:
   m_ObjectHideFlags: 0
@@ -8254,11 +9101,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1841684242}
   nextWaypoint: {fileID: 779533090}
-  width: 2.5
+  previousWaypoint: {fileID: 1841684242}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &978290708
 Transform:
   m_ObjectHideFlags: 0
@@ -8303,12 +9153,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 1283530900}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches:
   - {fileID: 122511537}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &983839585
 Transform:
   m_ObjectHideFlags: 0
@@ -8459,11 +9312,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1363123503}
   nextWaypoint: {fileID: 1207442320}
-  width: 2.5
+  previousWaypoint: {fileID: 1363123503}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &990767487
 Transform:
   m_ObjectHideFlags: 0
@@ -8565,12 +9421,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1485287416}
   nextWaypoint: {fileID: 1596685200}
-  width: 2.5
+  previousWaypoint: {fileID: 1485287416}
   branches:
   - {fileID: 436015876}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1046991594
 Transform:
   m_ObjectHideFlags: 0
@@ -8586,6 +9445,109 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1055821655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055821657}
+  - component: {fileID: 1055821656}
+  m_Layer: 0
+  m_Name: MAINSTREET,SIDE,RIGHT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1055821656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055821655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd468e6c3e89e1b408044bed69909a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trafficLightState: 1
+  lights:
+  - timeBeforeSwitch: 20
+    state: 0
+    direction: 0
+    redLights:
+    - {fileID: 316066448}
+    - {fileID: 1375430299}
+    - {fileID: 1547911189}
+    - {fileID: 1647421805}
+    yellowLights:
+    - {fileID: 316066447}
+    - {fileID: 1647421804}
+    - {fileID: 1375430298}
+    - {fileID: 1547911188}
+    greenLights:
+    - {fileID: 316066446}
+    - {fileID: 1647421803}
+    - {fileID: 1375430296}
+    - {fileID: 1547911186}
+    deathBoxes: []
+    wayPointsToStop:
+    - {fileID: 113867759}
+    - {fileID: 795631786}
+  - timeBeforeSwitch: 12
+    state: 1
+    direction: 1
+    redLights:
+    - {fileID: 316066445}
+    - {fileID: 1647421802}
+    - {fileID: 620050442}
+    - {fileID: 1955023749}
+    - {fileID: 1603657797}
+    yellowLights:
+    - {fileID: 316066444}
+    - {fileID: 1647421801}
+    - {fileID: 620050441}
+    - {fileID: 1955023748}
+    - {fileID: 1603657796}
+    greenLights:
+    - {fileID: 316066442}
+    - {fileID: 1647421799}
+    - {fileID: 620050439}
+    - {fileID: 1955023746}
+    - {fileID: 1603657794}
+    deathBoxes: []
+    wayPointsToStop:
+    - {fileID: 1422449403}
+    - {fileID: 645305832}
+    - {fileID: 1622247282}
+    - {fileID: 713382437}
+    - {fileID: 436015875}
+--- !u!4 &1055821657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055821655}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 160.87, y: 11.58, z: -134.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 316066443}
+  - {fileID: 1647421800}
+  - {fileID: 1375430297}
+  - {fileID: 620050440}
+  - {fileID: 1955023747}
+  - {fileID: 1603657795}
+  - {fileID: 1547911187}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1062294726
 GameObject:
   m_ObjectHideFlags: 0
@@ -8692,6 +9654,114 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
   m_PrefabInstance: {fileID: 852318308}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1072428588
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 783720048}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.57325304
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.57325304
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4139819
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4139819
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -71.671
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_Name
+      value: TrafficLightForPedestrians
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+--- !u!1 &1072428589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5923910272134997870, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1072428588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1072428590 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1072428588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1072428591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8169951345797447816, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1072428588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1072428592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7491644260435661124, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1072428588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1072428593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1072428588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1072428594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1072428588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1072428595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1072428588}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1075218981
 GameObject:
   m_ObjectHideFlags: 0
@@ -8721,11 +9791,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 69521895}
   nextWaypoint: {fileID: 2050942636}
-  width: 2.5
+  previousWaypoint: {fileID: 69521895}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1075218983
 Transform:
   m_ObjectHideFlags: 0
@@ -8770,11 +9843,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 801190828}
   nextWaypoint: {fileID: 1365452592}
-  width: 2.5
+  previousWaypoint: {fileID: 801190828}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1083541973
 Transform:
   m_ObjectHideFlags: 0
@@ -8923,11 +9999,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 455763101}
   nextWaypoint: {fileID: 1360240033}
-  width: 2.5
+  previousWaypoint: {fileID: 455763101}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1100233746
 Transform:
   m_ObjectHideFlags: 0
@@ -9024,11 +10103,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 18886944}
   nextWaypoint: {fileID: 756352907}
-  width: 2.5
+  previousWaypoint: {fileID: 18886944}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1113475967
 Transform:
   m_ObjectHideFlags: 0
@@ -9078,11 +10160,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 744297845}
   nextWaypoint: {fileID: 1181496472}
-  width: 2.5
+  previousWaypoint: {fileID: 744297845}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1126113706
 Transform:
   m_ObjectHideFlags: 0
@@ -9231,11 +10316,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 756352907}
   nextWaypoint: {fileID: 884419162}
-  width: 2.5
+  previousWaypoint: {fileID: 756352907}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1167882420
 Transform:
   m_ObjectHideFlags: 0
@@ -9280,11 +10368,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1448137734}
   nextWaypoint: {fileID: 1971433408}
-  width: 2.5
+  previousWaypoint: {fileID: 1448137734}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1169424857
 Transform:
   m_ObjectHideFlags: 0
@@ -9364,6 +10455,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: e12fe2d058a956c4eb9ba65aee094441, type: 2}
+    - target: {fileID: -7029948723529949830, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -516098083770646512, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -9375,6 +10470,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       propertyPath: m_Name
       value: VRTransitLevel8City12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9413,11 +10512,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1126113705}
   nextWaypoint: {fileID: 387763234}
-  width: 2.5
+  previousWaypoint: {fileID: 1126113705}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1181496473
 Transform:
   m_ObjectHideFlags: 0
@@ -9568,11 +10670,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 930398748}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1200413594
 Transform:
   m_ObjectHideFlags: 0
@@ -9617,11 +10722,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 990767486}
   nextWaypoint: {fileID: 436345691}
-  width: 2.5
+  previousWaypoint: {fileID: 990767486}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1207442321
 Transform:
   m_ObjectHideFlags: 0
@@ -9666,11 +10774,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1807702804}
   nextWaypoint: {fileID: 283107493}
-  width: 2.5
+  previousWaypoint: {fileID: 1807702804}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1207752521
 Transform:
   m_ObjectHideFlags: 0
@@ -9715,12 +10826,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1217827823}
   nextWaypoint: {fileID: 1408538668}
-  width: 2.5
+  previousWaypoint: {fileID: 1217827823}
   branches:
   - {fileID: 713382438}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1212329139
 Transform:
   m_ObjectHideFlags: 0
@@ -9817,11 +10931,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1832968986}
   nextWaypoint: {fileID: 1212329138}
-  width: 2.5
+  previousWaypoint: {fileID: 1832968986}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1217827824
 Transform:
   m_ObjectHideFlags: 0
@@ -9928,11 +11045,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 1790603527}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1263216596
 Transform:
   m_ObjectHideFlags: 0
@@ -10081,11 +11201,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 387763234}
   nextWaypoint: {fileID: 1424634762}
-  width: 2.5
+  previousWaypoint: {fileID: 387763234}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1277456704
 Transform:
   m_ObjectHideFlags: 0
@@ -10130,11 +11253,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 983839584}
   nextWaypoint: {fileID: 131316474}
-  width: 2.5
+  previousWaypoint: {fileID: 983839584}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1283530901
 Transform:
   m_ObjectHideFlags: 0
@@ -10179,12 +11305,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 709656335}
   nextWaypoint: {fileID: 1820687694}
-  width: 2.5
+  previousWaypoint: {fileID: 709656335}
   branches:
   - {fileID: 474658991}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1292476625
 Transform:
   m_ObjectHideFlags: 0
@@ -10229,11 +11358,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 864905514}
   nextWaypoint: {fileID: 511381316}
-  width: 2.5
+  previousWaypoint: {fileID: 864905514}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1305720723
 Transform:
   m_ObjectHideFlags: 0
@@ -10330,11 +11462,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 1485287416}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1325062522
 Transform:
   m_ObjectHideFlags: 0
@@ -10591,12 +11726,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1100233745}
   nextWaypoint: {fileID: 122511537}
-  width: 2.5
+  previousWaypoint: {fileID: 1100233745}
   branches:
   - {fileID: 1283530900}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1360240034
 Transform:
   m_ObjectHideFlags: 0
@@ -10693,11 +11831,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1542292633}
   nextWaypoint: {fileID: 990767486}
-  width: 2.5
+  previousWaypoint: {fileID: 1542292633}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1363123504
 Transform:
   m_ObjectHideFlags: 0
@@ -10742,11 +11883,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1083541972}
   nextWaypoint: {fileID: 1887735960}
-  width: 2.5
+  previousWaypoint: {fileID: 1083541972}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1365452593
 Transform:
   m_ObjectHideFlags: 0
@@ -10814,6 +11958,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: -67.855, z: 0}
+--- !u!1001 &1375430295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055821657}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -47.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.39851353
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.39851353
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.58411217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.58411217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 111.392
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &1375430296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1375430295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1375430297 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1375430295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1375430298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1375430295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1375430299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1375430295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1383663860
 GameObject:
   m_ObjectHideFlags: 0
@@ -10883,11 +12112,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1212329138}
   nextWaypoint: {fileID: 576778864}
-  width: 2.5
+  previousWaypoint: {fileID: 1212329138}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1408538669
 Transform:
   m_ObjectHideFlags: 0
@@ -10932,13 +12164,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 436015876}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 436015876}
   branches:
   - {fileID: 1596685200}
   - {fileID: 1485287416}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1416331468
 Transform:
   m_ObjectHideFlags: 0
@@ -11035,11 +12270,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 523072975}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1422829265
 Transform:
   m_ObjectHideFlags: 0
@@ -11084,11 +12322,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1277456703}
   nextWaypoint: {fileID: 956119967}
-  width: 2.5
+  previousWaypoint: {fileID: 1277456703}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1424634763
 Transform:
   m_ObjectHideFlags: 0
@@ -11133,11 +12374,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1508581002}
   nextWaypoint: {fileID: 69521895}
-  width: 2.5
+  previousWaypoint: {fileID: 1508581002}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1424863491
 Transform:
   m_ObjectHideFlags: 0
@@ -11182,13 +12426,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 474658991}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches:
   - {fileID: 1820687694}
   - {fileID: 709656335}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1438876505
 Transform:
   m_ObjectHideFlags: 0
@@ -11233,11 +12480,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1974506925}
   nextWaypoint: {fileID: 88934029}
-  width: 2.5
+  previousWaypoint: {fileID: 1974506925}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1441595594
 Transform:
   m_ObjectHideFlags: 0
@@ -11282,11 +12532,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2029779163}
   nextWaypoint: {fileID: 663263859}
-  width: 2.5
+  previousWaypoint: {fileID: 2029779163}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1446787597
 Transform:
   m_ObjectHideFlags: 0
@@ -11331,11 +12584,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 884419162}
   nextWaypoint: {fileID: 1169424856}
-  width: 2.5
+  previousWaypoint: {fileID: 884419162}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1448137735
 Transform:
   m_ObjectHideFlags: 0
@@ -11380,11 +12636,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 564050682}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1448594468
 Transform:
   m_ObjectHideFlags: 0
@@ -11429,11 +12688,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1890443219}
   nextWaypoint: {fileID: 864905514}
-  width: 2.5
+  previousWaypoint: {fileID: 1890443219}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1456627871
 Transform:
   m_ObjectHideFlags: 0
@@ -11478,11 +12740,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 1263216595}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1459687603
 Transform:
   m_ObjectHideFlags: 0
@@ -11527,11 +12792,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 523072975}
   nextWaypoint: {fileID: 1459687602}
-  width: 2.5
+  previousWaypoint: {fileID: 523072975}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1476725877
 Transform:
   m_ObjectHideFlags: 0
@@ -11628,11 +12896,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1325062521}
   nextWaypoint: {fileID: 1046991593}
-  width: 2.5
+  previousWaypoint: {fileID: 1325062521}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1485287417
 Transform:
   m_ObjectHideFlags: 0
@@ -11677,13 +12948,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 343586301}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 343586301}
   branches:
   - {fileID: 1923930860}
   - {fileID: 523055056}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1486944574
 Transform:
   m_ObjectHideFlags: 0
@@ -11728,12 +13002,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2100468260}
   nextWaypoint: {fileID: 269048973}
-  width: 2.5
+  previousWaypoint: {fileID: 2100468260}
   branches:
   - {fileID: 1642445034}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1494854883
 Transform:
   m_ObjectHideFlags: 0
@@ -11882,11 +13159,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 769187892}
   nextWaypoint: {fileID: 1424863490}
-  width: 2.5
+  previousWaypoint: {fileID: 769187892}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1508581003
 Transform:
   m_ObjectHideFlags: 0
@@ -11936,11 +13216,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1948293550}
   nextWaypoint: {fileID: 285931552}
-  width: 2.5
+  previousWaypoint: {fileID: 1948293550}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1531552854
 Transform:
   m_ObjectHideFlags: 0
@@ -11985,11 +13268,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2043109524}
   nextWaypoint: {fileID: 133186476}
-  width: 2.5
+  previousWaypoint: {fileID: 2043109524}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1538977433
 Transform:
   m_ObjectHideFlags: 0
@@ -12034,11 +13320,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1557055498}
   nextWaypoint: {fileID: 1363123503}
-  width: 2.5
+  previousWaypoint: {fileID: 1557055498}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1542292634
 Transform:
   m_ObjectHideFlags: 0
@@ -12106,6 +13395,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: -0.269, y: -381.759, z: 0}
+--- !u!1001 &1547911185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055821657}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.288048
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5299997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.684143
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.41436252
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.41436252
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.57297796
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.57297796
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 108.253
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &1547911186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1547911185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1547911187 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1547911185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1547911188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1547911185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1547911189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1547911185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1557055497
 GameObject:
   m_ObjectHideFlags: 0
@@ -12135,11 +13513,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 148669677}
   nextWaypoint: {fileID: 1542292633}
-  width: 2.5
+  previousWaypoint: {fileID: 148669677}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1557055499
 Transform:
   m_ObjectHideFlags: 0
@@ -12208,6 +13589,8 @@ MonoBehaviour:
     wayPointsToStop:
     - {fileID: 946365943}
     - {fileID: 327899967}
+    - {fileID: 38363424}
+    - {fileID: 1570802298}
   - timeBeforeSwitch: 12
     state: 1
     direction: 1
@@ -12232,6 +13615,10 @@ MonoBehaviour:
     deathBoxes: []
     wayPointsToStop:
     - {fileID: 1138137736}
+    - {fileID: 1283530899}
+    - {fileID: 131316473}
+    - {fileID: 22566150}
+    - {fileID: 343586300}
 --- !u!4 &1559692345
 Transform:
   m_ObjectHideFlags: 0
@@ -12283,11 +13670,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 523055056}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1563168515
 Transform:
   m_ObjectHideFlags: 0
@@ -12332,11 +13722,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2050942636}
   nextWaypoint: {fileID: 744297845}
-  width: 2.5
+  previousWaypoint: {fileID: 2050942636}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1565632796
 Transform:
   m_ObjectHideFlags: 0
@@ -12433,11 +13826,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 38363425}
   nextWaypoint: {fileID: 924007892}
-  width: 2.5
+  previousWaypoint: {fileID: 38363425}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1570802300
 Transform:
   m_ObjectHideFlags: 0
@@ -12591,11 +13987,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 536526461}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1592669450
 Transform:
   m_ObjectHideFlags: 0
@@ -12640,13 +14039,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 38363425}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches:
   - {fileID: 140386511}
   - {fileID: 455763101}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1594882952
 Transform:
   m_ObjectHideFlags: 0
@@ -12691,11 +14093,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1046991593}
   nextWaypoint: {fileID: 545454029}
-  width: 2.5
+  previousWaypoint: {fileID: 1046991593}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1596685201
 Transform:
   m_ObjectHideFlags: 0
@@ -12711,6 +14116,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1603657793
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055821657}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 56.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31.429993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &1603657794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1603657793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1603657795 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1603657793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1603657796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1603657793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1603657797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1603657793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1605425244
 GameObject:
   m_ObjectHideFlags: 0
@@ -12740,11 +14230,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 856098047}
   nextWaypoint: {fileID: 2064981741}
-  width: 2.5
+  previousWaypoint: {fileID: 856098047}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1605425246
 Transform:
   m_ObjectHideFlags: 0
@@ -12883,11 +14376,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 88934029}
   nextWaypoint: {fileID: 107142845}
-  width: 2.5
+  previousWaypoint: {fileID: 88934029}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!1 &1622247282
 GameObject:
   m_ObjectHideFlags: 0
@@ -12917,11 +14413,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 645305833}
   nextWaypoint: {fileID: 504069881}
-  width: 2.5
+  previousWaypoint: {fileID: 645305833}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1622247284
 Transform:
   m_ObjectHideFlags: 0
@@ -13387,11 +14886,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 474658991}
   nextWaypoint: {fileID: 53865281}
-  width: 2.5
+  previousWaypoint: {fileID: 474658991}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1642445035
 Transform:
   m_ObjectHideFlags: 0
@@ -13566,6 +15068,98 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: -0.269, y: -97.47, z: 0}
+--- !u!1001 &1647421798
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055821657}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -33.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68763876
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.68763876
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.16478148
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.16478148
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 26.952
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+      propertyPath: m_Name
+      value: TrafficLightForPedestrians (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+--- !u!1 &1647421799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1647421798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1647421800 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1647421798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647421801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1647421798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647421802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1647421798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647421803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5923910272134997870, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1647421798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647421804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8169951345797447816, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1647421798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1647421805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7491644260435661124, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
+  m_PrefabInstance: {fileID: 1647421798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1659638753
 GameObject:
   m_ObjectHideFlags: 0
@@ -13647,11 +15241,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2137069862}
   nextWaypoint: {fileID: 1422829264}
-  width: 2.5
+  previousWaypoint: {fileID: 2137069862}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1664869085
 Transform:
   m_ObjectHideFlags: 0
@@ -13696,13 +15293,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 645305833}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches:
   - {fileID: 1906674505}
   - {fileID: 1305720722}
   branchRatio: 1
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1666173897
 Transform:
   m_ObjectHideFlags: 0
@@ -14039,11 +15639,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 106046702}
   nextWaypoint: {fileID: 1841684242}
-  width: 2.5
+  previousWaypoint: {fileID: 106046702}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1743626350
 Transform:
   m_ObjectHideFlags: 0
@@ -14160,11 +15763,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 2077167743}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1790603528
 Transform:
   m_ObjectHideFlags: 0
@@ -14209,11 +15815,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 2022989694}
   nextWaypoint: {fileID: 2001969862}
-  width: 2.5
+  previousWaypoint: {fileID: 2022989694}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1793019421
 Transform:
   m_ObjectHideFlags: 0
@@ -14258,11 +15867,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1887735960}
   nextWaypoint: {fileID: 1807702804}
-  width: 2.5
+  previousWaypoint: {fileID: 1887735960}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1806729589
 Transform:
   m_ObjectHideFlags: 0
@@ -14359,11 +15971,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1806729588}
   nextWaypoint: {fileID: 1207752520}
-  width: 2.5
+  previousWaypoint: {fileID: 1806729588}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1807702805
 Transform:
   m_ObjectHideFlags: 0
@@ -14408,11 +16023,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1884482234}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 1884482234}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1811350101
 Transform:
   m_ObjectHideFlags: 0
@@ -14509,11 +16127,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1292476624}
   nextWaypoint: {fileID: 2141327565}
-  width: 2.5
+  previousWaypoint: {fileID: 1292476624}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1820687695
 Transform:
   m_ObjectHideFlags: 0
@@ -14610,11 +16231,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 436345691}
   nextWaypoint: {fileID: 1217827823}
-  width: 2.5
+  previousWaypoint: {fileID: 436345691}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1832968987
 Transform:
   m_ObjectHideFlags: 0
@@ -14659,11 +16283,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 978290707}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1841684243
 Transform:
   m_ObjectHideFlags: 0
@@ -14708,12 +16335,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 886563740}
   nextWaypoint: {fileID: 2128412876}
-  width: 2.5
+  previousWaypoint: {fileID: 886563740}
   branches:
   - {fileID: 1622247283}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1851926175
 Transform:
   m_ObjectHideFlags: 0
@@ -14820,11 +16450,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 890427801}
   nextWaypoint: {fileID: 1811350100}
-  width: 2.5
+  previousWaypoint: {fileID: 890427801}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1884482235
 Transform:
   m_ObjectHideFlags: 0
@@ -14869,12 +16502,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 523055056}
   nextWaypoint: {fileID: 1923930860}
-  width: 2.5
+  previousWaypoint: {fileID: 523055056}
   branches:
   - {fileID: 343586301}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1886199377
 Transform:
   m_ObjectHideFlags: 0
@@ -14919,11 +16555,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1365452592}
   nextWaypoint: {fileID: 1806729588}
-  width: 2.5
+  previousWaypoint: {fileID: 1365452592}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1887735961
 Transform:
   m_ObjectHideFlags: 0
@@ -15021,11 +16660,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 14730417}
   nextWaypoint: {fileID: 1456627870}
-  width: 2.5
+  previousWaypoint: {fileID: 14730417}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1890443220
 Transform:
   m_ObjectHideFlags: 0
@@ -15070,11 +16712,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 319419386}
   nextWaypoint: {fileID: 811460244}
-  width: 2.5
+  previousWaypoint: {fileID: 319419386}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1890693346
 Transform:
   m_ObjectHideFlags: 0
@@ -15171,11 +16816,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 511381316}
   nextWaypoint: {fileID: 823222783}
-  width: 2.5
+  previousWaypoint: {fileID: 511381316}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1906674506
 Transform:
   m_ObjectHideFlags: 0
@@ -15225,11 +16873,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1886199376}
   nextWaypoint: {fileID: 950480256}
-  width: 2.5
+  previousWaypoint: {fileID: 1886199376}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1923930861
 Transform:
   m_ObjectHideFlags: 0
@@ -15245,6 +16896,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1936623945
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 783720048}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 57.055916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.2117004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.1466812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1466812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69172585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.69172585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 203.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &1936623946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1936623945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1936623947 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1936623945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1936623948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1936623945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1936623949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1936623945}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1948293549
 GameObject:
   m_ObjectHideFlags: 0
@@ -15274,11 +17010,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 932383293}
   nextWaypoint: {fileID: 1531552853}
-  width: 2.5
+  previousWaypoint: {fileID: 932383293}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1948293551
 Transform:
   m_ObjectHideFlags: 0
@@ -15347,6 +17086,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: -0.269, y: -178.106, z: 0}
+--- !u!1001 &1955023745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1055821657}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2299957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08146588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.08146588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7023983
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7023983
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 193.231
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &1955023746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1955023745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1955023747 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1955023745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1955023748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1955023745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1955023749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1955023745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1968134939 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
@@ -15381,11 +17209,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1169424856}
   nextWaypoint: {fileID: 2137069862}
-  width: 2.5
+  previousWaypoint: {fileID: 1169424856}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1971433409
 Transform:
   m_ObjectHideFlags: 0
@@ -15430,12 +17261,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 1441595593}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches:
   - {fileID: 2043109524}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &1974506926
 Transform:
   m_ObjectHideFlags: 0
@@ -15503,6 +17337,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: -87.623, z: 0}
+--- !u!1001 &1984620579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 783720048}
+    m_Modifications:
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2299957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08146588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.08146588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7023983
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7023983
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 193.231
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012825289496640618, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+      propertyPath: m_Name
+      value: SingularTrafficLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+--- !u!1 &1984620580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209224396793137465, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1984620579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1984620581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1080202836871755104, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1984620579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1984620582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1984620579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1984620583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
+  m_PrefabInstance: {fileID: 1984620579}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1992376314
 GameObject:
   m_ObjectHideFlags: 0
@@ -15688,11 +17611,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1793019420}
   nextWaypoint: {fileID: 0}
-  width: 2.5
+  previousWaypoint: {fileID: 1793019420}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2001969863
 Transform:
   m_ObjectHideFlags: 0
@@ -15737,11 +17663,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 343067915}
   nextWaypoint: {fileID: 1793019420}
-  width: 2.5
+  previousWaypoint: {fileID: 343067915}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2022989695
 Transform:
   m_ObjectHideFlags: 0
@@ -15786,11 +17715,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 567326341}
   nextWaypoint: {fileID: 1446787596}
-  width: 2.5
+  previousWaypoint: {fileID: 567326341}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2029779164
 Transform:
   m_ObjectHideFlags: 0
@@ -15835,11 +17767,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 644969393}
   nextWaypoint: {fileID: 1538977432}
-  width: 2.5
+  previousWaypoint: {fileID: 644969393}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2043109525
 Transform:
   m_ObjectHideFlags: 0
@@ -15884,11 +17819,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 269048973}
   nextWaypoint: {fileID: 712734658}
-  width: 2.5
+  previousWaypoint: {fileID: 269048973}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2043343980
 Transform:
   m_ObjectHideFlags: 0
@@ -16135,11 +18073,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1075218982}
   nextWaypoint: {fileID: 1565632795}
-  width: 2.5
+  previousWaypoint: {fileID: 1075218982}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2050942637
 Transform:
   m_ObjectHideFlags: 0
@@ -16306,11 +18247,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1605425245}
   nextWaypoint: {fileID: 801190828}
-  width: 2.5
+  previousWaypoint: {fileID: 1605425245}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2064981742
 Transform:
   m_ObjectHideFlags: 0
@@ -16355,11 +18299,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 0}
   nextWaypoint: {fileID: 319944931}
-  width: 2.5
+  previousWaypoint: {fileID: 0}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2077167744
 Transform:
   m_ObjectHideFlags: 0
@@ -16598,12 +18545,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 285931552}
   nextWaypoint: {fileID: 915239646}
-  width: 2.5
+  previousWaypoint: {fileID: 285931552}
   branches:
   - {fileID: 1570802299}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2091878685
 Transform:
   m_ObjectHideFlags: 0
@@ -16648,12 +18598,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 458942870}
   nextWaypoint: {fileID: 789363122}
-  width: 2.5
+  previousWaypoint: {fileID: 458942870}
   branches:
   - {fileID: 131316474}
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2092618651
 Transform:
   m_ObjectHideFlags: 0
@@ -16713,11 +18666,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 283107493}
   nextWaypoint: {fileID: 1494854882}
-  width: 2.5
+  previousWaypoint: {fileID: 283107493}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!1 &2104107374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
@@ -17532,11 +19488,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1851926174}
   nextWaypoint: {fileID: 343067915}
-  width: 2.5
+  previousWaypoint: {fileID: 1851926174}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2128412877
 Transform:
   m_ObjectHideFlags: 0
@@ -17581,11 +19540,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1971433408}
   nextWaypoint: {fileID: 1664869084}
-  width: 2.5
+  previousWaypoint: {fileID: 1971433408}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2137069863
 Transform:
   m_ObjectHideFlags: 0
@@ -17630,11 +19592,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousWaypoint: {fileID: 1820687694}
   nextWaypoint: {fileID: 553190162}
-  width: 2.5
+  previousWaypoint: {fileID: 1820687694}
   branches: []
   branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  TrafficState: 1
+  width: 2.5
 --- !u!4 &2141327566
 Transform:
   m_ObjectHideFlags: 0
@@ -17675,7 +19640,8 @@ SceneRoots:
   - {fileID: 2086867645}
   - {fileID: 713184987}
   - {fileID: 1559692345}
-  - {fileID: 77689536}
+  - {fileID: 1055821657}
+  - {fileID: 783720048}
   - {fileID: 159339275}
   - {fileID: 1720848938}
   - {fileID: 14740904}
