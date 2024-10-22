@@ -47,6 +47,7 @@ namespace Movement{
                 unvisited.Add ( Waypoint );
                 
                 // Setting the Waypoint distance to Infinity
+                Debug.Log(Waypoint);
                 distances.Add ( Waypoint, float.MaxValue );
             }
             

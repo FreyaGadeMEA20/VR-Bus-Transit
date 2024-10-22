@@ -21,7 +21,6 @@ namespace Movement{
             int count = 0;
             while (count < pedestriansToSpawn)
             {
-                Debug.Log(count);
                 GameObject obj = Instantiate(pedestrianPrefabs[Random.Range(0, pedestrianPrefabs.Length)]);
                 Transform child = transform.GetChild(Random.Range(0, transform.childCount - 1));
                 obj.GetComponent<PedestrianWaypointNavigator>().currentWaypoint = child.GetComponent<PedestrianWaypoint>();

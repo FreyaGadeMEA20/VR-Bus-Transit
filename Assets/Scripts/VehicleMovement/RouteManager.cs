@@ -44,6 +44,7 @@ namespace Movement {
 
         void DetermineRoute(Waypoint _start, Waypoint _end){
             // Djikstra's Algorithm to determine the path for the bus to follow
+            Debug.Log("Determining Route");
             m_Path = new Path();
             m_Path = m_Waypoints.GetShortestPath(_start, _end);
             PATH_FOR_INSPECTOR = m_Path.waypoints;
