@@ -31,9 +31,16 @@ namespace Movement{
         [SerializeField] private BusController busController; // reference to the bus controller (doors, stop button, screen)
 
         // Wheel references
+        [System.Serializable]
+        public class Wheel
+        {
+            public WheelCollider wheels;
+            public Transform transforms;
+        }
+
         [Header("WHEELS")]
-        [SerializeField] WheelCollider[] frontWheels;
-        [SerializeField] WheelCollider[] rearWheels;
+        [SerializeField] Wheel[] frontWheels;
+        [SerializeField] Wheel[] rearWheels;
 
         // ALl of the variables that are used to control the movement of the vehicle
         [Header("MOVEMENT VARIABLES")]
@@ -133,8 +140,10 @@ namespace Movement{
                     NavigateTowardsWaypoint();
                     //MoveTowardsWaypoint();
                     //RotateTowardsWaypoint();
+                    //Update wheel meshes
+                    
 
-                    EngineRPM = (rearWheels[0].rpm + rearWheels[1].rpm)/2 * GearRatio[CurrentGear];
+                    EngineRPM = (rearWheels[0].wheels.rpm + rearWheels[1].wheels.rpm)/2 * GearRatio[CurrentGear];
                     ShiftGears();
 
                     //audio.pitch = Mathf.Abs(EngineRPM) + 1;
@@ -179,7 +188,7 @@ namespace Movement{
 
             if (EngineRPM >= MaxEngineRPM) {
                 for (int i= 0; i < GearRatio.Length; i++) {
-                    if (rearWheels[0].rpm * GearRatio[i] < MaxEngineRPM) {
+                    if (rearWheels[0].wheels.rpm * GearRatio[i] < MaxEngineRPM) {
                         AppropriateGear = i;
                         break;
                     }
@@ -192,7 +201,7 @@ namespace Movement{
                 AppropriateGear = CurrentGear;
                 
                 for (int j = GearRatio.Length - 1; j >= 0; j--) {
-                    if (rearWheels[0].rpm * GearRatio[j] > MinEngineRPM) {
+                    if (rearWheels[0].wheels.rpm * GearRatio[j] > MinEngineRPM) {
                         AppropriateGear = j;
                         break;
                     }
@@ -208,14 +217,18 @@ namespace Movement{
         public void Move(){
             // Apply forces to the front wheels
             currentBreakForce = breaks ? breakingForce : 0f;
-            foreach (WheelCollider wheel in frontWheels) {
-                wheel.steerAngle = maxSteering * steering;
-                wheel.brakeTorque = currentBreakForce;
+            foreach (Wheel wheel in frontWheels) {
+                wheel.wheels.steerAngle = maxSteering * steering;
+                wheel.wheels.brakeTorque = currentBreakForce;
+
+                UpdateWheel(wheel.wheels, wheel.transforms);
             }
             // Apply forces to the rear wheels
-            foreach (WheelCollider wheel in rearWheels) {
-                wheel.motorTorque = EngineTorque / GearRatio[CurrentGear] * acceleration;
-                wheel.brakeTorque = currentBreakForce;
+            foreach (Wheel wheel in rearWheels) {
+                wheel.wheels.motorTorque = EngineTorque / GearRatio[CurrentGear] * acceleration;
+                wheel.wheels.brakeTorque = currentBreakForce;
+
+                UpdateWheel(wheel.wheels, wheel.transforms);
             }
         }
 
@@ -296,6 +309,18 @@ namespace Movement{
 
         public void SetDestination(Waypoint destination){
             this.currentWaypoint = destination;
+        }
+
+        void UpdateWheel(WheelCollider col, Transform trans) 
+        {
+            //Get wheel collider state
+            Vector3 position;
+            Quaternion rotation;
+            col.GetWorldPose(out position, out rotation);
+
+            // Set wheel transform state
+            trans.position = position;
+            trans.rotation = rotation;
         }
     }
 }
