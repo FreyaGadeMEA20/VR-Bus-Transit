@@ -9,7 +9,7 @@ public class BusController : MonoBehaviour
     DoorController doors;
     BusScreenController screens;
 
-    public Movement.VehicleMovement vehicleMovement;
+    public VehicleMovement vehicleMovement;
 
     // What is the state of the bus
     // NOT BASED ON THE VEHICLE MOVEMENT, ONLY FOR WAITING AT STOPS
@@ -52,7 +52,7 @@ public class BusController : MonoBehaviour
         
     }
 
-    void Update() {
+    public void UpdateBusController() {
         switch(busState){
             case BusState.DRIVING:
                 UpdateDriveState();
@@ -70,14 +70,6 @@ public class BusController : MonoBehaviour
         return;
     }
 
-    public void StopNextStop() {
-        // Update the screens so the bus will stop at next stop
-        screens.ApplyStopTexture();
-
-        // Set state to bus stopped
-
-    }
-
     void UpdateWaitState() {
         if (!doorsOpen && doors != null)
             StartCoroutine(BusStopAnimations());
@@ -87,6 +79,8 @@ public class BusController : MonoBehaviour
         doors.OpenDoors();
 
         doorsOpen = true;
+
+        screens.ApplyNextTexture();
 
         yield return new WaitForSeconds(15);
 
@@ -124,6 +118,7 @@ public class BusController : MonoBehaviour
     public void StopBus() {
         busStopped = true;
         Debug.Log("Bus stopped");
+        screens.ApplyStopTexture();
         busState = BusState.STOP_BUTTON_PRESSED;
     }
 }

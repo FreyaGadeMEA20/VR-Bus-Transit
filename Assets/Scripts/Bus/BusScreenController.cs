@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class BusScreenController : MonoBehaviour
 {
-    public List<BusStop> stopList;
     public Material newMat; // Reference to the material renderer
-
-
     private int currentIndex = 0; // Index of the current image
 
+    // Class to hold the two textures for the given busstop
     [System.Serializable]
     public class BusStop {
         public GameObject wayPoint;
         public Texture nextStopDot;
         public Texture nextStopStop;
     }
+    public List<BusStop> stopList;
 
     // Start is called before the first frame update
     void Start()
@@ -30,20 +29,7 @@ public class BusScreenController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    /* void Update()
-    {
-        // Check for input to change the image
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ApplyNextTexture();
-        }
-
-        if (Input.GetKeyDown(KeyCode.M)){
-            ApplyStopTexture();
-        }
-    } */
-
+    // Fucntion does as name suggests
     public void ApplyNextTexture(){
         // Increment the index
         currentIndex++;
@@ -58,6 +44,7 @@ public class BusScreenController : MonoBehaviour
         newMat.mainTexture = stopList[currentIndex].nextStopDot;
     }
 
+    // Function does as name suggests
     public void ApplyStopTexture(){
         newMat.mainTexture = stopList[currentIndex].nextStopStop;
     }

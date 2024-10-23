@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -86,6 +87,10 @@ namespace Movement{
             //currentWaypoint = routeManager.currentWaypoint;
 
             //StartCoroutine(MovementSM());
+        }
+
+        void Update(){
+            busController.UpdateBusController();
         }
 
         /* private IEnumerator MovementSM(){
@@ -232,6 +237,7 @@ namespace Movement{
             }
         }
 
+        // Script to move the vehicle towards the waypoint
         void NavigateTowardsWaypoint (){
             // now we just find the relative position of the waypoint from the car transform,
             // that way we can determine how far to the left and right the waypoint is.
@@ -245,7 +251,7 @@ namespace Movement{
             
             // by dividing the horizontal position by the magnitude, we get a decimal percentage of the turn angle that we can use to drive the wheels
             steering = RelativeWaypointPosition.x / RelativeWaypointPosition.magnitude;
-            
+            steering = (float)Math.Round(steering, 2);
             // now we do the same for torque, but make sure that it doesn't apply any engine torque when going around a sharp turn...
             if ( Mathf.Abs( steering ) < 0.5f ) {
                 acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering);
@@ -277,23 +283,24 @@ namespace Movement{
             }
         }
 
+        // Function to advance to the next waypoint
         public void AdvanceToNextWaypoint(){
+            // Control variables to control whether or not to advance
             bool shouldBranch = false;
             reachedBusStop = false;
-            // currentWaypoint.branches
+
+            // Determines if the current waypoint has branches
+            //  - Only relevant for cars, as bus follow a set route
             if (routeManager.currentWaypoint.branches != null && routeManager.currentWaypoint.branches.Count > 0){
-                if(entityType == EntityTypes.Bus){
-                    shouldBranch = true;//
-                } else {
-                    shouldBranch = Random.Range(0f,1f) <= routeManager.currentWaypoint.branchRatio ? true : false;
-                }
+                shouldBranch = UnityEngine.Random.Range(0f,1f) <= routeManager.currentWaypoint.branchRatio;
             }
+
+            // If the vehicle has a set path (i.e. bus route), it will follow that path
             if (routeManager.m_Path != null){
                 routeManager.currentWaypoint = routeManager.GetNextWaypoint(routeManager.currentWaypoint);
-            }else if(shouldBranch){
-                Debug.Log("Branched");
-                routeManager.currentWaypoint = routeManager.currentWaypoint.branches[Random.Range(0, routeManager.currentWaypoint.branches.Count)];
-            } else {
+            } else if (shouldBranch) { // Should the bus branch?
+                routeManager.currentWaypoint = routeManager.currentWaypoint.branches[UnityEngine.Random.Range(0, routeManager.currentWaypoint.branches.Count)];
+            } else { // If the vehicle has no path to follow, and shouldn't branch, it will just continue onwards
                 if(direction == 1){
                     routeManager.currentWaypoint = routeManager.currentWaypoint.nextWaypoint;
                 } else if (direction == -1){

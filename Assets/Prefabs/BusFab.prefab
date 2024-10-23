@@ -3961,6 +3961,7 @@ GameObject:
   - component: {fileID: 6926448354235404981}
   - component: {fileID: 1850163252479042898}
   - component: {fileID: 7776536689084422545}
+  - component: {fileID: 6118230167528339313}
   m_Layer: 9
   m_Name: BusFab
   m_TagString: Car
@@ -4121,11 +4122,34 @@ MonoBehaviour:
   - 3
   CurrentGear: 0
   EngineTorque: 2400
-  MaxEngineRPM: 4000
-  MinEngineRPM: 1000
+  MaxEngineRPM: 3000
+  MinEngineRPM: 2000
   ReachedBusStop: 0
   currentWaypoint: {fileID: 0}
   collisionDetector: {fileID: 1315358656677010875}
+--- !u!114 &6118230167528339313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7407063518324850902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cf06236b8cb074fa5291b217b4eabc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newMat: {fileID: 2100000, guid: 14383d9f22b37254e99b1302b679a804, type: 2}
+  stopList:
+  - wayPoint: {fileID: 0}
+    nextStopDot: {fileID: 2800000, guid: 0177d23c84369c0498be208acfbfc4a8, type: 3}
+    nextStopStop: {fileID: 2800000, guid: 587f7ad69a344864b9691d07747a89af, type: 3}
+  - wayPoint: {fileID: 0}
+    nextStopDot: {fileID: 2800000, guid: ce57f9f5f4aeb2f4aa95a66bc6f72e7e, type: 3}
+    nextStopStop: {fileID: 2800000, guid: 5685ab1266a49fe4a982fd6c21393ae0, type: 3}
+  - wayPoint: {fileID: 0}
+    nextStopDot: {fileID: 2800000, guid: 8439309e6f0a82144bedcb531e5fb7cc, type: 3}
+    nextStopStop: {fileID: 2800000, guid: ec85687d9b926fa459be386e0210630e, type: 3}
 --- !u!1 &7467207215343391894
 GameObject:
   m_ObjectHideFlags: 0
@@ -5304,6 +5328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cf06236b8cb074fa5291b217b4eabc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newMat: {fileID: 2100000, guid: 14383d9f22b37254e99b1302b679a804, type: 2}
   stopList:
   - wayPoint: {fileID: 0}
     nextStopDot: {fileID: 2800000, guid: 0177d23c84369c0498be208acfbfc4a8, type: 3}
@@ -5314,7 +5339,6 @@ MonoBehaviour:
   - wayPoint: {fileID: 0}
     nextStopDot: {fileID: 2800000, guid: 8439309e6f0a82144bedcb531e5fb7cc, type: 3}
     nextStopStop: {fileID: 2800000, guid: ec85687d9b926fa459be386e0210630e, type: 3}
-  newMat: {fileID: 2100000, guid: 14383d9f22b37254e99b1302b679a804, type: 2}
 --- !u!1001 &4035401726908577340
 PrefabInstance:
   m_ObjectHideFlags: 0
