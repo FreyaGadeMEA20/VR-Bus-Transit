@@ -40,7 +40,7 @@ public class RejskortStanderFunctions : MonoBehaviour
             originalMaterial = ScreenText.material;
         }
 
-        Bus = GameObject.FindGameObjectWithTag("Bus").GetComponent<BusController>();
+        //Bus = GameObject.FindGameObjectWithTag("Bus").GetComponent<BusController>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -116,11 +116,11 @@ public class RejskortStanderFunctions : MonoBehaviour
         audioSource.Play();
         canInteract = false;
         Bus.HasCheckedIn = true;
-        Debug.Log("Checked in");
 
         // Change material on ScreenText to OkText
         if (ScreenText != null && checkedIn_GodRejse != null)
         {
+            Debug.Log("Checked in");
             ScreenText.material = checkedIn_GodRejse;
         }
 

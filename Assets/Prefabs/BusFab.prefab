@@ -755,6 +755,7 @@ GameObject:
   - component: {fileID: 7481238578941192984}
   - component: {fileID: 1888075085022894898}
   - component: {fileID: 2465773093328708836}
+  - component: {fileID: 1421724922487530589}
   m_Layer: 9
   m_Name: BusRamps
   m_TagString: Untagged
@@ -844,11 +845,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1421724922487530589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335487027068179806}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.000001, y: 0.000000037252903, z: 10.000002}
+  m_Center: {x: -0.0000009536743, y: 0.00000035762787, z: 0.0000042915344}
 --- !u!1 &1578126305747693108
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +883,7 @@ GameObject:
   - component: {fileID: 7041152210475375469}
   - component: {fileID: 4973552966496681439}
   - component: {fileID: 4027881317506601237}
+  - component: {fileID: 927155174773759708}
   m_Layer: 9
   m_Name: BusRamps
   m_TagString: Untagged
@@ -950,11 +973,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &927155174773759708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578126305747693108}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.000001, y: 0.000000037252903, z: 10.000002}
+  m_Center: {x: 0, y: 0.00000047683716, z: 0.00000667572}
 --- !u!1 &1604076758033766229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,7 +1158,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -1136,7 +1180,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2583,7 +2627,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -3487,6 +3531,7 @@ GameObject:
   - component: {fileID: 6395590240343880393}
   - component: {fileID: 535662385664762689}
   - component: {fileID: 6636418128314813136}
+  - component: {fileID: 6389137474537800554}
   m_Layer: 9
   m_Name: BusRamps
   m_TagString: Untagged
@@ -3576,11 +3621,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &6389137474537800554
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6837923175918223840}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.000001, y: 0.000000037252903, z: 10.000002}
+  m_Center: {x: 0.0000076293945, y: 0.00000047683716, z: 0.00000667572}
 --- !u!1 &6911460447354227479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,7 +4007,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -4787,7 +4853,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -5564,13 +5630,13 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   godkendtClip: {fileID: 8300000, guid: cdce391c17d8e044aa28c5479b10aae9, type: 3}
   afvistClip: {fileID: 8300000, guid: 30b57bca1aec758408778f9146bc017e, type: 3}
-  checkedIn_GodRejse: {fileID: 2100000, guid: 17dba9a39d642414e91c569bda54f6c4, type: 2}
+  checkedIn_GodRejse: {fileID: 2100000, guid: 2ba28409879dbbb43a6f4692915506ae, type: 2}
   checkedIn_alreadyCheckedIn: {fileID: 2100000, guid: 11539ac96ad81c34897a23ab6459924e, type: 2}
-  checkedOut_GodRejse: {fileID: 2100000, guid: 9cb28d097fe0c874cb7ee6f2ba32d2a0, type: 2}
+  checkedOut_GodRejse: {fileID: 2100000, guid: 86d6d687682fd1b48974a205b2a87dab, type: 2}
   checkedOut_alreadyCheckedOut: {fileID: 2100000, guid: 6633335496e8f9a4b96a7703741084fa, type: 2}
   ScreenText: {fileID: 0}
-  checkIndStander: 0
-  Bus: {fileID: 0}
+  checkIndStander: 1
+  Bus: {fileID: 1850163252479042898}
 --- !u!4 &8492099995748346879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3988016389306063690, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
@@ -5755,13 +5821,13 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   godkendtClip: {fileID: 8300000, guid: cdce391c17d8e044aa28c5479b10aae9, type: 3}
   afvistClip: {fileID: 8300000, guid: 30b57bca1aec758408778f9146bc017e, type: 3}
-  checkedIn_GodRejse: {fileID: 2100000, guid: 17dba9a39d642414e91c569bda54f6c4, type: 2}
+  checkedIn_GodRejse: {fileID: 2100000, guid: 2ba28409879dbbb43a6f4692915506ae, type: 2}
   checkedIn_alreadyCheckedIn: {fileID: 2100000, guid: 11539ac96ad81c34897a23ab6459924e, type: 2}
-  checkedOut_GodRejse: {fileID: 2100000, guid: 9cb28d097fe0c874cb7ee6f2ba32d2a0, type: 2}
+  checkedOut_GodRejse: {fileID: 2100000, guid: 86d6d687682fd1b48974a205b2a87dab, type: 2}
   checkedOut_alreadyCheckedOut: {fileID: 2100000, guid: 6633335496e8f9a4b96a7703741084fa, type: 2}
   ScreenText: {fileID: 0}
   checkIndStander: 0
-  Bus: {fileID: 0}
+  Bus: {fileID: 1850163252479042898}
 --- !u!4 &7073558963502321769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3590816371135977618, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
@@ -5926,13 +5992,13 @@ MonoBehaviour:
   audioSource: {fileID: 1865287649308425751}
   godkendtClip: {fileID: 8300000, guid: cdce391c17d8e044aa28c5479b10aae9, type: 3}
   afvistClip: {fileID: 8300000, guid: 30b57bca1aec758408778f9146bc017e, type: 3}
-  checkedIn_GodRejse: {fileID: 2100000, guid: 17dba9a39d642414e91c569bda54f6c4, type: 2}
+  checkedIn_GodRejse: {fileID: 2100000, guid: 2ba28409879dbbb43a6f4692915506ae, type: 2}
   checkedIn_alreadyCheckedIn: {fileID: 2100000, guid: 11539ac96ad81c34897a23ab6459924e, type: 2}
-  checkedOut_GodRejse: {fileID: 2100000, guid: 9cb28d097fe0c874cb7ee6f2ba32d2a0, type: 2}
+  checkedOut_GodRejse: {fileID: 2100000, guid: 86d6d687682fd1b48974a205b2a87dab, type: 2}
   checkedOut_alreadyCheckedOut: {fileID: 2100000, guid: 6633335496e8f9a4b96a7703741084fa, type: 2}
   ScreenText: {fileID: 0}
-  checkIndStander: 0
-  Bus: {fileID: 0}
+  checkIndStander: 1
+  Bus: {fileID: 1850163252479042898}
 --- !u!82 &1865287649308425751 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4783277230335525686, guid: 26b761aec902a1e4b8a8d73b2774131a, type: 3}
@@ -6127,13 +6193,13 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   godkendtClip: {fileID: 8300000, guid: cdce391c17d8e044aa28c5479b10aae9, type: 3}
   afvistClip: {fileID: 8300000, guid: 30b57bca1aec758408778f9146bc017e, type: 3}
-  checkedIn_GodRejse: {fileID: 2100000, guid: 17dba9a39d642414e91c569bda54f6c4, type: 2}
+  checkedIn_GodRejse: {fileID: 2100000, guid: 2ba28409879dbbb43a6f4692915506ae, type: 2}
   checkedIn_alreadyCheckedIn: {fileID: 2100000, guid: 11539ac96ad81c34897a23ab6459924e, type: 2}
-  checkedOut_GodRejse: {fileID: 2100000, guid: 9cb28d097fe0c874cb7ee6f2ba32d2a0, type: 2}
+  checkedOut_GodRejse: {fileID: 2100000, guid: 86d6d687682fd1b48974a205b2a87dab, type: 2}
   checkedOut_alreadyCheckedOut: {fileID: 2100000, guid: 6633335496e8f9a4b96a7703741084fa, type: 2}
   ScreenText: {fileID: 0}
   checkIndStander: 0
-  Bus: {fileID: 0}
+  Bus: {fileID: 1850163252479042898}
 --- !u!4 &5941616695214459482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3590816371135977618, guid: c70607c792e460c4d9ece98b85ccf181, type: 3}
