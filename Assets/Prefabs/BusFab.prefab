@@ -526,7 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 1511555276417706815}
   getOffButton: {fileID: 0}
 --- !u!1 &567738238146063182
 GameObject:
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 3923909112685621318}
   getOffButton: {fileID: 0}
 --- !u!1 &1315358656677010875
 GameObject:
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 1511555276417706815}
   getOffButton: {fileID: 0}
 --- !u!1 &1397245204140984769
 GameObject:
@@ -1165,8 +1165,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4219277873984347873}
   getOffButton: {fileID: 0}
+--- !u!1 &1511555276417706815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4045482439298024112}
+  m_Layer: 9
+  m_Name: CoupleBackward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4045482439298024112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511555276417706815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.561, y: -0.053, z: -1.1063001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546448143314634949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1462,16 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1332694177479993324}
+  - {fileID: 3086835590738945796}
+  - {fileID: 5976384497075898080}
+  - {fileID: 901521736454723139}
+  - {fileID: 1829068281056099923}
+  - {fileID: 6995653026594415872}
+  - {fileID: 680480026103939319}
+  - {fileID: 4045482439298024112}
+  - {fileID: 1624522402506603386}
   m_Father: {fileID: 3828788715187291001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1967479410585624137
@@ -1479,7 +1519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 3923909112685621318}
   getOffButton: {fileID: 0}
 --- !u!1 &2096783420376238017
 GameObject:
@@ -1681,8 +1721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bus: {fileID: 7407063518324850902}
   player: {fileID: 0}
-  _constrainer: {fileID: 0}
-  _dmp: {fileID: 0}
+  busSeatAssigner: {fileID: 5457255907422690771}
 --- !u!1 &2224407255876720201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,7 +2175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 7222654749728550408}
   getOffButton: {fileID: 0}
 --- !u!1 &2507024164285580472
 GameObject:
@@ -2183,7 +2222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 7222654749728550408}
   getOffButton: {fileID: 0}
 --- !u!1 &2615669124691132989
 GameObject:
@@ -2230,7 +2269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 8400247480845873970}
   getOffButton: {fileID: 0}
 --- !u!1 &2642289950435599518
 GameObject:
@@ -2535,7 +2574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 8400247480845873970}
   getOffButton: {fileID: 0}
 --- !u!1 &3217788553841046161
 GameObject:
@@ -2781,7 +2820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4219277873984347873}
   getOffButton: {fileID: 0}
 --- !u!1 &3709531801473633387
 GameObject:
@@ -2976,6 +3015,37 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &3923909112685621318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6995653026594415872}
+  m_Layer: 9
+  m_Name: MiddleExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6995653026594415872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3923909112685621318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.044, y: -0.035, z: -1.1063001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3925953961264846730
 GameObject:
   m_ObjectHideFlags: 0
@@ -3021,7 +3091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4592864846501403434}
   getOffButton: {fileID: 0}
 --- !u!1 &4061519909790648951
 GameObject:
@@ -3121,8 +3191,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 3923909112685621318}
   getOffButton: {fileID: 0}
+--- !u!1 &4219277873984347873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5976384497075898080}
+  m_Layer: 9
+  m_Name: Front'o'BackDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5976384497075898080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4219277873984347873}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.918, y: -0.035, z: -1.1063001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4249859627987425226
 GameObject:
   m_ObjectHideFlags: 0
@@ -3247,8 +3348,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4592864846501403434}
   getOffButton: {fileID: 0}
+--- !u!1 &4383808600517021647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680480026103939319}
+  m_Layer: 9
+  m_Name: CoupleForward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680480026103939319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383808600517021647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.607, y: 0.024, z: -1.1063001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4434047205157895109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,6 +3708,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &4592864846501403434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332694177479993324}
+  m_Layer: 9
+  m_Name: BackSeatExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1332694177479993324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592864846501403434}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.416, y: -0.142, z: -1.1063}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4667441642526612267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,6 +3963,37 @@ Transform:
   - {fileID: 6962456588584503986}
   - {fileID: 7059706306009732435}
   m_Father: {fileID: 2406480483788907336}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5267488014297922364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624522402506603386}
+  m_Layer: 9
+  m_Name: Front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1624522402506603386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5267488014297922364}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.711, y: -0.053, z: -1.1063001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5308762100699302584
 GameObject:
@@ -4033,7 +4227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4592864846501403434}
   getOffButton: {fileID: 0}
 --- !u!1 &5558999433553089087
 GameObject:
@@ -4080,7 +4274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 8110869222528440426}
   getOffButton: {fileID: 0}
 --- !u!1 &5685377383403929563
 GameObject:
@@ -5168,7 +5362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4592864846501403434}
   getOffButton: {fileID: 0}
 --- !u!1 &7131928348838893684
 GameObject:
@@ -5215,8 +5409,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 3923909112685621318}
   getOffButton: {fileID: 0}
+--- !u!1 &7222654749728550408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3086835590738945796}
+  m_Layer: 9
+  m_Name: BackDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3086835590738945796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7222654749728550408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.764, y: -0.035, z: -1.1063001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7287071345193782913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5368,7 +5593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4219277873984347873}
   getOffButton: {fileID: 0}
 --- !u!1 &7407063518324850902
 GameObject:
@@ -5765,7 +5990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 8110869222528440426}
   getOffButton: {fileID: 0}
 --- !u!1 &7563525907265116954
 GameObject:
@@ -5847,7 +6072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4219277873984347873}
   getOffButton: {fileID: 0}
 --- !u!1 &7663179834217103724
 GameObject:
@@ -5894,7 +6119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4592864846501403434}
   getOffButton: {fileID: 0}
 --- !u!1 &7691158680287911187
 GameObject:
@@ -5941,7 +6166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 8110869222528440426}
   getOffButton: {fileID: 0}
 --- !u!1 &7777905975838652165
 GameObject:
@@ -6067,7 +6292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 1511555276417706815}
   getOffButton: {fileID: 0}
 --- !u!1 &7885581066984666839
 GameObject:
@@ -6147,7 +6372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 1511555276417706815}
   getOffButton: {fileID: 0}
 --- !u!1 &7907039623281986442
 GameObject:
@@ -6194,7 +6419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 5267488014297922364}
   getOffButton: {fileID: 0}
 --- !u!1 &7928578839717626075
 GameObject:
@@ -6393,8 +6618,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 8400247480845873970}
   getOffButton: {fileID: 0}
+--- !u!1 &8110869222528440426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1829068281056099923}
+  m_Layer: 9
+  m_Name: Middle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1829068281056099923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110869222528440426}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.246, y: -0.035, z: -1.1063001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8192842737174655912
 GameObject:
   m_ObjectHideFlags: 0
@@ -6440,7 +6696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 5267488014297922364}
   getOffButton: {fileID: 0}
 --- !u!1 &8239110827845888304
 GameObject:
@@ -6487,8 +6743,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 5267488014297922364}
   getOffButton: {fileID: 0}
+--- !u!1 &8400247480845873970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901521736454723139}
+  m_Layer: 9
+  m_Name: MiddleBack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901521736454723139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400247480845873970}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.995, y: -0.035, z: -1.1063001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5787050554760016632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8432664480331439181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,7 +6874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 8110869222528440426}
   getOffButton: {fileID: 0}
 --- !u!1 &8531243375812035780
 GameObject:
@@ -6705,7 +6992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 3923909112685621318}
   getOffButton: {fileID: 0}
 --- !u!1 &8606612992811882717
 GameObject:
@@ -6911,7 +7198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 8400247480845873970}
   getOffButton: {fileID: 0}
 --- !u!1 &8956988340957817422
 GameObject:
@@ -6958,7 +7245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seatingArea: {fileID: 0}
-  exitArea: {fileID: 0}
+  exitArea: {fileID: 4592864846501403434}
   getOffButton: {fileID: 0}
 --- !u!1001 &939529704783474572
 PrefabInstance:
@@ -7060,6 +7347,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1827414097426499393}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7159,6 +7478,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 143048212887624102}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -7535,6 +7886,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 7232185665819318517}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7634,6 +8017,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3737953509477227011}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -7763,6 +8178,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 6859993242605226559}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7862,6 +8309,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4717190151414489971}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -7991,6 +8470,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2465797353478813645}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8090,6 +8601,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2550784515024654347}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8218,6 +8761,38 @@ PrefabInstance:
     - target: {fileID: 1275735380519942226, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2839842108506263421}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8436,6 +9011,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 329458592743741967}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8535,6 +9142,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8693263228524802381}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8789,6 +9428,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2465910866849759313}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8888,6 +9559,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8233755871862194258}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -9379,6 +10082,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8966404345077942896}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9478,6 +10213,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 871032052779750617}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -9607,6 +10374,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 801984930288125179}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9706,6 +10505,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 286718623388379483}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -9835,6 +10666,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4146515595707033160}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9934,6 +10797,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 7391825975959869714}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10063,6 +10958,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 118977984735711534}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10162,6 +11089,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2592537525078285954}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10663,6 +11622,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3671324630662889438}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10762,6 +11753,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2140637052539452023}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -11086,6 +12109,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1656961061536730479}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11181,6 +12236,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2669070766891130910}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -11310,6 +12397,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 5235511618025035862}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2133129407661317887, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -11322,6 +12441,38 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 19007533199074886}
+    - target: {fileID: 2467903998915010872, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467903998915010872, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467903998915010872, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 2467903998915010872, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467903998915010872, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467903998915010872, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467903998915010872, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8937133148258284125}
+    - target: {fileID: 2467903998915010872, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11414,6 +12565,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6138403677011393972, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138403677011393972, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138403677011393972, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 6138403677011393972, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138403677011393972, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138403677011393972, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138403677011393972, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 19007533199074886}
+    - target: {fileID: 6138403677011393972, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6298707458443922270, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
@@ -11433,6 +12616,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 6301498424709856302}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -11560,6 +12775,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3737030080962596849}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11659,6 +12906,38 @@ PrefabInstance:
     - target: {fileID: 8777730406320554528, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8721393007712692640}
+    - target: {fileID: 8995987602125456397, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9026580562431224881, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -11787,6 +13066,38 @@ PrefabInstance:
     - target: {fileID: 1275735380519942226, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5457255907422690771}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AssignSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BusSeatAssigner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 7272261478407638392}
+    - target: {fileID: 1821956877275168697, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seat, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2596208547321293662, guid: c9b59fa6e75084945b5b7a5a7767070e, type: 3}
       propertyPath: m_AnchorMax.y

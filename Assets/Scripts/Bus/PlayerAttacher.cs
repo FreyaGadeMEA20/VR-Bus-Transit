@@ -9,8 +9,7 @@ public class PlayerAttacher : MonoBehaviour
     [SerializeField] GameObject bus;
     [SerializeField] GameObject player;
 
-    [SerializeField] ParentConstraint _constrainer;
-    [SerializeField] DynamicMoveProvider _dmp;
+    [SerializeField] BusSeatAssigner busSeatAssigner;
     // Start is called before the first frame update
     ConstraintSource constraintSource;
     void Start()
@@ -25,7 +24,10 @@ public class PlayerAttacher : MonoBehaviour
         if(other.tag == "Player"){
             // ... then attaches the transform to the bus game object
             other.transform.parent = bus.transform;
+            
+            busSeatAssigner.GetPlayer(other.gameObject);
         }
+
     }
     
     // On trigger exit
