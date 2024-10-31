@@ -77,13 +77,15 @@ namespace Movement{
         void Start()
         {
             rb = GetComponent<Rigidbody>();
-            rb.centerOfMass = new Vector3 (rb.centerOfMass.x, -1.5f, rb.centerOfMass.z);
+            rb.centerOfMass = Vector3.zero;
             //currentRoute = waypoints.routes[currentRouteIndex];
             if (entityType == EntityTypes.Bus){
                 busController = this.GetComponent<BusController>();
             } 
 
             routeManager = GetComponent<RouteManager>();
+
+            rb.inertiaTensorRotation = Quaternion.identity;
             //currentWaypoint = routeManager.currentWaypoint;
 
             //StartCoroutine(MovementSM());

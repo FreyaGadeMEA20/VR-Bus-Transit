@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class XRManager : MonoBehaviour
+public class GameObjectInHandXR : MonoBehaviour
 {
     [SerializeField] GameObject hand;
     [SerializeField] GameObject item;

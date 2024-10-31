@@ -8,7 +8,9 @@ public class StopScript : MonoBehaviour
     [SerializeField] BusController busController;
 
     void Start(){
-        busController = this.GetComponent<BusController>();
+        busController = GetComponentInParent<BusController>();
+        
+        busScreenController = GetComponentInParent<BusScreenController>();
 //        busController = GameObject.Find("BusController").GetComponent<BusController>();
     }
 

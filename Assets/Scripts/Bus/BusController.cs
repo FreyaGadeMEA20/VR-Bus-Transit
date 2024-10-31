@@ -6,9 +6,10 @@ using System;
 
 public class BusController : MonoBehaviour
 {
+    // -- Outside Attributes --
     DoorController doors;
     BusScreenController screens;
-
+    [SerializeField] BusSeatAssigner seatAssigner;
     public VehicleMovement vehicleMovement;
 
     // What is the state of the bus
@@ -20,38 +21,44 @@ public class BusController : MonoBehaviour
     }
     [SerializeField] BusState busState;
 
+    // Are the doors open?
     bool doorsOpen = false;
 
+    // Are we allowed to drive?
     private bool driveAllowed{
         get{return DriveAllowed;}
         set{DriveAllowed = value;}
     }
     public bool DriveAllowed;
 
+    // Is the bus stop button pressed?
     private bool busStopped{
         get{return BusStopped;}
         set{BusStopped = value;}
     }
     public bool BusStopped;
     
+    // Is this the first time the bus has stopped?
     public bool firstTime = true;
 
+    // Has the player checked in?
     private bool hasCheckedIn{
         get{return HasCheckedIn;}
         set{HasCheckedIn = value;}
     }
-
     public bool HasCheckedIn;
 
     // Start is called before the first frame update
     void Start() {
+        // Gets and assigns all the relevant information
         busState = BusState.STOP_BUTTON_PRESSED;
         vehicleMovement = GetComponent<VehicleMovement>();
         doors = GetComponent<DoorController>();
         screens = GetComponent<BusScreenController>();
-        
+        seatAssigner = GetComponentInChildren<BusSeatAssigner>();
     }
 
+    // Update is called once per frame. Run in VehicleMovement, so it runs alongside it
     public void UpdateBusController() {
         switch(busState){
             case BusState.DRIVING:
@@ -66,59 +73,79 @@ public class BusController : MonoBehaviour
         }
     }
 
+    // drive state. Essentially a neutral state, as VehicleMovement is handling the driving
     private void UpdateDriveState() {
         return;
     }
 
+    // runs the coroutine to open the doors, and lets that control it the waiting at bus stop
     void UpdateWaitState() {
         if (!doorsOpen && doors != null)
             StartCoroutine(BusStopAnimations());
     }
 
+    // Coroutine to control how the bus behaves when it stops
     IEnumerator BusStopAnimations() {
-        doors.OpenDoors();
+        doors.OpenDoors(); // open the doors
 
-        doorsOpen = true;
+        doorsOpen = true;  // set the doors to be open
 
-        screens.ApplyNextTexture();
+        screens.ApplyNextTexture(); // change the bus screen texture
+        
+        if(busStopped && seatAssigner.PlayerSeated){
+            seatAssigner.UnassignSeat(); // unassign the player from the seat
+        }
 
+        busStopped = false;
+
+        // Wait for 15 seconds before continuing
         yield return new WaitForSeconds(15);
 
-        // add a check to see if player is within a certain distance, if so, wait another 6 seconds or smt
+        // CAN BE CHANGED TO LOOK AT IF THE PLAYER HAS CHECKED IN --
+        // If the player has entered the bus:
+        if(seatAssigner.player != null) {
+            // Continously check if the player has sat down, or they have exited the bus
+            while(!seatAssigner.PlayerSeated || seatAssigner.player == null){
+                yield return new WaitForSeconds(1);
 
+                // TELL THE PLAYER TO SIT DOWN
+            }
+        }
+
+        // Runs the coroutine to close the doors and drive the bus
         StartCoroutine(CloseDoorsAndDrive());
     }
 
+    // Coroutine to close the doors and drive the bus
     IEnumerator CloseDoorsAndDrive() {
-        doorsOpen = false;
+        doorsOpen = false; // set the doors to be closed
 
-        yield return new WaitForSeconds(2);
-        
+        // wait for 2 seconds before visually closing the doors
+        yield return new WaitForSeconds(2); 
         doors.CloseDoors();
 
+        // wait for 3 seconds before driving the bus
         yield return new WaitForSeconds(3);
 
         driveAllowed = true;
 
+        // Tells the rest of the bus to drive
         busState = BusState.DRIVING;
-        busStopped = true;
         vehicleMovement.AdvanceToNextWaypoint();
     }
 
     void UpdateStopState() {
-        if(!busStopped)
-            return;
-        // Add logic to stop the bus
-        
+        // Stops the bus when the vehicle has reached a bus stop
         if(vehicleMovement.ReachedBusStop) {
             busState = BusState.WAIT;
         }
     }
     
+    // Stops the bus. Gets run when stop button is pressed
     public void StopBus() {
-        busStopped = true;
-        Debug.Log("Bus stopped");
-        screens.ApplyStopTexture();
-        busState = BusState.STOP_BUTTON_PRESSED;
+        busStopped = true; // set the bus to be stopped
+        Debug.Log("Bus stopped"); // log that the bus has stopped
+        screens.ApplyStopTexture(); // change the bus screen texture to the stop texture
+        busState = BusState.STOP_BUTTON_PRESSED; // set the bus state to be stop button pressed
     }
 }

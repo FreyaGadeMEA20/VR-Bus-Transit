@@ -5,14 +5,11 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class BusSeatAssigner : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    public GameObject player;
     GameObject getOffButton;
     Seat currentSeat;
     [SerializeField] LayerMask seatedLayer;
-
-    void Start() {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
+    public bool PlayerSeated => currentSeat != null;
 
     public void GetPlayer(GameObject _player){
         player = _player;
@@ -26,7 +23,6 @@ public class BusSeatAssigner : MonoBehaviour
         //TODO: Tune position and rotation
         // Seat the player - ROTATION OF THE SEAT IS IMPORTANT
         player.transform.position = seat.seatingArea.transform.position;
-        Debug.Log(seat.seatingArea.transform.rotation);
         
         Quaternion newRot;
 
@@ -35,12 +31,13 @@ public class BusSeatAssigner : MonoBehaviour
         }else{
             newRot = new Quaternion(0,0,0,0);
         }
-        Debug.Log("New rotation: " + newRot);
         player.transform.rotation = newRot;
 
         // Disable the player's movement
         player.layer = LayerMask.NameToLayer("SeatedPlayer");
-        player.GetComponent<DynamicMoveProvider>().enabled = false;
+        player.GetComponent<DynamicMoveProvider>().moveSpeed = 0;
+        
+        player.GetComponent<DynamicMoveProvider>().useGravity = false;
 
         // Enable "get off" button
         //getOffButton = seat.GetComponent<Seat>().EnableGetOffButton();
@@ -50,11 +47,19 @@ public class BusSeatAssigner : MonoBehaviour
     public void UnassignSeat()
     {
         // Move the player to the closest bus exit  - ROTATION OF THE AREA IS IMPORTANT
-        player.transform.position = currentSeat.exitArea.transform.position;
-        player.transform.rotation = currentSeat.exitArea.transform.rotation;
+        player.transform.position = currentSeat.exitArea.transform.position;Quaternion newRot;
+
+        if(currentSeat.exitArea.transform.rotation.w<0){
+            newRot = new Quaternion(0,currentSeat.exitArea.transform.rotation.w,0,0);
+        }else{
+            newRot = new Quaternion(0,0,0,0);
+        }
+        Debug.Log("New rotation: " + newRot);
+        player.transform.rotation = newRot;
 
         // Enable the player's movement
-        player.GetComponent<DynamicMoveProvider>().enabled = true;
+        player.GetComponent<DynamicMoveProvider>().moveSpeed = 3;
+        player.GetComponent<DynamicMoveProvider>().useGravity = true;
 
         // Disable "get off" button
         //currentSeat.GetComponent<Seat>().DisableGetOffButton();
