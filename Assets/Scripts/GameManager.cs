@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 /// <summary>
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
     // The different states of the experience
     public enum GameState
     {
-        AT_SCHOOL,
+        START,
         CHECKED_PHONE,
         REACHED_BUS_STOP,
         CHECKED_IN,
@@ -35,18 +36,15 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] BusController Bus;
 
-    [SerializeField] ProxCheckerScript SignScript;
-    [SerializeField] GameObject SignBeam;
-    [SerializeField] ProxCheckerScript BusStopScript;
-    [SerializeField] GameObject StopBeam;
-    [SerializeField] CarSpawner carSpawer;
-    [SerializeField] GameObject busDeath;
+    public InputActionProperty handSwitch;
 
     // Start is called before the first frame update
     void Start()
     {
         // Set the initial state
-        currentState = GameState.AT_SCHOOL;
+        currentState = GameState.START;
+
+        // possibly coinflip to determine which station to start at
     }
 
     // Update is called once per frame
@@ -54,8 +52,8 @@ public class GameManager : MonoBehaviour
     {
         // Check for state transitions
         switch (currentState) {
-            case GameState.AT_SCHOOL:
-                // Handle SCHOOL state logic
+            case GameState.START:
+                // Handle START state logic
                 UpdateSchoolState();
                 break;
 
@@ -65,23 +63,28 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.REACHED_BUS_STOP:
-                
+                // Handle BUS_STOP state logic
+                UpdateBusStopState();
                 break;
 
             case GameState.CHECKED_IN:
-                
+                // Handle CHECK_IN state logic
+                UpdateCheckInState();
                 break;
 
             case GameState.SAT_DOWN:
-
+                // Handle SIT_DOWN state logic
+                UpdateSitDownState();
                 break;
 
             case GameState.PRESSED_STOP_BUTTON:
-
+                // Handle STOP_BUTTON state logic
+                UpdateStopButtonState();
                 break;
 
             case GameState.CHECKED_OUT:
-                
+                // Handle CHECK_OUT state logic
+                UpdateCheckOutState();
                 break;
         }
     }
@@ -90,8 +93,10 @@ public class GameManager : MonoBehaviour
     private float countdownTimer = 3f;
     private bool isCountingDown = true;
     void UpdateSchoolState() {
+        
+
         // Check if the GameObject is visible in the viewport
-        if (IsGameObjectVisibleInViewport(phone)) {
+        /* if (IsGameObjectVisibleInViewport(phone)) {
             // The GameObject is visible, do something
 
             if (isCountingDown) {
@@ -102,7 +107,6 @@ public class GameManager : MonoBehaviour
                     // Countdown finished, do something
                     Debug.Log("Countdown finished");
                     currentState = GameState.CHECKED_PHONE;
-                    SignBeam.SetActive(true);
                     // Reset the countdown timer
                     //countdownTimer = 3f;
                     isCountingDown = false;
@@ -113,11 +117,11 @@ public class GameManager : MonoBehaviour
                 countdownTimer = 3f;
                 isCountingDown = true;
             }
-        }
+        } */
     }
 
     void UpdatePhoneState(){
-        if(SignScript.CheckPlayerProximity()){
+        /* if(SignScript.CheckPlayerProximity()){
             if (isCountingDown) {
                 countdownTimer -= Time.deltaTime;
                 Debug.Log($"Player has been by the sign for {(countdownTimer-3)*-1} seconds");
@@ -138,11 +142,33 @@ public class GameManager : MonoBehaviour
             // Reset the countdown timer if the GameObject is not visible
             countdownTimer = 3f;
             isCountingDown = true;
-        }
+        } */
     }
 
+    void UpdateBusStopState(){
+
+    }
+
+    void UpdateCheckInState(){
+
+    }
+
+    void UpdateSitDownState(){
+
+    }
+
+    void UpdateStopButtonState(){
+
+    }
+
+    void UpdateCheckOutState(){
+
+    }
+
+    // Check if the GameObject is visible in the viewport
     bool IsGameObjectVisibleInViewport(GameObject gameObject)
-    {
+    {   
+        // Check if the GameObject is active
         if(!gameObject.activeSelf) {
             countdownTimer = 3f;
             return false;

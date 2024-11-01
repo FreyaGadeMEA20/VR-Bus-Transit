@@ -6,10 +6,15 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 public class BusSeatAssigner : MonoBehaviour
 {
     public GameObject player;
-    GameObject getOffButton;
     Seat currentSeat;
     [SerializeField] LayerMask seatedLayer;
     public bool PlayerSeated => currentSeat != null;
+
+    FadeToBlack ftb;
+
+    void Start(){
+        ftb = FindObjectOfType<FadeToBlack>();
+    }
 
     public void GetPlayer(GameObject _player){
         player = _player;
@@ -18,16 +23,25 @@ public class BusSeatAssigner : MonoBehaviour
     // Assigns the player to the given seat
     public void AssignSeat(Seat seat)
     {
-        Debug.Log("Assigning seat");
+        if(PlayerSeated){
+            return;
+        }
         currentSeat = seat;
+        StartCoroutine(SitOnSeat());
+    }
+
+    IEnumerator SitOnSeat(){
+        StartCoroutine(ftb.FadeOut());
+        yield return new WaitForSeconds(ftb.fadeDuration);
+        Debug.Log("Assigning seat");
         //TODO: Tune position and rotation
         // Seat the player - ROTATION OF THE SEAT IS IMPORTANT
-        player.transform.position = seat.seatingArea.transform.position;
+        player.transform.position = currentSeat.seatingArea.transform.position;
         
         Quaternion newRot;
 
-        if(seat.seatingArea.transform.rotation.w<0){
-            newRot = new Quaternion(0,seat.seatingArea.transform.rotation.w,0,0);
+        if(currentSeat.seatingArea.transform.rotation.w<0){
+            newRot = new Quaternion(0,currentSeat.seatingArea.transform.rotation.w,0,0);
         }else{
             newRot = new Quaternion(0,0,0,0);
         }
@@ -38,18 +52,26 @@ public class BusSeatAssigner : MonoBehaviour
         player.GetComponent<DynamicMoveProvider>().moveSpeed = 0;
         
         player.GetComponent<DynamicMoveProvider>().useGravity = false;
-
+        
+        StartCoroutine(ftb.FadeIn());
         // Enable "get off" button
         //getOffButton = seat.GetComponent<Seat>().EnableGetOffButton();
     }
 
+
     // Unassigns the player from the given seat
     public void UnassignSeat()
     {
-        // Move the player to the closest bus exit  - ROTATION OF THE AREA IS IMPORTANT
+        StartCoroutine(GetOffSeat());
+    }
+
+    IEnumerator GetOffSeat(){
+        StartCoroutine(ftb.FadeOut());
+        yield return new WaitForSeconds(ftb.fadeDuration);
+        // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
         player.transform.position = currentSeat.exitArea.transform.position;Quaternion newRot;
 
-        if(currentSeat.exitArea.transform.rotation.w<0){
+        if(currentSeat.exitArea.transform.rotation.w < 0){
             newRot = new Quaternion(0,currentSeat.exitArea.transform.rotation.w,0,0);
         }else{
             newRot = new Quaternion(0,0,0,0);
@@ -65,5 +87,7 @@ public class BusSeatAssigner : MonoBehaviour
         //currentSeat.GetComponent<Seat>().DisableGetOffButton();
 
         currentSeat = null;
+        StartCoroutine(ftb.FadeIn());
+        
     }
 }

@@ -10,6 +10,8 @@ namespace Movement{
 
         public int pedestriansToSpawn;
 
+        [SerializeField] GameObject Container;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -25,6 +27,7 @@ namespace Movement{
                 Transform child = transform.GetChild(Random.Range(0, transform.childCount - 1));
                 obj.GetComponent<PedestrianWaypointNavigator>().currentWaypoint = child.GetComponent<PedestrianWaypoint>();
                 obj.transform.position = child.position;
+                obj.transform.parent = Container.transform;
                 
                 StartCoroutine(StopAnimation(obj));
 
