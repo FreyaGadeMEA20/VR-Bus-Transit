@@ -27,7 +27,7 @@ namespace Movement{
             WaitingBehind,
         }
 
-        Rigidbody rb; // The rigidbody of the vehicle
+        [HideInInspector] public Rigidbody rb; // The rigidbody of the vehicle
 
         [SerializeField] private BusController busController; // reference to the bus controller (doors, stop button, screen)
 

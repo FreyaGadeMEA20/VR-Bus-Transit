@@ -88,6 +88,8 @@ public class BusController : MonoBehaviour
     IEnumerator BusStopAnimations() {
         doors.OpenDoors(); // open the doors
 
+        vehicleMovement.rb.isKinematic = true; // stop the bus from moving
+
         doorsOpen = true;  // set the doors to be open
 
         screens.ApplyNextTexture(); // change the bus screen texture
@@ -123,7 +125,8 @@ public class BusController : MonoBehaviour
         // wait for 2 seconds before visually closing the doors
         yield return new WaitForSeconds(2); 
         doors.CloseDoors();
-
+        vehicleMovement.rb.isKinematic = false; // allow the bus to move again
+        
         // wait for 3 seconds before driving the bus
         yield return new WaitForSeconds(3);
 
