@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Manages the logic for the different stages of the VR-Bus-Transit project/// </summary>
-public class GameManager : MonoBehaviour
+public class GameManager_OLD : MonoBehaviour
 {
     /* The bus is set to have two different states
      *  - Bus Arriving is to keep track of the players actions before they reach the bus stop
@@ -15,16 +15,13 @@ public class GameManager : MonoBehaviour
      *  - Bus Driving is to keep track of the bus' movement after it has been told to begin driving
      *      - Checked in, stop button pressed, waiting on player
      */
-    // The different states of the experience
+    // The different states the 
     public enum GameState
     {
         AT_SCHOOL,
         CHECKED_PHONE,
-        REACHED_BUS_STOP,
-        CHECKED_IN,
-        SAT_DOWN,
-        PRESSED_STOP_BUTTON,
-        CHECKED_OUT,
+        LOOKED_AT_SIGN,
+        BUS_STATE,
     }
 
     // Current state of the game
@@ -64,24 +61,14 @@ public class GameManager : MonoBehaviour
                 UpdatePhoneState();
                 break;
 
-            case GameState.REACHED_BUS_STOP:
-                
+            case GameState.LOOKED_AT_SIGN:
+                // Handle SIGN state logic
+                UpdateSignState();
                 break;
 
-            case GameState.CHECKED_IN:
-                
-                break;
-
-            case GameState.SAT_DOWN:
-
-                break;
-
-            case GameState.PRESSED_STOP_BUTTON:
-
-                break;
-
-            case GameState.CHECKED_OUT:
-                
+            case GameState.BUS_STATE:
+                // Handle BUS state logic
+                UpdateBusState();
                 break;
         }
     }
@@ -123,7 +110,11 @@ public class GameManager : MonoBehaviour
                 Debug.Log($"Player has been by the sign for {(countdownTimer-3)*-1} seconds");
 
                 if (countdownTimer <= 0f) {
-                    
+                    // Countdown finished, do something
+                    Debug.Log("Countdown finished");
+                    currentState = GameState.LOOKED_AT_SIGN;
+                    SignBeam.SetActive(false);
+                    StopBeam.SetActive(true);
                     // Reset the countdown timer
                     //countdownTimer = 3f;
                     isCountingDown = false;
@@ -139,6 +130,55 @@ public class GameManager : MonoBehaviour
             countdownTimer = 3f;
             isCountingDown = true;
         }
+    }
+
+    void UpdateSignState(){
+        if(BusStopScript.CheckPlayerProximity()){
+            if (isCountingDown) {
+                countdownTimer -= Time.deltaTime;
+                Debug.Log($"Player has been by the bus stop for {(countdownTimer-3)*-1} seconds");
+
+                if (countdownTimer <= 0f) {
+                    // Countdown finished, do something
+                    Debug.Log("Countdown finished");
+                    currentState = GameState.BUS_STATE;
+
+                    busDeath.SetActive(false);
+                    // Reset the countdown timer
+                    //countdownTimer = 3f;
+                    isCountingDown = false;
+                }
+            }
+            else {
+                // reset the countdown if it is not counting down
+                countdownTimer = 3f;
+                isCountingDown = true;
+            }
+        } else {
+            // Reset the countdown timer if the GameObject is not visible
+            countdownTimer = 3f;
+            isCountingDown = true;
+        }
+
+        // Set the car waypoint at the crosswalk to 'waiting' so the player can cross safely
+    }
+    
+    void UpdateBusState(){
+        if (!carSpawer.canSpawnBus)
+            carSpawer.canSpawnBus = true;
+
+        try {
+            Bus = GameObject.Find("BusController").GetComponent<BusController>(); 
+            if(Bus.HasCheckedIn)
+            {
+                WaypointMover wp = GameObject.FindWithTag("Bus").transform.parent.gameObject.GetComponent<WaypointMover>();
+            }
+            currentState = GameState.BUS_STATE;
+        } catch (NullReferenceException e){
+            Debug.LogWarning(e+"Bus has not spawned");
+        }
+
+        // Let the cars move again from the sign as the player has crossed the street
     }
 
     bool IsGameObjectVisibleInViewport(GameObject gameObject)
