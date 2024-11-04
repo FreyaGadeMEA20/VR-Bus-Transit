@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2622568989071168813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UpperLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,10 @@ GameObject:
   - component: {fileID: 1080202836871755104}
   - component: {fileID: 2734151344566762769}
   - component: {fileID: 299089838785234510}
-  m_Layer: 0
+  - component: {fileID: 8457541276216530596}
+  - component: {fileID: 191255059008897331}
+  - component: {fileID: 4242131772686721689}
+  m_Layer: 8
   m_Name: SingularTrafficLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,6 +124,73 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8457541276216530596
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012825289496640618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5278814
+  m_Height: 2.868416
+  m_Direction: 2
+  m_Center: {x: 0.15082869, y: -0.22534512, z: -5.482899}
+--- !u!136 &191255059008897331
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012825289496640618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15944794
+  m_Height: 6.380954
+  m_Direction: 2
+  m_Center: {x: 0.15082876, y: -0.19999483, z: -1.1298343}
+--- !u!65 &4242131772686721689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012825289496640618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9092325, y: 0.93045056, z: 2.0271785}
+  m_Center: {x: 0.06691869, y: -0.44206595, z: 0.97434705}
 --- !u!1 &3629181811308302023
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +203,7 @@ GameObject:
   - component: {fileID: 3246124514199048028}
   - component: {fileID: 4200490498395339085}
   - component: {fileID: 3381214054016809386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: YellowLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +308,7 @@ GameObject:
   - component: {fileID: 6656063629339739238}
   - component: {fileID: 3635125089061810556}
   - component: {fileID: 2012145711267833522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +413,7 @@ GameObject:
   - component: {fileID: 1691742264669926391}
   - component: {fileID: 4644034217642428316}
   - component: {fileID: 5646404596304410855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

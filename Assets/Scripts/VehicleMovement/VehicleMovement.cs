@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -25,6 +26,7 @@ namespace Movement{
             Moving,
             WaitingAtPoint,
             WaitingBehind,
+            BackingUp,
         }
 
         [HideInInspector] public Rigidbody rb; // The rigidbody of the vehicle
@@ -48,6 +50,7 @@ namespace Movement{
         [SerializeField] float maxSteering = 45f; // The maximum steering angle of the vehicle
         [SerializeField] float breakingForce = 300f; // The breaking force of the vehicle. I.e. how powerful the breaks are
         [SerializeField] float acceleration = 0f; // The acceleration of the vehicle
+        float tempAcc; // Temporary acceleration value. For backing it up
         [Range(-1,1)][SerializeField] float steering = 0f; //how much it is steering
         [SerializeField] bool breaks = false; // Whether or not the vehicle is breaking
         [SerializeField] float currentBreakForce = 0f; // The current break force of the vehicle. Checks the above, as breaks are not a bool, but a value
@@ -71,7 +74,7 @@ namespace Movement{
         int direction = 1; // Control which waypoint to navigate towards. Might be removed in the future
 
         [SerializeField] GameObject collisionDetector; // The collision detectors of the vehicle
-        bool vehicleInfront = false; // The vehicle infront of the current vehicle
+        bool BackingUpIntiated = false; // Whether or not the vehicle is backing up
 
         // Start is called before the first frame update
         void Start()
@@ -95,51 +98,13 @@ namespace Movement{
             busController.UpdateBusController();
         }
 
-        /* private IEnumerator MovementSM(){
-            while(true){
-                switch (currentMovementState){
-                    case MovementState.Moving:
-                        //Move(1,0,0);
-
-                        
-                        //Debug.Log("Applying Forces");
-                        //ApplyForces(1,0,false);
-                        
-                        break;
-
-                    case MovementState.WaitingAtPoint:
-                        //carSpawner.doSpawnCars = false;
-                        // Let the cars go again when the waypoint is no longer a waiting point
-                        if (entityType == EntityTypes.Car && currentWaypoint.STOP_VEHICLE == true){
-                            yield return new WaitUntil(() => currentWaypoint.STOP_VEHICLE == false);
-                            currentMovementState = MovementState.Moving;
-                            break;
-                        }
-
-                        // TODO: Implement bus checking in
-                        /* if(busController.firstTime){
-                            busController.firstTime = false;
-                        } 
-
-                        yield return new WaitUntil(() => hasCheckedIn == true);
-                        Debug.Log("Bus has checked in");
-                        hasCheckedIn = false;
-                        
-
-                        currentMovementState = MovementState.Moving;
-                        break;
-                }
-
-                yield return null;
-            }
-        } */
-
         void FixedUpdate(){
             // Current movement state keeps track of whether it is supposed to listen for waypoints, or be stopped
             switch(currentMovementState){
                 case MovementState.Moving:
                     if(CheckIfCar()){
                         breaks = true;
+                        currentMovementState = MovementState.BackingUp;
                         break;
                     }
                     breaks = false;
@@ -183,9 +148,33 @@ namespace Movement{
                             break;
                     }
                     break;
+                case MovementState.BackingUp:
+                    // Drive if nothing is in front
+                    
+                    if(!CheckIfCar()){
+                        currentMovementState = MovementState.Moving;
+                        BackingUpIntiated = false;
+                        acceleration = tempAcc;
+                        StopCoroutine(BackThatAssUp());
+                        break;
+                    }
+                    if(!BackingUpIntiated){
+                        StartCoroutine(BackThatAssUp());
+                    }
+                    
+                    break;
             }
+
             // After the program has checked where it is in accordance to its surroundings, it will apply the forces to the wheels
             Move();
+        }
+
+        IEnumerator BackThatAssUp(){
+            BackingUpIntiated = true;
+            acceleration = acceleration*-1f;
+            yield return new WaitForSeconds(4f);
+
+            breaks=false;
         }
 
         void  ShiftGears (){
@@ -312,8 +301,8 @@ namespace Movement{
         }
 
         bool CheckIfCar(){
-            // Send signal to the vehicle behind that it is safe to move
-            return collisionDetector.GetComponent<CollisionDetector>().CheckForVehicleInfront();;
+            // Checks if there is a vehicle infront of the current vehicle
+            return collisionDetector.GetComponent<CollisionDetector>().CheckForVehicleInfront();
         }
 
         public void SetDestination(Waypoint destination){

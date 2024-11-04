@@ -6492,7 +6492,7 @@ MonoBehaviour:
     transforms: {fileID: 617525569593264409}
   - wheels: {fileID: 2871405666039922326}
     transforms: {fileID: 4010619101099988064}
-  maxSteering: 65
+  maxSteering: 60
   breakingForce: 2000
   acceleration: 0
   steering: 0

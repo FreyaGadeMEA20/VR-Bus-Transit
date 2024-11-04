@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2622568989071168813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UpperLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,10 @@ GameObject:
   - component: {fileID: 1080202836871755104}
   - component: {fileID: 2734151344566762769}
   - component: {fileID: 299089838785234510}
-  m_Layer: 0
+  - component: {fileID: 2600524837657261863}
+  - component: {fileID: 1410782727762557090}
+  - component: {fileID: 6978750197887043177}
+  m_Layer: 8
   m_Name: TrafficLightForPedestrians
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,6 +125,73 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2600524837657261863
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012825289496640618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15944794
+  m_Height: 6.380954
+  m_Direction: 2
+  m_Center: {x: 0.15082876, y: -0.19999483, z: -1.1298343}
+--- !u!136 &1410782727762557090
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012825289496640618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5278814
+  m_Height: 2.868416
+  m_Direction: 2
+  m_Center: {x: 0.15082869, y: -0.22534512, z: -5.482899}
+--- !u!65 &6978750197887043177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012825289496640618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9720022, y: 0.81803966, z: 1.9754667}
+  m_Center: {x: 0.0983034, y: 0.5822525, z: -0.8212412}
 --- !u!1 &3105985332157035820
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4486038958231967685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LowerLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +238,7 @@ GameObject:
   - component: {fileID: 3246124514199048028}
   - component: {fileID: 4200490498395339085}
   - component: {fileID: 3381214054016809386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: YellowLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +343,7 @@ GameObject:
   - component: {fileID: 6656063629339739238}
   - component: {fileID: 3635125089061810556}
   - component: {fileID: 2012145711267833522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +448,7 @@ GameObject:
   - component: {fileID: 4344540210112603965}
   - component: {fileID: 7968454243683017116}
   - component: {fileID: 1210806552090442575}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +553,7 @@ GameObject:
   - component: {fileID: 1691742264669926391}
   - component: {fileID: 4644034217642428316}
   - component: {fileID: 5646404596304410855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +658,7 @@ GameObject:
   - component: {fileID: 664928846283717521}
   - component: {fileID: 594662243111197950}
   - component: {fileID: 788626742196411179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +763,7 @@ GameObject:
   - component: {fileID: 1748639914042791484}
   - component: {fileID: 4622036576134318121}
   - component: {fileID: 4067827384493606064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: YellowLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
