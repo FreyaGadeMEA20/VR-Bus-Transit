@@ -10,7 +10,7 @@ public class BusSeatAssigner : MonoBehaviour
     [SerializeField] LayerMask seatedLayer;
     public bool PlayerSeated => currentSeat != null;
 
-    FadeToBlack ftb;
+    public FadeToBlack ftb;
 
     void Start(){
         ftb = FindObjectOfType<FadeToBlack>();

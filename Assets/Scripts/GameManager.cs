@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
@@ -34,17 +35,48 @@ public class GameManager : MonoBehaviour
     // -- Objects for checking states -- //
     public GameObject phone;
     
-    [SerializeField] BusController Bus;
+    [SerializeField] BusController[] Buses;
+    [SerializeField] BusController BusToGetOn;
 
     public InputActionProperty handSwitch;
+
+
+
+    // Countdown timer variables
+    private float countdownTimer = 3f;
+    private bool isCountingDown = true;
+
+    public static GameManager Instance { get; internal set; }
+    public event Action<GameState> OnStateChange;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(Instance);
         // Set the initial state
         currentState = GameState.START;
 
+        // Set the initial bus to get on
+        if(Buses.Length > 0)
+            BusToGetOn = Buses[UnityEngine.Random.Range(0, Buses.Length)];
         // possibly coinflip to determine which station to start at
+
+        // Set the initial final destination
     }
 
     // Update is called once per frame
@@ -89,38 +121,29 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Countdown timer variables
-    private float countdownTimer = 3f;
-    private bool isCountingDown = true;
+    // In order to let the other scripts know of the state changing, an event is made to make it easier to call
+    public void ChangeState(GameState newState)
+    {
+        currentState = newState;
+        OnStateChange?.Invoke(currentState);
+    }
+
+    // First state just makes them check their phone and confirm they have understood the instructions
     void UpdateSchoolState() {
-        
-
-        // Check if the GameObject is visible in the viewport
-        /* if (IsGameObjectVisibleInViewport(phone)) {
-            // The GameObject is visible, do something
-
-            if (isCountingDown) {
-                countdownTimer -= Time.deltaTime;
-                Debug.Log($"GameObject has been visible in the viewport for {(countdownTimer-3)*-1} seconds");
-
-                if (countdownTimer <= 0f) {
-                    // Countdown finished, do something
-                    Debug.Log("Countdown finished");
-                    currentState = GameState.CHECKED_PHONE;
-                    // Reset the countdown timer
-                    //countdownTimer = 3f;
-                    isCountingDown = false;
-                }
+        // Check if the GameObject is visible in the viewport...
+        if (IsGameObjectVisibleInViewport(phone)) {
+            // ...and if the player presses the select button, change the state
+            if(handSwitch.action.ReadValue<float>() > 0.8f){
+                ChangeState(GameState.CHECKED_PHONE);
             }
-            else {
-                // Reset the countdown timer if the GameObject is not visible
-                countdownTimer = 3f;
-                isCountingDown = true;
-            }
-        } */
+        }
     }
 
     void UpdatePhoneState(){
+
+        // Check if the player is near the designated bus stop
+        //  - For now, the bus stop is not selected by random
+
         /* if(SignScript.CheckPlayerProximity()){
             if (isCountingDown) {
                 countdownTimer -= Time.deltaTime;
@@ -146,7 +169,7 @@ public class GameManager : MonoBehaviour
     }
 
     void UpdateBusStopState(){
-
+        // Wait and check the bus for the correct designation
     }
 
     void UpdateCheckInState(){

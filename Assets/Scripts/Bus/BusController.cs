@@ -48,6 +48,12 @@ public class BusController : MonoBehaviour
     }
     public bool HasCheckedIn;
 
+    private bool correctBus{
+        get{return CorrectBus;}
+        set{CorrectBus = value;}
+    }
+    public bool CorrectBus;
+
     // Start is called before the first frame update
     void Start() {
         // Gets and assigns all the relevant information
@@ -150,5 +156,9 @@ public class BusController : MonoBehaviour
         Debug.Log("Bus stopped"); // log that the bus has stopped
         screens.ApplyStopTexture(); // change the bus screen texture to the stop texture
         busState = BusState.STOP_BUTTON_PRESSED; // set the bus state to be stop button pressed
+    }
+
+    public void WrongBus(){
+        seatAssigner.ftb.FadeOutAndLoadScene("WrongBus");
     }
 }

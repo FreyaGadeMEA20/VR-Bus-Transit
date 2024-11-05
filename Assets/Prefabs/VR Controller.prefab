@@ -1110,7 +1110,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7872209151755206108}
   - component: {fileID: 4939636675847426414}
-  - component: {fileID: 4029510751564981713}
   - component: {fileID: 4410600794932256572}
   - component: {fileID: 5327637457639276984}
   - component: {fileID: 14399871246327329}
@@ -1159,19 +1158,6 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 338744972842864279}
   m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 3.5
---- !u!114 &4029510751564981713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6979563491172430359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 017c5e3933235514c9520e1dace2a4b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ActionAssets: []
 --- !u!114 &4410600794932256572
 MonoBehaviour:
   m_ObjectHideFlags: 0

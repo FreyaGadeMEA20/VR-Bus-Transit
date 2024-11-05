@@ -1557,6 +1557,7 @@ MonoBehaviour:
   seatedLayer:
     serializedVersion: 2
     m_Bits: 0
+  ftb: {fileID: 0}
 --- !u!1 &1578126305747693108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6466,6 +6467,7 @@ MonoBehaviour:
   BusStopped: 0
   firstTime: 1
   HasCheckedIn: 0
+  CorrectBus: 0
 --- !u!114 &7776536689084422545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6492,7 +6494,7 @@ MonoBehaviour:
     transforms: {fileID: 617525569593264409}
   - wheels: {fileID: 2871405666039922326}
     transforms: {fileID: 4010619101099988064}
-  maxSteering: 60
+  maxSteering: 65
   breakingForce: 2000
   acceleration: 0
   steering: 0

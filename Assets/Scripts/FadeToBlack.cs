@@ -14,14 +14,14 @@ public class FadeToBlack : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
-    public IEnumerator FadeOutAndReloadScene()
+    public IEnumerator FadeOutAndLoadScene(string scene)
     {
         StartCoroutine(FadeOut());
 
         yield return new WaitForSeconds(fadeDuration*2);
 
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadSceneAsync(currentSceneName);
+        //string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadSceneAsync(scene);
     }
 
     public IEnumerator FadeOut()

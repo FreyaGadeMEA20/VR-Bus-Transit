@@ -60,6 +60,10 @@ public class RejskortStanderFunctions : MonoBehaviour
                     {
                         // Perform check-in
                         HandleCheckIn();
+
+                        /* if(!Bus.CorrectBus){
+                            Bus.WrongBus();
+                        } */
                     }
                 }
             }
