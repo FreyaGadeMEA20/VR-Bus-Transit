@@ -6429,6 +6429,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10207de656f299e4fa4a3247e0d98412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BusLineID:
+    v1: 18
+    nameMap: []
+    v2: 0
   currentWaypoint: {fileID: 0}
   busStops: []
   PATH_FOR_INSPECTOR: []

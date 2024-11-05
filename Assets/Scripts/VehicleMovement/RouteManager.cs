@@ -5,24 +5,32 @@ using UnityEngine;
 namespace Movement {
     public class RouteManager : MonoBehaviour
     {
-        VehicleMovement controller;
+        public BusLineSO busLine;
         public Waypoint currentWaypoint;
-        public List<Waypoint> busStops = new List<Waypoint>();
         public Path m_Path;
         public List<Waypoint> PATH_FOR_INSPECTOR = new List<Waypoint>();
-
         public Waypoint endDestination;
-
         public Waypoints m_Waypoints;
+        
+        public List<Waypoint> busStops;
 
         private void Awake()
         {
-            controller = GetComponent<VehicleMovement>();
             m_Waypoints = FindObjectOfType<Waypoints>();
         }
 
-        void Start(){
+        void Start(){            
             SetRoute();
+
+            SendInformationToWaypoint();
+        }
+
+        
+        public void SendInformationToWaypoint(){
+            foreach (var busStop in busStops)
+            {
+                busStop.busStop.AddBusLine(busLine);
+            }
         }
 
         public void SetRoute(){

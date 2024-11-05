@@ -32,9 +32,9 @@ public class GameManager_OLD : MonoBehaviour
     
     [SerializeField] BusController Bus;
 
-    [SerializeField] ProxCheckerScript SignScript;
+    [SerializeField] BusStop SignScript;
     [SerializeField] GameObject SignBeam;
-    [SerializeField] ProxCheckerScript BusStopScript;
+    [SerializeField] BusStop BusStopScript;
     [SerializeField] GameObject StopBeam;
     [SerializeField] CarSpawner carSpawer;
     [SerializeField] GameObject busDeath;

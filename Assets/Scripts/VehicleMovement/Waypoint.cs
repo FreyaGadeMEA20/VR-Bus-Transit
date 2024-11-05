@@ -51,6 +51,7 @@ namespace Movement{
 
         [Range(0f,5f)]
         public float width = 1f;
+        public BusStop busStop;
 
         public Vector3 GetPosition()
         {

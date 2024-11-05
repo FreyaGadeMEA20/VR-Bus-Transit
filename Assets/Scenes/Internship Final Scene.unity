@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34226415, g: 0.43345553, b: 0.5748249, a: 1}
+  m_IndirectSpecularColor: {r: 0.34239453, g: 0.433598, b: 0.57491326, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -160,6 +160,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &7016502
 Transform:
   m_ObjectHideFlags: 0
@@ -290,6 +291,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &14730418
 Transform:
   m_ObjectHideFlags: 0
@@ -342,6 +344,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 0
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &15690179
 Transform:
   m_ObjectHideFlags: 0
@@ -394,6 +397,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &18886945
 Transform:
   m_ObjectHideFlags: 0
@@ -446,6 +450,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &22566152
 Transform:
   m_ObjectHideFlags: 0
@@ -989,6 +994,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busLine
+      value: 
+      objectReference: {fileID: 11400000, guid: 6745eb9cc8827744aad21bc8509234e6, type: 2}
     - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: currentWaypoint
       value: 
@@ -1987,6 +1996,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &38363426
 Transform:
   m_ObjectHideFlags: 0
@@ -2041,6 +2051,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &53865282
 Transform:
   m_ObjectHideFlags: 0
@@ -2093,6 +2104,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &55082131
 Transform:
   m_ObjectHideFlags: 0
@@ -2145,6 +2157,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &56327963
 Transform:
   m_ObjectHideFlags: 0
@@ -2197,6 +2210,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &69521896
 Transform:
   m_ObjectHideFlags: 0
@@ -2282,6 +2296,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &88934030
 Transform:
   m_ObjectHideFlags: 0
@@ -2334,6 +2349,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &106046703
 Transform:
   m_ObjectHideFlags: 0
@@ -2386,6 +2402,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &107142846
 Transform:
   m_ObjectHideFlags: 0
@@ -2526,6 +2543,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &113867761
 Transform:
   m_ObjectHideFlags: 0
@@ -2811,6 +2829,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &122511538
 Transform:
   m_ObjectHideFlags: 0
@@ -2863,6 +2882,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &131316475
 Transform:
   m_ObjectHideFlags: 0
@@ -2917,6 +2937,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &133186477
 Transform:
   m_ObjectHideFlags: 0
@@ -2969,6 +2990,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &140386512
 Transform:
   m_ObjectHideFlags: 0
@@ -3021,6 +3043,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &142405760
 Transform:
   m_ObjectHideFlags: 0
@@ -3073,6 +3096,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &148669678
 Transform:
   m_ObjectHideFlags: 0
@@ -3126,6 +3150,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &152836516
 Transform:
   m_ObjectHideFlags: 0
@@ -3395,6 +3420,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!1 &186599808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3447,6 +3473,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &191875900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
@@ -3581,6 +3608,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &194256021
 Transform:
   m_ObjectHideFlags: 0
@@ -3819,6 +3847,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &257015697
 Transform:
   m_ObjectHideFlags: 0
@@ -3871,6 +3900,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &269048974
 Transform:
   m_ObjectHideFlags: 0
@@ -3939,6 +3969,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!1 &279895295
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,6 +4007,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &279895297
 Transform:
   m_ObjectHideFlags: 0
@@ -4028,6 +4060,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &283107494
 Transform:
   m_ObjectHideFlags: 0
@@ -4080,6 +4113,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &285931553
 Transform:
   m_ObjectHideFlags: 0
@@ -4173,6 +4207,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &307832670
 Transform:
   m_ObjectHideFlags: 0
@@ -4333,6 +4368,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &319419387
 Transform:
   m_ObjectHideFlags: 0
@@ -4385,6 +4421,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &319928867
 Transform:
   m_ObjectHideFlags: 0
@@ -4437,6 +4474,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &319944932
 Transform:
   m_ObjectHideFlags: 0
@@ -4489,6 +4527,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &327899969
 Transform:
   m_ObjectHideFlags: 0
@@ -4546,6 +4585,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &343067916
 Transform:
   m_ObjectHideFlags: 0
@@ -4598,6 +4638,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &343586302
 Transform:
   m_ObjectHideFlags: 0
@@ -4886,6 +4927,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &364359387
 Transform:
   m_ObjectHideFlags: 0
@@ -4949,6 +4991,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &387763235
 Transform:
   m_ObjectHideFlags: 0
@@ -5012,6 +5055,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &390471279
 Transform:
   m_ObjectHideFlags: 0
@@ -5064,6 +5108,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &391276858
 Transform:
   m_ObjectHideFlags: 0
@@ -5116,6 +5161,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &398617108
 Transform:
   m_ObjectHideFlags: 0
@@ -5253,6 +5299,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &436015877
 Transform:
   m_ObjectHideFlags: 0
@@ -5305,6 +5352,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &436345692
 Transform:
   m_ObjectHideFlags: 0
@@ -5475,6 +5523,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &455763102
 Transform:
   m_ObjectHideFlags: 0
@@ -5527,6 +5576,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &458942871
 Transform:
   m_ObjectHideFlags: 0
@@ -5579,6 +5629,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &474229443
 Transform:
   m_ObjectHideFlags: 0
@@ -5631,6 +5682,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &474658992
 Transform:
   m_ObjectHideFlags: 0
@@ -5700,6 +5752,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!1 &504069880
 GameObject:
   m_ObjectHideFlags: 0
@@ -5739,6 +5792,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &504069882
 Transform:
   m_ObjectHideFlags: 0
@@ -5881,6 +5935,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &511381317
 Transform:
   m_ObjectHideFlags: 0
@@ -5933,6 +5988,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &519706628
 Transform:
   m_ObjectHideFlags: 0
@@ -5985,6 +6041,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &523055057
 Transform:
   m_ObjectHideFlags: 0
@@ -6037,6 +6094,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &523072976
 Transform:
   m_ObjectHideFlags: 0
@@ -6091,6 +6149,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &533371490
 Transform:
   m_ObjectHideFlags: 0
@@ -6143,6 +6202,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &536526462
 Transform:
   m_ObjectHideFlags: 0
@@ -6210,6 +6270,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &539514279
 GameObject:
   m_ObjectHideFlags: 0
@@ -6247,6 +6308,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &539514281
 Transform:
   m_ObjectHideFlags: 0
@@ -6299,6 +6361,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &545454030
 Transform:
   m_ObjectHideFlags: 0
@@ -6351,6 +6414,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &549809758
 Transform:
   m_ObjectHideFlags: 0
@@ -6403,6 +6467,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &553190163
 Transform:
   m_ObjectHideFlags: 0
@@ -6544,6 +6609,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &564050683
 Transform:
   m_ObjectHideFlags: 0
@@ -6596,6 +6662,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &565709654
 Transform:
   m_ObjectHideFlags: 0
@@ -6648,6 +6715,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &567326342
 Transform:
   m_ObjectHideFlags: 0
@@ -6700,6 +6768,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &576778865
 Transform:
   m_ObjectHideFlags: 0
@@ -6777,6 +6846,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!1 &617769226
 GameObject:
   m_ObjectHideFlags: 0
@@ -6814,6 +6884,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &617769228
 Transform:
   m_ObjectHideFlags: 0
@@ -6951,6 +7022,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &631750198
 Transform:
   m_ObjectHideFlags: 0
@@ -7005,6 +7077,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &644969394
 Transform:
   m_ObjectHideFlags: 0
@@ -7057,6 +7130,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &645305834
 Transform:
   m_ObjectHideFlags: 0
@@ -7124,6 +7198,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &651618700
 GameObject:
   m_ObjectHideFlags: 0
@@ -7161,6 +7236,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &651618702
 Transform:
   m_ObjectHideFlags: 0
@@ -7213,6 +7289,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &663263860
 Transform:
   m_ObjectHideFlags: 0
@@ -7588,6 +7665,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &682794782
 Transform:
   m_ObjectHideFlags: 0
@@ -7659,6 +7737,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &694006839
 Transform:
   m_ObjectHideFlags: 0
@@ -7711,6 +7790,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &708767852
 Transform:
   m_ObjectHideFlags: 0
@@ -7763,6 +7843,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &709656336
 Transform:
   m_ObjectHideFlags: 0
@@ -7815,6 +7896,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &712734659
 Transform:
   m_ObjectHideFlags: 0
@@ -7902,6 +7984,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &713382439
 Transform:
   m_ObjectHideFlags: 0
@@ -8044,6 +8127,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &744297846
 Transform:
   m_ObjectHideFlags: 0
@@ -8097,6 +8181,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &748300577
 Transform:
   m_ObjectHideFlags: 0
@@ -8149,6 +8234,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &749663525
 Transform:
   m_ObjectHideFlags: 0
@@ -8206,6 +8292,7 @@ MonoBehaviour:
   waypointType: 2
   TrafficState: 1
   width: 5
+  busStop: {fileID: 2022937652}
 --- !u!4 &754457675
 Transform:
   m_ObjectHideFlags: 0
@@ -8258,6 +8345,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &756352908
 Transform:
   m_ObjectHideFlags: 0
@@ -8310,6 +8398,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &769187893
 Transform:
   m_ObjectHideFlags: 0
@@ -8362,6 +8451,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &779533091
 Transform:
   m_ObjectHideFlags: 0
@@ -8416,6 +8506,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &779533161
 Transform:
   m_ObjectHideFlags: 0
@@ -8569,6 +8660,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &784637812
 Transform:
   m_ObjectHideFlags: 0
@@ -8621,6 +8713,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &789363123
 Transform:
   m_ObjectHideFlags: 0
@@ -8683,6 +8776,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &795631788
 Transform:
   m_ObjectHideFlags: 0
@@ -8735,6 +8829,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &801190829
 Transform:
   m_ObjectHideFlags: 0
@@ -8787,6 +8882,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &810896727
 Transform:
   m_ObjectHideFlags: 0
@@ -8839,6 +8935,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &811460245
 Transform:
   m_ObjectHideFlags: 0
@@ -8891,6 +8988,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &823222784
 Transform:
   m_ObjectHideFlags: 0
@@ -9413,6 +9511,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &856098048
 Transform:
   m_ObjectHideFlags: 0
@@ -9480,6 +9579,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &864905513
 GameObject:
   m_ObjectHideFlags: 0
@@ -9517,6 +9617,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &864905515
 Transform:
   m_ObjectHideFlags: 0
@@ -9569,6 +9670,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &874441018
 Transform:
   m_ObjectHideFlags: 0
@@ -9739,6 +9841,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &884419163
 Transform:
   m_ObjectHideFlags: 0
@@ -9791,6 +9894,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &886563741
 Transform:
   m_ObjectHideFlags: 0
@@ -9843,6 +9947,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &889006623
 Transform:
   m_ObjectHideFlags: 0
@@ -9980,6 +10085,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &890427802
 Transform:
   m_ObjectHideFlags: 0
@@ -10032,6 +10138,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &891429052
 Transform:
   m_ObjectHideFlags: 0
@@ -10084,6 +10191,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &911172248
 Transform:
   m_ObjectHideFlags: 0
@@ -10136,6 +10244,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &915239647
 Transform:
   m_ObjectHideFlags: 0
@@ -10311,6 +10420,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &924007893
 Transform:
   m_ObjectHideFlags: 0
@@ -10363,6 +10473,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &928183850
 Transform:
   m_ObjectHideFlags: 0
@@ -10415,6 +10526,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &928796572
 Transform:
   m_ObjectHideFlags: 0
@@ -10467,6 +10579,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &929084987
 Transform:
   m_ObjectHideFlags: 0
@@ -10534,6 +10647,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &930398747
 GameObject:
   m_ObjectHideFlags: 0
@@ -10571,6 +10685,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &930398749
 Transform:
   m_ObjectHideFlags: 0
@@ -10624,6 +10739,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &932383294
 Transform:
   m_ObjectHideFlags: 0
@@ -10691,6 +10807,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!1 &946365943
 GameObject:
   m_ObjectHideFlags: 0
@@ -10728,6 +10845,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 0
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &946365945
 Transform:
   m_ObjectHideFlags: 0
@@ -10780,6 +10898,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &950480257
 Transform:
   m_ObjectHideFlags: 0
@@ -10837,6 +10956,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &956119968
 Transform:
   m_ObjectHideFlags: 0
@@ -10894,6 +11014,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &978290708
 Transform:
   m_ObjectHideFlags: 0
@@ -10947,6 +11068,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &983839585
 Transform:
   m_ObjectHideFlags: 0
@@ -11105,6 +11227,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &990767487
 Transform:
   m_ObjectHideFlags: 0
@@ -11236,6 +11359,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1046991594
 Transform:
   m_ObjectHideFlags: 0
@@ -11391,6 +11515,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1062294728
 Transform:
   m_ObjectHideFlags: 0
@@ -11506,6 +11631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   phone: {fileID: 2086867650}
+  BusLines: []
+  BusLine: {fileID: 0}
   Buses: []
   BusToGetOn: {fileID: 0}
   handSwitch:
@@ -11665,6 +11792,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1075218983
 Transform:
   m_ObjectHideFlags: 0
@@ -11717,6 +11845,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1083541973
 Transform:
   m_ObjectHideFlags: 0
@@ -11769,6 +11898,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1092453649
 Transform:
   m_ObjectHideFlags: 0
@@ -11821,6 +11951,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1095119805
 Transform:
   m_ObjectHideFlags: 0
@@ -11873,6 +12004,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1100233746
 Transform:
   m_ObjectHideFlags: 0
@@ -11925,6 +12057,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1113475967
 Transform:
   m_ObjectHideFlags: 0
@@ -11982,6 +12115,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1126113706
 Transform:
   m_ObjectHideFlags: 0
@@ -12307,6 +12441,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1131096329
 Transform:
   m_ObjectHideFlags: 0
@@ -12359,6 +12494,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1138137738
 Transform:
   m_ObjectHideFlags: 0
@@ -12411,6 +12547,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1167882420
 Transform:
   m_ObjectHideFlags: 0
@@ -12463,6 +12600,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1169424857
 Transform:
   m_ObjectHideFlags: 0
@@ -12887,6 +13025,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1181496473
 Transform:
   m_ObjectHideFlags: 0
@@ -12955,6 +13094,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!1 &1198626470
 GameObject:
   m_ObjectHideFlags: 0
@@ -12993,6 +13133,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1198626472
 Transform:
   m_ObjectHideFlags: 0
@@ -13045,6 +13186,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1200413594
 Transform:
   m_ObjectHideFlags: 0
@@ -13097,6 +13239,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1207442321
 Transform:
   m_ObjectHideFlags: 0
@@ -13149,6 +13292,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1207752521
 Transform:
   m_ObjectHideFlags: 0
@@ -13202,6 +13346,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1212329139
 Transform:
   m_ObjectHideFlags: 0
@@ -13254,6 +13399,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1213707138
 Transform:
   m_ObjectHideFlags: 0
@@ -13306,6 +13452,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1217827824
 Transform:
   m_ObjectHideFlags: 0
@@ -13363,6 +13510,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1239211241
 Transform:
   m_ObjectHideFlags: 0
@@ -13420,6 +13568,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1263216596
 Transform:
   m_ObjectHideFlags: 0
@@ -13472,6 +13621,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1265071018
 Transform:
   m_ObjectHideFlags: 0
@@ -13614,6 +13764,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1272377526
 Transform:
   m_ObjectHideFlags: 0
@@ -13666,6 +13817,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1277456704
 Transform:
   m_ObjectHideFlags: 0
@@ -13718,6 +13870,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1283530901
 Transform:
   m_ObjectHideFlags: 0
@@ -13771,6 +13924,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1292476625
 Transform:
   m_ObjectHideFlags: 0
@@ -13823,6 +13977,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1305720723
 Transform:
   m_ObjectHideFlags: 0
@@ -13875,6 +14030,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1315036212
 Transform:
   m_ObjectHideFlags: 0
@@ -13927,6 +14083,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1325062522
 Transform:
   m_ObjectHideFlags: 0
@@ -14100,6 +14257,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &1349069202
 GameObject:
   m_ObjectHideFlags: 0
@@ -14240,6 +14398,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1355783584
 Transform:
   m_ObjectHideFlags: 0
@@ -14293,6 +14452,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1360240034
 Transform:
   m_ObjectHideFlags: 0
@@ -14345,6 +14505,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1363123504
 Transform:
   m_ObjectHideFlags: 0
@@ -14397,6 +14558,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1365452593
 Transform:
   m_ObjectHideFlags: 0
@@ -14449,6 +14611,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1371804868
 Transform:
   m_ObjectHideFlags: 0
@@ -14626,6 +14789,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1408538669
 Transform:
   m_ObjectHideFlags: 0
@@ -14680,6 +14844,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1416331468
 Transform:
   m_ObjectHideFlags: 0
@@ -14840,6 +15005,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1422449405
 Transform:
   m_ObjectHideFlags: 0
@@ -14892,6 +15058,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1422829265
 Transform:
   m_ObjectHideFlags: 0
@@ -14944,6 +15111,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1424634763
 Transform:
   m_ObjectHideFlags: 0
@@ -14996,6 +15164,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1424863491
 Transform:
   m_ObjectHideFlags: 0
@@ -15050,6 +15219,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1438876505
 Transform:
   m_ObjectHideFlags: 0
@@ -15102,6 +15272,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1441595594
 Transform:
   m_ObjectHideFlags: 0
@@ -15154,6 +15325,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1446787597
 Transform:
   m_ObjectHideFlags: 0
@@ -15206,6 +15378,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1448137735
 Transform:
   m_ObjectHideFlags: 0
@@ -15258,6 +15431,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1448594468
 Transform:
   m_ObjectHideFlags: 0
@@ -15315,6 +15489,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1456627871
 Transform:
   m_ObjectHideFlags: 0
@@ -15367,6 +15542,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1459687603
 Transform:
   m_ObjectHideFlags: 0
@@ -15419,6 +15595,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1476725877
 Transform:
   m_ObjectHideFlags: 0
@@ -15471,6 +15648,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1482217635
 Transform:
   m_ObjectHideFlags: 0
@@ -15523,6 +15701,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1485287417
 Transform:
   m_ObjectHideFlags: 0
@@ -15577,6 +15756,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1486944574
 Transform:
   m_ObjectHideFlags: 0
@@ -15630,6 +15810,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1494854883
 Transform:
   m_ObjectHideFlags: 0
@@ -15697,6 +15878,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &1506714827
 GameObject:
   m_ObjectHideFlags: 0
@@ -15749,6 +15931,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &1508581001
 GameObject:
   m_ObjectHideFlags: 0
@@ -15786,6 +15969,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1508581003
 Transform:
   m_ObjectHideFlags: 0
@@ -15843,6 +16027,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1531552854
 Transform:
   m_ObjectHideFlags: 0
@@ -15895,6 +16080,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1538977433
 Transform:
   m_ObjectHideFlags: 0
@@ -15947,6 +16133,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1542292634
 Transform:
   m_ObjectHideFlags: 0
@@ -15999,6 +16186,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1542312958
 Transform:
   m_ObjectHideFlags: 0
@@ -16103,6 +16291,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
   m_PrefabInstance: {fileID: 1547911185}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1552535814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 3026922757622361742}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1557055497
 GameObject:
   m_ObjectHideFlags: 0
@@ -16140,6 +16339,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1557055499
 Transform:
   m_ObjectHideFlags: 0
@@ -16297,6 +16497,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1563168515
 Transform:
   m_ObjectHideFlags: 0
@@ -16349,6 +16550,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1565632796
 Transform:
   m_ObjectHideFlags: 0
@@ -16416,6 +16618,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 1
+  busStop: {fileID: 0}
 --- !u!1 &1570802298
 GameObject:
   m_ObjectHideFlags: 0
@@ -16453,6 +16656,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1570802300
 Transform:
   m_ObjectHideFlags: 0
@@ -16510,6 +16714,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1581880175
 Transform:
   m_ObjectHideFlags: 0
@@ -16562,6 +16767,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1591038696
 Transform:
   m_ObjectHideFlags: 0
@@ -16614,6 +16820,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1592669450
 Transform:
   m_ObjectHideFlags: 0
@@ -16668,6 +16875,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1594882952
 Transform:
   m_ObjectHideFlags: 0
@@ -16720,6 +16928,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1596685201
 Transform:
   m_ObjectHideFlags: 0
@@ -16857,6 +17066,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1605425246
 Transform:
   m_ObjectHideFlags: 0
@@ -17003,6 +17213,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!1 &1620153396
 GameObject:
   m_ObjectHideFlags: 0
@@ -17071,6 +17282,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1622247284
 Transform:
   m_ObjectHideFlags: 0
@@ -17260,6 +17472,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1625449426
 Transform:
   m_ObjectHideFlags: 0
@@ -17832,6 +18045,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busLine
+      value: 
+      objectReference: {fileID: 11400000, guid: 0082032ad4f8a864399c61b26283d5ca, type: 2}
     - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: currentWaypoint
       value: 
@@ -19018,6 +19235,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1642445035
 Transform:
   m_ObjectHideFlags: 0
@@ -19071,6 +19289,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1642807488
 Transform:
   m_ObjectHideFlags: 0
@@ -19123,6 +19342,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1646339537
 Transform:
   m_ObjectHideFlags: 0
@@ -19177,6 +19397,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1646836762
 Transform:
   m_ObjectHideFlags: 0
@@ -19321,6 +19542,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1659638755
 Transform:
   m_ObjectHideFlags: 0
@@ -19373,6 +19595,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1664869085
 Transform:
   m_ObjectHideFlags: 0
@@ -19427,6 +19650,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1666173897
 Transform:
   m_ObjectHideFlags: 0
@@ -19479,6 +19703,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1691348793
 Transform:
   m_ObjectHideFlags: 0
@@ -19532,6 +19757,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1695412425
 Transform:
   m_ObjectHideFlags: 0
@@ -19584,6 +19810,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1700026480
 Transform:
   m_ObjectHideFlags: 0
@@ -19636,6 +19863,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1717455592
 Transform:
   m_ObjectHideFlags: 0
@@ -19688,6 +19916,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1723767580
 Transform:
   m_ObjectHideFlags: 0
@@ -19740,6 +19969,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1743626350
 Transform:
   m_ObjectHideFlags: 0
@@ -19864,6 +20094,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1790603528
 Transform:
   m_ObjectHideFlags: 0
@@ -19916,6 +20147,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1793019421
 Transform:
   m_ObjectHideFlags: 0
@@ -19968,6 +20200,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1806729589
 Transform:
   m_ObjectHideFlags: 0
@@ -20020,6 +20253,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1806795387
 Transform:
   m_ObjectHideFlags: 0
@@ -20072,6 +20306,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1807702805
 Transform:
   m_ObjectHideFlags: 0
@@ -20124,6 +20359,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1811350101
 Transform:
   m_ObjectHideFlags: 0
@@ -20176,6 +20412,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1819804470
 Transform:
   m_ObjectHideFlags: 0
@@ -20228,6 +20465,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1820687695
 Transform:
   m_ObjectHideFlags: 0
@@ -20280,6 +20518,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1832208023
 Transform:
   m_ObjectHideFlags: 0
@@ -20332,6 +20571,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1832968987
 Transform:
   m_ObjectHideFlags: 0
@@ -20384,6 +20624,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1841684243
 Transform:
   m_ObjectHideFlags: 0
@@ -20437,6 +20678,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1851926175
 Transform:
   m_ObjectHideFlags: 0
@@ -20586,6 +20828,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1881227681
 Transform:
   m_ObjectHideFlags: 0
@@ -20638,6 +20881,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1884482235
 Transform:
   m_ObjectHideFlags: 0
@@ -20691,6 +20935,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1886199377
 Transform:
   m_ObjectHideFlags: 0
@@ -20743,6 +20988,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1887735961
 Transform:
   m_ObjectHideFlags: 0
@@ -20796,6 +21042,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1888286265
 Transform:
   m_ObjectHideFlags: 0
@@ -20848,6 +21095,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1890443220
 Transform:
   m_ObjectHideFlags: 0
@@ -20900,6 +21148,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1890693346
 Transform:
   m_ObjectHideFlags: 0
@@ -20952,6 +21201,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1893794375
 Transform:
   m_ObjectHideFlags: 0
@@ -21009,6 +21259,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1906674506
 Transform:
   m_ObjectHideFlags: 0
@@ -21066,6 +21317,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1923930861
 Transform:
   m_ObjectHideFlags: 0
@@ -21118,6 +21370,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 0
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1929761328
 Transform:
   m_ObjectHideFlags: 0
@@ -21255,6 +21508,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1948293551
 Transform:
   m_ObjectHideFlags: 0
@@ -21319,6 +21573,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1951897818
 Transform:
   m_ObjectHideFlags: 0
@@ -21465,6 +21720,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1971433409
 Transform:
   m_ObjectHideFlags: 0
@@ -21518,6 +21774,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &1974506926
 Transform:
   m_ObjectHideFlags: 0
@@ -21570,6 +21827,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1983878429
 Transform:
   m_ObjectHideFlags: 0
@@ -21711,6 +21969,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1992376316
 Transform:
   m_ObjectHideFlags: 0
@@ -21798,6 +22057,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &1998613469
 Transform:
   m_ObjectHideFlags: 0
@@ -21850,6 +22110,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &2000091836
 Transform:
   m_ObjectHideFlags: 0
@@ -21902,6 +22163,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2001969863
 Transform:
   m_ObjectHideFlags: 0
@@ -21917,6 +22179,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2022937652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 2024292095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2022989693
 GameObject:
   m_ObjectHideFlags: 0
@@ -21954,6 +22227,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2022989695
 Transform:
   m_ObjectHideFlags: 0
@@ -22068,6 +22342,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2029779164
 Transform:
   m_ObjectHideFlags: 0
@@ -22120,6 +22395,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2043109525
 Transform:
   m_ObjectHideFlags: 0
@@ -22172,6 +22448,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2043343980
 Transform:
   m_ObjectHideFlags: 0
@@ -22224,6 +22501,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2050942637
 Transform:
   m_ObjectHideFlags: 0
@@ -22582,6 +22860,7 @@ MonoBehaviour:
   waypointType: 1
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &2059179471
 Transform:
   m_ObjectHideFlags: 0
@@ -22634,6 +22913,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2064981742
 Transform:
   m_ObjectHideFlags: 0
@@ -22686,6 +22966,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2077167744
 Transform:
   m_ObjectHideFlags: 0
@@ -23232,6 +23513,7 @@ MonoBehaviour:
   waypointType: 2
   TrafficState: 1
   width: 5
+  busStop: {fileID: 1552535814}
 --- !u!4 &2088926439
 Transform:
   m_ObjectHideFlags: 0
@@ -23285,6 +23567,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2091878685
 Transform:
   m_ObjectHideFlags: 0
@@ -23338,6 +23621,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2092618651
 Transform:
   m_ObjectHideFlags: 0
@@ -23405,6 +23689,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!1 &2104107374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
@@ -23519,6 +23804,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 5
+  busStop: {fileID: 0}
 --- !u!4 &2121901478
 Transform:
   m_ObjectHideFlags: 0
@@ -23571,6 +23857,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2128412877
 Transform:
   m_ObjectHideFlags: 0
@@ -23623,6 +23910,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2137069863
 Transform:
   m_ObjectHideFlags: 0
@@ -23675,6 +23963,7 @@ MonoBehaviour:
   waypointType: 0
   TrafficState: 1
   width: 2.5
+  busStop: {fileID: 0}
 --- !u!4 &2141327566
 Transform:
   m_ObjectHideFlags: 0

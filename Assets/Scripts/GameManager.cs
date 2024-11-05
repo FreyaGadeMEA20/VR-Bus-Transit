@@ -34,7 +34,8 @@ public class GameManager : MonoBehaviour
 
     // -- Objects for checking states -- //
     public GameObject phone;
-    
+    [SerializeField] BusLineSO[] BusLines;
+    public BusLineSO BusLine;
     [SerializeField] BusController[] Buses;
     [SerializeField] BusController BusToGetOn;
 
