@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34239453, g: 0.433598, b: 0.57491326, a: 1}
+  m_IndirectSpecularColor: {r: 0.34224635, g: 0.43344212, b: 0.5748069, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8739,6 +8739,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
   m_PrefabInstance: {fileID: 32619300}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &793360198 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1850163252479042898, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+  m_PrefabInstance: {fileID: 32619300}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793360189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9052b0ad300da99418d109dad3724809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &795631786
 GameObject:
   m_ObjectHideFlags: 0
@@ -9240,6 +9251,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 301476185}
   m_SourcePrefab: {fileID: 100100000, guid: 7ff7b999fc3a8a242a27ecc83d838b3b, type: 3}
+--- !u!1 &842764847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 842764848}
+  m_Layer: 0
+  m_Name: -- ROAD COLLIDERS --
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &842764848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842764847}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.258316, y: -73.29445, z: 10.11471}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &847919455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11631,9 +11673,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   phone: {fileID: 2086867650}
-  BusLines: []
+  busStopSign: {fileID: 0}
+  lookedAtSign: 0
   BusLine: {fileID: 0}
-  Buses: []
+  Buses:
+  - {fileID: 793360198}
+  - {fileID: 2108379587}
   BusToGetOn: {fileID: 0}
   handSwitch:
     m_UseReference: 1
@@ -11647,6 +11692,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  inCorrectStopZone: 0
 --- !u!1001 &1072428588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16299,7 +16345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1557055497
@@ -22187,7 +22233,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2022989693
@@ -23100,7 +23146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3666740242592447939, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
       propertyPath: m_Name
-      value: -- VR CONTROLLER --
+      value: -- PLAYER --
       objectReference: {fileID: 0}
     - target: {fileID: 3666740242592447939, guid: 8f00ef482ece3bf4f890d0553dc37c77, type: 3}
       propertyPath: m_IsActive
@@ -23695,6 +23741,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
   m_PrefabInstance: {fileID: 1609612649}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108379587 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1850163252479042898, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+  m_PrefabInstance: {fileID: 1639180813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9052b0ad300da99418d109dad3724809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2121621459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24036,6 +24093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BusStop
       objectReference: {fileID: 0}
+    - target: {fileID: 8448476959915859970, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29eab3281f39e7c4aa1fce3b3bc472c7, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24053,3 +24114,4 @@ SceneRoots:
   - {fileID: 2086867645}
   - {fileID: 713184987}
   - {fileID: 73912202}
+  - {fileID: 842764848}

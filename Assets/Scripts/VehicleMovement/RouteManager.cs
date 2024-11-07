@@ -40,7 +40,7 @@ namespace Movement {
                 return;
             }
 
-            Debug.Log(busStops[0].name);
+            //Debug.Log(busStops[0].name);
             endDestination = busStops[0];
 
             if(endDestination == null){

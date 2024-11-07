@@ -69,7 +69,13 @@ namespace Movement{
             get{return ReachedBusStop;}
             set{ReachedBusStop = value;}
         }
-        RouteManager routeManager; // The base reference to its starting waypoint
+        RouteManager routeManager{
+            get{return _RouteManager;}
+            set{_RouteManager = value;}
+        } // The base reference to its starting waypoint
+
+        public RouteManager _RouteManager;
+
         [SerializeField] Waypoint currentWaypoint; // The current waypoint, in which it navigates towards
         int direction = 1; // Control which waypoint to navigate towards. Might be removed in the future
 
@@ -104,7 +110,8 @@ namespace Movement{
                 case MovementState.Moving:
                     if(CheckIfCar()){
                         breaks = true;
-                        currentMovementState = MovementState.BackingUp;
+                        // TODO: backing up needs more work
+                        //currentMovementState = MovementState.BackingUp;
                         break;
                     }
                     breaks = false;
@@ -149,6 +156,7 @@ namespace Movement{
                     }
                     break;
                 case MovementState.BackingUp:
+                    // Needs more work
                     // Drive if nothing is in front
                     
                     if(!CheckIfCar()){
@@ -169,6 +177,7 @@ namespace Movement{
             Move();
         }
 
+        // needs more work
         IEnumerator BackThatAssUp(){
             BackingUpIntiated = true;
             acceleration = acceleration*-1f;

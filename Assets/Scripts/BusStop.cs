@@ -5,12 +5,13 @@ using Movement;
 using UnityEngine;
 
 public class BusStop : MonoBehaviour {
-    [HideInInspector] public GameObject sign;
+    public GameObject sign;
 
     GameObject player;
 
-    public List<BusLineSO> associatedLines; 
-    public Waypoint associatedWaypoint;
+    GameObject busSignInformation;
+
+    public List<BusLineSO> associatedLines;
     
     bool playerInProx { get; set; }
 
@@ -30,12 +31,18 @@ public class BusStop : MonoBehaviour {
             // Perform actions when player enters proximity
             Debug.Log("Player is within proximity");
             playerInProx = CheckValidStop();
+            if(playerInProx){
+                GameManager.Instance.inCorrectStopZone = true;
+                GameManager.Instance.busStopSign = sign;
+            }
         }
     }
 
     private void OnTriggerExit(Collider other) {
         if (other.gameObject.CompareTag("Player")){
             playerInProx = false;
+            GameManager.Instance.inCorrectStopZone = false;
+                GameManager.Instance.busStopSign = null;
             Debug.Log("Player exits proximity");
         }
     }
@@ -43,7 +50,7 @@ public class BusStop : MonoBehaviour {
     public bool CheckValidStop(){
         foreach (var line in associatedLines)
         {
-            if(GameManager.Instance.BusLine.BusLineID.v2 == associatedWaypoint.name){
+            if(GameManager.Instance.BusLine.BusLineID.v3 == line.BusLineID.v3){
                 return true;
             } 
         }

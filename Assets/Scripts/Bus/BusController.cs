@@ -9,7 +9,12 @@ public class BusController : MonoBehaviour
     // -- Outside Attributes --
     DoorController doors;
     BusScreenController screens;
-    [SerializeField] BusSeatAssigner seatAssigner;
+    BusSeatAssigner seatAssigner{
+        get{return SeatAssigner;}
+        set{SeatAssigner = value;}
+    }
+
+    public BusSeatAssigner SeatAssigner;
     public VehicleMovement vehicleMovement;
 
     // What is the state of the bus

@@ -12,6 +12,8 @@ public class BusSeatAssigner : MonoBehaviour
 
     public FadeToBlack ftb;
 
+    float seatCooldown;
+
     void Start(){
         ftb = FindObjectOfType<FadeToBlack>();
     }
@@ -26,6 +28,11 @@ public class BusSeatAssigner : MonoBehaviour
         if(PlayerSeated){
             return;
         }
+
+        if(seatCooldown > 0){
+            return;
+        }
+
         currentSeat = seat;
         StartCoroutine(SitOnSeat());
     }
@@ -89,5 +96,12 @@ public class BusSeatAssigner : MonoBehaviour
         currentSeat = null;
         StartCoroutine(ftb.FadeIn());
         
+
+    }
+
+    IEnumerator Cooldown(){
+        seatCooldown = 3;
+        yield return new WaitForSeconds(seatCooldown);
+        seatCooldown = 0;
     }
 }

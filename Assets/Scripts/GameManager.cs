@@ -34,18 +34,18 @@ public class GameManager : MonoBehaviour
 
     // -- Objects for checking states -- //
     public GameObject phone;
-    [SerializeField] BusLineSO[] BusLines;
+    [HideInInspector] public GameObject busStopSign;
+    [SerializeField] bool lookedAtSign = false;
     public BusLineSO BusLine;
     [SerializeField] BusController[] Buses;
     [SerializeField] BusController BusToGetOn;
 
     public InputActionProperty handSwitch;
 
-
-
     // Countdown timer variables
     private float countdownTimer = 3f;
-    private bool isCountingDown = true;
+    private bool isCountingDown = false;
+    public bool inCorrectStopZone = false;
 
     public static GameManager Instance { get; internal set; }
     public event Action<GameState> OnStateChange;
@@ -68,13 +68,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(Instance);
         // Set the initial state
         currentState = GameState.START;
 
         // Set the initial bus to get on
         if(Buses.Length > 0)
             BusToGetOn = Buses[UnityEngine.Random.Range(0, Buses.Length)];
+
+        BusLine = BusToGetOn.vehicleMovement._RouteManager.busLine;
         // possibly coinflip to determine which station to start at
 
         // Set the initial final destination
@@ -141,52 +142,75 @@ public class GameManager : MonoBehaviour
     }
 
     void UpdatePhoneState(){
-
         // Check if the player is near the designated bus stop
-        //  - For now, the bus stop is not selected by random
+        if(!inCorrectStopZone){
+            Debug.Log("Player is not in the correct stop zone");
+            return;
+        }
 
-        /* if(SignScript.CheckPlayerProximity()){
-            if (isCountingDown) {
-                countdownTimer -= Time.deltaTime;
-                Debug.Log($"Player has been by the sign for {(countdownTimer-3)*-1} seconds");
+        if(IsGameObjectVisibleInViewport(busStopSign) && !lookedAtSign){
+            lookedAtSign = true;
+        }
 
-                if (countdownTimer <= 0f) {
-                    
-                    // Reset the countdown timer
-                    //countdownTimer = 3f;
-                    isCountingDown = false;
-                }
-            }
-            else {
-                // reset the countdown if it is not counting down
+        if(!lookedAtSign){
+            return;
+        }
+
+        // Apply information to phone
+
+        // Counts down to see how long the player has been by the bus stop
+        if (isCountingDown) {
+            countdownTimer -= Time.deltaTime;
+            Debug.Log($"Player has been by the sign for {(countdownTimer-3)*-1:#.0} seconds");
+            
+            // for phone visuals vvv
+            //Mathf.Lerp(0,100, countdownTimer);
+
+            // once countdown is finished, change state and reset imer
+            if (countdownTimer <= 0f) {
                 countdownTimer = 3f;
-                isCountingDown = true;
+                isCountingDown = false;
+                ChangeState(GameState.REACHED_BUS_STOP);
             }
         } else {
-            // Reset the countdown timer if the GameObject is not visible
+            // reset the countdown if it is not counting down
             countdownTimer = 3f;
             isCountingDown = true;
-        } */
+        }
+        
     }
 
     void UpdateBusStopState(){
-        // Wait and check the bus for the correct designation
+        if(BusToGetOn.HasCheckedIn){
+            ChangeState(GameState.CHECKED_IN);
+        }
     }
 
     void UpdateCheckInState(){
-
+        if(BusToGetOn.SeatAssigner.PlayerSeated){
+            ChangeState(GameState.SAT_DOWN);
+        }
     }
 
     void UpdateSitDownState(){
-
+        if(!BusToGetOn.SeatAssigner.PlayerSeated){
+            // More logic needs to be added, this is just a placeholder
+            ChangeState(GameState.PRESSED_STOP_BUTTON);
+        }
     }
 
     void UpdateStopButtonState(){
-
+        if(!BusToGetOn.HasCheckedIn){
+            ChangeState(GameState.CHECKED_OUT);
+        }
     }
 
     void UpdateCheckOutState(){
-
+        Debug.Log("Finished");
+        
+        // Check how well the player did (if needed)
+        //  - Off at correct bus stop?
+        //  - Time spent?
     }
 
     // Check if the GameObject is visible in the viewport

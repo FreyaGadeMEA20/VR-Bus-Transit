@@ -8,6 +8,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Bus Line")]
 public class BusLineSO : ScriptableObject
 {
-    [SerializedTupleLabels("Number", "End Station", "End Station")]
-    public SerializedTuple<int, string, bool> BusLineID = new (18, "0", false);
+    [SerializedTupleLabels("Number", "End Station", "ID", "Direction(Forward/Backward)")]
+    public SerializedTuple<int, string, int, bool> BusLineID = new (18, "0", 0, false);
 }
