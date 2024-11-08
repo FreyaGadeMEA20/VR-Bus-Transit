@@ -60,7 +60,7 @@ public class BusController : MonoBehaviour
     public bool CorrectBus;
 
     // Start is called before the first frame update
-    void Start() {
+    void Awake() {
         // Gets and assigns all the relevant information
         busState = BusState.STOP_BUTTON_PRESSED;
         vehicleMovement = GetComponent<VehicleMovement>();

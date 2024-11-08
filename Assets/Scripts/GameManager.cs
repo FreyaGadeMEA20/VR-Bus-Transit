@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 
     // -- Objects for checking states -- //
     public GameObject phone;
+    bool lookedAtPhone = false;
     [HideInInspector] public GameObject busStopSign;
     [SerializeField] bool lookedAtSign = false;
     public BusLineSO BusLine;
@@ -41,9 +42,26 @@ public class GameManager : MonoBehaviour
     [SerializeField] BusController BusToGetOn;
 
     public InputActionProperty handSwitch;
+    public bool buttonPressed = false;
 
     // Countdown timer variables
-    private float countdownTimer = 3f;
+    private float countdownTimer = 0f;
+    public event OnVariableChangeDelegate OnVariableChange;
+    public delegate void OnVariableChangeDelegate(float newVal);
+    public float CoutndownTimer
+    {
+        get
+        {
+            return countdownTimer;
+        }
+        set
+        {
+            if (countdownTimer == value) return;
+            countdownTimer = value;
+            if (OnVariableChange != null)
+                OnVariableChange(countdownTimer);
+        }
+    }
     private bool isCountingDown = false;
     public bool inCorrectStopZone = false;
 
@@ -132,11 +150,30 @@ public class GameManager : MonoBehaviour
 
     // First state just makes them check their phone and confirm they have understood the instructions
     void UpdateSchoolState() {
+        if(lookedAtPhone){
+            OnVariableChange(countdownTimer+=Time.deltaTime);
+//            countdownTimer += Time.deltaTime;
+            //Debug.Log($"Player has been by the sign for {(countdownTimer):#.0} seconds");
+            
+            // for phone visuals vvv
+            //Mathf.Lerp(0,100, countdownTimer);
+
+            // once countdown is finished, change state and reset imer
+            if (countdownTimer >= 3f) {
+                countdownTimer = 0f;
+                isCountingDown = false;
+                ChangeState(GameState.CHECKED_PHONE);
+            }
+        }
+        
+        
+
         // Check if the GameObject is visible in the viewport...
-        if (IsGameObjectVisibleInViewport(phone)) {
+        if (IsGameObjectVisibleInViewport(phone) && !lookedAtPhone) {
             // ...and if the player presses the select button, change the state
             if(handSwitch.action.ReadValue<float>() > 0.8f){
-                ChangeState(GameState.CHECKED_PHONE);
+                //ChangeState(GameState.CHECKED_PHONE);
+                lookedAtPhone = true;
             }
         }
     }
@@ -160,21 +197,21 @@ public class GameManager : MonoBehaviour
 
         // Counts down to see how long the player has been by the bus stop
         if (isCountingDown) {
-            countdownTimer -= Time.deltaTime;
+            countdownTimer += Time.deltaTime;
             Debug.Log($"Player has been by the sign for {(countdownTimer-3)*-1:#.0} seconds");
             
             // for phone visuals vvv
             //Mathf.Lerp(0,100, countdownTimer);
 
             // once countdown is finished, change state and reset imer
-            if (countdownTimer <= 0f) {
-                countdownTimer = 3f;
+            if (countdownTimer >= 3f) {
+                countdownTimer = 0f;
                 isCountingDown = false;
                 ChangeState(GameState.REACHED_BUS_STOP);
             }
         } else {
             // reset the countdown if it is not counting down
-            countdownTimer = 3f;
+            countdownTimer = 0f;
             isCountingDown = true;
         }
         

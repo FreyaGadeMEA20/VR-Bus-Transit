@@ -17,7 +17,8 @@ MonoBehaviour:
     nameMap:
     - Number
     - End Station
-    - End Station
+    - ID
+    - Direction(Forward/Backward)
     v2: Hundeby Torv
-    v3: 0
-  busStops: []
+    v3: 2
+    v4: 0

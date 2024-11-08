@@ -83,7 +83,7 @@ namespace Movement{
         bool BackingUpIntiated = false; // Whether or not the vehicle is backing up
 
         // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
             rb = GetComponent<Rigidbody>();
             rb.centerOfMass = Vector3.zero;
@@ -93,6 +93,7 @@ namespace Movement{
             } 
 
             routeManager = GetComponent<RouteManager>();
+            Debug.Log(routeManager);
 
             rb.inertiaTensorRotation = Quaternion.identity;
             //currentWaypoint = routeManager.currentWaypoint;
