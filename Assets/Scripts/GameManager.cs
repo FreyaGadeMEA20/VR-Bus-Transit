@@ -94,7 +94,6 @@ public class GameManager : MonoBehaviour
             BusToGetOn = Buses[UnityEngine.Random.Range(0, Buses.Length)];
 
         BusLine = BusToGetOn.vehicleMovement._RouteManager.busLine;
-        // possibly coinflip to determine which station to start at
 
         // Set the initial final destination
     }
@@ -159,7 +158,7 @@ public class GameManager : MonoBehaviour
             //Mathf.Lerp(0,100, countdownTimer);
 
             // once countdown is finished, change state and reset imer
-            if (countdownTimer >= 3f) {
+            if (countdownTimer >= 4f) {
                 countdownTimer = 0f;
                 isCountingDown = false;
                 ChangeState(GameState.CHECKED_PHONE);

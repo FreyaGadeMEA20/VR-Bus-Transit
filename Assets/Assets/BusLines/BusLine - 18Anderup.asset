@@ -17,7 +17,8 @@ MonoBehaviour:
     nameMap:
     - Number
     - End Station
-    - End Station
+    - ID
+    - Direction(Forward/Backward)
     v2: Anderup St
     v3: 0
-  busStops: []
+    v4: 0

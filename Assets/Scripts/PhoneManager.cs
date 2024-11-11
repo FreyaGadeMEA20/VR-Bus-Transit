@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -11,7 +12,7 @@ public class PhoneManager : MonoBehaviour
     [SerializeField] Material phoneScreen;
     [SerializeField] PhoneScreen[] phoneScreens;
     
-    public InputActionProperty pulLOutPhone;
+    public InputActionProperty pullOutPhone;
     bool animationPlaying = false;
 
     [SerializeField] RectTransform rejseplanenScreen;
@@ -21,36 +22,63 @@ public class PhoneManager : MonoBehaviour
     [Serializable]
     public class PhoneScreen
     {
-        public GameObject screen;
+        public RectTransform screen;
         public GameManager.GameState state;
     }
+
+    [Serializable]
+    public class RejseplanScreen{
+        public TextMeshProUGUI from;
+        public TextMeshProUGUI to;
+        public TextMeshProUGUI bus;
+        public TextMeshProUGUI getOff;
+
+    }
+    public RejseplanScreen rejseplanScreen;
 
     void Start()
     {
         GameManager.Instance.OnStateChange += SwitchToScreen;
-        pulLOutPhone = GameManager.Instance.handSwitch;
-        pulLOutPhone.action.performed += ctx => StartCoroutine(TogglePhone());
+        pullOutPhone = GameManager.Instance.handSwitch;
+        pullOutPhone.action.performed += ctx => StartCoroutine(TogglePhone());
         GameManager.Instance.OnVariableChange += PhoneSlider;
+
+        // Test data   
+        FillRejseplanen("Ørneskolen", "Nørreport St.", "150S", "Nørreport St.");
+    }
+
+    void FillRejseplanen(string from, string to, string bus, string getOff)
+    {
+        rejseplanScreen.from.text = from;
+        rejseplanScreen.to.text = to;
+        rejseplanScreen.bus.text = bus;
+        rejseplanScreen.getOff.text = getOff;
     }
 
     public void SwitchToScreen(GameManager.GameState state)
     {
         foreach (PhoneScreen screen in phoneScreens)
         {
-            screen.screen.SetActive(false);
+            screen.screen.gameObject.SetActive(false);
             if (screen.state == state)
             {
-                screen.screen.SetActive(true);
+                screen.screen.gameObject.SetActive(true);
             }
         }
     }
 
     void PhoneSlider(float newVal)
     {
+        if(newVal <=0){
+            progressSlider.gameObject.SetActive(false);
+            checkMark.gameObject.SetActive(false);
+        } else {
+            progressSlider.gameObject.SetActive(true);
+        }
         progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value = newVal;
         Debug.Log("Slider value: " + progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value);
 
-        if(newVal >=3){
+        if(newVal >=4){
             StartCoroutine(TogglePhone());
             progressSlider.gameObject.SetActive(false);
             checkMark.gameObject.SetActive(true);
@@ -89,5 +117,7 @@ public class PhoneManager : MonoBehaviour
 
         rejseplanenScreen.anchoredPosition = targetPosition;
         animationPlaying = false;
+        
+        checkMark.gameObject.SetActive(false);
     }
 }
