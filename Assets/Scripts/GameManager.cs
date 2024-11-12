@@ -218,7 +218,14 @@ public class GameManager : MonoBehaviour
 
     void UpdateBusStopState(){
         if(BusToGetOn.HasCheckedIn){
-            ChangeState(GameState.CHECKED_IN);
+            // add a check to see if it is the correct bus that has been checked in at
+            if(BusToGetOn.vehicleMovement._RouteManager.busLine == BusLine){
+                ChangeState(GameState.CHECKED_IN);
+            } else {
+                Debug.Log("Wrong bus");
+                //FadeToBlack.Instance.FadeOutAndLoadScene("WrongBus");
+            }
+            //ChangeState(GameState.CHECKED_IN);
         }
     }
 

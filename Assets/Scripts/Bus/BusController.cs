@@ -164,6 +164,6 @@ public class BusController : MonoBehaviour
     }
 
     public void WrongBus(){
-        seatAssigner.ftb.FadeOutAndLoadScene("WrongBus");
+        FadeToBlack.Instance.FadeOutAndLoadScene("WrongBus");
     }
 }

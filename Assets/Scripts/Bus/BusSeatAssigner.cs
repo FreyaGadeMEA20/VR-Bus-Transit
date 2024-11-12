@@ -10,13 +10,7 @@ public class BusSeatAssigner : MonoBehaviour
     [SerializeField] LayerMask seatedLayer;
     public bool PlayerSeated => currentSeat != null;
 
-    public FadeToBlack ftb;
-
     float seatCooldown;
-
-    void Start(){
-        ftb = FindObjectOfType<FadeToBlack>();
-    }
 
     public void GetPlayer(GameObject _player){
         player = _player;
@@ -38,8 +32,8 @@ public class BusSeatAssigner : MonoBehaviour
     }
 
     IEnumerator SitOnSeat(){
-        StartCoroutine(ftb.FadeOut());
-        yield return new WaitForSeconds(ftb.fadeDuration);
+        StartCoroutine(FadeToBlack.Instance.FadeOut());
+        yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         Debug.Log("Assigning seat");
         //TODO: Tune position and rotation
         // Seat the player - ROTATION OF THE SEAT IS IMPORTANT
@@ -60,7 +54,7 @@ public class BusSeatAssigner : MonoBehaviour
         
         player.GetComponent<DynamicMoveProvider>().useGravity = false;
         
-        StartCoroutine(ftb.FadeIn());
+        StartCoroutine(FadeToBlack.Instance.FadeIn());
         // Enable "get off" button
         //getOffButton = seat.GetComponent<Seat>().EnableGetOffButton();
     }
@@ -73,8 +67,8 @@ public class BusSeatAssigner : MonoBehaviour
     }
 
     IEnumerator GetOffSeat(){
-        StartCoroutine(ftb.FadeOut());
-        yield return new WaitForSeconds(ftb.fadeDuration);
+        StartCoroutine(FadeToBlack.Instance.FadeOut());
+        yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
         player.transform.position = currentSeat.exitArea.transform.position;Quaternion newRot;
 
@@ -94,7 +88,7 @@ public class BusSeatAssigner : MonoBehaviour
         //currentSeat.GetComponent<Seat>().DisableGetOffButton();
 
         currentSeat = null;
-        StartCoroutine(ftb.FadeIn());
+        StartCoroutine(FadeToBlack.Instance.FadeIn());
         
 
     }

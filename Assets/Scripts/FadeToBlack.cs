@@ -8,6 +8,21 @@ public class FadeToBlack : MonoBehaviour
 {
     public float fadeDuration = 2.0f; // Duration of the fade in seconds
     [SerializeField] Image fadeImage;
+
+    public static FadeToBlack Instance { get; internal set; }
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     
     private void Start()
     {
