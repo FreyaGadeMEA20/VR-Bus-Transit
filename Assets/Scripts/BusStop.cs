@@ -7,6 +7,10 @@ using UnityEngine;
 public class BusStop : MonoBehaviour {
     public GameObject sign;
 
+    string stopName{ get{return BusStopName;} set{BusStopName = value;}}
+
+    public string BusStopName;
+
     GameObject player;
 
     GameObject busSignInformation;

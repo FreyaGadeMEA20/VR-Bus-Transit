@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34224424, g: 0.43341953, b: 0.5745566, a: 1}
+  m_IndirectSpecularColor: {r: 0.3423754, g: 0.4335773, b: 0.57489634, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1004,7 +1004,7 @@ PrefabInstance:
       objectReference: {fileID: 327899968}
     - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: busStops.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: busStops.Array.data[0]
@@ -1012,6 +1012,10 @@ PrefabInstance:
       objectReference: {fileID: 2088926438}
     - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: busStops.Array.data[1]
+      value: 
+      objectReference: {fileID: 754457674}
+    - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: busStops.Array.data[2]
       value: 
       objectReference: {fileID: 754457674}
     - target: {fileID: 3530312206161781865, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
@@ -22470,6 +22474,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 916689554}
     m_Modifications:
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: "\xD8rneskolen 2"
+      objectReference: {fileID: 0}
     - target: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.54
@@ -24228,6 +24236,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 916689554}
     m_Modifications:
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: "\xD8rneskolen"
+      objectReference: {fileID: 0}
     - target: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.3698
