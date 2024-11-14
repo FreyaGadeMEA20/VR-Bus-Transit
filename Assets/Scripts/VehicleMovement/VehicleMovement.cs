@@ -135,6 +135,7 @@ namespace Movement{
                             if(entityType == EntityTypes.Bus && !reachedBusStop){
                                 reachedBusStop = true;
                                 breaks = true;
+                                //routeManager.currentWaypoint.busStop.deathZone.SetActive(false);
                                 busController.StopBus();
                                 routeManager.SetRoute();
                             }
@@ -289,6 +290,9 @@ namespace Movement{
             // Control variables to control whether or not to advance
             bool shouldBranch = false;
             reachedBusStop = false;
+            if(routeManager.currentWaypoint.busStop != null){
+                routeManager.currentWaypoint.busStop.deathZone.SetActive(true);
+            }
 
             // Determines if the current waypoint has branches
             //  - Only relevant for cars, as bus follow a set route

@@ -12,8 +12,7 @@ public class BusStop : MonoBehaviour {
     public string BusStopName;
 
     GameObject player;
-
-    GameObject busSignInformation;
+    public GameObject deathZone;
 
     public List<BusLineSO> associatedLines;
     

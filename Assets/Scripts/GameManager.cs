@@ -251,6 +251,9 @@ public class GameManager : MonoBehaviour
 
     void UpdateStopButtonState(){
         if(!BusToGetOn.HasCheckedIn){
+            if(BusToGetOn.vehicleMovement._RouteManager.currentWaypoint == _finalDestination){
+                Debug.Log("WOWZERS");
+            }
             ChangeState(GameState.CHECKED_OUT);
         }
     }
@@ -258,6 +261,7 @@ public class GameManager : MonoBehaviour
     void UpdateCheckOutState(){
         Debug.Log("Finished");
         
+
         // Check how well the player did (if needed)
         //  - Off at correct bus stop?
         //  - Time spent?

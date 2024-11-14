@@ -6,6 +6,9 @@ To do:
  - Fix bus freezing up after player has exited
  - Fix seating (Reset camera offset?)
  - Make player not sit in an NPC's lap
+ - Colliders for street ✅
+  - Add connection between traffic light and Colliders
+  - Add connection between bus stops and Colliders
 
 Less important:
  - Hand animation
