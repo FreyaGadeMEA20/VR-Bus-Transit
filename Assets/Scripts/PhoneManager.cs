@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using SerializedTuples;
+using SerializedTuples.Runtime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
-using UnityProgressBar;
 
 public class PhoneManager : MonoBehaviour
 {
@@ -36,6 +36,9 @@ public class PhoneManager : MonoBehaviour
     }
     public RejseplanScreen rejseplanScreen;
 
+    [SerializedTupleLabels("From", "To", "Bus Number", "Get off")]
+    public SerializedTuple<string, string, string, string> RejseplanInfo;
+
     void Start()
     {
         GameManager.Instance.OnStateChange += SwitchToScreen;
@@ -44,15 +47,19 @@ public class PhoneManager : MonoBehaviour
         GameManager.Instance.OnVariableChange += PhoneSlider;
 
         // Test data   
-        FillRejseplanen("Ørneskolen", "Nørreport St.", "150S", "Nørreport St.");
+        StartCoroutine(FillRejseplanen());
     }
 
-    void FillRejseplanen(string from, string to, string bus, string getOff)
+
+
+    IEnumerator FillRejseplanen()
     {
-        rejseplanScreen.from.text = from;
-        rejseplanScreen.to.text = to;
-        rejseplanScreen.bus.text = bus;
-        rejseplanScreen.getOff.text = getOff;
+        yield return new WaitForSeconds(1);
+
+        rejseplanScreen.from.text = GameManager.Instance.BusLine.BusLineID.v2;
+        rejseplanScreen.to.text = GameManager.Instance.BusLine.BusLineID.v3;
+        rejseplanScreen.bus.text = GameManager.Instance.BusLine.BusLineID.v1.ToString();
+        rejseplanScreen.getOff.text = GameManager.Instance._finalDestination.busStop.BusStopName;
     }
 
     public void SwitchToScreen(GameManager.GameState state)

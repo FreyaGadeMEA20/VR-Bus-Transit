@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Movement;
+using MyBox;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -37,14 +39,18 @@ public class GameManager : MonoBehaviour
     bool lookedAtPhone = false;
     [HideInInspector] public GameObject busStopSign;
     [SerializeField] bool lookedAtSign = false;
+    [Separator("Information regarding the bus")]
     public BusLineSO BusLine;
+    public Waypoint _finalDestination;
     [SerializeField] BusController[] Buses;
-    [SerializeField] BusController BusToGetOn;
+    public BusController BusToGetOn;
 
+    [Separator("Information regarding the button input")]
     public InputActionProperty handSwitch;
     public bool buttonPressed = false;
 
     // Countdown timer variables
+    [Separator("Countdown Timer")]
     private float countdownTimer = 0f;
     public event OnVariableChangeDelegate OnVariableChange;
     public delegate void OnVariableChangeDelegate(float newVal);
@@ -94,6 +100,7 @@ public class GameManager : MonoBehaviour
             BusToGetOn = Buses[UnityEngine.Random.Range(0, Buses.Length)];
 
         BusLine = BusToGetOn.vehicleMovement._RouteManager.busLine;
+        _finalDestination = BusLine.ChooseRandomWaypoint();
 
         // Set the initial final destination
     }

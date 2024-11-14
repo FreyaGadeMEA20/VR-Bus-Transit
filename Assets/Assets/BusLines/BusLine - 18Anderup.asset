@@ -16,9 +16,11 @@ MonoBehaviour:
     v1: 18
     nameMap:
     - Number
+    - Starting Zone
     - End Station
-    - ID
-    - Direction(Forward/Backward)
-    v2: Anderup St
-    v3: 0
-    v4: 0
+    v2: "\xD8rneskolen"
+    v3: Anderup St
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

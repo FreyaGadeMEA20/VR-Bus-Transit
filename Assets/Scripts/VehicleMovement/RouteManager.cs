@@ -23,6 +23,8 @@ namespace Movement {
             SetRoute();
 
             SendInformationToWaypoint();
+
+            busLine.waypoints = busStops;
         }
 
         

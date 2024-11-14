@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3423754, g: 0.4335773, b: 0.57489634, a: 1}
+  m_IndirectSpecularColor: {r: 0.34227696, g: 0.43347582, b: 0.57483923, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,8 +158,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &7016502
 Transform:
@@ -289,8 +289,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &14730418
 Transform:
@@ -342,8 +342,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
   width: 5
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!4 &15690179
 Transform:
@@ -395,8 +395,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &18886945
 Transform:
@@ -448,8 +448,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &22566152
 Transform:
@@ -1998,8 +1998,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &38363426
 Transform:
@@ -2053,8 +2053,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &53865282
 Transform:
@@ -2106,8 +2106,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &55082131
 Transform:
@@ -2159,8 +2159,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &56327963
 Transform:
@@ -2212,8 +2212,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &69521896
 Transform:
@@ -2298,8 +2298,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &88934030
 Transform:
@@ -2351,8 +2351,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &106046703
 Transform:
@@ -2404,8 +2404,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &107142846
 Transform:
@@ -2545,8 +2545,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &113867761
 Transform:
@@ -2831,8 +2831,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &122511538
 Transform:
@@ -2884,8 +2884,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &131316475
 Transform:
@@ -2939,8 +2939,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &133186477
 Transform:
@@ -2992,8 +2992,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &140386512
 Transform:
@@ -3045,8 +3045,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &142405760
 Transform:
@@ -3098,8 +3098,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &148669678
 Transform:
@@ -3152,8 +3152,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &152836516
 Transform:
@@ -3422,8 +3422,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!1 &186599808
 GameObject:
@@ -3475,8 +3475,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &191875900 stripped
 GameObject:
@@ -3610,8 +3610,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &194256021
 Transform:
@@ -3849,8 +3849,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &257015697
 Transform:
@@ -3902,8 +3902,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &269048974
 Transform:
@@ -3971,8 +3971,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!1 &279895295
 GameObject:
@@ -4009,8 +4009,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &279895297
 Transform:
@@ -4062,8 +4062,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &283107494
 Transform:
@@ -4115,8 +4115,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &285931553
 Transform:
@@ -4209,8 +4209,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &307832670
 Transform:
@@ -4370,8 +4370,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &319419387
 Transform:
@@ -4423,8 +4423,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &319928867
 Transform:
@@ -4476,8 +4476,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &319944932
 Transform:
@@ -4529,8 +4529,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &327899969
 Transform:
@@ -4587,8 +4587,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &343067916
 Transform:
@@ -4640,8 +4640,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &343586302
 Transform:
@@ -4934,8 +4934,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &364359387
 Transform:
@@ -4998,8 +4998,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &387763235
 Transform:
@@ -5062,8 +5062,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &390471279
 Transform:
@@ -5115,8 +5115,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &391276858
 Transform:
@@ -5168,8 +5168,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &398617108
 Transform:
@@ -5306,8 +5306,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &436015877
 Transform:
@@ -5359,8 +5359,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &436345692
 Transform:
@@ -5530,8 +5530,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &455763102
 Transform:
@@ -5583,8 +5583,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &458942871
 Transform:
@@ -5636,8 +5636,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &474229443
 Transform:
@@ -5689,8 +5689,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &474658992
 Transform:
@@ -5759,8 +5759,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!1 &504069880
 GameObject:
@@ -5799,8 +5799,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &504069882
 Transform:
@@ -5942,8 +5942,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &511381317
 Transform:
@@ -5995,8 +5995,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &519706628
 Transform:
@@ -6048,8 +6048,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &523055057
 Transform:
@@ -6101,8 +6101,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &523072976
 Transform:
@@ -6156,8 +6156,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &533371490
 Transform:
@@ -6209,8 +6209,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &536526462
 Transform:
@@ -6277,8 +6277,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &539514279
 GameObject:
@@ -6315,8 +6315,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &539514281
 Transform:
@@ -6368,8 +6368,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &545454030
 Transform:
@@ -6421,8 +6421,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &549809758
 Transform:
@@ -6474,8 +6474,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &553190163
 Transform:
@@ -6616,8 +6616,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &564050683
 Transform:
@@ -6669,8 +6669,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &565709654
 Transform:
@@ -6722,8 +6722,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &567326342
 Transform:
@@ -6775,8 +6775,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &576778865
 Transform:
@@ -6853,8 +6853,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!1 &617769226
 GameObject:
@@ -6891,8 +6891,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &617769228
 Transform:
@@ -7029,8 +7029,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &631750198
 Transform:
@@ -7084,8 +7084,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &644969394
 Transform:
@@ -7137,8 +7137,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &645305834
 Transform:
@@ -7205,8 +7205,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &651618700
 GameObject:
@@ -7243,8 +7243,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &651618702
 Transform:
@@ -7296,8 +7296,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &663263860
 Transform:
@@ -7672,8 +7672,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &682794782
 Transform:
@@ -7744,8 +7744,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &694006839
 Transform:
@@ -7797,8 +7797,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &708767852
 Transform:
@@ -7850,8 +7850,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &709656336
 Transform:
@@ -7903,8 +7903,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &712734659
 Transform:
@@ -7991,8 +7991,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &713382439
 Transform:
@@ -8134,8 +8134,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &744297846
 Transform:
@@ -8188,8 +8188,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &748300577
 Transform:
@@ -8241,8 +8241,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &749663525
 Transform:
@@ -8299,8 +8299,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 2
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 2022937652}
 --- !u!4 &754457675
 Transform:
@@ -8352,8 +8352,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &756352908
 Transform:
@@ -8405,8 +8405,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &769187893
 Transform:
@@ -8458,8 +8458,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &779533091
 Transform:
@@ -8513,8 +8513,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &779533161
 Transform:
@@ -8667,8 +8667,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &784637812
 Transform:
@@ -8720,8 +8720,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &789363123
 Transform:
@@ -8794,8 +8794,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &795631788
 Transform:
@@ -8847,8 +8847,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &801190829
 Transform:
@@ -8900,8 +8900,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &810896727
 Transform:
@@ -8953,8 +8953,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &811460245
 Transform:
@@ -9006,8 +9006,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &823222784
 Transform:
@@ -9560,8 +9560,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &856098048
 Transform:
@@ -9628,8 +9628,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &864905513
 GameObject:
@@ -9666,8 +9666,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &864905515
 Transform:
@@ -9719,8 +9719,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &874441018
 Transform:
@@ -9890,8 +9890,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &884419163
 Transform:
@@ -9943,8 +9943,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &886563741
 Transform:
@@ -9996,8 +9996,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &889006623
 Transform:
@@ -10134,8 +10134,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &890427802
 Transform:
@@ -10187,8 +10187,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 5
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!4 &891429052
 Transform:
@@ -10402,8 +10402,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &911172248
 Transform:
@@ -10455,8 +10455,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &915239647
 Transform:
@@ -10631,8 +10631,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &924007893
 Transform:
@@ -10684,8 +10684,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &928183850
 Transform:
@@ -10737,8 +10737,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &928796572
 Transform:
@@ -10790,8 +10790,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &929084987
 Transform:
@@ -10858,8 +10858,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &930398747
 GameObject:
@@ -10896,8 +10896,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &930398749
 Transform:
@@ -10950,8 +10950,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &932383294
 Transform:
@@ -11018,8 +11018,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!1 &946365943
 GameObject:
@@ -11056,8 +11056,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 0
   width: 5
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!4 &946365945
 Transform:
@@ -11109,8 +11109,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &950480257
 Transform:
@@ -11167,8 +11167,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &956119968
 Transform:
@@ -11225,8 +11225,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &978290708
 Transform:
@@ -11279,8 +11279,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &983839585
 Transform:
@@ -11438,8 +11438,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &990767487
 Transform:
@@ -11570,8 +11570,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1046991594
 Transform:
@@ -11726,8 +11726,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1062294728
 Transform:
@@ -11847,6 +11847,7 @@ MonoBehaviour:
   busStopSign: {fileID: 0}
   lookedAtSign: 0
   BusLine: {fileID: 0}
+  _finalDestination: {fileID: 0}
   Buses:
   - {fileID: 793360198}
   - {fileID: 2108379587}
@@ -12008,8 +12009,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1075218983
 Transform:
@@ -12061,8 +12062,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1083541973
 Transform:
@@ -12114,8 +12115,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1092453649
 Transform:
@@ -12167,8 +12168,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1095119805
 Transform:
@@ -12220,8 +12221,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1100233746
 Transform:
@@ -12273,8 +12274,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1113475967
 Transform:
@@ -12331,8 +12332,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1126113706
 Transform:
@@ -12657,8 +12658,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1131096329
 Transform:
@@ -12710,8 +12711,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1138137738
 Transform:
@@ -12763,8 +12764,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1167882420
 Transform:
@@ -12816,8 +12817,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1169424857
 Transform:
@@ -13241,8 +13242,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1181496473
 Transform:
@@ -13310,8 +13311,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!1 &1198626470
 GameObject:
@@ -13349,8 +13350,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1198626472
 Transform:
@@ -13402,8 +13403,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1200413594
 Transform:
@@ -13455,8 +13456,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1207442321
 Transform:
@@ -13508,8 +13509,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1207752521
 Transform:
@@ -13562,8 +13563,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1212329139
 Transform:
@@ -13615,8 +13616,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1213707138
 Transform:
@@ -13668,8 +13669,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1217827824
 Transform:
@@ -13726,8 +13727,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1239211241
 Transform:
@@ -13784,8 +13785,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1263216596
 Transform:
@@ -13837,8 +13838,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1265071018
 Transform:
@@ -13980,8 +13981,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1272377526
 Transform:
@@ -14033,8 +14034,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1277456704
 Transform:
@@ -14086,8 +14087,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1283530901
 Transform:
@@ -14140,8 +14141,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1292476625
 Transform:
@@ -14193,8 +14194,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1305720723
 Transform:
@@ -14246,8 +14247,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1315036212
 Transform:
@@ -14299,8 +14300,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1325062522
 Transform:
@@ -14473,8 +14474,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &1349069202
 GameObject:
@@ -14614,8 +14615,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1355783584
 Transform:
@@ -14668,8 +14669,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1360240034
 Transform:
@@ -14721,8 +14722,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1363123504
 Transform:
@@ -14774,8 +14775,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1365452593
 Transform:
@@ -14827,8 +14828,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1371804868
 Transform:
@@ -15005,8 +15006,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1408538669
 Transform:
@@ -15060,8 +15061,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1416331468
 Transform:
@@ -15221,8 +15222,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1422449405
 Transform:
@@ -15274,8 +15275,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1422829265
 Transform:
@@ -15327,8 +15328,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1424634763
 Transform:
@@ -15380,8 +15381,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1424863491
 Transform:
@@ -15435,8 +15436,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1438876505
 Transform:
@@ -15488,8 +15489,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1441595594
 Transform:
@@ -15541,8 +15542,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1446787597
 Transform:
@@ -15594,8 +15595,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1448137735
 Transform:
@@ -15647,8 +15648,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1448594468
 Transform:
@@ -15705,8 +15706,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1456627871
 Transform:
@@ -15758,8 +15759,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1459687603
 Transform:
@@ -15811,8 +15812,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1476725877
 Transform:
@@ -15864,8 +15865,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1482217635
 Transform:
@@ -15917,8 +15918,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1485287417
 Transform:
@@ -15972,8 +15973,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1486944574
 Transform:
@@ -16026,8 +16027,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1494854883
 Transform:
@@ -16094,8 +16095,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &1506714827
 GameObject:
@@ -16147,8 +16148,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &1508581001
 GameObject:
@@ -16185,8 +16186,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1508581003
 Transform:
@@ -16243,8 +16244,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1531552854
 Transform:
@@ -16296,8 +16297,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1538977433
 Transform:
@@ -16349,8 +16350,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1542292634
 Transform:
@@ -16402,8 +16403,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1542312958
 Transform:
@@ -16555,8 +16556,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1557055499
 Transform:
@@ -16713,8 +16714,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1563168515
 Transform:
@@ -16766,8 +16767,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1565632796
 Transform:
@@ -16834,8 +16835,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 1
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!1 &1570802298
 GameObject:
@@ -16872,8 +16873,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1570802300
 Transform:
@@ -16930,8 +16931,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1581880175
 Transform:
@@ -16983,8 +16984,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1591038696
 Transform:
@@ -17036,8 +17037,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1592669450
 Transform:
@@ -17091,8 +17092,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1594882952
 Transform:
@@ -17144,8 +17145,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1596685201
 Transform:
@@ -17282,8 +17283,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1605425246
 Transform:
@@ -17429,8 +17430,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!1 &1620153396
 GameObject:
@@ -17498,8 +17499,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1622247284
 Transform:
@@ -17688,8 +17689,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1625449426
 Transform:
@@ -19451,8 +19452,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1642445035
 Transform:
@@ -19505,8 +19506,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1642807488
 Transform:
@@ -19558,8 +19559,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1646339537
 Transform:
@@ -19613,8 +19614,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1646836762
 Transform:
@@ -19758,8 +19759,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1659638755
 Transform:
@@ -19811,8 +19812,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1664869085
 Transform:
@@ -19866,8 +19867,8 @@ MonoBehaviour:
   branchRatio: 1
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1666173897
 Transform:
@@ -19919,8 +19920,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1691348793
 Transform:
@@ -19973,8 +19974,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1695412425
 Transform:
@@ -20026,8 +20027,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1700026480
 Transform:
@@ -20079,8 +20080,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1717455592
 Transform:
@@ -20132,8 +20133,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1723767580
 Transform:
@@ -20185,8 +20186,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1743626350
 Transform:
@@ -20315,8 +20316,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1790603528
 Transform:
@@ -20368,8 +20369,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1793019421
 Transform:
@@ -20421,8 +20422,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1806729589
 Transform:
@@ -20474,8 +20475,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1806795387
 Transform:
@@ -20527,8 +20528,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1807702805
 Transform:
@@ -20580,8 +20581,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1811350101
 Transform:
@@ -20633,8 +20634,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1819804470
 Transform:
@@ -20686,8 +20687,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1820687695
 Transform:
@@ -20739,8 +20740,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1832208023
 Transform:
@@ -20792,8 +20793,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1832968987
 Transform:
@@ -20845,8 +20846,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1841684243
 Transform:
@@ -20899,8 +20900,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1851926175
 Transform:
@@ -21049,8 +21050,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1881227681
 Transform:
@@ -21102,8 +21103,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1884482235
 Transform:
@@ -21156,8 +21157,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1886199377
 Transform:
@@ -21209,8 +21210,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1887735961
 Transform:
@@ -21263,8 +21264,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1888286265
 Transform:
@@ -21316,8 +21317,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1890443220
 Transform:
@@ -21369,8 +21370,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1890693346
 Transform:
@@ -21422,8 +21423,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1893794375
 Transform:
@@ -21480,8 +21481,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1906674506
 Transform:
@@ -21538,8 +21539,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1923930861
 Transform:
@@ -21591,8 +21592,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 0
   width: 5
+  TrafficState: 0
   busStop: {fileID: 0}
 --- !u!4 &1929761328
 Transform:
@@ -21729,8 +21730,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1948293551
 Transform:
@@ -21794,8 +21795,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1951897818
 Transform:
@@ -21941,8 +21942,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1971433409
 Transform:
@@ -21995,8 +21996,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1974506926
 Transform:
@@ -22048,8 +22049,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1983878429
 Transform:
@@ -22190,8 +22191,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1992376316
 Transform:
@@ -22278,8 +22279,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &1998613469
 Transform:
@@ -22331,8 +22332,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2000091836
 Transform:
@@ -22384,8 +22385,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2001969863
 Transform:
@@ -22448,8 +22449,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2022989695
 Transform:
@@ -22567,8 +22568,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2029779164
 Transform:
@@ -22620,8 +22621,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2043109525
 Transform:
@@ -22673,8 +22674,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2043343980
 Transform:
@@ -22726,8 +22727,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2050942637
 Transform:
@@ -23085,8 +23086,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 1
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2059179471
 Transform:
@@ -23138,8 +23139,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2064981742
 Transform:
@@ -23191,8 +23192,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2077167744
 Transform:
@@ -23744,8 +23745,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 2
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 1552535814}
 --- !u!4 &2088926439
 Transform:
@@ -23798,8 +23799,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2091878685
 Transform:
@@ -23852,8 +23853,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2092618651
 Transform:
@@ -23920,8 +23921,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!1 &2104107374 stripped
 GameObject:
@@ -24046,8 +24047,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2121901478
 Transform:
@@ -24099,8 +24100,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2128412877
 Transform:
@@ -24152,8 +24153,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2137069863
 Transform:
@@ -24205,8 +24206,8 @@ MonoBehaviour:
   branchRatio: 0.5
   connections: []
   waypointType: 0
-  TrafficState: 1
   width: 2.5
+  TrafficState: 1
   busStop: {fileID: 0}
 --- !u!4 &2141327566
 Transform:
