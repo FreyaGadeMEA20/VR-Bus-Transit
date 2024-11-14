@@ -1,7 +1,8 @@
 To do:
+ - Add check for if player has exited the correct bus stop
  - Add more bus stops (when Nickolai is finished with road)
  - Make program check whether or not the player has entered the correct bus
- - Screens to show they did something wrong
+ - Screens to show they did something wrong OR completed the game (if needed)
  - Fix bus freezing up after player has exited
  - Fix seating (Reset camera offset?)
  - Make player not sit in an NPC's lap
