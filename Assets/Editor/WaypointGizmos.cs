@@ -43,7 +43,7 @@ public class WaypointEditor
         }
 
         // Draws a sphere in the position of the waypoint
-        Gizmos.DrawSphere(waypoint.transform.position, 0.1f);
+        Gizmos.DrawSphere(waypoint.transform.position, 3f);
 
         // Draws a line from the waypoint to the right and left, to show the width of the waypoint
         Gizmos.color = Color.white;
