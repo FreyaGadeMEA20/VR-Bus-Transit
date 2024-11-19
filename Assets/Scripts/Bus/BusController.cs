@@ -65,7 +65,7 @@ public class BusController : MonoBehaviour
         busState = BusState.STOP_BUTTON_PRESSED;
         vehicleMovement = GetComponent<VehicleMovement>();
         doors = GetComponent<DoorController>();
-        screens = GetComponent<BusScreenController>();
+        screens = GetComponentInChildren<BusScreenController>();
         seatAssigner = GetComponentInChildren<BusSeatAssigner>();
     }
 

@@ -135,7 +135,7 @@ namespace Movement{
                             if(entityType == EntityTypes.Bus && !reachedBusStop){
                                 reachedBusStop = true;
                                 breaks = true;
-                                //routeManager.currentWaypoint.busStop.deathZone.SetActive(false);
+                                routeManager.currentWaypoint.busStop.deathZone.SetActive(false);
                                 busController.StopBus();
                                 routeManager.SetRoute();
                             }
