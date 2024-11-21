@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
             BusToGetOn = Buses[UnityEngine.Random.Range(0, Buses.Length)];
 
         BusLine = BusToGetOn.vehicleMovement._RouteManager.busLine;
-        _finalDestination = BusLine.ChooseRandomWaypoint();
+        _finalDestination = BusToGetOn.vehicleMovement._RouteManager.ChooseRandomWaypoint();
 
         // Set the initial final destination
     }
@@ -224,12 +224,12 @@ public class GameManager : MonoBehaviour
     }
 
     void UpdateBusStopState(){
-        if(BusToGetOn.HasCheckedIn){
+        if(BusToGetOn.HasCheckedIn){ // CHANGE THIS? ADD MORE TO THIS?
             // add a check to see if it is the correct bus that has been checked in at
-            if(BusToGetOn.vehicleMovement._RouteManager.busLine == BusLine){
+            if(BusToGetOn.vehicleMovement._RouteManager.busLine.Equals(BusLine)){
                 ChangeState(GameState.CHECKED_IN);
             } else {
-                Debug.Log("Wrong bus");
+                Debug.LogWarning("Wrong bus");
                 //FadeToBlack.Instance.FadeOutAndLoadScene("WrongBus");
             }
             //ChangeState(GameState.CHECKED_IN);
@@ -251,8 +251,8 @@ public class GameManager : MonoBehaviour
 
     void UpdateStopButtonState(){
         if(!BusToGetOn.HasCheckedIn){
-            if(BusToGetOn.vehicleMovement._RouteManager.currentWaypoint == _finalDestination){
-                Debug.Log("WOWZERS");
+            if(BusToGetOn.vehicleMovement._RouteManager.currentWaypoint.Equals(_finalDestination)){
+                Debug.LogWarning("WOWZERS");
             }
             ChangeState(GameState.CHECKED_OUT);
         }

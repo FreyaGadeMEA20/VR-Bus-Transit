@@ -1,6 +1,5 @@
 To do:
- - Add check for if player has exited the correct bus stop
- - Make program check whether or not the player has entered the correct bus
+ - Make program check whether or not the player has entered the correct bus (need to test)
 
  - Screens to show they did something wrong OR completed the game (if needed)
  - Fix bus freezing up after player has exited
@@ -14,6 +13,7 @@ To do:
  - Fix corners (busses driving into the sidewalk)
 
  COMPLETED:
+ - Add check for if player has exited the correct bus stop ✅
  - Add more bus stops (when Nickolai is finished with road) ✅
  - Colliders for street ✅
   - Add connection between traffic light and Colliders ✅

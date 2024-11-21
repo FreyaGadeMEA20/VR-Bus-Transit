@@ -137,6 +137,7 @@ namespace Movement{
                                 breaks = true;
                                 routeManager.currentWaypoint.busStop.deathZone.SetActive(false);
                                 busController.StopBus();
+                                busController.screens.ApplyNextTexture(); // change the bus screen texture
                                 routeManager.SetRoute();
                             }
                             // Add logic to tell the bus that it is at a bus stop
@@ -317,10 +318,6 @@ namespace Movement{
         bool CheckIfCar(){
             // Checks if there is a vehicle infront of the current vehicle
             return collisionDetector.GetComponent<CollisionDetector>().CheckForVehicleInfront();
-        }
-
-        public void SetDestination(Waypoint destination){
-            this.currentWaypoint = destination;
         }
 
         void UpdateWheel(WheelCollider col, Transform trans) 

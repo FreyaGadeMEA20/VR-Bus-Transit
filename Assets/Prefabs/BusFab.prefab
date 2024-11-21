@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   busScreenController: {fileID: 8139587815507489976}
-  busController: {fileID: 0}
+  busController: {fileID: 1850163252479042898}
 --- !u!114 &7913492655840015044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5451,8 +5451,8 @@ MonoBehaviour:
     nextNextNextStation: {fileID: 7654254798062900721}
     line: {fileID: 2178234007472029292}
     image: {fileID: 1741398977645169328}
-  stopScreen: {fileID: 21300000, guid: 1a2089536ecd1db4c86ef364d4ce5737, type: 3}
-  dotScreen: {fileID: 21300000, guid: 0ffc8d3422cbffb42a8b6704b040a36e, type: 3}
+  stopScreen: {fileID: 21300000, guid: 0ffc8d3422cbffb42a8b6704b040a36e, type: 3}
+  dotScreen: {fileID: 21300000, guid: 1a2089536ecd1db4c86ef364d4ce5737, type: 3}
   routeManager: {fileID: 3481685594001589083}
   stopList: []
 --- !u!1 &6608810831019008099

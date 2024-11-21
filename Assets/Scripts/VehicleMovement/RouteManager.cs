@@ -23,8 +23,6 @@ namespace Movement {
             SetRoute();
 
             SendInformationToWaypoint();
-
-            busLine.waypoints = busStops;
         }
 
         
@@ -79,6 +77,14 @@ namespace Movement {
 
             return null;
         } 
+
+        public Waypoint ChooseRandomWaypoint()
+        {
+            int randomIndex = Random.Range(0, busStops.Count-1);
+            Waypoint randomWaypoint = busStops[randomIndex];
+
+            return randomWaypoint;
+        }
 
         /* void Update(){
             if(controller.ReachedDestination){

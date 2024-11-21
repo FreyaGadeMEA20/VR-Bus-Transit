@@ -80,6 +80,7 @@ public class BusSeatAssigner : MonoBehaviour
         Debug.Log("New rotation: " + newRot);
         player.transform.rotation = newRot;
 
+        player.layer = LayerMask.NameToLayer("Default");
         // Enable the player's movement
         player.GetComponent<DynamicMoveProvider>().moveSpeed = 3;
         player.GetComponent<DynamicMoveProvider>().useGravity = true;

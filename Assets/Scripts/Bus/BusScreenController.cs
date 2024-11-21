@@ -22,8 +22,6 @@ public class BusScreenController : MonoBehaviour
     [SerializeField] Screen[] sceens = new Screen[2];
     [SerializeField] Sprite stopScreen;
     [SerializeField] Sprite dotScreen;
-    //public Material newMat; // Reference to the material renderer
-    private int currentIndex = 0; // Index of the current image
 
     [SerializeField] RouteManager routeManager;
     public List<Waypoint> stopList;

@@ -8,7 +8,7 @@ public class BusController : MonoBehaviour
 {
     // -- Outside Attributes --
     DoorController doors;
-    BusScreenController screens;
+    public BusScreenController screens;
     BusSeatAssigner seatAssigner{
         get{return SeatAssigner;}
         set{SeatAssigner = value;}
@@ -103,7 +103,6 @@ public class BusController : MonoBehaviour
 
         doorsOpen = true;  // set the doors to be open
 
-        screens.ApplyNextTexture(); // change the bus screen texture
         
         if(busStopped && seatAssigner.PlayerSeated){
             seatAssigner.UnassignSeat(); // unassign the player from the seat

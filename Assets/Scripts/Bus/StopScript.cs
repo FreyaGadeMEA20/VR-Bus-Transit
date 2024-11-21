@@ -9,8 +9,6 @@ public class StopScript : MonoBehaviour
 
     void Start(){
         busController = GetComponentInParent<BusController>();
-        
-        busScreenController = GetComponentInParent<BusScreenController>();
 //        busController = GameObject.Find("BusController").GetComponent<BusController>();
     }
 
