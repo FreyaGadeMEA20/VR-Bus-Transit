@@ -1054,7 +1054,7 @@ PrefabInstance:
     - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: currentWaypoint
       value: 
-      objectReference: {fileID: 327899968}
+      objectReference: {fileID: 1371804867}
     - target: {fileID: 3481685594001589083, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: busStops.Array.size
       value: 5
@@ -1309,7 +1309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 306.7
+      value: 248.9
       objectReference: {fileID: 0}
     - target: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1317,7 +1317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 165.7
+      value: 168.9
       objectReference: {fileID: 0}
     - target: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalRotation.w
