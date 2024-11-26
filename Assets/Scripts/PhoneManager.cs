@@ -9,6 +9,7 @@ using UnityEngine.InputSystem;
 
 public class PhoneManager : MonoBehaviour
 {
+    [SerializeField] Animator phoneAnimator;
     [SerializeField] Material phoneScreen;
     [SerializeField] PhoneScreen[] phoneScreens;
     
@@ -45,6 +46,8 @@ public class PhoneManager : MonoBehaviour
         pullOutPhone = GameManager.Instance.handSwitch;
         pullOutPhone.action.performed += ctx => StartCoroutine(TogglePhone());
         GameManager.Instance.OnVariableChange += PhoneSlider;
+
+        phoneAnimator.SetTrigger("HoldObject");
 
         // Test data   
         StartCoroutine(FillRejseplanen());

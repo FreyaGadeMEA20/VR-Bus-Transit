@@ -2042,7 +2042,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6653285379173045858}
   - {fileID: 4801423002918379276}
@@ -2147,6 +2147,16 @@ MonoBehaviour:
     to: {fileID: 9138536063939296456}
     bus: {fileID: 7676945954279065478}
     getOff: {fileID: 6166372512374320464}
+  RejseplanInfo:
+    v1: 
+    nameMap:
+    - From
+    - To
+    - Bus Number
+    - Get off
+    v2: 
+    v3: 
+    v4: 
 --- !u!1 &3649129406151435788
 GameObject:
   m_ObjectHideFlags: 0
