@@ -19,7 +19,6 @@ public class RejskortStanderFunctions : MonoBehaviour
     public Renderer ScreenText; // Reference til det object der skal have �ndret materiale
 
     private Material originalMaterial;
-   
     private bool canInteract; // Can the player interact with the stander?
     private bool isCoroutineRunning = false; 
     public bool checkIndStander; // If this is a checkInd stander, then this is true. If it is a checkUd stander, then this is false.
@@ -45,56 +44,27 @@ public class RejskortStanderFunctions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(checkIndStander)
-        {
-            if (canInteract)
-            {
-                if (other.gameObject.CompareTag("Skolekort"))
-                {
-                    if (Bus.HasCheckedIn)
-                    {
-                        // Already checked in
-                        HandleAlreadyCheckedIn();
-                    }
-                    else
-                    {
-                        // Perform check-in
-                        HandleCheckIn();
+        if(!canInteract)
+            return;
 
-                        /* if(!Bus.CorrectBus){
-                            Bus.WrongBus();
-                        } */
-                    }
-                }
-            }
-            else
-            {
-                Debug.Log("Cannot interact");
-            }
-        }
-        else
-        {
-            if (canInteract)
-            {
-                if (other.CompareTag("Skolekort"))
-                {
-                    if (Bus.HasCheckedIn)
-                    {
-                        // Already checked in
-                        HandleCheckOut();
-                    }
-                    else
-                    {
-                        HandleAlreadyCheckedOut();
-                        // Perform check-in
+        if(!other.gameObject.CompareTag("Skolekort"))
+            return; 
 
-                    }
+        switch(checkIndStander){
+            case true:
+                if(RejsekortInformation.Instance.GetCheckedIn()){
+                    HandleAlreadyCheckedIn();
+                }else{
+                    HandleCheckIn();
                 }
-            }
-            else
-            {
-                Debug.Log("Cannot interact");
-            }
+                break;
+            case false:
+                if(RejsekortInformation.Instance.GetCheckedIn()){
+                    HandleCheckOut();
+                }else{
+                    HandleAlreadyCheckedOut();
+                }
+                break;
         }
     }
 
@@ -119,7 +89,8 @@ public class RejskortStanderFunctions : MonoBehaviour
         Blaatlys.enabled = false;
         audioSource.Play();
         canInteract = false;
-        Bus.HasCheckedIn = true;
+        RejsekortInformation.Instance.CheckIn();
+        RejsekortInformation.Instance.AssignBus(Bus);
 
         // Change material on ScreenText to OkText
         if (ScreenText != null && checkedIn_GodRejse != null)
@@ -151,7 +122,8 @@ public class RejskortStanderFunctions : MonoBehaviour
         Blaatlys.enabled = false;
         audioSource.Play();
         canInteract = false;
-        Bus.HasCheckedIn = false;
+        RejsekortInformation.Instance.CheckOut();
+        RejsekortInformation.Instance.DeductBalance(20);
         Debug.Log("Checked out");
 
         // Change material on ScreenText to OkText

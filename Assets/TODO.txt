@@ -1,6 +1,4 @@
 To do:
- - Make program check whether or not the player has entered the correct bus (need to test)
-
  - Screens to show they did something wrong OR completed the game (if needed)
  - Fix bus freezing up after player has exited
   - Fix by ending the game
@@ -8,12 +6,12 @@ To do:
  - Fix seating (Reset camera offset?)
  - Make player not sit in an NPC's lap
 
- - Fix crash spots (busses driving into each other)
-  - Ulvevej / Ørnegade traffic light
+ - Fix crash spots (busses driving into each other) 
  - Fix corners (busses driving into the sidewalk)
 
  COMPLETED:
  - Add check for if player has exited the correct bus stop ✅
+ - Make program check whether or not the player has entered the correct bus (need to test)✅
  - Add more bus stops (when Nickolai is finished with road) ✅
  - Colliders for street ✅
   - Add connection between traffic light and Colliders ✅

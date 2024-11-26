@@ -1333,8 +1333,8 @@ MonoBehaviour:
   reachedDestination: 0
   stopDistance: 2.5
   rotationSpeed: 120
-  minSpeed: 1.25
-  maxSpeed: 2
+  minSpeed: 2
+  maxSpeed: 3
   movementSpeed: 1.6
 --- !u!114 &2905389745571298760
 MonoBehaviour:

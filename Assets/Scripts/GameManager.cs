@@ -185,6 +185,10 @@ public class GameManager : MonoBehaviour
     }
 
     void UpdatePhoneState(){
+        if(RejsekortInformation.Instance.GetCheckedIn() && !inCorrectStopZone)
+            Debug.Log("Player has checked in at the wrong stop");
+            // do something
+        
         // Check if the player is near the designated bus stop
         if(!inCorrectStopZone){
             Debug.Log("Player is not in the correct stop zone");
@@ -203,7 +207,7 @@ public class GameManager : MonoBehaviour
 
         // Counts down to see how long the player has been by the bus stop
         if (isCountingDown) {
-            countdownTimer += Time.deltaTime;
+            OnVariableChange(countdownTimer+=Time.deltaTime);
             Debug.Log($"Player has been by the sign for {(countdownTimer-3)*-1:#.0} seconds");
             
             // for phone visuals vvv
@@ -224,16 +228,17 @@ public class GameManager : MonoBehaviour
     }
 
     void UpdateBusStopState(){
-        if(BusToGetOn.HasCheckedIn){ // CHANGE THIS? ADD MORE TO THIS?
-            // add a check to see if it is the correct bus that has been checked in at
-            if(BusToGetOn.vehicleMovement._RouteManager.busLine.Equals(BusLine)){
-                ChangeState(GameState.CHECKED_IN);
-            } else {
-                Debug.LogWarning("Wrong bus");
-                //FadeToBlack.Instance.FadeOutAndLoadScene("WrongBus");
-            }
-            //ChangeState(GameState.CHECKED_IN);
+        if(!RejsekortInformation.Instance.GetCheckedIn())
+            return;
+        
+        // add a check to see if it is the correct bus that has been checked in at
+        if(BusToGetOn.Equals(RejsekortInformation.Instance.GetBus())){//BusToGetOn.vehicleMovement._RouteManager.busLine.Equals(BusLine)){
+            ChangeState(GameState.CHECKED_IN);
+        } else {
+            Debug.LogWarning("Wrong bus");
+            //FadeToBlack.Instance.FadeOutAndLoadScene("WrongBus");
         }
+        
     }
 
     void UpdateCheckInState(){
@@ -250,17 +255,20 @@ public class GameManager : MonoBehaviour
     }
 
     void UpdateStopButtonState(){
-        if(!BusToGetOn.HasCheckedIn){
-            if(BusToGetOn.vehicleMovement._RouteManager.currentWaypoint.Equals(_finalDestination)){
-                Debug.LogWarning("WOWZERS");
-            }
-            ChangeState(GameState.CHECKED_OUT);
+        if(RejsekortInformation.Instance.GetCheckedIn())
+            return;
+        
+        if(!BusToGetOn.vehicleMovement._RouteManager.currentWaypoint.Equals(_finalDestination)){
+            Debug.Log("Wrong stop");
+            return;
         }
+
+        Debug.LogWarning("WOWZERS");
+        ChangeState(GameState.CHECKED_OUT);
     }
 
     void UpdateCheckOutState(){
         Debug.Log("Finished");
-        
 
         // Check how well the player did (if needed)
         //  - Off at correct bus stop?
