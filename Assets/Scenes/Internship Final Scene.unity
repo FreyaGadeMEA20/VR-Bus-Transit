@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34223714, g: 0.43345302, b: 0.5748249, a: 1}
+  m_IndirectSpecularColor: {r: 0.34243163, g: 0.43279153, b: 0.57317823, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,7 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 539514280}
   previousWaypoint: {fileID: 779533090}
-  branches: []
+  branches:
+  - {fileID: 2108935439}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -338,7 +339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1760605155}
   previousWaypoint: {fileID: 688716051}
-  branches: []
+  branches:
+  - {fileID: 1984041086}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -460,7 +462,7 @@ Transform:
   m_GameObject: {fileID: 16878192}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7080236, z: -0, w: 0.7061888}
-  m_LocalPosition: {x: 128.2, y: 0, z: -92.57}
+  m_LocalPosition: {x: 123.87, y: 0, z: -92.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2230,7 +2232,7 @@ Transform:
   m_GameObject: {fileID: 38363424}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 127.5, y: 0, z: 139.54}
+  m_LocalPosition: {x: 123.9, y: 0, z: 139.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2320,7 +2322,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1625933526}
   previousWaypoint: {fileID: 548893422}
-  branches: []
+  branches:
+  - {fileID: 1159981315}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -2374,8 +2377,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1520121787}
   branches:
-  - {fileID: 549221410}
-  - {fileID: 177872840}
+  - {fileID: 896229874}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -2610,8 +2612,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1642445034}
   branches:
-  - {fileID: 269048973}
-  - {fileID: 2100468260}
+  - {fileID: 1494854882}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -3004,8 +3005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1075218982}
   previousWaypoint: {fileID: 1424863490}
-  branches:
-  - {fileID: 1200366507}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -3196,7 +3196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1243074794}
-  previousWaypoint: {fileID: 2092618650}
+  previousWaypoint: {fileID: 151208522}
   branches: []
   branchRatio: 0.5
   connections: []
@@ -3409,7 +3409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1935678001}
   previousWaypoint: {fileID: 1316329925}
-  branches: []
+  branches:
+  - {fileID: 442187569}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -3462,7 +3463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1529455679}
   previousWaypoint: {fileID: 492999345}
-  branches: []
+  branches:
+  - {fileID: 321247479}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -3568,8 +3570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1743626349}
   previousWaypoint: {fileID: 928183849}
-  branches:
-  - {fileID: 16878193}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -3622,7 +3623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 140386511}
   previousWaypoint: {fileID: 1370279682}
-  branches: []
+  branches:
+  - {fileID: 1086524811}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -3758,7 +3760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 688825184}
   previousWaypoint: {fileID: 446018408}
-  branches: []
+  branches:
+  - {fileID: 1175225714}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -4022,6 +4025,8 @@ Transform:
   - {fileID: 1397679575}
   - {fileID: 665516371}
   - {fileID: 1772075012}
+  - {fileID: 151208523}
+  - {fileID: 1335758463}
   - {fileID: 2092618651}
   - {fileID: 1594882952}
   - {fileID: 38363426}
@@ -4243,6 +4248,7 @@ Transform:
   - {fileID: 1769705859}
   - {fileID: 945084821}
   - {fileID: 1175225715}
+  - {fileID: 957391415}
   - {fileID: 1960311279}
   - {fileID: 1032130323}
   - {fileID: 170172132}
@@ -4511,8 +4517,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1538977432}
   branches:
-  - {fileID: 811460244}
-  - {fileID: 1605425245}
+  - {fileID: 856098047}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -4674,8 +4679,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 1714601541}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1114947358}
-  - {fileID: 1310893205}
+  - {fileID: 391898114}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -4781,7 +4785,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 748300576}
   previousWaypoint: {fileID: 107142845}
-  branches: []
+  branches:
+  - {fileID: 38363425}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -4887,7 +4892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1557055498}
   previousWaypoint: {fileID: 631750197}
-  branches: []
+  branches:
+  - {fileID: 727437867}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -4904,6 +4910,60 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 148.5, y: 0, z: -56.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 120983775}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &151208521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151208523}
+  - component: {fileID: 151208522}
+  m_Layer: 0
+  m_Name: Waypoint 419
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &151208522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151208521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextWaypoint: {fileID: 77423825}
+  previousWaypoint: {fileID: 2092618650}
+  branches:
+  - {fileID: 131316474}
+  branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  width: 2.5
+  TrafficState: 0
+  busStop: {fileID: 0}
+--- !u!4 &151208523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151208521}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 114.33, y: 0, z: 177.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5351,7 +5411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 511424983}
   previousWaypoint: {fileID: 393374709}
-  branches: []
+  branches:
+  - {fileID: 1502455472}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -5631,7 +5692,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 896229874}
   previousWaypoint: {fileID: 81007745}
-  branches: []
+  branches:
+  - {fileID: 1520121787}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -5791,7 +5853,7 @@ Transform:
   m_GameObject: {fileID: 187394790}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999992, z: -0, w: -0.0012557333}
-  m_LocalPosition: {x: -209.64969, y: 0, z: -123.41}
+  m_LocalPosition: {x: -209.64969, y: 0, z: -126.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5941,7 +6003,7 @@ Transform:
   m_GameObject: {fileID: 202188511}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7070206, z: -0, w: 0.70719296}
-  m_LocalPosition: {x: -178.8, y: 0, z: 139.31}
+  m_LocalPosition: {x: -175.45, y: 0, z: 139.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6250,8 +6312,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 321247479}
   branches:
-  - {fileID: 91266096}
-  - {fileID: 2041361222}
+  - {fileID: 1529455679}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -6319,7 +6380,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 2100468260}
-  branches: []
+  branches:
+  - {fileID: 1642445034}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -6792,7 +6854,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2043343979}
   previousWaypoint: {fileID: 1494854882}
-  branches: []
+  branches:
+  - {fileID: 1642445034}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -6952,8 +7015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 323369970}
   previousWaypoint: {fileID: 736333490}
-  branches:
-  - {fileID: 1480352785}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -7059,7 +7121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2091878684}
   previousWaypoint: {fileID: 1531552853}
-  branches: []
+  branches:
+  - {fileID: 1570802299}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -7595,7 +7658,7 @@ Transform:
   m_GameObject: {fileID: 321247478}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70540255, z: -0, w: 0.70880693}
-  m_LocalPosition: {x: -459.14, y: 0, z: 43.42}
+  m_LocalPosition: {x: -455.44, y: 0, z: 43.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7632,7 +7695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1989726244}
   previousWaypoint: {fileID: 281310302}
-  branches: []
+  branches:
+  - {fileID: 1480352785}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -7770,7 +7834,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1440239428}
   previousWaypoint: {fileID: 256778391}
-  branches: []
+  branches:
+  - {fileID: 1222417780}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -7839,7 +7904,7 @@ Transform:
   m_GameObject: {fileID: 324177050}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.00072857406, z: -0, w: 0.99999976}
-  m_LocalPosition: {x: -209.7, y: 0, z: 156.67}
+  m_LocalPosition: {x: -209.7, y: 0, z: 153.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8194,7 +8259,7 @@ Transform:
   m_GameObject: {fileID: 340725054}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.6964103, z: -0, w: 0.71764386}
-  m_LocalPosition: {x: -192.64, y: 0, z: 3.5674887}
+  m_LocalPosition: {x: -195.97, y: 0, z: 3.5674887}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8337,7 +8402,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1079205064}
   previousWaypoint: {fileID: 1995593943}
-  branches: []
+  branches:
+  - {fileID: 1745821650}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -8629,7 +8695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2089116188}
   previousWaypoint: {fileID: 931401013}
-  branches: []
+  branches:
+  - {fileID: 976900388}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -8683,8 +8750,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 22566151}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 536526461}
-  - {fileID: 1948293550}
+  - {fileID: 932383293}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -9004,8 +9070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1114947358}
   previousWaypoint: {fileID: 1310893205}
-  branches:
-  - {fileID: 1714601541}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -9249,7 +9314,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1141392600}
   previousWaypoint: {fileID: 2082799986}
-  branches: []
+  branches:
+  - {fileID: 2098833237}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -9457,7 +9523,7 @@ Transform:
   m_GameObject: {fileID: 422605363}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70942867, z: -0, w: -0.70477724}
-  m_LocalPosition: {x: 127.4, y: 0, z: -12.56}
+  m_LocalPosition: {x: 124.09, y: 0, z: -12.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9787,7 +9853,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1832968986}
   previousWaypoint: {fileID: 1207442320}
-  branches: []
+  branches:
+  - {fileID: 923749420}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -9909,7 +9976,7 @@ Transform:
   m_GameObject: {fileID: 442187568}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70540255, z: -0, w: -0.70880693}
-  m_LocalPosition: {x: -472.6, y: 0, z: 43.42}
+  m_LocalPosition: {x: -476.1, y: 0, z: 43.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10202,7 +10269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1100233745}
   previousWaypoint: {fileID: 748300576}
-  branches: []
+  branches:
+  - {fileID: 38363425}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -10481,8 +10549,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 187394791}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1837218864}
-  - {fileID: 1497024794}
+  - {fileID: 1096173440}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -10589,8 +10656,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 2016196554}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 932782563}
-  - {fileID: 1706254932}
+  - {fileID: 854675781}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -10855,7 +10921,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1929102597}
   previousWaypoint: {fileID: 941963283}
-  branches: []
+  branches:
+  - {fileID: 202188512}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -11123,8 +11190,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1622247283}
   branches:
-  - {fileID: 2128412876}
-  - {fileID: 886563740}
+  - {fileID: 1851926174}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -11319,8 +11385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1906674505}
   previousWaypoint: {fileID: 1305720722}
-  branches:
-  - {fileID: 645305833}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -11373,8 +11438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1116206784}
   previousWaypoint: {fileID: 164519420}
-  branches:
-  - {fileID: 1502455472}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -11549,8 +11613,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 909719194}
   branches:
-  - {fileID: 1641453254}
-  - {fileID: 1890737417}
+  - {fileID: 1887300230}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -11589,8 +11652,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 202188512}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 485579651}
-  - {fileID: 832944647}
+  - {fileID: 1929102597}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -11696,7 +11758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 131316474}
-  branches: []
+  branches:
+  - {fileID: 2092618650}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -11749,7 +11812,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1407741901}
-  branches: []
+  branches:
+  - {fileID: 22566151}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -12014,8 +12078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 40397476}
   previousWaypoint: {fileID: 1821889401}
-  branches:
-  - {fileID: 1159981315}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -12068,7 +12131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 941963283}
   previousWaypoint: {fileID: 896229874}
-  branches: []
+  branches:
+  - {fileID: 1520121787}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -12703,7 +12767,7 @@ Transform:
   m_GameObject: {fileID: 573378820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7029856, z: -0, w: 0.7112042}
-  m_LocalPosition: {x: -192.55, y: 0, z: -92.631165}
+  m_LocalPosition: {x: -196.13, y: 0, z: -92.631165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13197,8 +13261,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 1086524811}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1618214932}
-  - {fileID: 107142845}
+  - {fileID: 1370279682}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -13304,7 +13367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 726377716}
   previousWaypoint: {fileID: 1462244565}
-  branches: []
+  branches:
+  - {fileID: 1009617537}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -13614,7 +13678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1112371796}
   previousWaypoint: {fileID: 1227266695}
-  branches: []
+  branches:
+  - {fileID: 340725055}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -13774,8 +13839,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 2043109524}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 930398748}
-  - {fileID: 1441595593}
+  - {fileID: 1974506925}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -14146,7 +14210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1615635432}
   previousWaypoint: {fileID: 1265077798}
-  branches: []
+  branches:
+  - {fileID: 573378821}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -14787,8 +14852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 14730417}
   previousWaypoint: {fileID: 842515876}
-  branches:
-  - {fileID: 1984041086}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -14841,8 +14905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1260166655}
   previousWaypoint: {fileID: 108814266}
-  branches:
-  - {fileID: 1175225714}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -14967,7 +15030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1292476624}
   previousWaypoint: {fileID: 539514280}
-  branches: []
+  branches:
+  - {fileID: 474658991}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -15408,7 +15472,7 @@ Transform:
   m_GameObject: {fileID: 727437866}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70748323, z: -0, w: 0.7067302}
-  m_LocalPosition: {x: 141.29, y: 0, z: -60.59}
+  m_LocalPosition: {x: 144.74, y: 0, z: -60.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15551,7 +15615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 281310302}
   previousWaypoint: {fileID: 457857575}
-  branches: []
+  branches:
+  - {fileID: 1480352785}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -15657,7 +15722,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1126113705}
   previousWaypoint: {fileID: 1565632795}
-  branches: []
+  branches:
+  - {fileID: 1018501277}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -15710,8 +15776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 455763101}
   previousWaypoint: {fileID: 140386511}
-  branches:
-  - {fileID: 38363425}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -16198,8 +16263,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1108618735}
   branches:
-  - {fileID: 1277456703}
-  - {fileID: 956119967}
+  - {fileID: 1424634762}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -16305,8 +16369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 7016501}
   previousWaypoint: {fileID: 978290707}
-  branches:
-  - {fileID: 2108935439}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -16360,9 +16423,8 @@ MonoBehaviour:
   nextWaypoint: {fileID: 713382438}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1217827823}
-  - {fileID: 1408538668}
-  branchRatio: 0.5
+  - {fileID: 1212329138}
+  branchRatio: 1
   connections: []
   waypointType: 0
   width: 2.5
@@ -16835,7 +16897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1083541972}
   previousWaypoint: {fileID: 2064981741}
-  branches: []
+  branches:
+  - {fileID: 1860152533}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -16889,8 +16952,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1480352785}
   branches:
-  - {fileID: 736333490}
-  - {fileID: 323369970}
+  - {fileID: 281310302}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -16943,7 +17005,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 856098047}
   previousWaypoint: {fileID: 1890693345}
-  branches: []
+  branches:
+  - {fileID: 1538977432}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -17103,8 +17166,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1018501277}
   branches:
-  - {fileID: 744297845}
-  - {fileID: 1181496472}
+  - {fileID: 1126113705}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -17157,7 +17219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 542237065}
   previousWaypoint: {fileID: 1929102597}
-  branches: []
+  branches:
+  - {fileID: 202188512}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -17446,7 +17509,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 688716051}
   previousWaypoint: {fileID: 1625933526}
-  branches: []
+  branches:
+  - {fileID: 1984041086}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -17695,8 +17759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1706254932}
   previousWaypoint: {fileID: 932782563}
-  branches:
-  - {fileID: 2016196554}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -17819,8 +17882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1605425245}
   previousWaypoint: {fileID: 811460244}
-  branches:
-  - {fileID: 1538977432}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -17873,7 +17935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1316329925}
   previousWaypoint: {fileID: 1079205064}
-  branches: []
+  branches:
+  - {fileID: 442187569}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -18447,7 +18510,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1523037639}
   previousWaypoint: {fileID: 1694374818}
-  branches: []
+  branches:
+  - {fileID: 1964374605}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -18500,7 +18564,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1851926174}
   previousWaypoint: {fileID: 911172247}
-  branches: []
+  branches:
+  - {fileID: 1622247283}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -18894,8 +18959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 549221410}
   previousWaypoint: {fileID: 177872840}
-  branches:
-  - {fileID: 1520121787}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -19285,7 +19349,7 @@ Transform:
   m_GameObject: {fileID: 909719193}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7032299, z: -0, w: 0.71096253}
-  m_LocalPosition: {x: -459.7, y: 0, z: 3.4937506}
+  m_LocalPosition: {x: -455.51, y: 0, z: 3.4937506}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19323,8 +19387,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 340725055}
   branches:
-  - {fileID: 627852777}
-  - {fileID: 1927170140}
+  - {fileID: 1112371796}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -19483,7 +19546,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 257015696}
   previousWaypoint: {fileID: 2091878684}
-  branches: []
+  branches:
+  - {fileID: 1570802299}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -19657,8 +19721,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1964374605}
   branches:
-  - {fileID: 1972630059}
-  - {fileID: 886188936}
+  - {fileID: 1694374818}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -19727,7 +19790,7 @@ Transform:
   m_GameObject: {fileID: 923749419}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70802355, z: -0, w: 0.7061888}
-  m_LocalPosition: {x: 141.11, y: 0, z: -92.57}
+  m_LocalPosition: {x: 144.59, y: 0, z: -92.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19765,8 +19828,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1570802299}
   branches:
-  - {fileID: 915239646}
-  - {fileID: 285931552}
+  - {fileID: 2091878684}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -19872,7 +19934,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 106046702}
   previousWaypoint: {fileID: 823222783}
-  branches: []
+  branches:
+  - {fileID: 16878193}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -20084,7 +20147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1974506925}
   previousWaypoint: {fileID: 0}
-  branches: []
+  branches:
+  - {fileID: 2043109524}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -20190,8 +20254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1948293550}
   previousWaypoint: {fileID: 0}
-  branches:
-  - {fileID: 22566151}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -20244,7 +20307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 854675781}
   previousWaypoint: {fileID: 551774089}
-  branches: []
+  branches:
+  - {fileID: 2016196554}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -20404,8 +20468,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 1175225714}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1260166655}
-  - {fileID: 108814266}
+  - {fileID: 688825184}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -20516,7 +20579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 307832669}
   previousWaypoint: {fileID: 1424634762}
-  branches: []
+  branches:
+  - {fileID: 1108618735}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -20533,6 +20597,59 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 148.5, y: 0, z: -16.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 120983775}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &957391413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957391415}
+  - component: {fileID: 957391414}
+  m_Layer: 0
+  m_Name: Waypoint 421
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &957391414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957391413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextWaypoint: {fileID: 1960311278}
+  previousWaypoint: {fileID: 1175225714}
+  branches: []
+  branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  width: 2.5
+  TrafficState: 0
+  busStop: {fileID: 0}
+--- !u!4 &957391415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957391413}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7088346, z: -0, w: 0.7053748}
+  m_LocalPosition: {x: -195.89, y: 0, z: 51.41625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20744,7 +20861,7 @@ Transform:
   m_GameObject: {fileID: 976900387}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.00039495516, z: -0, w: 0.99999994}
-  m_LocalPosition: {x: -161.64, y: 0, z: 170.31}
+  m_LocalPosition: {x: -161.64, y: 0, z: 173.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20786,7 +20903,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 779533090}
   previousWaypoint: {fileID: 1841684242}
-  branches: []
+  branches:
+  - {fileID: 2108935439}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -20999,7 +21117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1207442320}
   previousWaypoint: {fileID: 1363123503}
-  branches: []
+  branches:
+  - {fileID: 923749420}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -21222,7 +21341,7 @@ Transform:
   m_GameObject: {fileID: 1009617536}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999978, z: -0, w: -0.00212707}
-  m_LocalPosition: {x: -161.68149, y: 0, z: -123.31}
+  m_LocalPosition: {x: -161.68149, y: 0, z: -126.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21339,7 +21458,7 @@ Transform:
   m_GameObject: {fileID: 1018501276}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7073152, z: -0, w: 0.70689833}
-  m_LocalPosition: {x: 141.17, y: 0, z: 19.47}
+  m_LocalPosition: {x: 144.7, y: 0, z: 19.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21392,7 +21511,7 @@ Transform:
   m_GameObject: {fileID: 1021412589}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000577207, y: 0.7071545, z: 0.0005772858, w: 0.7070586}
-  m_LocalPosition: {x: 247.41, y: 0, z: 43.38}
+  m_LocalPosition: {x: 244.01, y: 0, z: 43.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21535,7 +21654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 170172131}
   previousWaypoint: {fileID: 1364086951}
-  branches: []
+  branches:
+  - {fileID: 957391414}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -21699,8 +21819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1596685200}
   previousWaypoint: {fileID: 1485287416}
-  branches:
-  - {fileID: 436015876}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -22284,7 +22403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2050942636}
   previousWaypoint: {fileID: 69521895}
-  branches: []
+  branches:
+  - {fileID: 1200366507}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -22443,8 +22563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1365452592}
   previousWaypoint: {fileID: 801190828}
-  branches:
-  - {fileID: 1860152533}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -22513,7 +22632,7 @@ Transform:
   m_GameObject: {fileID: 1086524810}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70904404, z: -0, w: 0.70516425}
-  m_LocalPosition: {x: 127.48, y: 0, z: 67.51}
+  m_LocalPosition: {x: 124.04, y: 0, z: 67.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22817,8 +22936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1497024794}
   previousWaypoint: {fileID: 1837218864}
-  branches:
-  - {fileID: 187394791}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -22993,7 +23111,7 @@ Transform:
   m_GameObject: {fileID: 1108618734}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70942867, z: -0, w: 0.70477724}
-  m_LocalPosition: {x: 141.2, y: 0, z: -12.56}
+  m_LocalPosition: {x: 144.47, y: 0, z: -12.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23030,8 +23148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1927170140}
   previousWaypoint: {fileID: 627852777}
-  branches:
-  - {fileID: 340725055}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -23085,8 +23202,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 573378821}
   branches:
-  - {fileID: 1192962081}
-  - {fileID: 659089668}
+  - {fileID: 1265077798}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -23192,7 +23308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 465713858}
   previousWaypoint: {fileID: 391898114}
-  branches: []
+  branches:
+  - {fileID: 1714601541}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -23245,7 +23362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1185814737}
   previousWaypoint: {fileID: 511424983}
-  branches: []
+  branches:
+  - {fileID: 1502455472}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -23378,8 +23496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1181496472}
   previousWaypoint: {fileID: 744297845}
-  branches:
-  - {fileID: 1018501277}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -23950,8 +24067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1809109702}
   previousWaypoint: {fileID: 406849756}
-  branches:
-  - {fileID: 2098833237}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -24272,8 +24388,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 442187569}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 90843332}
-  - {fileID: 856781072}
+  - {fileID: 1316329925}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -24395,7 +24510,7 @@ Transform:
   m_GameObject: {fileID: 1159981314}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7029856, z: -0, w: -0.7112042}
-  m_LocalPosition: {x: -178.75, y: 0, z: -92.631165}
+  m_LocalPosition: {x: -175.42, y: 0, z: -92.631165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24589,7 +24704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 1960311278}
+  nextWaypoint: {fileID: 957391414}
   previousWaypoint: {fileID: 945084820}
   branches: []
   branchRatio: 0.5
@@ -24607,7 +24722,7 @@ Transform:
   m_GameObject: {fileID: 1175225713}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7088346, z: -0, w: 0.7053748}
-  m_LocalPosition: {x: -178.84, y: 0, z: 51.41625}
+  m_LocalPosition: {x: -175.34, y: 0, z: 51.41625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25146,7 +25261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 387763234}
   previousWaypoint: {fileID: 1126113705}
-  branches: []
+  branches:
+  - {fileID: 1018501277}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -25380,7 +25496,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1265077798}
   previousWaypoint: {fileID: 1523037639}
-  branches: []
+  branches:
+  - {fileID: 573378821}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -25557,7 +25674,7 @@ Transform:
   m_GameObject: {fileID: 1200366506}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.709044, z: -0, w: 0.70516425}
-  m_LocalPosition: {x: 141.28, y: 0, z: 67.51}
+  m_LocalPosition: {x: 144.67, y: 0, z: 67.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25648,8 +25765,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 976900388}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1480672396}
-  - {fileID: 359793636}
+  - {fileID: 2089116188}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -25783,8 +25899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 436345691}
   previousWaypoint: {fileID: 990767486}
-  branches:
-  - {fileID: 923749420}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -25837,7 +25952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 283107493}
   previousWaypoint: {fileID: 1807702804}
-  branches: []
+  branches:
+  - {fileID: 422605364}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -25943,8 +26059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1408538668}
   previousWaypoint: {fileID: 1217827823}
-  branches:
-  - {fileID: 713382438}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -26156,7 +26271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1364086951}
   previousWaypoint: {fileID: 1627287747}
-  branches: []
+  branches:
+  - {fileID: 957391414}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -26209,7 +26325,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1212329138}
   previousWaypoint: {fileID: 1832968986}
-  branches: []
+  branches:
+  - {fileID: 713382438}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -26263,8 +26380,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 727437867}
   branches:
-  - {fileID: 148669677}
-  - {fileID: 1542292633}
+  - {fileID: 1557055498}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -26333,7 +26449,7 @@ Transform:
   m_GameObject: {fileID: 1222417779}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00057720725, y: 0.7071545, z: 0.00057728565, w: 0.70705855}
-  m_LocalPosition: {x: 261.09, y: 0, z: 43.38}
+  m_LocalPosition: {x: 264.6, y: 0, z: 43.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26429,8 +26545,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1222417780}
   branches:
-  - {fileID: 1766239451}
-  - {fileID: 324124264}
+  - {fileID: 1440239428}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -26589,7 +26704,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1886199376}
   previousWaypoint: {fileID: 77423825}
-  branches: []
+  branches:
+  - {fileID: 343586301}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -26643,8 +26759,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 422605364}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1806729588}
-  - {fileID: 1207752520}
+  - {fileID: 1807702804}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -26756,8 +26871,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 1009617537}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 2001969862}
-  - {fileID: 615961219}
+  - {fileID: 1462244565}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -26810,7 +26924,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2082799986}
   previousWaypoint: {fileID: 688825184}
-  branches: []
+  branches:
+  - {fileID: 1175225714}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -26916,8 +27031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 659089668}
   previousWaypoint: {fileID: 1192962081}
-  branches:
-  - {fileID: 573378821}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -27113,7 +27227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1424634762}
   previousWaypoint: {fileID: 387763234}
-  branches: []
+  branches:
+  - {fileID: 1108618735}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -27325,8 +27440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1820687694}
   previousWaypoint: {fileID: 709656335}
-  branches:
-  - {fileID: 474658991}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -27432,7 +27546,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 511381316}
   previousWaypoint: {fileID: 864905514}
-  branches: []
+  branches:
+  - {fileID: 645305833}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -27538,7 +27653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 391898114}
   previousWaypoint: {fileID: 1153211300}
-  branches: []
+  branches:
+  - {fileID: 1714601541}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -27778,8 +27894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 90843332}
   previousWaypoint: {fileID: 856781072}
-  branches:
-  - {fileID: 442187569}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -27832,7 +27947,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1995593943}
   previousWaypoint: {fileID: 339480184}
-  branches: []
+  branches:
+  - {fileID: 1745821650}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -27938,7 +28054,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1212175327}
   previousWaypoint: {fileID: 2139360103}
-  branches: []
+  branches:
+  - {fileID: 324177051}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -28065,6 +28182,60 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1997725920}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1335758461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335758463}
+  - component: {fileID: 1335758462}
+  m_Layer: 0
+  m_Name: Waypoint 420
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1335758462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335758461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextWaypoint: {fileID: 2092618650}
+  previousWaypoint: {fileID: 1772075011}
+  branches:
+  - {fileID: 131316474}
+  branchRatio: 0.5
+  connections: []
+  waypointType: 0
+  width: 2.5
+  TrafficState: 0
+  busStop: {fileID: 0}
+--- !u!4 &1335758463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335758461}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 106.55, y: 0, z: 177.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337687106
 GameObject:
@@ -28575,7 +28746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1887735960}
   previousWaypoint: {fileID: 1083541972}
-  branches: []
+  branches:
+  - {fileID: 1860152533}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -28628,8 +28800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 107142845}
   previousWaypoint: {fileID: 1618214932}
-  branches:
-  - {fileID: 1086524811}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -29257,7 +29428,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 576778864}
   previousWaypoint: {fileID: 1212329138}
-  branches: []
+  branches:
+  - {fileID: 713382438}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -29364,8 +29536,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1200366507}
   branches:
-  - {fileID: 1424863490}
-  - {fileID: 1075218982}
+  - {fileID: 69521895}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -29419,8 +29590,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 436015876}
   branches:
-  - {fileID: 1596685200}
-  - {fileID: 1485287416}
+  - {fileID: 1046991593}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -29687,8 +29857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 956119967}
   previousWaypoint: {fileID: 1277456703}
-  branches:
-  - {fileID: 1108618735}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -29741,7 +29910,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 69521895}
   previousWaypoint: {fileID: 1508581002}
-  branches: []
+  branches:
+  - {fileID: 1200366507}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -29795,8 +29965,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 474658991}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1820687694}
-  - {fileID: 709656335}
+  - {fileID: 1292476624}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -29849,8 +30018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1766239451}
   previousWaypoint: {fileID: 324124264}
-  branches:
-  - {fileID: 1222417780}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -29903,7 +30071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 88934029}
   previousWaypoint: {fileID: 1974506925}
-  branches: []
+  branches:
+  - {fileID: 2043109524}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -29957,8 +30126,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 1860152533}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 801190828}
-  - {fileID: 1365452592}
+  - {fileID: 1083541972}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -30281,8 +30449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 615961219}
   previousWaypoint: {fileID: 2001969862}
-  branches:
-  - {fileID: 1009617537}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -30489,7 +30656,7 @@ Transform:
   m_GameObject: {fileID: 1480352784}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7070207, z: -0, w: 0.7071929}
-  m_LocalPosition: {x: -192.54, y: 0, z: 139.31}
+  m_LocalPosition: {x: -196.02, y: 0, z: 139.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30526,7 +30693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 684802226}
   previousWaypoint: {fileID: 2089116188}
-  branches: []
+  branches:
+  - {fileID: 976900388}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -30632,7 +30800,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1046991593}
   previousWaypoint: {fileID: 1325062521}
-  branches: []
+  branches:
+  - {fileID: 436015876}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -30685,7 +30854,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 343586301}
-  branches: []
+  branches:
+  - {fileID: 1886199376}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -30738,8 +30908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 269048973}
   previousWaypoint: {fileID: 2100468260}
-  branches:
-  - {fileID: 1642445034}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -30792,7 +30961,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1594044918}
   previousWaypoint: {fileID: 1096173440}
-  branches: []
+  branches:
+  - {fileID: 187394791}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -30914,7 +31084,7 @@ Transform:
   m_GameObject: {fileID: 1502455471}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70915914, z: -0, w: 0.70504844}
-  m_LocalPosition: {x: 261.28, y: 0, z: 3.52}
+  m_LocalPosition: {x: 264.58, y: 0, z: 3.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31237,7 +31407,7 @@ Transform:
   m_GameObject: {fileID: 1520121786}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.00039495522, z: -0, w: 0.99999994}
-  m_LocalPosition: {x: -161.64, y: 0, z: 156.68}
+  m_LocalPosition: {x: -161.64, y: 0, z: 153.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31380,8 +31550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1910837598}
   previousWaypoint: {fileID: 2041840285}
-  branches:
-  - {fileID: 1021412590}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -31434,8 +31603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2041361222}
   previousWaypoint: {fileID: 91266096}
-  branches:
-  - {fileID: 321247479}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -31450,13 +31618,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529455678}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.024421161, z: -0, w: 0.9997018}
-  m_LocalPosition: {x: -451.68, y: 0, z: 43.65}
+  m_LocalRotation: {x: -0, y: -0.004135553, z: -0, w: 0.99999154}
+  m_LocalPosition: {x: -451.68, y: 0, z: 43.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 120983775}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.474, z: 0}
 --- !u!1 &1531552852
 GameObject:
   m_ObjectHideFlags: 0
@@ -31542,8 +31710,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1984041086}
   branches:
-  - {fileID: 842515876}
-  - {fileID: 14730417}
+  - {fileID: 688716051}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -31649,7 +31816,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1363123503}
   previousWaypoint: {fileID: 1557055498}
-  branches: []
+  branches:
+  - {fileID: 727437867}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -31908,8 +32076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1542292633}
   previousWaypoint: {fileID: 148669677}
-  branches:
-  - {fileID: 727437867}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -32533,8 +32700,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 38363425}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 140386511}
-  - {fileID: 455763101}
+  - {fileID: 748300576}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -32587,7 +32753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 545454029}
   previousWaypoint: {fileID: 1046991593}
-  branches: []
+  branches:
+  - {fileID: 436015876}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -32725,7 +32892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2064981741}
   previousWaypoint: {fileID: 856098047}
-  branches: []
+  branches:
+  - {fileID: 1538977432}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -32925,7 +33093,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1370279682}
   previousWaypoint: {fileID: 88934029}
-  branches: []
+  branches:
+  - {fileID: 1086524811}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -35105,7 +35274,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1887300230}
   previousWaypoint: {fileID: 1766705195}
-  branches: []
+  branches:
+  - {fileID: 909719194}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -35367,7 +35537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2139360103}
   previousWaypoint: {fileID: 1989726244}
-  branches: []
+  branches:
+  - {fileID: 324177051}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -35780,8 +35951,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 645305833}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1906674505}
-  - {fileID: 1305720722}
+  - {fileID: 511381316}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -36032,8 +36202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 886188936}
   previousWaypoint: {fileID: 1972630059}
-  branches:
-  - {fileID: 1964374605}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -36193,7 +36362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 931401013}
   previousWaypoint: {fileID: 854675781}
-  branches: []
+  branches:
+  - {fileID: 2016196554}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -36295,7 +36465,7 @@ Transform:
   m_GameObject: {fileID: 1714601540}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7091592, z: -0, w: 0.70504844}
-  m_LocalPosition: {x: 247.57, y: 0, z: 3.52}
+  m_LocalPosition: {x: 244, y: 0, z: 3.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36386,8 +36556,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 16878193}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1743626349}
-  - {fileID: 928183849}
+  - {fileID: 106046702}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -36739,8 +36908,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 2108935439}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 7016501}
-  - {fileID: 978290707}
+  - {fileID: 779533090}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -36794,8 +36962,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 923749420}
   branches:
-  - {fileID: 990767486}
-  - {fileID: 436345691}
+  - {fileID: 1207442320}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -36848,7 +37015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1841684242}
   previousWaypoint: {fileID: 106046702}
-  branches: []
+  branches:
+  - {fileID: 16878193}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -36979,7 +37147,7 @@ Transform:
   m_GameObject: {fileID: 1745821649}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7032299, z: -0, w: -0.7109626}
-  m_LocalPosition: {x: -472.56, y: 0, z: 3.4937506}
+  m_LocalPosition: {x: -476.07, y: 0, z: 3.4937506}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37256,8 +37424,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 2098833237}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1809109702}
-  - {fileID: 406849756}
+  - {fileID: 1141392600}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -37315,7 +37482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 393374709}
   previousWaypoint: {fileID: 1440239428}
-  branches: []
+  branches:
+  - {fileID: 1222417780}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -37475,8 +37643,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1502455472}
   branches:
-  - {fileID: 164519420}
-  - {fileID: 1116206784}
+  - {fileID: 511424983}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -37527,7 +37694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 2092618650}
+  nextWaypoint: {fileID: 1335758462}
   previousWaypoint: {fileID: 665516370}
   branches: []
   branchRatio: 0.5
@@ -37832,8 +37999,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 1021412590}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1910837598}
-  - {fileID: 2041840285}
+  - {fileID: 1525805436}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -37886,7 +38052,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1807702804}
   previousWaypoint: {fileID: 1887735960}
-  branches: []
+  branches:
+  - {fileID: 422605364}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -37939,8 +38106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1207752520}
   previousWaypoint: {fileID: 1806729588}
-  branches:
-  - {fileID: 422605364}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -37993,7 +38159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1060010056}
   previousWaypoint: {fileID: 1141392600}
-  branches: []
+  branches:
+  - {fileID: 2098833237}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -38099,7 +38266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2141327565}
   previousWaypoint: {fileID: 1292476624}
-  branches: []
+  branches:
+  - {fileID: 474658991}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -38152,7 +38320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 548893422}
   previousWaypoint: {fileID: 555253605}
-  branches: []
+  branches:
+  - {fileID: 1159981315}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -38364,7 +38533,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1096173440}
   previousWaypoint: {fileID: 726377716}
-  branches: []
+  branches:
+  - {fileID: 187394791}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -38564,8 +38734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2128412876}
   previousWaypoint: {fileID: 886563740}
-  branches:
-  - {fileID: 1622247283}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -38639,7 +38808,7 @@ Transform:
   m_GameObject: {fileID: 1860152532}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70731515, z: -0, w: -0.7068984}
-  m_LocalPosition: {x: 127.2, y: 0, z: 19.47}
+  m_LocalPosition: {x: 123.93, y: 0, z: 19.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38980,8 +39149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1960092744}
   previousWaypoint: {fileID: 1243074794}
-  branches:
-  - {fileID: 343586301}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -39034,8 +39202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1890737417}
   previousWaypoint: {fileID: 1641453254}
-  branches:
-  - {fileID: 909719194}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -39050,13 +39217,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887300229}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.024421161, z: -0, w: 0.9997018}
-  m_LocalPosition: {x: -451.68, y: 0, z: 3.75}
+  m_LocalRotation: {x: -0, y: 0.0058313403, z: -0, w: 0.9999831}
+  m_LocalPosition: {x: -451.68, y: 0, z: 3.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 120983775}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.668, z: 0}
 --- !u!1 &1887735959
 GameObject:
   m_ObjectHideFlags: 0
@@ -39354,7 +39521,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 2045156009}
   previousWaypoint: {fileID: 1887300230}
-  branches: []
+  branches:
+  - {fileID: 909719194}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -39571,7 +39739,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 823222783}
   previousWaypoint: {fileID: 511381316}
-  branches: []
+  branches:
+  - {fileID: 645305833}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -39624,7 +39793,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 898294729}
   previousWaypoint: {fileID: 1525805436}
-  branches: []
+  branches:
+  - {fileID: 1021412590}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -39682,7 +39852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1048330318}
   previousWaypoint: {fileID: 1112371796}
-  branches: []
+  branches:
+  - {fileID: 340725055}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -39735,8 +39906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 832944647}
   previousWaypoint: {fileID: 485579651}
-  branches:
-  - {fileID: 202188512}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -40114,7 +40284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1531552853}
   previousWaypoint: {fileID: 932383293}
-  branches: []
+  branches:
+  - {fileID: 22566151}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -40321,7 +40492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 488085400}
   previousWaypoint: {fileID: 0}
-  branches: []
+  branches:
+  - {fileID: 343586301}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -40373,10 +40545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
-  previousWaypoint: {fileID: 1175225714}
+  previousWaypoint: {fileID: 957391414}
   branches:
-  - {fileID: 1032130322}
-  - {fileID: 1215822648}
+  - {fileID: 1364086951}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -40392,7 +40563,7 @@ Transform:
   m_GameObject: {fileID: 1960311277}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7088346, z: -0, w: 0.7053748}
-  m_LocalPosition: {x: -197.88, y: 0, z: 51.41625}
+  m_LocalPosition: {x: -197.91, y: 0, z: 51.41625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40498,7 +40669,7 @@ Transform:
   m_GameObject: {fileID: 1964374604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999992, z: -0, w: -0.0012557335}
-  m_LocalPosition: {x: -209.64969, y: 0, z: -109.72}
+  m_LocalPosition: {x: -209.64969, y: 0, z: -106.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40593,7 +40764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1694374818}
   previousWaypoint: {fileID: 797876559}
-  branches: []
+  branches:
+  - {fileID: 1964374605}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -40646,8 +40818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1441595593}
   previousWaypoint: {fileID: 0}
-  branches:
-  - {fileID: 2043109524}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -40769,7 +40940,7 @@ Transform:
   m_GameObject: {fileID: 1984041085}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.99999774, z: -0, w: -0.0021270697}
-  m_LocalPosition: {x: -161.68149, y: 0, z: -109.73}
+  m_LocalPosition: {x: -161.68149, y: 0, z: -106.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41001,8 +41172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 346773567}
   previousWaypoint: {fileID: 1322505743}
-  branches:
-  - {fileID: 1745821650}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -41196,7 +41366,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1462244565}
   previousWaypoint: {fileID: 925416155}
-  branches: []
+  branches:
+  - {fileID: 1009617537}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -41250,8 +41421,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 1745821650}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 1322505743}
-  - {fileID: 346773567}
+  - {fileID: 1995593943}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -41408,7 +41578,7 @@ Transform:
   m_GameObject: {fileID: 2016196553}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.00074703613, z: -0, w: 0.99999976}
-  m_LocalPosition: {x: -209.7, y: 0, z: 170.28}
+  m_LocalPosition: {x: -209.7, y: 0, z: 173.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41781,7 +41951,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1766705195}
   previousWaypoint: {fileID: 1529455679}
-  branches: []
+  branches:
+  - {fileID: 321247479}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -41834,7 +42005,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1525805436}
   previousWaypoint: {fileID: 465713858}
-  branches: []
+  branches:
+  - {fileID: 1021412590}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -42614,8 +42786,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 324177051}
   branches:
-  - {fileID: 1644915218}
-  - {fileID: 1332818167}
+  - {fileID: 2139360103}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -43433,8 +43604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1480672396}
   previousWaypoint: {fileID: 359793636}
-  branches:
-  - {fileID: 976900388}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -43487,8 +43657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 915239646}
   previousWaypoint: {fileID: 285931552}
-  branches:
-  - {fileID: 1570802299}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -43539,10 +43708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabcb3b1f7419ed498046f8d16d407aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 77423825}
-  previousWaypoint: {fileID: 1772075011}
-  branches:
-  - {fileID: 131316474}
+  nextWaypoint: {fileID: 151208522}
+  previousWaypoint: {fileID: 1335758462}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -43611,7 +43779,7 @@ Transform:
   m_GameObject: {fileID: 2098833236}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.6964103, z: -0, w: 0.71764386}
-  m_LocalPosition: {x: -178.74, y: 0, z: 3.5674887}
+  m_LocalPosition: {x: -175.18, y: 0, z: 3.5674887}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43733,7 +43901,7 @@ Transform:
   m_GameObject: {fileID: 2108935438}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7074832, z: -0, w: 0.70673025}
-  m_LocalPosition: {x: 127.37, y: 0, z: -60.59}
+  m_LocalPosition: {x: 124.07, y: 0, z: -60.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44001,7 +44169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 343067915}
   previousWaypoint: {fileID: 1851926174}
-  branches: []
+  branches:
+  - {fileID: 1622247283}
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -44250,8 +44419,7 @@ MonoBehaviour:
   nextWaypoint: {fileID: 1159981315}
   previousWaypoint: {fileID: 0}
   branches:
-  - {fileID: 40397476}
-  - {fileID: 1821889401}
+  - {fileID: 548893422}
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -44304,8 +44472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 1332818167}
   previousWaypoint: {fileID: 1644915218}
-  branches:
-  - {fileID: 324177051}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
