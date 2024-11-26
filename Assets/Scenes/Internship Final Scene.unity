@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34226704, g: 0.43347245, b: 0.57455605, a: 1}
+  m_IndirectSpecularColor: {r: 0.34223714, g: 0.43345302, b: 0.5748249, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24164,7 +24164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 167059180}
-  previousWaypoint: {fileID: 0}
+  previousWaypoint: {fileID: 576778864}
   branches: []
   branchRatio: 0.5
   connections: []
@@ -24661,6 +24661,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8524307005163275552, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.030493
+      objectReference: {fileID: 0}
+    - target: {fileID: -8524307005163275552, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.7716
+      objectReference: {fileID: 0}
+    - target: {fileID: -8524307005163275552, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 80.574
+      objectReference: {fileID: 0}
     - target: {fileID: -8391222552659086748, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -24680,6 +24692,18 @@ PrefabInstance:
     - target: {fileID: -7029948723529949830, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6039311771963195123, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.030493
+      objectReference: {fileID: 0}
+    - target: {fileID: -6039311771963195123, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.7716
+      objectReference: {fileID: 0}
+    - target: {fileID: -6039311771963195123, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 80.574
       objectReference: {fileID: 0}
     - target: {fileID: -516098083770646512, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       propertyPath: m_IsActive
@@ -29179,7 +29203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 536526461}
-  previousWaypoint: {fileID: 0}
+  previousWaypoint: {fileID: 1392641175}
   branches: []
   branchRatio: 0.5
   connections: []
