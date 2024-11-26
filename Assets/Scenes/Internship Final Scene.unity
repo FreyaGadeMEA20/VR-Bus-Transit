@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34244794, g: 0.4327764, b: 0.5731565, a: 1}
+  m_IndirectSpecularColor: {r: 0.34226704, g: 0.43347245, b: 0.57455605, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -444,8 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 923749420}
   previousWaypoint: {fileID: 1721503743}
-  branches:
-  - {fileID: 0}
+  branches: []
   branchRatio: 0.5
   connections: []
   waypointType: 0
@@ -5081,8 +5080,6 @@ Transform:
   - {fileID: 891429052}
   - {fileID: 2059179471}
   - {fileID: 492100138}
-  - {fileID: 491254628}
-  - {fileID: 559454557}
   - {fileID: 1129782356}
   - {fileID: 778308726}
   - {fileID: 1087135094}
@@ -5227,8 +5224,6 @@ MonoBehaviour:
   - {fileID: 891429051}
   - {fileID: 2059179470}
   - {fileID: 492100139}
-  - {fileID: 491254627}
-  - {fileID: 559454558}
   - {fileID: 1129782355}
   - {fileID: 778308725}
   - {fileID: 1087135093}
@@ -10935,59 +10930,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &491254626
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 491254628}
-  - component: {fileID: 491254627}
-  m_Layer: 0
-  m_Name: Waypoint 70
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &491254627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491254626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 559454558}
-  previousWaypoint: {fileID: 492100139}
-  branches: []
-  branchRatio: 0.5
-  connections: []
-  waypointType: 0
-  width: 5
-  TrafficState: 0
-  busStop: {fileID: 0}
---- !u!4 &491254628
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491254626}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 132.34, y: 0, z: 39}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 159311591}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492100137
 GameObject:
   m_ObjectHideFlags: 0
@@ -11014,7 +10956,7 @@ Transform:
   m_GameObject: {fileID: 492100137}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 132.34, y: 0, z: 39}
+  m_LocalPosition: {x: 135.1, y: 0, z: 39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11032,7 +10974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 491254627}
+  nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 2059179470}
   branches:
   - {fileID: 519706627}
@@ -11754,9 +11696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 131316474}
-  branches:
-  - {fileID: 0}
-  - {fileID: 0}
+  branches: []
   branchRatio: 1
   connections: []
   waypointType: 0
@@ -12451,59 +12391,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: -51.933, z: 0}
---- !u!1 &559454556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 559454557}
-  - component: {fileID: 559454558}
-  m_Layer: 0
-  m_Name: Waypoint 71
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &559454557
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559454556}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 132.34, y: 0, z: 39}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 159311591}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &559454558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559454556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f48718a8b70d243aa191cb41c8b036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextWaypoint: {fileID: 0}
-  previousWaypoint: {fileID: 491254627}
-  branches: []
-  branchRatio: 0.5
-  connections: []
-  waypointType: 0
-  width: 5
-  TrafficState: 0
-  busStop: {fileID: 0}
 --- !u!1 &564050681
 GameObject:
   m_ObjectHideFlags: 0
@@ -30774,9 +30661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 343586301}
-  branches:
-  - {fileID: 0}
-  - {fileID: 0}
+  branches: []
   branchRatio: 1
   connections: []
   waypointType: 0
