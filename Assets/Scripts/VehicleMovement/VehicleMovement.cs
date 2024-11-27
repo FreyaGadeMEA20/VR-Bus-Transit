@@ -93,8 +93,6 @@ namespace Movement{
             } 
 
             routeManager = GetComponent<RouteManager>();
-            Debug.Log(routeManager);
-
             rb.inertiaTensorRotation = Quaternion.identity;
             //currentWaypoint = routeManager.currentWaypoint;
 
@@ -259,7 +257,7 @@ namespace Movement{
             if ( Mathf.Abs( steering ) < 0.5f ) {
                 acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering);
             } else {
-                acceleration = 1f;
+                acceleration = .45f;
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the

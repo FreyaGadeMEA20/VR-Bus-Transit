@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
@@ -7,6 +8,9 @@ public class BusSeatAssigner : MonoBehaviour
 {
     public GameObject player;
     Seat currentSeat;
+    [SerializeField] Transform head;
+    [SerializeField] Transform origin;
+    
     [SerializeField] LayerMask seatedLayer;
     public bool PlayerSeated => currentSeat != null;
 
@@ -34,19 +38,12 @@ public class BusSeatAssigner : MonoBehaviour
     IEnumerator SitOnSeat(){
         StartCoroutine(FadeToBlack.Instance.FadeOut());
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
-        Debug.Log("Assigning seat");
+        //Debug.Log("Assigning seat");
         //TODO: Tune position and rotation
         // Seat the player - ROTATION OF THE SEAT IS IMPORTANT
-        player.transform.position = currentSeat.seatingArea.transform.position;
         
-        Quaternion newRot;
-
-        if(currentSeat.seatingArea.transform.rotation.w<0){
-            newRot = new Quaternion(0,currentSeat.seatingArea.transform.rotation.w,0,0);
-        }else{
-            newRot = new Quaternion(0,0,0,0);
-        }
-        player.transform.rotation = newRot;
+        Recenter(currentSeat.seatingArea);
+        
 
         // Disable the player's movement
         player.layer = LayerMask.NameToLayer("SeatedPlayer");
@@ -70,15 +67,7 @@ public class BusSeatAssigner : MonoBehaviour
         StartCoroutine(FadeToBlack.Instance.FadeOut());
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
-        player.transform.position = currentSeat.exitArea.transform.position;Quaternion newRot;
-
-        if(currentSeat.exitArea.transform.rotation.w < 0){
-            newRot = new Quaternion(0,currentSeat.exitArea.transform.rotation.w,0,0);
-        }else{
-            newRot = new Quaternion(0,0,0,0);
-        }
-        Debug.Log("New rotation: " + newRot);
-        player.transform.rotation = newRot;
+        Recenter(currentSeat.exitArea);
 
         player.layer = LayerMask.NameToLayer("Default");
         // Enable the player's movement
@@ -92,6 +81,23 @@ public class BusSeatAssigner : MonoBehaviour
         StartCoroutine(FadeToBlack.Instance.FadeIn());
         
 
+    }
+
+    public void Recenter(GameObject target){
+        //player.transform.position = target.transform.position;
+        
+        XROrigin xrOrigin = player.GetComponent<XROrigin>();
+        xrOrigin.MoveCameraToWorldLocation(target.transform.position);
+        xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
+
+        /* Quaternion newRot;
+
+        if(target.transform.rotation.w < 0){
+            newRot = new Quaternion(0, target.transform.rotation.w, 0, 0);
+        }else{
+            newRot = new Quaternion(0, 0, 0, 0);
+        }
+        player.transform.rotation = newRot; */
     }
 
     IEnumerator Cooldown(){
