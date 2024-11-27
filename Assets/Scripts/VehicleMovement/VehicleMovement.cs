@@ -137,7 +137,7 @@ namespace Movement{
                                 breaks = true;
                                 routeManager.currentWaypoint.busStop.deathZone.SetActive(false);
                                 busController.StopBus();
-                                busController.screens.ApplyNextTexture(); // change the bus screen texture
+                                busController.screens.GiveInformation(); // change the bus screen texture
                                 routeManager.SetRoute();
                             }
                             // Add logic to tell the bus that it is at a bus stop
@@ -233,7 +233,7 @@ namespace Movement{
             }
             // Apply forces to the rear wheels
             foreach (Wheel wheel in rearWheels) {
-                wheel.wheels.motorTorque = EngineTorque / GearRatio[CurrentGear] * acceleration;
+                wheel.wheels.motorTorque = EngineTorque / GearRatio[CurrentGear] * acceleration * 2;
                 wheel.wheels.brakeTorque = currentBreakForce;
 
                 UpdateWheel(wheel.wheels, wheel.transforms);

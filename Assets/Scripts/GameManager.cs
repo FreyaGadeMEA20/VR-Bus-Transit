@@ -214,7 +214,7 @@ public class GameManager : MonoBehaviour
             //Mathf.Lerp(0,100, countdownTimer);
 
             // once countdown is finished, change state and reset imer
-            if (countdownTimer >= 3f) {
+            if (countdownTimer >= 4f) {
                 countdownTimer = 0f;
                 isCountingDown = false;
                 ChangeState(GameState.REACHED_BUS_STOP);

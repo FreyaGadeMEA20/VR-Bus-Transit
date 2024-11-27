@@ -67,6 +67,8 @@ public class BusController : MonoBehaviour
         doors = GetComponent<DoorController>();
         screens = GetComponentInChildren<BusScreenController>();
         seatAssigner = GetComponentInChildren<BusSeatAssigner>();
+        screens.GiveInformation();
+        screens.ApplyNextTexture();
     }
 
     // Update is called once per frame. Run in VehicleMovement, so it runs alongside it
@@ -145,6 +147,7 @@ public class BusController : MonoBehaviour
         // Tells the rest of the bus to drive
         busState = BusState.DRIVING;
         vehicleMovement.AdvanceToNextWaypoint();
+        screens.ApplyNextTexture(); // change the bus screen texture
     }
 
     void UpdateStopState() {

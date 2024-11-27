@@ -37,6 +37,8 @@ public class PlayerAttacher : MonoBehaviour
         if (other.tag == "Player"){
             // ... then sets the player to have no parent
             other.transform.parent = null;
+
+            busSeatAssigner.GetPlayer(null);
         }
     }
 }

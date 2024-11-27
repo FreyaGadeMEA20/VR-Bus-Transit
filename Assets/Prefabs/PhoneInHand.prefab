@@ -2024,6 +2024,7 @@ GameObject:
   - component: {fileID: 3678775173307608589}
   - component: {fileID: 967672301998166825}
   - component: {fileID: 2833168094322710256}
+  - component: {fileID: 3416093031914641257}
   m_Layer: 0
   m_Name: PhoneInHand
   m_TagString: Untagged
@@ -2111,6 +2112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c3897bf7915e04aab827eaadad36cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  phoneAnimator: {fileID: 0}
   phoneScreen: {fileID: 0}
   phoneScreens:
   - screen: {fileID: 542481472203041371}
@@ -2157,6 +2159,18 @@ MonoBehaviour:
     v2: 
     v3: 
     v4: 
+--- !u!114 &3416093031914641257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3535473601529558972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14097dcf96ce7647806bc13cd441d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3649129406151435788
 GameObject:
   m_ObjectHideFlags: 0

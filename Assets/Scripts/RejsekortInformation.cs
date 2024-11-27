@@ -10,7 +10,7 @@ public class RejsekortInformation : MonoBehaviour
 
     public static RejsekortInformation Instance { get; internal set; }
 
-        void Awake()
+    void Awake()
     {
         if (Instance == null)
         {
