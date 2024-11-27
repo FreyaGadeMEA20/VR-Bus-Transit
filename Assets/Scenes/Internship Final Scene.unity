@@ -22978,6 +22978,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: VRTransitLevel8City12
       objectReference: {fileID: 0}
+    - target: {fileID: 1399385805252961804, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d9905784a1ae5642a6829b8055db8d3, type: 2}
+    - target: {fileID: 1399385805252961804, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51d3fb1300f9edb4eb4865c9b39a232b, type: 2}
+    - target: {fileID: 1399385805252961804, guid: c4ce98c256796b84bb1160797014791b, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18747f1372886754ba7673c78605ec37, type: 2}
     - target: {fileID: 8416272007918961125, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       propertyPath: m_IsActive
       value: 1
