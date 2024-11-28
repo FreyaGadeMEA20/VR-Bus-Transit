@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Movement;
+using MyBox;
+using SerializedTuples.Runtime;
+using TMPro;
 using UnityEngine;
 
 public class BusStop : MonoBehaviour {
@@ -18,6 +21,17 @@ public class BusStop : MonoBehaviour {
     
     bool playerInProx { get; set; }
 
+    [Separator("Timetable")]
+    
+    public List<TTElement> timeTable;
+    
+    [Serializable]
+    public class TTElement{
+        public GameObject parent;
+        public TextMeshProUGUI number;
+        public TextMeshProUGUI timeTableE;
+        public TextMeshProUGUI time;
+    }
     // Start is called before the first frame update
     void Start() {
         sign = this.gameObject;
@@ -40,7 +54,7 @@ public class BusStop : MonoBehaviour {
         if (other.gameObject.CompareTag("Player")){
             playerInProx = false;
             GameManager.Instance.inCorrectStopZone = false;
-                GameManager.Instance.busStopSign = null;
+            GameManager.Instance.busStopSign = null;
             Debug.Log("Player exits proximity");
         }
     }
@@ -55,12 +69,56 @@ public class BusStop : MonoBehaviour {
         return false;
     }
 
+    private Coroutine updateTimeTableCoroutine;
+
+
     public void AddBusLine(BusLineSO line){
         associatedLines.Add(line);
-        Debug.Log("Bus Line added to stop");
+
+        if(updateTimeTableCoroutine != null){
+            StopCoroutine(updateTimeTableCoroutine);
+        }
+
+        updateTimeTableCoroutine = StartCoroutine(UpdateTimeTable());
+    }
+
+    IEnumerator UpdateTimeTable(){
+        yield return new WaitForSeconds(1);
+        foreach(var time in timeTable){
+            time.parent.SetActive(false);
+        }
+        yield return new WaitForSeconds(1);
+        int index = 0;
+        int TIME = 2; // TEMPORARY
+        foreach(var time in timeTable){
+            time.parent.SetActive(true);
+
+            if(index > associatedLines.Count-1){
+                index = 0;
+            }
+
+            time.number.text = associatedLines[index].BusLineID.v1.ToString();
+            time.timeTableE.text = associatedLines[index].BusLineID.v3;
+            time.time.text = TIME.ToString();
+            TIME += 5; // TEMPORARY
+            Debug.Log(index);
+            index++;
+        }
     }
 
     public bool CheckPlayerProximity(){
         return playerInProx;
+    }
+}
+
+internal class SerializedTuplesLabelsAttribute : Attribute
+{
+    private string v1;
+    private string v2;
+
+    public SerializedTuplesLabelsAttribute(string v1, string v2)
+    {
+        this.v1 = v1;
+        this.v2 = v2;
     }
 }
