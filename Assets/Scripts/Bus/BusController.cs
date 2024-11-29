@@ -93,12 +93,24 @@ public class BusController : MonoBehaviour
 
     // runs the coroutine to open the doors, and lets that control it the waiting at bus stop
     void UpdateWaitState() {
-        if (!doorsOpen && doors != null)
+        if (!doorsOpen && doors != null){
             StartCoroutine(BusStopAnimations());
+            
+            foreach(var stop in vehicleMovement._RouteManager.busStops){
+                stop.busStop.busStop.BusPassedStop(vehicleMovement._RouteManager.busLine);
+                stop.busStop.busStop.UpdateTime();
+            }
+            
+            // For baking time
+            //Debug.Log($"I ran {index} times");
+            //vehicleMovement._RouteManager.busLine.BakeTime(index);
+            //index++;
+        }
     }
-
+    int index = 0;
     // Coroutine to control how the bus behaves when it stops
     IEnumerator BusStopAnimations() {
+
         doors.OpenDoors(); // open the doors
 
         vehicleMovement.rb.isKinematic = true; // stop the bus from moving
@@ -132,7 +144,6 @@ public class BusController : MonoBehaviour
 
     // Coroutine to close the doors and drive the bus
     IEnumerator CloseDoorsAndDrive() {
-        doorsOpen = false; // set the doors to be closed
 
         // wait for 2 seconds before visually closing the doors
         yield return new WaitForSeconds(2); 
@@ -146,6 +157,7 @@ public class BusController : MonoBehaviour
 
         // Tells the rest of the bus to drive
         busState = BusState.DRIVING;
+        doorsOpen = false; // set the doors to be closed
         vehicleMovement.AdvanceToNextWaypoint();
         screens.ApplyNextTexture(); // change the bus screen texture
     }

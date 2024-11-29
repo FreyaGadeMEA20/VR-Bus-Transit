@@ -54,9 +54,9 @@ public class BusScreenController : MonoBehaviour
     }
 
     public void GiveInformation(){
-        BusLineID.v1 = routeManager.busStops[0].busStop.BusStopName;
-        BusLineID.v2 = routeManager.busStops[1].busStop.BusStopName;
-        BusLineID.v3 = routeManager.busStops[2].busStop.BusStopName;
+        BusLineID.v1 = routeManager.busStops[0].busStop.busStop.BusStopName;
+        BusLineID.v2 = routeManager.busStops[1].busStop.busStop.BusStopName;
+        BusLineID.v3 = routeManager.busStops[2].busStop.busStop.BusStopName;
         BusLineID.v4 = routeManager.busLine.BusLineID.v1.ToString();
     }
 

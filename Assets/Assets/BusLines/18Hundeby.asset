@@ -20,6 +20,10 @@ MonoBehaviour:
     - End Station
     v2: "\xD8rneskolen"
     v3: Hundeby Torv
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
+  travelTimes:
+  - 96.11069
+  - 322.52316
+  - 418.64038
+  - 519.32214
+  - 688.7034
+  totalTravelTime: 818.815

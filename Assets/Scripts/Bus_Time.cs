@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class Bus_Time : MonoBehaviour
 {
-    public int hour{
-        get{return hour;}
-        set{
-            hour = (int)(Mathf.Round((minute / 60)) % 24);
-        }
-    }
-    public int minute;
+    public List<BusController> Bus;
+    public float currentTime;
     public static Bus_Time Instance;
     void Awake()
     {
@@ -23,16 +18,5 @@ public class Bus_Time : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(Time.time);
     }
 }

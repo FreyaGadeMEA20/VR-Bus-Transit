@@ -20,7 +20,10 @@ MonoBehaviour:
     - End Station
     v2: "\xD8rneskolen"
     v3: Anderup St
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  travelTimes:
+  - 122.17958
+  - 317.14584
+  - 407.6136
+  - 628.4091
+  - 785.31
+  totalTravelTime: 923.66394

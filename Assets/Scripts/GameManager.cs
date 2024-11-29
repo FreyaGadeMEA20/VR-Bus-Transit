@@ -105,9 +105,18 @@ public class GameManager : MonoBehaviour
         // Set the initial final destination
     }
 
+    Coroutine updateTimeCoroutine;
+
     // Update is called once per frame
     void Update()
     {
+        if(Mathf.RoundToInt(Time.time % 60) == 0){
+            if(updateTimeCoroutine != null){
+                StopCoroutine(updateTimeCoroutine);
+            }
+
+            updateTimeCoroutine = StartCoroutine(UpdateTime());
+        }
         // Check for state transitions
         switch (currentState) {
             case GameState.START:
@@ -144,6 +153,14 @@ public class GameManager : MonoBehaviour
                 // Handle CHECK_OUT state logic
                 UpdateCheckOutState();
                 break;
+        }
+    }
+
+    IEnumerator UpdateTime(){
+        yield return new WaitForSeconds(1);
+        Debug.Log("Updating time");
+        foreach(var busStop in FindObjectsOfType<BusStop>()){
+            busStop.UpdateTime();
         }
     }
 

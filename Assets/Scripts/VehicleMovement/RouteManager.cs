@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,10 +10,14 @@ namespace Movement {
         public Waypoint currentWaypoint;
         public Path m_Path;
         public List<Waypoint> PATH_FOR_INSPECTOR = new List<Waypoint>();
-        public Waypoint endDestination;
+        public BusStops endDestination;
         public Waypoints m_Waypoints;
-        
-        public List<Waypoint> busStops;
+        [Serializable]
+        public class BusStops{
+            public float timeFromNextStop;
+            public Waypoint busStop;
+        }
+        public List<BusStops> busStops;
 
         private void Awake()
         {
@@ -27,9 +32,9 @@ namespace Movement {
 
         
         public void SendInformationToWaypoint(){
-            foreach (var busStop in busStops)
+            foreach (var _busStop in busStops)
             {
-                busStop.busStop.AddBusLine(busLine);
+                _busStop.busStop.busStop.AddBusLine(busLine);
             }
         }
 
@@ -50,15 +55,16 @@ namespace Movement {
             DetermineRoute(currentWaypoint, endDestination);
         }
 
-        void DetermineRoute(Waypoint _start, Waypoint _end){
+        void DetermineRoute(Waypoint _start, BusStops _end){
             // Djikstra's Algorithm to determine the path for the bus to follow
             Debug.Log("Determining Route");
             m_Path = new Path();
-            m_Path = m_Waypoints.GetShortestPath(_start, _end);
+            m_Path = m_Waypoints.GetShortestPath(_start, _end.busStop);
             PATH_FOR_INSPECTOR = m_Path.waypoints;
             
             busStops.Add(_end);
             busStops.RemoveAt(0);
+
 
         }
 
@@ -80,8 +86,8 @@ namespace Movement {
 
         public Waypoint ChooseRandomWaypoint()
         {
-            int randomIndex = Random.Range(0, busStops.Count-1);
-            Waypoint randomWaypoint = busStops[randomIndex];
+            int randomIndex = UnityEngine.Random.Range(0, busStops.Count-1);
+            Waypoint randomWaypoint = busStops[randomIndex].busStop;
 
             return randomWaypoint;
         }

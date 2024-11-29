@@ -21,6 +21,8 @@ public class BusStop : MonoBehaviour {
     
     bool playerInProx { get; set; }
 
+    public int busStopIndex;
+
     [Separator("Timetable")]
     
     public List<TTElement> timeTable;
@@ -75,6 +77,10 @@ public class BusStop : MonoBehaviour {
     public void AddBusLine(BusLineSO line){
         associatedLines.Add(line);
 
+        UpdateTime();
+    }
+
+    public void UpdateTime(){
         if(updateTimeTableCoroutine != null){
             StopCoroutine(updateTimeTableCoroutine);
         }
@@ -82,43 +88,52 @@ public class BusStop : MonoBehaviour {
         updateTimeTableCoroutine = StartCoroutine(UpdateTimeTable());
     }
 
+    int timeTillBusArrives = 0;
+
     IEnumerator UpdateTimeTable(){
         yield return new WaitForSeconds(1);
         foreach(var time in timeTable){
             time.parent.SetActive(false);
         }
         yield return new WaitForSeconds(1);
-        int index = 0;
-        int TIME = 2; // TEMPORARY
+        int lineIndex = 0;
+
+        // Time between the busses arriving to the same stop
+        int timeBetween = (Mathf.RoundToInt(associatedLines[lineIndex].totalTravelTime) / 60) - 1;
+        //int TimeToRemove = Mathf.RoundToInt(Bus_Time.Instance.currentTime / 60) - 1;
+        int index = 0; // TEMPORARY
         foreach(var time in timeTable){
             time.parent.SetActive(true);
 
-            if(index > associatedLines.Count-1){
-                index = 0;
+            if(lineIndex > associatedLines.Count-1){
+                lineIndex = 0;
+                index++;
             }
 
-            time.number.text = associatedLines[index].BusLineID.v1.ToString();
-            time.timeTableE.text = associatedLines[index].BusLineID.v3;
-            time.time.text = TIME.ToString();
-            TIME += 5; // TEMPORARY
-            Debug.Log(index);
-            index++;
+            time.number.text = associatedLines[lineIndex].BusLineID.v1.ToString();
+            time.timeTableE.text = associatedLines[lineIndex].BusLineID.v3;
+            int timeToAdd = timeBetween * index;
+            int busStopTime = (int)(associatedLines[lineIndex].travelTimes[busStopIndex] / 60) - 1 < 0 ? 0 : (int)(associatedLines[lineIndex].travelTimes[busStopIndex] / 60) - 1;
+            time.time.text = (busStopTime + timeToAdd - timeTillBusArrives).ToString();
+
+            lineIndex++;
         }
+
+        timeTillBusArrives++;
+    }
+
+    public void BusPassedStop(BusLineSO line){
+        if(busStopIndex == 0){
+            busStopIndex = line.travelTimes.Count-1;
+        }
+        else{
+            busStopIndex--;
+        }
+
+        timeTillBusArrives = 0;
     }
 
     public bool CheckPlayerProximity(){
         return playerInProx;
-    }
-}
-
-internal class SerializedTuplesLabelsAttribute : Attribute
-{
-    private string v1;
-    private string v2;
-
-    public SerializedTuplesLabelsAttribute(string v1, string v2)
-    {
-        this.v1 = v1;
-        this.v2 = v2;
     }
 }
