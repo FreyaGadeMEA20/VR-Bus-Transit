@@ -86,7 +86,7 @@ public class PhoneManager : MonoBehaviour
             progressSlider.gameObject.SetActive(true);
         }
         progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value = newVal;
-        Debug.Log("Slider value: " + progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value);
+        Debug.Log($"Slider value: + {progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value:0.0}");
 
         if(newVal >=4){
             StartCoroutine(TogglePhone());

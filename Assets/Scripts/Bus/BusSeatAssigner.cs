@@ -44,7 +44,6 @@ public class BusSeatAssigner : MonoBehaviour
         
         Recenter(currentSeat.seatingArea);
         
-
         // Disable the player's movement
         player.layer = LayerMask.NameToLayer("SeatedPlayer");
         player.GetComponent<DynamicMoveProvider>().moveSpeed = 0;
@@ -86,18 +85,18 @@ public class BusSeatAssigner : MonoBehaviour
     public void Recenter(GameObject target){
         //player.transform.position = target.transform.position;
         
-        XROrigin xrOrigin = player.GetComponent<XROrigin>();
-        xrOrigin.MoveCameraToWorldLocation(target.transform.position);
-        xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
+        //XROrigin xrOrigin = player.GetComponent<XROrigin>();
+        //xrOrigin.MoveCameraToWorldLocation(target.transform.position);
+        //xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
 
-        /* Quaternion newRot;
+        Quaternion newRot;
 
         if(target.transform.rotation.w < 0){
             newRot = new Quaternion(0, target.transform.rotation.w, 0, 0);
         }else{
             newRot = new Quaternion(0, 0, 0, 0);
         }
-        player.transform.rotation = newRot; */
+        player.transform.rotation = newRot;
     }
 
     IEnumerator Cooldown(){

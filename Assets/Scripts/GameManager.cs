@@ -107,6 +107,8 @@ public class GameManager : MonoBehaviour
 
     Coroutine updateTimeCoroutine;
 
+    bool rotateSkybox = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -117,6 +119,10 @@ public class GameManager : MonoBehaviour
 
             updateTimeCoroutine = StartCoroutine(UpdateTime());
         }
+        if(rotateSkybox){
+            RenderSettings.skybox.SetFloat("_Rotation", Time.time * 0.4f);
+        }
+
         // Check for state transitions
         switch (currentState) {
             case GameState.START:
@@ -158,10 +164,13 @@ public class GameManager : MonoBehaviour
 
     IEnumerator UpdateTime(){
         yield return new WaitForSeconds(1);
-        Debug.Log("Updating time");
+
+        rotateSkybox = true;
+
         foreach(var busStop in FindObjectsOfType<BusStop>()){
             busStop.UpdateTime();
         }
+        PhoneTime.Instance.UpdateTime();
     }
 
     // In order to let the other scripts know of the state changing, an event is made to make it easier to call
@@ -202,10 +211,12 @@ public class GameManager : MonoBehaviour
     }
 
     void UpdatePhoneState(){
-        if(RejsekortInformation.Instance.GetCheckedIn() && !inCorrectStopZone)
+        if(RejsekortInformation.Instance.GetCheckedIn() && !inCorrectStopZone){
             Debug.Log("Player has checked in at the wrong stop");
             // do something
-        
+
+            StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1));
+        }
         // Check if the player is near the designated bus stop
         if(!inCorrectStopZone){
             Debug.Log("Player is not in the correct stop zone");
@@ -253,7 +264,7 @@ public class GameManager : MonoBehaviour
             ChangeState(GameState.CHECKED_IN);
         } else {
             Debug.LogWarning("Wrong bus");
-            //FadeToBlack.Instance.FadeOutAndLoadScene("WrongBus");
+            StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1));
         }
         
     }

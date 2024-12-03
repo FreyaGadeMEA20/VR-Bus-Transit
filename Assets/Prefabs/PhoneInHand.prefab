@@ -4152,6 +4152,7 @@ GameObject:
   - component: {fileID: 8702950673262400783}
   - component: {fileID: 2644422626657661069}
   - component: {fileID: 131769947124280329}
+  - component: {fileID: 9175479845765347607}
   m_Layer: 0
   m_Name: TIME
   m_TagString: Untagged
@@ -4206,7 +4207,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:00
+  m_text: '12:00
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4275,6 +4278,21 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9175479845765347607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7721361780451832953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f67a8132d0fa884d8af8a677bedf2c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hour: 12
+  minute: 0
+  text: {fileID: 0}
 --- !u!1 &7821850093442066227
 GameObject:
   m_ObjectHideFlags: 0

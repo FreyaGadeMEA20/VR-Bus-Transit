@@ -178,6 +178,6 @@ public class BusController : MonoBehaviour
     }
 
     public void WrongBus(){
-        FadeToBlack.Instance.FadeOutAndLoadScene("WrongBus");
+        StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1));
     }
 }

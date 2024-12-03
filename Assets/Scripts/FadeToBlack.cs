@@ -10,6 +10,7 @@ public class FadeToBlack : MonoBehaviour
     [SerializeField] Image fadeImage;
 
     public static FadeToBlack Instance { get; internal set; }
+    public bool isFading = false;
 
     void Awake()
     {
@@ -29,18 +30,27 @@ public class FadeToBlack : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
-    public IEnumerator FadeOutAndLoadScene(string scene)
+    public IEnumerator FadeOutAndLoadScene(int scene)
     {
+        if (isFading)
+            yield break;
+        isFading = true;
+        
         StartCoroutine(FadeOut());
 
         yield return new WaitForSeconds(fadeDuration*2);
 
         //string currentSceneName = SceneManager.GetActiveScene().name;
+        Debug.Log("Scene loaded");
         SceneManager.LoadSceneAsync(scene);
     }
 
     public IEnumerator FadeOut()
     {
+        if (isFading)
+            yield break;
+        isFading = true;
+
         float elapsedTime = 0f;
         while (elapsedTime < fadeDuration+1)
         {
@@ -55,6 +65,10 @@ public class FadeToBlack : MonoBehaviour
 
     public IEnumerator FadeIn()
     {
+        if (isFading)
+            yield break;
+        isFading = true;
+
         yield return new WaitForSeconds(fadeDuration);
         Debug.Log("Fading in");
         float elapsedTime = 0f;

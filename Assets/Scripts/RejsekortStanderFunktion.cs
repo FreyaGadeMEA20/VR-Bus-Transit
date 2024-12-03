@@ -135,9 +135,6 @@ public class RejskortStanderFunctions : MonoBehaviour
         StartCoroutine(ResetLightAndAudio());
     }
 
-
-
-
     private void OnTriggerExit(Collider other)
     {
       StartCoroutine(ResetLightAndAudio()); // wait x seconds before resetting the light and audio
