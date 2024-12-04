@@ -17,7 +17,7 @@ public class FadeToBlack : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -31,11 +31,7 @@ public class FadeToBlack : MonoBehaviour
     }
 
     public IEnumerator FadeOutAndLoadScene(int scene)
-    {
-        if (isFading)
-            yield break;
-        isFading = true;
-        
+    {        
         StartCoroutine(FadeOut());
 
         yield return new WaitForSeconds(fadeDuration*2);
@@ -43,14 +39,11 @@ public class FadeToBlack : MonoBehaviour
         //string currentSceneName = SceneManager.GetActiveScene().name;
         Debug.Log("Scene loaded");
         SceneManager.LoadSceneAsync(scene);
+        isFading = false;
     }
 
     public IEnumerator FadeOut()
     {
-        if (isFading)
-            yield break;
-        isFading = true;
-
         float elapsedTime = 0f;
         while (elapsedTime < fadeDuration+1)
         {
@@ -61,14 +54,12 @@ public class FadeToBlack : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
+        isFading = false;
     }
 
     public IEnumerator FadeIn()
     {
-        if (isFading)
-            yield break;
-        isFading = true;
-
         yield return new WaitForSeconds(fadeDuration);
         Debug.Log("Fading in");
         float elapsedTime = 0f;
@@ -82,5 +73,7 @@ public class FadeToBlack : MonoBehaviour
             yield return null;
         }
         fadeDuration = 1.0f;
+
+        isFading = false;
     }
 }
