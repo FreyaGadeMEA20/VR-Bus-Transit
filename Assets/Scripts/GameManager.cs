@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
             updateTimeCoroutine = StartCoroutine(UpdateTime());
         }
         if(rotateSkybox){
-            RenderSettings.skybox.SetFloat("_Rotation", Time.time * 0.4f);
+            RenderSettings.skybox.SetFloat("_Rotation", Time.time * 0.15f);
         }
 
         // Check for state transitions

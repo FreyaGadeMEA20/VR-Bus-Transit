@@ -85,9 +85,9 @@ public class BusSeatAssigner : MonoBehaviour
     public void Recenter(GameObject target){
         //player.transform.position = target.transform.position;
         
-        //XROrigin xrOrigin = player.GetComponent<XROrigin>();
-        //xrOrigin.MoveCameraToWorldLocation(target.transform.position);
-        //xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
+        XROrigin xrOrigin = player.GetComponent<XROrigin>();
+        xrOrigin.MoveCameraToWorldLocation(target.transform.position);
+        xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
 
         Quaternion newRot;
 

@@ -2593,17 +2593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9207ee96ce6bd8e40b87d68769cd7432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleStates:
-  - stateName: Waving
-    animationBool: isWaving
-    minStateTime: 0
-    maxStateTime: 29
-    stateWeight: 1
-  - stateName: Texting
-    animationBool: isTexting
-    minStateTime: 0
-    maxStateTime: 100
-    stateWeight: 0
+  idleStates: []
   movementStates:
   - stateName: Walking
     animationBool: isWalking
@@ -2615,16 +2605,8 @@ MonoBehaviour:
     maxStateTime: 20
     moveSpeed: 4
     turnSpeed: 120
-  attackingStates:
-  - stateName: 'Punch Left '
-    animationBool: isPunching_Left
-  - stateName: Punch Right
-    animationBool: isPunching_Right
-  - stateName: Kicking
-    animationBool: isKicking
-  deathStates:
-  - stateName: Dead
-    animationBool: isDead
+  attackingStates: []
+  deathStates: []
   species: Human
   stats: {fileID: 11400000, guid: df9751c3f50884146ba79d1e58dd1354, type: 2}
   wanderZone: 10
