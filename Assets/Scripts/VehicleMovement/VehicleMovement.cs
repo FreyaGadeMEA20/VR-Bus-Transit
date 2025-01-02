@@ -164,11 +164,11 @@ namespace Movement{
                         currentMovementState = MovementState.Moving;
                         BackingUpIntiated = false;
                         acceleration = tempAcc;
-                        StopCoroutine(BackThatAssUp());
+                        StopCoroutine(DriveBackwards());
                         break;
                     }
                     if(!BackingUpIntiated){
-                        StartCoroutine(BackThatAssUp());
+                        StartCoroutine(DriveBackwards());
                     }
                     
                     break;
@@ -179,7 +179,7 @@ namespace Movement{
         }
 
         // needs more work
-        IEnumerator BackThatAssUp(){
+        IEnumerator DriveBackwards(){
             BackingUpIntiated = true;
             acceleration = acceleration*-1f;
             yield return new WaitForSeconds(4f);
