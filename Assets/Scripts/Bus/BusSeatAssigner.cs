@@ -14,10 +14,14 @@ public class BusSeatAssigner : MonoBehaviour
     [SerializeField] LayerMask seatedLayer;
     public bool PlayerSeated => currentSeat != null;
 
+    XROrigin xrOrigin;
+
     float seatCooldown;
 
     public void GetPlayer(GameObject _player){
         player = _player;
+        
+        xrOrigin = player.GetComponent<XROrigin>();
     }
     
     // Assigns the player to the given seat
@@ -42,6 +46,7 @@ public class BusSeatAssigner : MonoBehaviour
         //TODO: Tune position and rotation
         // Seat the player - ROTATION OF THE SEAT IS IMPORTANT
         
+        xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = false;
         Recenter(currentSeat.seatingArea);
         
         // Disable the player's movement
@@ -66,6 +71,8 @@ public class BusSeatAssigner : MonoBehaviour
         StartCoroutine(FadeToBlack.Instance.FadeOut());
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
+        
+        xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = true;
         Recenter(currentSeat.exitArea);
 
         player.layer = LayerMask.NameToLayer("Default");
@@ -85,7 +92,6 @@ public class BusSeatAssigner : MonoBehaviour
     public void Recenter(GameObject target){
         //player.transform.position = target.transform.position;
         
-        XROrigin xrOrigin = player.GetComponent<XROrigin>();
         xrOrigin.MoveCameraToWorldLocation(target.transform.position);
         xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
 

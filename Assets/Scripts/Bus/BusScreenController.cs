@@ -45,7 +45,7 @@ public class BusScreenController : MonoBehaviour
             screen.nextStation[1].text = BusLineID.v1;
             screen.nextNextStation.text = BusLineID.v2;
             screen.nextNextNextStation.text = BusLineID.v3;
-            screen.line.text = BusLineID.v3;
+            screen.line.text = BusLineID.v4;
             screen.image.sprite = dotScreen;
         }
 
