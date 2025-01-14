@@ -6440,7 +6440,9 @@ MonoBehaviour:
   busLine: {fileID: 0}
   currentWaypoint: {fileID: 0}
   PATH_FOR_INSPECTOR: []
-  endDestination: {fileID: 0}
+  endDestination:
+    timeFromNextStop: 0
+    busStop: {fileID: 0}
   m_Waypoints: {fileID: 0}
   busStops: []
 --- !u!114 &6926448354235404981
@@ -6550,7 +6552,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 62f8532f77a58fe44b3c8dbc6e1d6e38, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6559,7 +6561,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 3
-  MaxDistance: 50
+  MaxDistance: 35.71
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

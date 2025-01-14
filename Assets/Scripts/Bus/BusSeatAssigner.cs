@@ -46,8 +46,8 @@ public class BusSeatAssigner : MonoBehaviour
         //TODO: Tune position and rotation
         // Seat the player - ROTATION OF THE SEAT IS IMPORTANT
         
-        xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = false;
         Recenter(currentSeat.seatingArea);
+        //xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = false;
         
         // Disable the player's movement
         player.layer = LayerMask.NameToLayer("SeatedPlayer");
@@ -72,8 +72,8 @@ public class BusSeatAssigner : MonoBehaviour
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
         
-        xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = true;
         Recenter(currentSeat.exitArea);
+        //xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = true;
 
         player.layer = LayerMask.NameToLayer("Default");
         // Enable the player's movement
@@ -90,9 +90,9 @@ public class BusSeatAssigner : MonoBehaviour
     }
 
     public void Recenter(GameObject target){
-        //player.transform.position = target.transform.position;
+        player.transform.position = target.transform.position;
         
-        xrOrigin.MoveCameraToWorldLocation(target.transform.position);
+        //xrOrigin.MoveCameraToWorldLocation(target.transform.position);
         xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
 
         Quaternion newRot;
