@@ -62,6 +62,7 @@ namespace Movement{
         public float MinEngineRPM = 1000.0f; // The minimum engine RPM of the vehicle
         float EngineRPM = 0.0f; // The current engine RPM of the vehicle
 
+        [Range(1, 4)][SerializeField] float speedModifier = 4f; // The speed modifier of the vehicle
         // Variables for controlling navigation and collision
         [Header("NAVIGATION AND COLLISSION")]
         public bool ReachedBusStop = false; // Variable to control whether or not it has reached the bus stop
@@ -231,7 +232,7 @@ namespace Movement{
             }
             // Apply forces to the rear wheels
             foreach (Wheel wheel in rearWheels) {
-                wheel.wheels.motorTorque = EngineTorque / GearRatio[CurrentGear] * acceleration * 2;
+                wheel.wheels.motorTorque = EngineTorque / GearRatio[CurrentGear] * acceleration * speedModifier;
                 wheel.wheels.brakeTorque = currentBreakForce;
 
                 UpdateWheel(wheel.wheels, wheel.transforms);
@@ -258,6 +259,7 @@ namespace Movement{
                 acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering);
             } else {
                 acceleration = .45f;
+                speedModifier = 2f;
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the

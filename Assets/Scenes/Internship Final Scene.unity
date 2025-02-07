@@ -188,6 +188,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Busdriver
       objectReference: {fileID: 0}
+    - target: {fileID: 6630009405205805413, guid: 641364e42eb6b974e9c00df2cfdd1b28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8613722185068337269, guid: 641364e42eb6b974e9c00df2cfdd1b28, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Hip_L'\n\tTransform 'Neck_M'\n\tTransform
+        'Hip_R'\n\tTransform 'Hip_L'\n\tTransform 'Neck_M'\n\tTransform 'Hip_R'\n\tFrom
+        animation clip 'BusChaffeurTest'"
+      objectReference: {fileID: 0}
     - target: {fileID: 8803380706600537821, guid: 641364e42eb6b974e9c00df2cfdd1b28, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.2000003
@@ -1868,6 +1880,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 690588403}
+    - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: speedModifier
+      value: 2.01
+      objectReference: {fileID: 0}
     - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: GearRatio.Array.data[3]
       value: 2
@@ -37404,7 +37420,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8398500045510702135, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       insertIndex: -1
