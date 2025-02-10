@@ -259,7 +259,7 @@ namespace Movement{
                 acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering);
             } else {
                 acceleration = .45f;
-                speedModifier = 2f;
+                //speedModifier = 2f;
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the

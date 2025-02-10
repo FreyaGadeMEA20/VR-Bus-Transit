@@ -1882,7 +1882,7 @@ PrefabInstance:
       objectReference: {fileID: 690588403}
     - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: speedModifier
-      value: 2.01
+      value: 3.04
       objectReference: {fileID: 0}
     - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: GearRatio.Array.data[3]
@@ -10203,7 +10203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightState: 1
   lights:
-  - timeBeforeSwitch: 20
+  - timeBeforeSwitch: 10
     state: 0
     direction: 0
     redLights:
@@ -10226,7 +10226,7 @@ MonoBehaviour:
     wayPointsToStop:
     - {fileID: 935864078}
     - {fileID: 1077204228}
-  - timeBeforeSwitch: 12
+  - timeBeforeSwitch: 6
     state: 1
     direction: 1
     redLights:
@@ -17233,7 +17233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightState: 1
   lights:
-  - timeBeforeSwitch: 18.2
+  - timeBeforeSwitch: 6
     state: 0
     direction: 0
     redLights:
@@ -17256,7 +17256,7 @@ MonoBehaviour:
     wayPointsToStop:
     - {fileID: 15690177}
     - {fileID: 1992376314}
-  - timeBeforeSwitch: 25.3
+  - timeBeforeSwitch: 10
     state: 1
     direction: 1
     redLights:
@@ -22533,7 +22533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightState: 1
   lights:
-  - timeBeforeSwitch: 20
+  - timeBeforeSwitch: 10
     state: 0
     direction: 0
     redLights:
@@ -22556,7 +22556,7 @@ MonoBehaviour:
     wayPointsToStop:
     - {fileID: 113867759}
     - {fileID: 795631786}
-  - timeBeforeSwitch: 12
+  - timeBeforeSwitch: 6
     state: 1
     direction: 1
     redLights:
@@ -25325,7 +25325,8 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -516098083770646512, guid: c4ce98c256796b84bb1160797014791b, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       insertIndex: 4
@@ -30132,7 +30133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightState: 1
   lights:
-  - timeBeforeSwitch: 12
+  - timeBeforeSwitch: 6
     state: 0
     direction: 0
     redLights:
@@ -30155,7 +30156,7 @@ MonoBehaviour:
     wayPointsToStop:
     - {fileID: 1213707136}
     - {fileID: 1131096327}
-  - timeBeforeSwitch: 20
+  - timeBeforeSwitch: 10
     state: 1
     direction: 1
     redLights:
@@ -33578,7 +33579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightState: 1
   lights:
-  - timeBeforeSwitch: 20
+  - timeBeforeSwitch: 10
     state: 0
     direction: 0
     redLights:
@@ -33601,7 +33602,7 @@ MonoBehaviour:
     wayPointsToStop:
     - {fileID: 327899967}
     - {fileID: 946365943}
-  - timeBeforeSwitch: 12
+  - timeBeforeSwitch: 6
     state: 1
     direction: 1
     redLights:
@@ -37199,6 +37200,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 690588403}
+    - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: speedModifier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: GearRatio.Array.data[3]
       value: 4
@@ -46000,7 +46005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightState: 1
   lights:
-  - timeBeforeSwitch: 20
+  - timeBeforeSwitch: 10
     state: 0
     direction: 0
     redLights:
@@ -46023,7 +46028,7 @@ MonoBehaviour:
     wayPointsToStop:
     - {fileID: 411679827}
     - {fileID: 2088796745}
-  - timeBeforeSwitch: 12
+  - timeBeforeSwitch: 6
     state: 1
     direction: 1
     redLights:
