@@ -519,7 +519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4299274241590701525}
   - component: {fileID: 8003421362771401320}
-  - component: {fileID: 7005379482668095730}
+  - component: {fileID: 15168381745352516}
   m_Layer: 0
   m_Name: PlayerProx
   m_TagString: Untagged
@@ -564,7 +564,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5225073, y: 1, z: 0.30712542}
   m_Center: {x: -0.084673144, y: 2.1053116e-15, z: 0.15195423}
---- !u!114 &7005379482668095730
+--- !u!114 &15168381745352516
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,12 +573,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1555438239365370412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sign: {fileID: 3841645246760962792}
-  BusStopName: "\xD8rneskolen"
-  deathZone: {fileID: 0}
+  BusStopName: 
+  deathZone: {fileID: 4007545933259690966}
   associatedLines: []
   busStopIndex: 0
   timeTable:
@@ -1195,7 +1195,7 @@ GameObject:
   - component: {fileID: 6249269764490939074}
   - component: {fileID: 8654648249100210060}
   m_Layer: 0
-  m_Name: BusCollider
+  m_Name: StopZone
   m_TagString: DeathBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

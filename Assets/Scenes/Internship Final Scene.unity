@@ -2740,7 +2740,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 1939426990}
+  busStop: {fileID: 0}
 --- !u!4 &64929746
 Transform:
   m_ObjectHideFlags: 0
@@ -5248,7 +5248,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 261992643}
+  busStop: {fileID: 0}
 --- !u!4 &175397823
 Transform:
   m_ObjectHideFlags: 0
@@ -6341,6 +6341,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: Anderup St.
+      objectReference: {fileID: 0}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: busStopIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7164,17 +7172,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
   m_PrefabInstance: {fileID: 261992641}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &261992643 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 261992641}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &269048972
 GameObject:
   m_ObjectHideFlags: 0
@@ -8473,7 +8470,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 1315221299}
+  busStop: {fileID: 0}
 --- !u!4 &336610866
 Transform:
   m_ObjectHideFlags: 0
@@ -9195,6 +9192,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: Tranetorvet
+      objectReference: {fileID: 0}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: busStopIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10017,17 +10022,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
   m_PrefabInstance: {fileID: 395498732}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &395498734 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 395498732}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &398617106
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,6 +10820,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: Tranetorvet
+      objectReference: {fileID: 0}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: busStopIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11648,17 +11650,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
   m_PrefabInstance: {fileID: 448003187}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &448003189 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 448003187}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &453101061 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -466329591000292508, guid: c4ce98c256796b84bb1160797014791b, type: 3}
@@ -16942,7 +16933,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 1
   TrafficLightClear: 1
-  busStop: {fileID: 2022937652}
+  busStop: {fileID: 0}
 --- !u!4 &754457675
 Transform:
   m_ObjectHideFlags: 0
@@ -21629,6 +21620,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: Ulvevej (Anderup Gade)
+      objectReference: {fileID: 0}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: busStopIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -22442,17 +22441,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
---- !u!114 &1003529313 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 1003529312}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1003529314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
@@ -26932,6 +26920,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: "Bj\xF8rneboulevard (Svanegade)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: busStopIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -27745,17 +27741,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
---- !u!114 &1205456722 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 1205456721}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1205456723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
@@ -29325,7 +29310,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 1791471609}
+  busStop: {fileID: 0}
 --- !u!4 &1312646876
 Transform:
   m_ObjectHideFlags: 0
@@ -29403,6 +29388,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: "Bj\xF8rneboulevard (Svanegade)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: busStopIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -30216,17 +30209,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
---- !u!114 &1315221299 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 1315221298}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1315221300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
@@ -30646,7 +30628,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 1003529313}
+  busStop: {fileID: 0}
 --- !u!4 &1342982297
 Transform:
   m_ObjectHideFlags: 0
@@ -34053,17 +34035,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
   m_PrefabInstance: {fileID: 1547911185}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1552535814 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 3026922757622361742}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1557055497
 GameObject:
   m_ObjectHideFlags: 0
@@ -38360,7 +38331,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 1
   TrafficLightClear: 1
-  busStop: {fileID: 448003189}
+  busStop: {fileID: 0}
 --- !u!4 &1646339537
 Transform:
   m_ObjectHideFlags: 0
@@ -39459,7 +39430,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 1205456722}
+  busStop: {fileID: 0}
 --- !u!4 &1727172978
 Transform:
   m_ObjectHideFlags: 0
@@ -40374,6 +40345,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: Ulvevej (Anderup Gade)
+      objectReference: {fileID: 0}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: busStopIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -41191,17 +41170,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
---- !u!114 &1791471609 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 1791471608}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1791471610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
@@ -41838,7 +41806,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 1
   TrafficLightClear: 1
-  busStop: {fileID: 395498734}
+  busStop: {fileID: 0}
 --- !u!4 &1832208023
 Transform:
   m_ObjectHideFlags: 0
@@ -43653,6 +43621,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: Anderup St.
+      objectReference: {fileID: 0}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: busStopIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -44466,17 +44442,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
---- !u!114 &1939426990 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 1939426989}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1939426991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7310514089208617837, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
@@ -45779,17 +45744,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2022937652 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 2024292095}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75a77dead03a8a48b41c7ef1f50d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2022989693
 GameObject:
   m_ObjectHideFlags: 0
@@ -45852,6 +45806,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 959300682}
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: "\xD8rneskolen"
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -48038,7 +48000,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 1
   TrafficLightClear: 1
-  busStop: {fileID: 1552535814}
+  busStop: {fileID: 0}
 --- !u!4 &2088926439
 Transform:
   m_ObjectHideFlags: 0
@@ -48986,6 +48948,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1847264218}
     m_Modifications:
+    - target: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: BusStopName
+      value: "\xD8rneskolen"
+      objectReference: {fileID: 0}
     - target: {fileID: 31566024276081261, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -49802,11 +49768,43 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3026922757622361745}
   m_SourcePrefab: {fileID: 100100000, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+--- !u!1 &3026922757622361743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3841645246760962792, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 3026922757622361742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3026922757622361744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 3026922757622361742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3026922757622361745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3026922757622361744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sign: {fileID: 3026922757622361743}
+  BusStopName: 
+  deathZone: {fileID: 1139019396}
+  associatedLines: []
+  busStopIndex: 0
+  timeTable: []
 --- !u!20 &4210704883357540619 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2012646995600501545, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
