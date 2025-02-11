@@ -2740,7 +2740,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 1565200474}
 --- !u!4 &64929746
 Transform:
   m_ObjectHideFlags: 0
@@ -5248,7 +5248,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 561981538}
 --- !u!4 &175397823
 Transform:
   m_ObjectHideFlags: 0
@@ -6556,6 +6556,10 @@ PrefabInstance:
     - target: {fileID: 1371963526520317378, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Name
+      value: Anderup St. 1
       objectReference: {fileID: 0}
     - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8470,7 +8474,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 505560302}
 --- !u!4 &336610866
 Transform:
   m_ObjectHideFlags: 0
@@ -12507,6 +12511,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &505560302 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1205456721}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &507582978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13588,6 +13603,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: -51.933, z: 0}
+--- !u!114 &561981538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 261992641}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &564050681
 GameObject:
   m_ObjectHideFlags: 0
@@ -14642,6 +14668,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5637864547345215000, guid: 433e3fb54ce41ce4a87f8b6e83136254, type: 3}
   m_PrefabInstance: {fileID: 620050438}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &622669426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 2024292095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &623274898
 GameObject:
   m_ObjectHideFlags: 0
@@ -16941,7 +16978,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 1
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 622669426}
 --- !u!4 &754457675
 Transform:
   m_ObjectHideFlags: 0
@@ -21055,6 +21092,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: -139.612, z: 0}
+--- !u!114 &944517556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1315221298}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &946365943
 GameObject:
   m_ObjectHideFlags: 0
@@ -21843,6 +21891,10 @@ PrefabInstance:
     - target: {fileID: 1371963526520317378, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Name
+      value: Ulvevej (Anderup Gade) 2
       objectReference: {fileID: 0}
     - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23068,6 +23120,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1060847083 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1003529312}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1063173593
 GameObject:
   m_ObjectHideFlags: 1
@@ -23117,6 +23180,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1067593496 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 448003187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1067931485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3629181811308302023, guid: 25c75ff3e4921b142b4da3cfad4420a8, type: 3}
@@ -27145,6 +27219,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Name
+      value: "Bj\xF8rneboulevard (Svanegade) 2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -29318,7 +29396,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 1060847083}
 --- !u!4 &1312646876
 Transform:
   m_ObjectHideFlags: 0
@@ -29611,6 +29689,10 @@ PrefabInstance:
     - target: {fileID: 1371963526520317378, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Name
+      value: "Bj\xF8rneboulevard (Svanegade) 1"
       objectReference: {fileID: 0}
     - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30636,7 +30718,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 1847021694}
 --- !u!4 &1342982297
 Transform:
   m_ObjectHideFlags: 0
@@ -34253,6 +34335,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1565200474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1939426989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1565632794
 GameObject:
   m_ObjectHideFlags: 0
@@ -38339,7 +38432,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 1
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 1067593496}
 --- !u!4 &1646339537
 Transform:
   m_ObjectHideFlags: 0
@@ -38355,6 +38448,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &1646372012 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 395498732}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1646836760
 GameObject:
   m_ObjectHideFlags: 0
@@ -39438,7 +39542,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 0
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 944517556}
 --- !u!4 &1727172978
 Transform:
   m_ObjectHideFlags: 0
@@ -40568,6 +40672,10 @@ PrefabInstance:
     - target: {fileID: 1371963526520317378, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Name
+      value: Ulvevej (Anderup Gade) 1
       objectReference: {fileID: 0}
     - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -41814,7 +41922,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 1
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 1646372012}
 --- !u!4 &1832208023
 Transform:
   m_ObjectHideFlags: 0
@@ -42046,6 +42154,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1847021694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1791471608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1847264217
 GameObject:
   m_ObjectHideFlags: 0
@@ -43844,6 +43963,10 @@ PrefabInstance:
     - target: {fileID: 1371963526520317378, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Name
+      value: Anderup St. 2
       objectReference: {fileID: 0}
     - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -46031,6 +46154,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Name
+      value: "\xD8rneskolen 2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -48008,7 +48135,7 @@ MonoBehaviour:
   width: 5
   TrafficState: 1
   TrafficLightClear: 1
-  busStop: {fileID: 0}
+  busStop: {fileID: 3026922757622361751}
 --- !u!4 &2088926439
 Transform:
   m_ObjectHideFlags: 0
@@ -49169,6 +49296,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: m_Name
+      value: "\xD8rneskolen 1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -49780,39 +49911,19 @@ PrefabInstance:
     - {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3026922757622361745}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
---- !u!1 &3026922757622361743 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3841645246760962792, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 3026922757622361742}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3026922757622361744 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1555438239365370412, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-  m_PrefabInstance: {fileID: 3026922757622361742}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3026922757622361745
+--- !u!114 &3026922757622361751 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 15168381745352516, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 3026922757622361742}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3026922757622361744}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ab69a3bee5484b4b8737e9b1e4590fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sign: {fileID: 3026922757622361743}
-  BusStopName: 
-  deathZone: {fileID: 1139019396}
-  associatedLines: []
-  busStopIndex: 0
-  timeTable: []
 --- !u!20 &4210704883357540619 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2012646995600501545, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
