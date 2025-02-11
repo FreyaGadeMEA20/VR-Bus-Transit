@@ -255,11 +255,12 @@ namespace Movement{
             steering = RelativeWaypointPosition.x / RelativeWaypointPosition.magnitude;
             steering = (float)Math.Round(steering, 2);
             // now we do the same for torque, but make sure that it doesn't apply any engine torque when going around a sharp turn...
-            if ( Mathf.Abs( steering ) < 0.5f ) {
-                acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering);
+            if ( Mathf.Abs( steering ) < 0.2f ) {
+                acceleration = (float)Math.Round(RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering), 2);
+                speedModifier = 3f;
             } else {
                 acceleration = .45f;
-                //speedModifier = 2f;
+                speedModifier = 1f;
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
