@@ -2052,6 +2052,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8618031473502423388, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8694574316277383081, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -2111,7 +2115,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 340070924}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7407063518324850902, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      insertIndex: 8
+      addedObject: {fileID: 793360206}
   m_SourcePrefab: {fileID: 100100000, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
 --- !u!1 &39222032
 GameObject:
@@ -17378,6 +17385,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9052b0ad300da99418d109dad3724809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &793360200 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4821247001211594923, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+  m_PrefabInstance: {fileID: 32619300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &793360202 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+  m_PrefabInstance: {fileID: 32619300}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793360189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3e1aff86721944eb4eef10cda0c977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &793360206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793360189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2b1041c25b1884cb885666af315227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineAudioSource: {fileID: 793360200}
+  vehicleMovement: {fileID: 793360202}
+  maxVolume: 0.4
+  minVolume: 0.1
+  maxPitch: 1.5
+  minPitch: 1
+  smoothTime: 0.7
 --- !u!1 &795631786
 GameObject:
   m_ObjectHideFlags: 0
