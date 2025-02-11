@@ -111,6 +111,28 @@ public class TrafficLightController : MonoBehaviour
         
     }
 
+    void OnTriggerEnter(Collider other)
+    {   
+        if(other.gameObject.CompareTag("Bus") || other.gameObject.CompareTag("Car")){
+            foreach(var light in lights){
+                foreach (var wayPoint in light.wayPointsToStop) {
+                    wayPoint.GetComponent<Waypoint>().TrafficLightClear = false;
+                }
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.CompareTag("Bus") || other.gameObject.CompareTag("Car")){
+            foreach(var light in lights){
+                foreach (var wayPoint in light.wayPointsToStop) {
+                    wayPoint.GetComponent<Waypoint>().TrafficLightClear = true;
+                }
+            }
+        }
+    }
+
     void SwitchTrafficLightState(){
         switch(trafficLightState){
             case Direction.NS:

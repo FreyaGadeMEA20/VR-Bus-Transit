@@ -41,8 +41,10 @@ namespace Movement{
         }
 
         [Separator("Waypoint Type Variables (empty = none)")]
-        [ConditionalField("waypointType", false, WaypointType.TrafficLight)]public TrafficLightState TrafficState;
+        [ConditionalField("waypointType", false, WaypointType.TrafficLight)] public TrafficLightState TrafficState;
+        [ConditionalField("waypointType", false, WaypointType.TrafficLight)] public bool TrafficLightClear = true;
         [ConditionalField("waypointType", false, WaypointType.BusStop)] public BusStop busStop;
+        
 
         public Vector3 GetPosition()
         {
@@ -50,6 +52,11 @@ namespace Movement{
             Vector3 maxBound = transform.position - transform.right * width / 2f;
 
             return Vector3.Lerp(minBound, maxBound, Random.Range(0f, 1f));  
+        }
+
+        public bool EvaluateTrafficLight()
+        {
+            return TrafficLightClear;
         }
 
         void Awake(){

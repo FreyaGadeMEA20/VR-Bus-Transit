@@ -6354,7 +6354,7 @@ GameObject:
   - component: {fileID: 4821247001211594923}
   m_Layer: 9
   m_Name: BusFab
-  m_TagString: Car
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6520,10 +6520,11 @@ MonoBehaviour:
   EngineTorque: 2400
   MaxEngineRPM: 3000
   MinEngineRPM: 2000
+  speedModifier: 4
   ReachedBusStop: 0
   _RouteManager: {fileID: 0}
-  currentWaypoint: {fileID: 0}
   collisionDetector: {fileID: 1315358656677010875}
+  TrafficLightClear: 0
 --- !u!114 &8618031473502423388
 MonoBehaviour:
   m_ObjectHideFlags: 0

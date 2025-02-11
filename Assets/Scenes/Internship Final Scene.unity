@@ -160,6 +160,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &7016502
 Transform:
@@ -303,6 +304,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &12862777
 Transform:
@@ -356,6 +358,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &14730418
 Transform:
@@ -409,6 +412,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &15690179
 Transform:
@@ -462,6 +466,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &18553027
 Transform:
@@ -515,6 +520,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &18886945
 Transform:
@@ -568,6 +574,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &28522278
 Transform:
@@ -2150,6 +2157,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &39222034
 Transform:
@@ -2203,6 +2211,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &40397477
 Transform:
@@ -2331,6 +2340,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &52409319
 Transform:
@@ -2384,6 +2394,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &53566859
 Transform:
@@ -2437,6 +2448,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &55082131
 Transform:
@@ -2490,6 +2502,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &56327963
 Transform:
@@ -2618,6 +2631,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &59197404
 Transform:
@@ -2671,6 +2685,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &63781997
 Transform:
@@ -2724,6 +2739,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 1939426990}
 --- !u!4 &64929746
 Transform:
@@ -2777,6 +2793,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &69521896
 Transform:
@@ -2863,6 +2880,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &73939219
 Transform:
@@ -2916,6 +2934,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &75261300
 Transform:
@@ -2969,6 +2988,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &77423826
 Transform:
@@ -3022,6 +3042,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &81007746
 Transform:
@@ -3075,6 +3096,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &88934030
 Transform:
@@ -3128,6 +3150,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &90389510
 Transform:
@@ -3181,6 +3204,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &90843333
 Transform:
@@ -3234,6 +3258,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &91266097
 Transform:
@@ -3287,6 +3312,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &105070950
 Transform:
@@ -3340,6 +3366,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &106046703
 Transform:
@@ -3393,6 +3420,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &107142846
 Transform:
@@ -3529,6 +3557,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &108814267
 Transform:
@@ -3587,6 +3616,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &112699830
 Transform:
@@ -3640,6 +3670,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &113867761
 Transform:
@@ -4082,6 +4113,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &122511538
 Transform:
@@ -4279,6 +4311,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &138594648
 Transform:
@@ -4332,6 +4365,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &140386512
 Transform:
@@ -4385,6 +4419,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &142405760
 Transform:
@@ -4438,6 +4473,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &148669678
 Transform:
@@ -4491,6 +4527,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &151208523
 Transform:
@@ -4545,6 +4582,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &152836516
 Transform:
@@ -4939,6 +4977,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &159945849
 Transform:
@@ -4992,6 +5031,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &164519421
 Transform:
@@ -5045,6 +5085,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &167059181
 Transform:
@@ -5098,6 +5139,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &170172132
 Transform:
@@ -5151,6 +5193,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &170207533
 Transform:
@@ -5204,6 +5247,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 261992643}
 --- !u!4 &175397823
 Transform:
@@ -5272,6 +5316,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!1 &183397093
 GameObject:
@@ -5310,6 +5355,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &183397095
 Transform:
@@ -5605,6 +5651,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &205372490
 Transform:
@@ -5906,6 +5953,7 @@ MonoBehaviour:
   waypointType: 0
   width: 1
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!1 &225175577
 GameObject:
@@ -5944,6 +5992,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &225175579
 Transform:
@@ -5997,6 +6046,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &228462847
 Transform:
@@ -6212,6 +6262,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &256778392
 Transform:
@@ -6265,6 +6316,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &257015697
 Transform:
@@ -6934,6 +6986,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 1025332930}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: BusStopName
       value: Anderup St.
       objectReference: {fileID: 0}
@@ -7156,6 +7212,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &269048974
 Transform:
@@ -7209,6 +7266,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &276312100
 Transform:
@@ -7278,6 +7336,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!1 &281310301
 GameObject:
@@ -7316,6 +7375,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &281310303
 Transform:
@@ -7369,6 +7429,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &283107494
 Transform:
@@ -7422,6 +7483,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &285931553
 Transform:
@@ -7475,6 +7537,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &297099090
 Transform:
@@ -7569,6 +7632,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &301663242
 Transform:
@@ -7622,6 +7686,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &307832670
 Transform:
@@ -7819,6 +7884,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &319419387
 Transform:
@@ -7872,6 +7938,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &319928867
 Transform:
@@ -7925,6 +7992,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &319944932
 Transform:
@@ -7978,6 +8046,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &323369971
 Transform:
@@ -8136,6 +8205,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &324124265
 Transform:
@@ -8294,6 +8364,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &327899969
 Transform:
@@ -8347,6 +8418,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &334718739
 Transform:
@@ -8400,6 +8472,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 1315221299}
 --- !u!4 &336610866
 Transform:
@@ -8453,6 +8526,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &339480185
 Transform:
@@ -8511,6 +8585,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &343067916
 Transform:
@@ -8564,6 +8639,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &346773568
 Transform:
@@ -8726,6 +8802,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &359793637
 Transform:
@@ -8812,6 +8889,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &386527400
 Transform:
@@ -8865,6 +8943,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &387763235
 Transform:
@@ -8929,6 +9008,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &390471279
 Transform:
@@ -8982,6 +9062,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &391276858
 Transform:
@@ -9035,6 +9116,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &391898115
 Transform:
@@ -9088,6 +9170,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &393374710
 Transform:
@@ -9757,6 +9840,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 640330220}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: BusStopName
       value: Tranetorvet
       objectReference: {fileID: 0}
@@ -9978,6 +10065,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &398617108
 Transform:
@@ -10031,6 +10119,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &406849757
 Transform:
@@ -10117,6 +10206,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &411679829
 Transform:
@@ -10170,6 +10260,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &412586693
 Transform:
@@ -10430,6 +10521,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &433684174
 Transform:
@@ -10483,6 +10575,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &436345692
 Transform:
@@ -10536,6 +10629,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &440418150
 Transform:
@@ -10707,6 +10801,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &446018409
 Transform:
@@ -11376,6 +11471,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 1023598171}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: BusStopName
       value: Tranetorvet
       objectReference: {fileID: 0}
@@ -11623,6 +11722,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &455763102
 Transform:
@@ -11676,6 +11776,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &457857576
 Transform:
@@ -11848,6 +11949,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &465713859
 Transform:
@@ -11901,6 +12003,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &468328919
 Transform:
@@ -11954,6 +12057,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &474229443
 Transform:
@@ -12007,6 +12111,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &481411327
 Transform:
@@ -12060,6 +12165,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &483578154
 Transform:
@@ -12113,6 +12219,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &485579652
 Transform:
@@ -12166,6 +12273,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &488085401
 Transform:
@@ -12236,6 +12344,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!1 &492999344
 GameObject:
@@ -12274,6 +12383,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &492999346
 Transform:
@@ -12327,6 +12437,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &504016390
 Transform:
@@ -12380,6 +12491,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &504498399
 Transform:
@@ -12595,6 +12707,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &511381317
 Transform:
@@ -12648,6 +12761,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &511424984
 Transform:
@@ -12701,6 +12815,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &519706628
 Transform:
@@ -12754,6 +12869,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &523072976
 Transform:
@@ -12807,6 +12923,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &532319713
 Transform:
@@ -12860,6 +12977,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &536526462
 Transform:
@@ -12913,6 +13031,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &539514281
 Transform:
@@ -12966,6 +13085,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &542237066
 Transform:
@@ -13019,6 +13139,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &545454030
 Transform:
@@ -13072,6 +13193,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &548893423
 Transform:
@@ -13125,6 +13247,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &549221411
 Transform:
@@ -13178,6 +13301,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &551774090
 Transform:
@@ -13231,6 +13355,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &553190163
 Transform:
@@ -13284,6 +13409,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &555253606
 Transform:
@@ -13446,6 +13572,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &558813593
 Transform:
@@ -13499,6 +13626,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &564050683
 Transform:
@@ -13552,6 +13680,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &565709654
 Transform:
@@ -13605,6 +13734,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &567088108
 Transform:
@@ -13658,6 +13788,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &567326342
 Transform:
@@ -13711,6 +13842,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &570825363
 Transform:
@@ -13764,6 +13896,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &576778865
 Transform:
@@ -13817,6 +13950,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &582383741
 Transform:
@@ -13870,6 +14004,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &585742797
 Transform:
@@ -14008,6 +14143,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &601311360
 Transform:
@@ -14076,6 +14212,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!1 &603003355
 GameObject:
@@ -14114,6 +14251,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &603003357
 Transform:
@@ -14167,6 +14305,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &603158912
 Transform:
@@ -14220,6 +14359,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &608008073
 Transform:
@@ -14273,6 +14413,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &615961220
 Transform:
@@ -14326,6 +14467,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &617066151
 Transform:
@@ -14379,6 +14521,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &617769228
 Transform:
@@ -14656,6 +14799,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &627852778
 Transform:
@@ -14709,6 +14853,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &631750198
 Transform:
@@ -14762,6 +14907,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &634396204
 Transform:
@@ -14778,6 +14924,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &640330220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 395498732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &651618700
 GameObject:
   m_ObjectHideFlags: 0
@@ -14815,6 +14966,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &651618702
 Transform:
@@ -14868,6 +15020,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &657210468
 Transform:
@@ -14921,6 +15074,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &657504683
 Transform:
@@ -14974,6 +15128,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &658122961
 Transform:
@@ -15027,6 +15182,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &659089669
 Transform:
@@ -15080,6 +15236,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &663263860
 Transform:
@@ -15450,6 +15607,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &665516371
 Transform:
@@ -15503,6 +15661,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &668001796
 Transform:
@@ -15561,6 +15720,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &682794782
 Transform:
@@ -15614,6 +15774,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &684802227
 Transform:
@@ -15667,6 +15828,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &688657257
 Transform:
@@ -15720,6 +15882,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &688716052
 Transform:
@@ -15773,6 +15936,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &688825185
 Transform:
@@ -15837,6 +16001,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &694006839
 Transform:
@@ -15890,6 +16055,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &709656336
 Transform:
@@ -15943,6 +16109,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &712734659
 Transform:
@@ -16033,6 +16200,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &715730738
 Transform:
@@ -16229,6 +16397,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &726377717
 Transform:
@@ -16282,6 +16451,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &726630691
 Transform:
@@ -16335,6 +16505,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &731878628
 Transform:
@@ -16388,6 +16559,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &735287911
 Transform:
@@ -16441,6 +16613,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &736333491
 Transform:
@@ -16547,6 +16720,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &744297846
 Transform:
@@ -16600,6 +16774,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &748300577
 Transform:
@@ -16653,6 +16828,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &749663525
 Transform:
@@ -16706,6 +16882,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &751836857
 Transform:
@@ -16764,6 +16941,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 2022937652}
 --- !u!4 &754457675
 Transform:
@@ -16817,6 +16995,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &754826045
 Transform:
@@ -16870,6 +17049,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &756352908
 Transform:
@@ -16923,6 +17103,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &761033217
 Transform:
@@ -16978,6 +17159,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &766059596
 Transform:
@@ -17031,6 +17213,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &769187893
 Transform:
@@ -17086,6 +17269,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &777217038
 Transform:
@@ -17139,6 +17323,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &778308726
 Transform:
@@ -17192,6 +17377,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &779533091
 Transform:
@@ -17245,6 +17431,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &782371166
 Transform:
@@ -17298,6 +17485,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &782557337
 Transform:
@@ -17484,6 +17672,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &784637812
 Transform:
@@ -17558,6 +17747,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &795631788
 Transform:
@@ -17611,6 +17801,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &797876560
 Transform:
@@ -17664,6 +17855,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &801190829
 Transform:
@@ -17680,6 +17872,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &810614961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1003529312}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &811460243
 GameObject:
   m_ObjectHideFlags: 0
@@ -17717,6 +17914,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &811460245
 Transform:
@@ -17770,6 +17968,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &817480727
 Transform:
@@ -17823,6 +18022,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &823222784
 Transform:
@@ -17876,6 +18076,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &832944648
 Transform:
@@ -18193,6 +18394,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &842515877
 Transform:
@@ -18498,6 +18700,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &854675782
 Transform:
@@ -18641,6 +18844,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &856098048
 Transform:
@@ -18694,6 +18898,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &856781073
 Transform:
@@ -18747,6 +18952,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &862864887
 Transform:
@@ -18800,6 +19006,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &864905515
 Transform:
@@ -18816,6 +19023,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &866037919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1315221298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &872426579
 GameObject:
   m_ObjectHideFlags: 0
@@ -18853,6 +19065,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &872426581
 Transform:
@@ -18906,6 +19119,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &874441018
 Transform:
@@ -19182,6 +19396,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &884419163
 Transform:
@@ -19235,6 +19450,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &886188937
 Transform:
@@ -19288,6 +19504,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &886563741
 Transform:
@@ -19341,6 +19558,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &886736499
 Transform:
@@ -19394,6 +19612,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &889006623
 Transform:
@@ -19649,6 +19868,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &891429052
 Transform:
@@ -19702,6 +19922,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &896229875
 Transform:
@@ -19755,6 +19976,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &897220654
 Transform:
@@ -19808,6 +20030,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &898294730
 Transform:
@@ -19861,6 +20084,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &898882652
 Transform:
@@ -19914,6 +20138,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &907520183
 Transform:
@@ -19967,6 +20192,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &911172248
 Transform:
@@ -20020,6 +20246,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &912954189
 Transform:
@@ -20073,6 +20300,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &914433294
 Transform:
@@ -20126,6 +20354,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &915239647
 Transform:
@@ -20319,6 +20548,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &925416156
 Transform:
@@ -20372,6 +20602,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &928183850
 Transform:
@@ -20425,6 +20656,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &928796572
 Transform:
@@ -20478,6 +20710,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &929084987
 Transform:
@@ -20531,6 +20764,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &930398749
 Transform:
@@ -20584,6 +20818,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &931401014
 Transform:
@@ -20637,6 +20872,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &932383294
 Transform:
@@ -20690,6 +20926,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &932782564
 Transform:
@@ -20758,7 +20995,13 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
+--- !u!1 &940110777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1939426989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &941963282
 GameObject:
   m_ObjectHideFlags: 0
@@ -20796,6 +21039,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &941963284
 Transform:
@@ -20849,6 +21093,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &946365945
 Transform:
@@ -20907,6 +21152,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &956119968
 Transform:
@@ -21013,6 +21259,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &963732239
 Transform:
@@ -21124,6 +21371,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &978290708
 Transform:
@@ -21283,6 +21531,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &990767487
 Transform:
@@ -22021,6 +22270,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 810614961}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: BusStopName
       value: Ulvevej (Anderup Gade)
       objectReference: {fileID: 0}
@@ -22253,6 +22506,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1016766602
 Transform:
@@ -22269,6 +22523,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1023598171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 448003187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1024166470
 GameObject:
   m_ObjectHideFlags: 0
@@ -22306,6 +22565,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1024166472
 Transform:
@@ -22322,6 +22582,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1025332930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 261992641}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1031058555
 GameObject:
   m_ObjectHideFlags: 0
@@ -22359,6 +22624,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1031058557
 Transform:
@@ -22412,6 +22678,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1032130323
 Transform:
@@ -22470,6 +22737,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1044912413
 Transform:
@@ -22523,6 +22791,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1045673657
 Transform:
@@ -22576,6 +22845,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1046991594
 Transform:
@@ -22629,6 +22899,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1048330319
 Transform:
@@ -22784,6 +23055,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1060010057
 Transform:
@@ -23227,6 +23499,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1075218983
 Transform:
@@ -23280,6 +23553,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1077204230
 Transform:
@@ -23333,6 +23607,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1079205065
 Transform:
@@ -23386,6 +23661,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1083541973
 Transform:
@@ -23440,6 +23716,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1087135094
 Transform:
@@ -23494,6 +23771,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1092183135
 Transform:
@@ -23547,6 +23825,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1092453649
 Transform:
@@ -23600,6 +23879,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1093856498
 Transform:
@@ -23653,6 +23933,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1094306203
 Transform:
@@ -23706,6 +23987,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1096173441
 Transform:
@@ -23759,6 +24041,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1097184321
 Transform:
@@ -23812,6 +24095,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1100233746
 Transform:
@@ -23865,6 +24149,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1112371797
 Transform:
@@ -23918,6 +24203,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1113475967
 Transform:
@@ -23971,6 +24257,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1114947359
 Transform:
@@ -24024,6 +24311,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1116206785
 Transform:
@@ -24157,6 +24445,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1126113706
 Transform:
@@ -24483,6 +24772,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1129782356
 Transform:
@@ -24536,6 +24826,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1131096329
 Transform:
@@ -24589,6 +24880,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1137201427
 Transform:
@@ -24642,6 +24934,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1138137738
 Transform:
@@ -24658,6 +24951,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1139019396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 3026922757622361742}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1139197018
 GameObject:
   m_ObjectHideFlags: 0
@@ -24728,6 +25026,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1141392601
 Transform:
@@ -24925,6 +25224,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1146879553
 Transform:
@@ -24978,6 +25278,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1149478849
 Transform:
@@ -25031,6 +25332,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1151022232
 Transform:
@@ -25084,6 +25386,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1153211301
 Transform:
@@ -25137,6 +25440,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1165597067
 Transform:
@@ -25190,6 +25494,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1167882420
 Transform:
@@ -25243,6 +25548,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1169424857
 Transform:
@@ -26038,6 +26344,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1177137395
 Transform:
@@ -26091,6 +26398,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1179773069
 Transform:
@@ -26144,6 +26452,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1181496473
 Transform:
@@ -26197,6 +26506,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1182867273
 Transform:
@@ -26325,6 +26635,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1184624826
 Transform:
@@ -26378,6 +26689,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1185814738
 Transform:
@@ -26431,6 +26743,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1192962082
 Transform:
@@ -26500,6 +26813,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!1 &1198626470
 GameObject:
@@ -26539,6 +26853,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1198626472
 Transform:
@@ -26592,6 +26907,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1200413594
 Transform:
@@ -27257,6 +27573,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 1276007784}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: BusStopName
       value: "Bj\xF8rneboulevard (Svanegade)"
       objectReference: {fileID: 0}
@@ -27478,6 +27798,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1207442321
 Transform:
@@ -27531,6 +27852,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1207752521
 Transform:
@@ -27584,6 +27906,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1212175328
 Transform:
@@ -27637,6 +27960,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1212329139
 Transform:
@@ -27690,6 +28014,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1212657115
 Transform:
@@ -27743,6 +28068,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1213707138
 Transform:
@@ -27796,6 +28122,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1213844674
 Transform:
@@ -27902,6 +28229,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1215822649
 Transform:
@@ -27955,6 +28283,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1217827824
 Transform:
@@ -28013,6 +28342,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1227266696
 Transform:
@@ -28066,6 +28396,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1236967275
 Transform:
@@ -28119,6 +28450,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1239211241
 Transform:
@@ -28172,6 +28504,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1241868298
 Transform:
@@ -28225,6 +28558,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1243074795
 Transform:
@@ -28278,6 +28612,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1251759621
 Transform:
@@ -28336,6 +28671,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1260166656
 Transform:
@@ -28389,6 +28725,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1263216596
 Transform:
@@ -28442,6 +28779,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1265077799
 Transform:
@@ -28495,6 +28833,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1272377526
 Transform:
@@ -28511,6 +28850,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 159311591}
   m_LocalEulerAnglesHint: {x: 0, y: 87.726, z: 0}
+--- !u!1 &1276007784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1205456721}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1277456702
 GameObject:
   m_ObjectHideFlags: 0
@@ -28548,6 +28892,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1277456704
 Transform:
@@ -28601,6 +28946,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1286653798
 Transform:
@@ -28654,6 +29000,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1288384814
 Transform:
@@ -28707,6 +29054,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1292476625
 Transform:
@@ -28760,6 +29108,7 @@ MonoBehaviour:
   waypointType: 0
   width: 1
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1300935039
 Transform:
@@ -28813,6 +29162,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1305720723
 Transform:
@@ -28866,6 +29216,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1306938831
 Transform:
@@ -28919,6 +29270,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1310893206
 Transform:
@@ -28972,6 +29324,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 1791471609}
 --- !u!4 &1312646876
 Transform:
@@ -29025,6 +29378,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1315036212
 Transform:
@@ -29690,6 +30044,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 866037919}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: BusStopName
       value: "Bj\xF8rneboulevard (Svanegade)"
       objectReference: {fileID: 0}
@@ -29911,6 +30269,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1316329926
 Transform:
@@ -29964,6 +30323,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1322505744
 Transform:
@@ -30017,6 +30377,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1325062522
 Transform:
@@ -30070,6 +30431,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1332818168
 Transform:
@@ -30229,6 +30591,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1335758463
 Transform:
@@ -30282,6 +30645,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 1003529313}
 --- !u!4 &1342982297
 Transform:
@@ -30335,6 +30699,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1346677263
 Transform:
@@ -30453,6 +30818,11 @@ Transform:
   - {fileID: 411422550}
   m_Father: {fileID: 713184987}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1351408688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4007545933259690966, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+  m_PrefabInstance: {fileID: 1791471608}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1355783582
 GameObject:
   m_ObjectHideFlags: 0
@@ -30492,6 +30862,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1355783584
 Transform:
@@ -30545,6 +30916,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1360240034
 Transform:
@@ -30598,6 +30970,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1363123504
 Transform:
@@ -30651,6 +31024,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1364086952
 Transform:
@@ -30704,6 +31078,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1365452593
 Transform:
@@ -30757,6 +31132,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1370279683
 Transform:
@@ -30810,6 +31186,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1371804868
 Transform:
@@ -30863,6 +31240,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1373840850
 Transform:
@@ -31206,6 +31584,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1392641176
 Transform:
@@ -31259,6 +31638,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1397679575
 Transform:
@@ -31312,6 +31692,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1407741902
 Transform:
@@ -31365,6 +31746,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1408538669
 Transform:
@@ -31418,6 +31800,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1408856498
 Transform:
@@ -31471,6 +31854,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1410611755
 Transform:
@@ -31668,6 +32052,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1422449405
 Transform:
@@ -31721,6 +32106,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1422829265
 Transform:
@@ -31774,6 +32160,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1424634763
 Transform:
@@ -31827,6 +32214,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1424863491
 Transform:
@@ -31880,6 +32268,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1440239429
 Transform:
@@ -31933,6 +32322,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1441595594
 Transform:
@@ -31986,6 +32376,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1446787597
 Transform:
@@ -32039,6 +32430,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1448137735
 Transform:
@@ -32092,6 +32484,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1448594468
 Transform:
@@ -32150,6 +32543,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1456627871
 Transform:
@@ -32292,6 +32686,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1459687603
 Transform:
@@ -32345,6 +32740,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1462244566
 Transform:
@@ -32398,6 +32794,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1476725877
 Transform:
@@ -32556,6 +32953,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1480672397
 Transform:
@@ -32609,6 +33007,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1482217635
 Transform:
@@ -32715,6 +33114,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1485287417
 Transform:
@@ -32768,6 +33168,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1494854883
 Transform:
@@ -32821,6 +33222,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1497024795
 Transform:
@@ -32874,6 +33276,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1508146758
 Transform:
@@ -32927,6 +33330,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1508581003
 Transform:
@@ -32980,6 +33384,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1510844048
 Transform:
@@ -33033,6 +33438,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1511575144
 Transform:
@@ -33144,6 +33550,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1523037640
 Transform:
@@ -33197,6 +33604,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1525673122
 Transform:
@@ -33250,6 +33658,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1525805437
 Transform:
@@ -33303,6 +33712,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1529455680
 Transform:
@@ -33356,6 +33766,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1531552854
 Transform:
@@ -33409,6 +33820,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1542292634
 Transform:
@@ -33462,6 +33874,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1542312958
 Transform:
@@ -33688,6 +34101,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1557055499
 Transform:
@@ -33843,6 +34257,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1560677667
 Transform:
@@ -33896,6 +34311,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1565632796
 Transform:
@@ -33987,6 +34403,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1581000767
 Transform:
@@ -34040,6 +34457,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1581880175
 Transform:
@@ -34093,6 +34511,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1589620190
 Transform:
@@ -34146,6 +34565,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1591038696
 Transform:
@@ -34199,6 +34619,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1594044919
 Transform:
@@ -34252,6 +34673,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1596685201
 Transform:
@@ -34410,6 +34832,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1605425246
 Transform:
@@ -34463,6 +34886,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1606987138
 Transform:
@@ -35644,6 +36068,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1615635433
 Transform:
@@ -35712,6 +36137,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!1 &1620153396
 GameObject:
@@ -35781,6 +36207,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1620350957
 Transform:
@@ -35834,6 +36261,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1625933527
 Transform:
@@ -35887,6 +36315,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1627287748
 Transform:
@@ -35940,6 +36369,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1628631966
 Transform:
@@ -37766,6 +38196,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1641453255
 Transform:
@@ -37820,6 +38251,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1642807488
 Transform:
@@ -37873,6 +38305,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1644915219
 Transform:
@@ -37926,6 +38359,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 448003189}
 --- !u!4 &1646339537
 Transform:
@@ -37981,6 +38415,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1646836762
 Transform:
@@ -38162,6 +38597,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1659369184
 Transform:
@@ -38215,6 +38651,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1659638755
 Transform:
@@ -38268,6 +38705,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1664869085
 Transform:
@@ -38321,6 +38759,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1681637045
 Transform:
@@ -38502,6 +38941,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1691348793
 Transform:
@@ -38555,6 +38995,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1694374819
 Transform:
@@ -38609,6 +39050,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1695412425
 Transform:
@@ -38662,6 +39104,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1700026480
 Transform:
@@ -38715,6 +39158,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1706254933
 Transform:
@@ -38801,6 +39245,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1717455592
 Transform:
@@ -38854,6 +39299,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1723767580
 Transform:
@@ -39012,6 +39458,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 1205456722}
 --- !u!4 &1727172978
 Transform:
@@ -39066,6 +39513,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1727952499
 Transform:
@@ -39119,6 +39567,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1728002513
 Transform:
@@ -39172,6 +39621,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1728637291
 Transform:
@@ -39225,6 +39675,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1743626350
 Transform:
@@ -39376,6 +39827,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1748539508
 Transform:
@@ -39429,6 +39881,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1754430208
 Transform:
@@ -39562,6 +40015,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1760605156
 Transform:
@@ -39620,6 +40074,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1766239452
 Transform:
@@ -39673,6 +40128,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1766705196
 Transform:
@@ -39726,6 +40182,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1768623432
 Transform:
@@ -39779,6 +40236,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1772075012
 Transform:
@@ -39832,6 +40290,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1774759203
 Transform:
@@ -39890,6 +40349,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1790603528
 Transform:
@@ -40559,6 +41019,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 1351408688}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: BusStopName
       value: Ulvevej (Anderup Gade)
       objectReference: {fileID: 0}
@@ -40780,6 +41244,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1793019421
 Transform:
@@ -40833,6 +41298,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1797490828
 Transform:
@@ -40939,6 +41405,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1801767915
 Transform:
@@ -40992,6 +41459,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1806729589
 Transform:
@@ -41045,6 +41513,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1807702805
 Transform:
@@ -41098,6 +41567,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1809109703
 Transform:
@@ -41151,6 +41621,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1819804470
 Transform:
@@ -41204,6 +41675,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1820687695
 Transform:
@@ -41257,6 +41729,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1821889402
 Transform:
@@ -41310,6 +41783,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1824040342
 Transform:
@@ -41363,6 +41837,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 395498734}
 --- !u!4 &1832208023
 Transform:
@@ -41416,6 +41891,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1832968987
 Transform:
@@ -41469,6 +41945,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1837218865
 Transform:
@@ -41522,6 +41999,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1841684243
 Transform:
@@ -41575,6 +42053,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1842396951
 Transform:
@@ -41669,6 +42148,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1851926175
 Transform:
@@ -41727,6 +42207,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1861999484
 Transform:
@@ -41785,6 +42266,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1867572549
 Transform:
@@ -41838,6 +42320,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1881227681
 Transform:
@@ -41891,6 +42374,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1882821499
 Transform:
@@ -41944,6 +42428,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1883838157
 Transform:
@@ -41997,6 +42482,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1883868506
 Transform:
@@ -42103,6 +42589,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1886199377
 Transform:
@@ -42156,6 +42643,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1887300231
 Transform:
@@ -42209,6 +42697,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1887735961
 Transform:
@@ -42263,6 +42752,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1888286265
 Transform:
@@ -42369,6 +42859,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1890443220
 Transform:
@@ -42422,6 +42913,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1890693346
 Transform:
@@ -42475,6 +42967,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1890737418
 Transform:
@@ -42528,6 +43021,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1893794375
 Transform:
@@ -42581,6 +43075,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1898111783
 Transform:
@@ -42634,6 +43129,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1898403694
 Transform:
@@ -42687,6 +43183,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1906674506
 Transform:
@@ -42740,6 +43237,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1910837599
 Transform:
@@ -42809,6 +43307,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1927170141
 Transform:
@@ -42862,6 +43361,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1929102598
 Transform:
@@ -42915,6 +43415,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1929761328
 Transform:
@@ -42968,6 +43469,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1932541024
 Transform:
@@ -43021,6 +43523,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1935678002
 Transform:
@@ -43791,6 +44294,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 940110777}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: BusStopName
       value: Anderup St.
       objectReference: {fileID: 0}
@@ -44012,6 +44519,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1948293551
 Transform:
@@ -44077,6 +44585,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1951897818
 Transform:
@@ -44239,6 +44748,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1960092745
 Transform:
@@ -44292,6 +44802,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1962589081
 Transform:
@@ -44350,6 +44861,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1971433409
 Transform:
@@ -44403,6 +44915,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1972630060
 Transform:
@@ -44456,6 +44969,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1974506926
 Transform:
@@ -44509,6 +45023,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1983878429
 Transform:
@@ -44671,6 +45186,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1989726245
 Transform:
@@ -44724,6 +45240,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1992376316
 Transform:
@@ -44777,6 +45294,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1995593944
 Transform:
@@ -44865,6 +45383,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &1998613469
 Transform:
@@ -44918,6 +45437,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2000091836
 Transform:
@@ -44971,6 +45491,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2001969863
 Transform:
@@ -45059,6 +45580,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2012072379
 Transform:
@@ -45112,6 +45634,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2018113722
 Transform:
@@ -45304,6 +45827,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2022989695
 Transform:
@@ -45964,10 +46488,6 @@ PrefabInstance:
       propertyPath: deathZone
       value: 
       objectReference: {fileID: 959300682}
-    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
-      propertyPath: BusStopName
-      value: "\xD8rneskolen"
-      objectReference: {fileID: 0}
     - target: {fileID: 7265512432899119344, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -46175,6 +46695,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2029779164
 Transform:
@@ -46356,6 +46877,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2039288868
 Transform:
@@ -46409,6 +46931,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2041361223
 Transform:
@@ -46462,6 +46985,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2041840286
 Transform:
@@ -46617,6 +47141,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2043343980
 Transform:
@@ -46670,6 +47195,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2045156010
 Transform:
@@ -46723,6 +47249,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2050942637
 Transform:
@@ -46776,6 +47303,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2056120067
 Transform:
@@ -47239,6 +47767,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2059179471
 Transform:
@@ -47292,6 +47821,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2064981742
 Transform:
@@ -47345,6 +47875,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2077167744
 Transform:
@@ -47398,6 +47929,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2082799987
 Transform:
@@ -47451,6 +47983,7 @@ MonoBehaviour:
   waypointType: 1
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2088796747
 Transform:
@@ -47504,6 +48037,7 @@ MonoBehaviour:
   waypointType: 2
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 1552535814}
 --- !u!4 &2088926439
 Transform:
@@ -47557,6 +48091,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2089116189
 Transform:
@@ -47610,6 +48145,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2091878685
 Transform:
@@ -47663,6 +48199,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2092618651
 Transform:
@@ -47731,6 +48268,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!1 &2104107374 stripped
 GameObject:
@@ -47785,6 +48323,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2117324831
 Transform:
@@ -47930,6 +48469,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2121901478
 Transform:
@@ -47983,6 +48523,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2122456844
 Transform:
@@ -48036,6 +48577,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2128412877
 Transform:
@@ -48089,6 +48631,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2133005320
 Transform:
@@ -48251,6 +48794,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2137069863
 Transform:
@@ -48304,6 +48848,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2139360104
 Transform:
@@ -48357,6 +48902,7 @@ MonoBehaviour:
   waypointType: 0
   width: 2.5
   TrafficState: 1
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2141327566
 Transform:
@@ -48415,6 +48961,7 @@ MonoBehaviour:
   waypointType: 0
   width: 5
   TrafficState: 0
+  TrafficLightClear: 1
   busStop: {fileID: 0}
 --- !u!4 &2146436616
 Transform:
@@ -49075,6 +49622,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7005379482668095730, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
+      propertyPath: deathZone
+      value: 
+      objectReference: {fileID: 1139019396}
     - target: {fileID: 7265512432899119344, guid: 56944910d77b3b04080b62b2a4dacc06, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647

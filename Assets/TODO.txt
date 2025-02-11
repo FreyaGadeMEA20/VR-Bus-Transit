@@ -1,5 +1,2 @@
 To do:
- - Fix corners (outside track needs to have earlier turns)
- - Fix long stretches
- - Fix traffic lights
  - Add proper collission detection

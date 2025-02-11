@@ -578,7 +578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sign: {fileID: 3841645246760962792}
   BusStopName: "\xD8rneskolen"
-  deathZone: {fileID: 4007545933259690966}
+  deathZone: {fileID: 0}
   associatedLines: []
   busStopIndex: 0
   timeTable:

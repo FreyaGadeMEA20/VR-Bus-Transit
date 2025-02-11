@@ -77,11 +77,11 @@ namespace Movement{
 
         public RouteManager _RouteManager;
 
-        [SerializeField] Waypoint currentWaypoint; // The current waypoint, in which it navigates towards
         int direction = 1; // Control which waypoint to navigate towards. Might be removed in the future
 
         [SerializeField] GameObject collisionDetector; // The collision detectors of the vehicle
         bool BackingUpIntiated = false; // Whether or not the vehicle is backing up
+        public bool TrafficLightClear = false; // Whether or not the traffic light is clear
 
         // Start is called before the first frame update
         void Awake()
@@ -273,7 +273,10 @@ namespace Movement{
                                 currentMovementState = MovementState.WaitingAtPoint;
                                 break;
                             case Waypoint.TrafficLightState.Green:
-                                AdvanceToNextWaypoint();
+                                if(routeManager.currentWaypoint.EvaluateTrafficLight()){
+                                    AdvanceToNextWaypoint();
+                                }
+                                //AdvanceToNextWaypoint();
                                 break;
                         }
                         break;
@@ -286,6 +289,8 @@ namespace Movement{
                 }
             }
         }
+
+
 
         // Function to advance to the next waypoint
         public void AdvanceToNextWaypoint(){
