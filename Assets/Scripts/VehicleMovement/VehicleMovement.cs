@@ -111,7 +111,7 @@ namespace Movement{
                     if(CheckIfCar()){
                         breaks = true;
                         // TODO: backing up needs more work
-                        //currentMovementState = MovementState.BackingUp;
+                        currentMovementState = MovementState.BackingUp;
                         break;
                     }
                     breaks = false;
