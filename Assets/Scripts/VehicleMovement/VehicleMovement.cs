@@ -179,10 +179,11 @@ namespace Movement{
             Move();
         }
 
-        // needs more work
+        // TODO: needs more work
         IEnumerator DriveBackwards(){
             BackingUpIntiated = true;
             acceleration = acceleration*-1f;
+            speedModifier = 3f;
             yield return new WaitForSeconds(4f);
 
             breaks=false;
@@ -259,8 +260,9 @@ namespace Movement{
                 acceleration = (float)Math.Round(RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering), 2);
                 speedModifier = 3f;
             } else {
-                acceleration = .45f;
-                speedModifier = 1f;
+                if(!BackingUpIntiated) {
+                    speedModifier = 1f;
+                } 
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the

@@ -10,6 +10,7 @@ TagManager:
   - TeleportArea
   - BusFloor
   - DeathBox
+  - Detector
   layers:
   - Default
   - TransparentFX
