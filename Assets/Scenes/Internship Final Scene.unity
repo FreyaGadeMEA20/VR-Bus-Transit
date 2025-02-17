@@ -2485,6 +2485,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 120983775}
   m_LocalEulerAnglesHint: {x: 0, y: 178.772, z: 0}
+--- !u!1 &47934765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7407063518324850902, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+  m_PrefabInstance: {fileID: 1639180813}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &51068074
 GameObject:
   m_ObjectHideFlags: 0
@@ -38180,6 +38185,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8618031473502423388, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8694574316277383081, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -38240,6 +38249,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 110235030}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7407063518324850902, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      insertIndex: 8
+      addedObject: {fileID: 2108379590}
     - targetCorrespondingSourceObject: {fileID: 1335487027068179806, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1639180819}
@@ -48029,10 +48041,45 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1850163252479042898, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
   m_PrefabInstance: {fileID: 1639180813}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 47934765}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9052b0ad300da99418d109dad3724809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &2108379589 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4821247001211594923, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+  m_PrefabInstance: {fileID: 1639180813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108379590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47934765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2b1041c25b1884cb885666af315227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineAudioSource: {fileID: 2108379589}
+  vehicleMovement: {fileID: 2108379592}
+  maxVolume: 0.4
+  minVolume: 0.1
+  maxPitch: 1.5
+  minPitch: 1
+  smoothTime: 0.7
+--- !u!114 &2108379592 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7776536689084422545, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+  m_PrefabInstance: {fileID: 1639180813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47934765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3e1aff86721944eb4eef10cda0c977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2117324829
