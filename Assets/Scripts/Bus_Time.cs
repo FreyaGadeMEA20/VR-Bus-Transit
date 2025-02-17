@@ -19,4 +19,9 @@ public class Bus_Time : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    /*void Update()
+    {
+        currentTime += Time.deltaTime;
+    }*/
 }

@@ -2110,8 +2110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FieldOfView: 90
-  ViewDistance: 100
-  detectionRate: 1
+  ViewDistance: 50
+  detectionRate: 0.25
   elapsedTime: 0
   vehicleTrans: []
 --- !u!1 &2224407255876720201
@@ -4985,8 +4985,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 6.341048, z: 6.17482}
-  m_Center: {x: -0.000000010419932, y: 2.999984, z: -2.58741}
+  m_Size: {x: 1, y: 6.341056, z: 5.7249794}
+  m_Center: {x: -0.000000031293816, y: 2.9999876, z: -2.3624897}
 --- !u!1 &5696449490441918240
 GameObject:
   m_ObjectHideFlags: 0

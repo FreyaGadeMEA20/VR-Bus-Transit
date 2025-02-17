@@ -90,6 +90,7 @@ public class BusStop : MonoBehaviour {
 
     int timeTillBusArrives = 0;
 
+    // TODO: work to match multiple busses at inconsistent times
     IEnumerator UpdateTimeTable(){
         yield return new WaitForSeconds(1);
         foreach(var time in timeTable){

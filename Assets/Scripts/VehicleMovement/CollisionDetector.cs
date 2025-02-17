@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Movement;
 
 public class CollisionDetector : MonoBehaviour
 {
     public int FieldOfView = 45;
     public int ViewDistance = 100;
 
-    public float detectionRate = 1f;
+    public float detectionRate = .25f;
     public float elapsedTime = 0f;
 
     [SerializeField] List<Transform> vehicleTrans = new List<Transform>();
@@ -46,10 +47,10 @@ public class CollisionDetector : MonoBehaviour
             Debug.Log("Sending Ray");
             if(Physics.Raycast(transform.position, rayDirection, out hit, ViewDistance)) {
                 if(hit.collider.gameObject.tag == "Detector") {
-                    Debug.Log("Vehicle infront detected");
                     
                     if(DetermineIfBreak(hit)) {
                         vehicleInfront = true;
+                        Debug.Log("Vehicle infront detected");
                         return true;
                     }
                 } else if (vehicleInfront){
@@ -65,13 +66,28 @@ public class CollisionDetector : MonoBehaviour
     // Bunch of criteria to determine whether or not the bus should stop for the vehicle infront
     bool DetermineIfBreak(RaycastHit _hit){
         bool breakNow = false;
+        bool[] conditions = new bool[2];
+        Vector3 otherBusRotation = _hit.collider.gameObject.transform.parent.rotation.eulerAngles;
+        Vector3 thisBusRotation = this.transform.parent.parent.rotation.eulerAngles;
+        float rotationDifference = Mathf.Abs((thisBusRotation.y % 180)  - (otherBusRotation.y % 180));
 
-        float otherBusRotation = _hit.collider.gameObject.transform.parent.rotation.y;
-        float thisBusRotation = this.transform.parent.rotation.y;
-        float rotationDifference = Mathf.Abs(thisBusRotation - otherBusRotation);
+        if(rotationDifference > 2f && rotationDifference < 178f) {
+            Debug.Log("Rotation Difference: " + rotationDifference + " between " + this.transform.parent.parent.name + " and " + _hit.collider.gameObject.transform.parent.name);
+            conditions[0] = true;
+        } else {
+            conditions[0] = false;
+        }
 
-        if(rotationDifference < 10f) {
+        if(_hit.collider.gameObject.transform.GetComponentInParent<VehicleMovement>().isBreaking) {
+            conditions[1] = false;
+        } else {
+            conditions[1] = true;
+        }
+
+        if(conditions[0] && conditions[1]) {
             breakNow = true;
+        } else {
+            breakNow = false;
         }
 
         return breakNow;

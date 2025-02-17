@@ -89,6 +89,7 @@ public class BusSeatAssigner : MonoBehaviour
 
     }
 
+    // TODO: Teleport anchor to the target
     public void Recenter(GameObject target){
         player.transform.position = target.transform.position;
         
