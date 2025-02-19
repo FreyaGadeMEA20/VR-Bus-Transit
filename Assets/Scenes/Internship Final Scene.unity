@@ -13713,7 +13713,7 @@ GameObject:
   - component: {fileID: 462422442}
   - component: {fileID: 462422441}
   - component: {fileID: 462422440}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MainStreet PosZ
   m_TagString: DeathBox
   m_Icon: {fileID: 0}
@@ -13771,7 +13771,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13792,7 +13792,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13813,7 +13813,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16601,7 +16601,9 @@ GameObject:
   - component: {fileID: 623274902}
   - component: {fileID: 623274901}
   - component: {fileID: 623274900}
-  m_Layer: 0
+  - component: {fileID: 623274905}
+  - component: {fileID: 623274904}
+  m_Layer: 12
   m_Name: MainStreet NegZ
   m_TagString: DeathBox
   m_Icon: {fileID: 0}
@@ -16638,7 +16640,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16659,12 +16661,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 29.676369, y: 15.728022, z: 21.118324}
-  m_Center: {x: -4.2302284, y: 6.679268, z: 39.848194}
+  m_Size: {x: 29.676369, y: 15.728022, z: 23.761232}
+  m_Center: {x: -4.2302284, y: 6.679268, z: 40.20527}
 --- !u!65 &623274902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16680,12 +16682,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.847626, y: 15.728022, z: 38.23954}
-  m_Center: {x: 0.18414307, y: 6.679268, z: 40.320675}
+  m_Size: {x: 21.770441, y: 15.728022, z: 37.94612}
+  m_Center: {x: -0.27726555, y: 6.679268, z: 40.46739}
 --- !u!65 &623274903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16701,12 +16703,54 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.847626, y: 15.728022, z: 271.732}
-  m_Center: {x: 0.18414307, y: 6.679268, z: -124.009186}
+  m_Size: {x: 20.847626, y: 15.728022, z: 261.74396}
+  m_Center: {x: 0.18414307, y: 6.679268, z: -119.30928}
+--- !u!65 &623274904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623274898}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30.12141, y: 15.110001, z: 23.277765}
+  m_Center: {x: -3.5533085, y: 6, z: -279.43423}
+--- !u!65 &623274905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623274898}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 22.803001, y: 15.110001, z: 38.51098}
+  m_Center: {x: 0.10589695, y: 6, z: -279.14075}
 --- !u!1 &627852776
 GameObject:
   m_ObjectHideFlags: 0
@@ -21654,7 +21698,7 @@ GameObject:
   - component: {fileID: 889011587}
   - component: {fileID: 889011586}
   - component: {fileID: 889011585}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: "\xD8rneskolenParking1"
   m_TagString: DeathBox
   m_Icon: {fileID: 0}
@@ -21691,12 +21735,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 96.57658, y: 20.400988, z: 19.735113}
-  m_Center: {x: 19.454227, y: 9.700494, z: -35.767704}
+  m_Size: {x: 101.21352, y: 20.400988, z: 21.622353}
+  m_Center: {x: 18.89502, y: 9.700494, z: -37.104572}
 --- !u!65 &889011586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21712,12 +21756,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 96.19974, y: 19.073233, z: 18.54515}
-  m_Center: {x: 20.311333, y: 9.036616, z: 43.194984}
+  m_Size: {x: 100.797165, y: 19.073233, z: 19.854858}
+  m_Center: {x: 18.84575, y: 9.036616, z: 43.84984}
 --- !u!65 &889011587
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21733,12 +21777,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 31.694681, y: 18.785307, z: 99.67964}
-  m_Center: {x: -0.4054594, y: 8.903787, z: 3.5760193}
+  m_Size: {x: 31.694681, y: 18.785307, z: 102.217026}
+  m_Center: {x: -0.4054594, y: 8.903787, z: 3.6604156}
 --- !u!1001 &889206045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29424,7 +29468,7 @@ PrefabInstance:
     - target: {fileID: 882129737928793925, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: beb9be6d05c97e44ba6470bb21bc5609, type: 2}
+      objectReference: {fileID: 2100000, guid: 2b3aa3b909f74584193f49d528a2e542, type: 2}
     - target: {fileID: 919132149155446097, guid: c4ce98c256796b84bb1160797014791b, type: 3}
       propertyPath: m_Name
       value: VRTransitLevel8City12
@@ -35140,7 +35184,7 @@ GameObject:
   - component: {fileID: 1383234888}
   - component: {fileID: 1383234887}
   - component: {fileID: 1383234886}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Skolevejen
   m_TagString: DeathBox
   m_Icon: {fileID: 0}
@@ -35261,7 +35305,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -35282,7 +35326,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -35303,7 +35347,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
