@@ -36,6 +36,8 @@ public class NPCMurmur : MonoBehaviour
 
     private void InitializeAudioSources(int count)
     {
+        HashSet<int> usedIndices = new HashSet<int>();
+
         for (int i = 0; i < count; i++)
         {
             AudioSource audioSource = gameObject.AddComponent<AudioSource>();
@@ -43,6 +45,20 @@ public class NPCMurmur : MonoBehaviour
             audioSource.loop = true;
             audioSource.Play();
             audioSources.Add(audioSource);
+
+            // Set the position of the audio source to a random NPC position
+            if (npcParent != null && npcParent.childCount > 0)
+            {
+                int randomIndex;
+                do
+                {
+                    randomIndex = Random.Range(0, npcParent.childCount);
+                } while (usedIndices.Contains(randomIndex));
+
+                usedIndices.Add(randomIndex);
+                Transform randomNPC = npcParent.GetChild(randomIndex);
+                audioSource.transform.position = randomNPC.position;
+            }
         }
     }
 
