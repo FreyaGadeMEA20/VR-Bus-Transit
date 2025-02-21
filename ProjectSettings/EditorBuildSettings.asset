@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Internship Final Scene.unity
     guid: cce051977a81bce4e8a1550673f81c1d
   - enabled: 1
+    path: Assets/Scenes/Mistake Scenes/MissedBus.unity
+    guid: baae301b187339a40871116f27c39bdb
+  - enabled: 1
     path: Assets/Scenes/Mistake Scenes/WrongBus.unity
     guid: 6846bce93bfc8294d81eb787aaae68dd
   m_configObjects:

@@ -1,39 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Seat : MonoBehaviour
 {
     public GameObject seatingArea;
     public GameObject exitArea;
-    public GameObject getOffButton;
+    public GameObject panel;
+    public GameObject associatedButton;
 
     void Awake(){
         seatingArea = gameObject;
     }
 
+    public void DisableButton(){
+        associatedButton.GetComponent<BoxCollider>().enabled = false;
+        associatedButton.GetComponent<Image>().color = Color.red;
+    }
+
     // - POSSIBLE JUST CHANGE TO A STATIC BUTTON -
     
     // Creates a get off button for the player at the seat
-    public GameObject EnableGetOffButton(){
-        Vector3 PositionOffset = new Vector3(0, 0.5f, 0);
-        Quaternion quaternion = new Quaternion(90, 0, -90, 0);
-
-        // Instantiate the button, set its parent to the seating area and set its position and rotation
-        GameObject _getOffButton = Instantiate(Resources.Load("Prefabs/GetOffButton"),
-            PositionOffset, quaternion, seatingArea.transform) as GameObject;
-
-        // Give it memory of the button        
-        getOffButton = _getOffButton;
-
-        // Return the button
-        return getOffButton;
+    public void DisableScreen(){
+        panel.SetActive(false);
     }
 
-    // Disables the get off button for the player at the seat
-    public void DisableGetOffButton(){
-        Destroy(getOffButton);
+    public void Enable(){
+        panel.SetActive(true);
     }
 }

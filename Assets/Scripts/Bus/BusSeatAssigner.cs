@@ -36,10 +36,12 @@ public class BusSeatAssigner : MonoBehaviour
         }
 
         currentSeat = seat;
+        
         StartCoroutine(SitOnSeat());
     }
 
     IEnumerator SitOnSeat(){
+        DisableSeatSigns();
         StartCoroutine(FadeToBlack.Instance.FadeOut());
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         //Debug.Log("Assigning seat");
@@ -65,6 +67,7 @@ public class BusSeatAssigner : MonoBehaviour
     public void UnassignSeat()
     {
         StartCoroutine(GetOffSeat());
+        StartCoroutine(Cooldown());
     }
 
     IEnumerator GetOffSeat(){
@@ -86,7 +89,8 @@ public class BusSeatAssigner : MonoBehaviour
         currentSeat = null;
         StartCoroutine(FadeToBlack.Instance.FadeIn());
         
-
+        yield return new WaitForSeconds(1);
+        EnableSeatSigns();
     }
 
     // TODO: Teleport anchor to the target
@@ -110,5 +114,19 @@ public class BusSeatAssigner : MonoBehaviour
         seatCooldown = 3;
         yield return new WaitForSeconds(seatCooldown);
         seatCooldown = 0;
+    }
+
+    void DisableSeatSigns(){
+        foreach (var seat in FindObjectsOfType<Seat>())
+        {
+            seat.DisableScreen();
+        }
+    }
+
+    void EnableSeatSigns(){
+        foreach (var seat in FindObjectsOfType<Seat>())
+        {
+            seat.Enable();
+        }
     }
 }

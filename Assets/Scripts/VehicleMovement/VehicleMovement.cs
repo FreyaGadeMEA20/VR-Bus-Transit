@@ -105,10 +105,14 @@ namespace Movement{
         }
 
         void Update(){
+            if(!GameManager.Instance.CanBusDrive) 
+                return;
             busController.UpdateBusController();
         }
 
         void FixedUpdate(){
+            if(!GameManager.Instance.CanBusDrive) 
+                return;
             // Current movement state keeps track of whether it is supposed to listen for waypoints, or be stopped
             switch(currentMovementState){
                 case MovementState.Moving:
@@ -139,6 +143,9 @@ namespace Movement{
                                 reachedBusStop = true;
                                 breaks = true;
                                 routeManager.currentWaypoint.busStop.deathZone.SetActive(false);
+                                if(routeManager.busLine.Equals(GameManager.Instance.BusLine)){
+                                    GameManager.Instance.ApplyBusController(busController);
+                                }
                                 busController.StopBus();
                                 busController.screens.GiveInformation(); // change the bus screen texture
                                 routeManager.SetRoute();

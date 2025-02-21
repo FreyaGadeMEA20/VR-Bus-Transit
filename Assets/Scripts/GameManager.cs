@@ -71,6 +71,8 @@ public class GameManager : MonoBehaviour
     private bool isCountingDown = false;
     public bool inCorrectStopZone = false;
 
+    public bool CanBusDrive = false;
+
     public static GameManager Instance { get; internal set; }
     public event Action<GameState> OnStateChange;
 
@@ -166,9 +168,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         rotateSkybox = true;
-
-        foreach(var busStop in FindObjectsOfType<BusStop>()){
-            busStop.UpdateTime();
+        
+        if(CanBusDrive){
+            foreach(var busStop in FindObjectsOfType<BusStop>()){
+                busStop.UpdateTime();
+            }
         }
         PhoneTime.Instance.UpdateTime();
     }
@@ -245,6 +249,7 @@ public class GameManager : MonoBehaviour
             if (countdownTimer >= 4f) {
                 countdownTimer = 0f;
                 isCountingDown = false;
+                CanBusDrive = true;
                 ChangeState(GameState.REACHED_BUS_STOP);
             }
         } else {
@@ -256,15 +261,28 @@ public class GameManager : MonoBehaviour
     }
 
     void UpdateBusStopState(){
+        // add a check to see if the bus has reached the bus stop
+        if(busAtStop != null){
+            Debug.Log("Bus has reached the bus stop");
+            if(busAtStop._BusState == BusController.BusState.DRIVING && !RejsekortInformation.Instance.GetCheckedIn()){
+                StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1)); // can be made nicer
+                Debug.Log("Bus has left the bus stop");
+            }
+        } else {
+            Debug.LogWarning("Bus has not reached the bus stop");
+            return;
+        }
+
         if(!RejsekortInformation.Instance.GetCheckedIn())
             return;
         
         // add a check to see if it is the correct bus that has been checked in at
         if(BusToGetOn.Equals(RejsekortInformation.Instance.GetBus())){//BusToGetOn.vehicleMovement._RouteManager.busLine.Equals(BusLine)){
             ChangeState(GameState.CHECKED_IN);
+            busAtStop.doors.CloseDoors();
         } else {
             Debug.LogWarning("Wrong bus");
-            StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1));
+            StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(2));
         }
         
     }
@@ -287,11 +305,12 @@ public class GameManager : MonoBehaviour
             return;
         
         if(!BusToGetOn.vehicleMovement._RouteManager.currentWaypoint.Equals(_finalDestination)){
-            Debug.Log("Wrong stop");
+            Debug.LogWarning("Wrong stop");
             return;
         }
 
-        Debug.LogWarning("WOWZERS");
+        Debug.Log("WOWZERS");
+        busAtStop.doors.OpenDoors();
         ChangeState(GameState.CHECKED_OUT);
     }
 
@@ -331,5 +350,11 @@ public class GameManager : MonoBehaviour
         {
             return false;
         }
+    }
+
+    [SerializeField] BusController busAtStop;
+    // to check if the bus has reached the bus stop, we apply the buscontroller that has reached the bus stop
+    public void ApplyBusController(BusController applyingBus){
+        busAtStop = applyingBus;
     }
 }
