@@ -1636,6 +1636,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 4821247001211594923, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: MinDistance
+      value: 14.18
+      objectReference: {fileID: 0}
     - target: {fileID: 4828187548447160948, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_Camera
       value: 
@@ -48644,7 +48648,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
