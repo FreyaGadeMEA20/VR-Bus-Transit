@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDuration: 2
   fadeImage: {fileID: 3507869879190207542}
+  isFading: 0
 --- !u!1 &4517073710189382102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1136,7 @@ GameObject:
   - component: {fileID: 3564783961618515418}
   - component: {fileID: 4981668106528083876}
   - component: {fileID: 4805983893357458362}
+  - component: {fileID: 7221962708106159293}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Player
@@ -1321,6 +1323,20 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
+--- !u!114 &7221962708106159293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827516879872332259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 3564783961618515418}
+  m_DelayTime: 0
 --- !u!1 &8969421350997373680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,7 +1621,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8969421350997373680}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b7d68caa6e912346a43b6e094fceb28, type: 3}
   m_Name: 

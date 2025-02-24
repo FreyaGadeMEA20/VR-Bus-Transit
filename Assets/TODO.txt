@@ -1,2 +1,4 @@
 To do:
- - Add proper collission detection
+ - Fix issues relating to traffic lights and sitting by the window?
+ - Fix bus kicking you off at wrong stops
+ - Make everyone try it out and give feedback

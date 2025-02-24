@@ -6,6 +6,7 @@ public class StopScript : MonoBehaviour
 {
     public BusScreenController busScreenController;
     [SerializeField] BusController busController;
+    public bool Active = false;
 
     void Start(){
         busController = GetComponentInParent<BusController>();
@@ -13,7 +14,9 @@ public class StopScript : MonoBehaviour
     }
 
     public void StopButton(){
-        busController.StopBus();
-        busScreenController.ApplyStopTexture();
+        if(Active){
+            busController.StopBus();
+            busScreenController.ApplyStopTexture();       
+        }
     }
 }

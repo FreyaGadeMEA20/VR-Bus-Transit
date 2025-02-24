@@ -92,6 +92,7 @@ namespace Movement{
         {
             rb = GetComponent<Rigidbody>();
             rb.centerOfMass = Vector3.zero;
+            rb.useGravity = false;
             //currentRoute = waypoints.routes[currentRouteIndex];
             if (entityType == EntityTypes.Bus){
                 busController = this.GetComponent<BusController>();
@@ -109,10 +110,14 @@ namespace Movement{
                 return;
             busController.UpdateBusController();
         }
-
+        bool first = false;
         void FixedUpdate(){
-            if(!GameManager.Instance.CanBusDrive) 
+            if(!GameManager.Instance.CanBusDrive) {
                 return;
+            } else if(!first) {
+                rb.useGravity = true;
+                first = true;
+            }
             // Current movement state keeps track of whether it is supposed to listen for waypoints, or be stopped
             switch(currentMovementState){
                 case MovementState.Moving:
