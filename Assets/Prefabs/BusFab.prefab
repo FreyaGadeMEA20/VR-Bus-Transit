@@ -6520,6 +6520,7 @@ MonoBehaviour:
   EngineTorque: 2400
   MaxEngineRPM: 3000
   MinEngineRPM: 2000
+  speedModifier: 4
   ReachedBusStop: 0
   _RouteManager: {fileID: 0}
   currentWaypoint: {fileID: 0}
@@ -9495,8 +9496,58 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3980264098230673651, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2544889545359479751}
   m_SourcePrefab: {fileID: 100100000, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
+--- !u!1 &2093606451016323442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3980264098230673651, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
+  m_PrefabInstance: {fileID: 3040289161724359041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &2544889545359479751
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093606451016323442}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: e4e90b9dc1928014b87f50766c160d83, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 1
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -6244681417693346847, guid: 0cc71a368eac6a4429a0ef55cf2862b5, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -177674378696691902, guid: 1c4e0ec1f29578a4a8b2c39a6b3fe9de, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4990117813455459488, guid: e4e90b9dc1928014b87f50766c160d83, type: 2}
+    value: {fileID: 2970376658090932764}
+  - key: {fileID: -1662212685680558534, guid: bc3b12455bc95074fb57ba0a6b3cb30a, type: 2}
+    value: {fileID: 2970376658090932764}
+  - key: {fileID: -5726994105366957124, guid: 242d0049a3a1e894a91812c7a97c86fb, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5495638889458268439, guid: 242d0049a3a1e894a91812c7a97c86fb, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -6713570592996008724, guid: df70dbf3708e4904fa66b4b0b6530eed, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4244435407784702698, guid: bc3b12455bc95074fb57ba0a6b3cb30a, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1952149310450878609, guid: bf303e866e9f24f46acc7603551176ad, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3962710612685829982, guid: cfcba06d6c4ac80428d6e7a42eae0214, type: 2}
+    value: {fileID: 2970376658090932764}
+  m_ExposedReferences:
+    m_References: []
+--- !u!95 &2970376658090932764 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 218885515025566621, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
+  m_PrefabInstance: {fileID: 3040289161724359041}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8552065095386266105 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6673858588513863800, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
