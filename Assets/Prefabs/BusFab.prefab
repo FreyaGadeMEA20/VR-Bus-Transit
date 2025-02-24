@@ -8200,7 +8200,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 994438091922898009, guid: c74c9d4f12beb3f4088026ff0485c0b7, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
+        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
+        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
+        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
       objectReference: {fileID: 0}
     - target: {fileID: 1159033765522855624, guid: c74c9d4f12beb3f4088026ff0485c0b7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10170,7 +10175,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2561038062939070784, guid: 2df81fa23d1e225468dfc287d8addba4, type: 3}
       propertyPath: m_Name
-      value: MMBus
+      value: MMBus (D)
       objectReference: {fileID: 0}
     - target: {fileID: 4227312089303784510, guid: 2df81fa23d1e225468dfc287d8addba4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10264,6 +10269,8 @@ PlayableDirector:
     value: {fileID: 5415314939093144739}
   - key: {fileID: 4480348542985059180, guid: cfcba06d6c4ac80428d6e7a42eae0214, type: 2}
     value: {fileID: 5757139424769950850}
+  - key: {fileID: -5149683485301271824, guid: cfcba06d6c4ac80428d6e7a42eae0214, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &5415314939093144739 stripped
@@ -10867,6 +10874,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6424939731942685517, guid: 9976470be6621614b9545849fef802a0, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
+        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
+        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
+        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
+      objectReference: {fileID: 0}
     - target: {fileID: 7330805104565062071, guid: 9976470be6621614b9545849fef802a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.27
@@ -11018,11 +11034,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 218885515025566621, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
+        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
+        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
+        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
       objectReference: {fileID: 0}
     - target: {fileID: 3980264098230673651, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
       propertyPath: m_Name
-      value: WMBus
+      value: WMBus (D)
       objectReference: {fileID: 0}
     - target: {fileID: 6673858588513863800, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11112,6 +11133,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 3962710612685829982, guid: cfcba06d6c4ac80428d6e7a42eae0214, type: 2}
     value: {fileID: 2970376658090932764}
+  - key: {fileID: 1376830481923808196, guid: e4e90b9dc1928014b87f50766c160d83, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &2970376658090932764 stripped
@@ -12706,7 +12729,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1097640102674809782, guid: 283aaf427a7d3d645a2ca789ec63185f, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
+        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
+        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
+        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
       objectReference: {fileID: 0}
     - target: {fileID: 4952115777352708583, guid: 283aaf427a7d3d645a2ca789ec63185f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12750,7 +12778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7620271021023955913, guid: 283aaf427a7d3d645a2ca789ec63185f, type: 3}
       propertyPath: m_Name
-      value: MCBus
+      value: MCBus (D)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12793,6 +12821,8 @@ PlayableDirector:
     value: {fileID: 5483715222488307743}
   - key: {fileID: 8054782541779866166, guid: 1c4e0ec1f29578a4a8b2c39a6b3fe9de, type: 2}
     value: {fileID: 4862811080454294893}
+  - key: {fileID: 6976199268625038783, guid: 1c4e0ec1f29578a4a8b2c39a6b3fe9de, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &5616938963918084982 stripped
@@ -13147,6 +13177,15 @@ PrefabInstance:
     - target: {fileID: 1024078898, guid: a6e25ae48b4449341a23b3d868e717ab, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024078898, guid: a6e25ae48b4449341a23b3d868e717ab, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
+        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
+        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
+        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13841,7 +13880,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872413893340249361, guid: 333054d660b77504da29b0191717d0d9, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
+        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
+        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
+        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
       objectReference: {fileID: 0}
     - target: {fileID: 5945346231703595002, guid: 333054d660b77504da29b0191717d0d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13885,7 +13929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6629832995879279726, guid: 333054d660b77504da29b0191717d0d9, type: 3}
       propertyPath: m_Name
-      value: WLBus
+      value: WLBus (D)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15566,7 +15610,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6908056118635114189, guid: 926b28559efb10245b182c923e9cbb8a, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
+        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
+        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
+        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
       objectReference: {fileID: 0}
     - target: {fileID: 6986415906666063456, guid: 926b28559efb10245b182c923e9cbb8a, type: 3}
       propertyPath: m_Name
@@ -16734,7 +16783,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4059531493428543354, guid: f2510b6bfd63bc94a998d4449268a090, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
+        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
+        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
+        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
       objectReference: {fileID: 0}
     - target: {fileID: 4188724839926163659, guid: f2510b6bfd63bc94a998d4449268a090, type: 3}
       propertyPath: m_LocalPosition.x
