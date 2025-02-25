@@ -86,7 +86,7 @@ namespace Movement {
 
         public Waypoint ChooseRandomWaypoint()
         {
-            int randomIndex = UnityEngine.Random.Range(0, busStops.Count-1);
+            int randomIndex = UnityEngine.Random.Range(1, busStops.Count-1);
             Waypoint randomWaypoint = busStops[randomIndex].busStop;
 
             return randomWaypoint;

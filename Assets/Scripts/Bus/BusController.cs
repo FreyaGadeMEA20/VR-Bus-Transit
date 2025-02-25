@@ -62,6 +62,11 @@ public class BusController : MonoBehaviour
         set{CorrectBus = value;}
     }
     public bool CorrectBus;
+    bool stopButtonPressed = false;
+    public bool StopButtonPressed{
+        get{return stopButtonPressed;}
+        set{stopButtonPressed = value;}
+    }
 
 
     // Start is called before the first frame update
@@ -123,9 +128,11 @@ public class BusController : MonoBehaviour
         doorsOpen = true;  // set the doors to be open
 
         
-        if(busStopped && seatAssigner.PlayerSeated){
+        if(busStopped && seatAssigner.PlayerSeated && stopButtonPressed){
             seatAssigner.UnassignSeat(); // unassign the player from the seat
-        }
+            stopButtonPressed = false; // set the stop button to be unpressed
+        }  
+
 
         busStopped = false;
 
@@ -179,7 +186,7 @@ public class BusController : MonoBehaviour
     // Stops the bus. Gets run when stop button is pressed
     public void StopBus() {
         busStopped = true; // set the bus to be stopped
-        Debug.Log("Bus stopped"); // log that the bus has stopped
+        Debug.Log("Stop button pressed"); // log that the bus has stopped
         screens.ApplyStopTexture(); // change the bus screen texture to the stop texture
         busState = BusState.STOP_BUTTON_PRESSED; // set the bus state to be stop button pressed
     }

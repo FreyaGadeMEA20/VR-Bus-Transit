@@ -23,6 +23,8 @@ public class BusSeatAssigner : MonoBehaviour
     void Start() {
         mainCamera = Camera.main;
         stops = new List<StopScript>(FindObjectsOfType<StopScript>());
+        head = GameManager.Instance.head;
+        origin = GameManager.Instance.origin;
     }
     
     public void GetPlayer(GameObject _player){
@@ -93,7 +95,8 @@ public class BusSeatAssigner : MonoBehaviour
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
         
-        MoveOffSeat(currentSeat.exitArea);
+        //MoveOffSeat(currentSeat.exitArea);
+        Recenter(currentSeat.exitArea);
         //xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = true;
 
         player.layer = LayerMask.NameToLayer("Default");
@@ -133,20 +136,6 @@ public class BusSeatAssigner : MonoBehaviour
 
         // Rotate the XR Rig's XROrigin to face the correct direction after teleportation, considering camera rotation
         player.transform.rotation = targetRotation;// * Quaternion.Inverse(cameraRotation);
-
-        /*player.transform.position = target.transform.position;
-        
-        //xrOrigin.MoveCameraToWorldLocation(target.transform.position);
-        xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
-
-        Quaternion newRot;
-
-        if(target.transform.rotation.w < 0){
-            newRot = new Quaternion(0, target.transform.rotation.w, 0, 0);
-        }else{
-            newRot = new Quaternion(0, 0, 0, 0);
-        }
-        player.transform.rotation = newRot;*/
     }
 
     public void MoveOffSeat(GameObject target){
@@ -163,6 +152,22 @@ public class BusSeatAssigner : MonoBehaviour
             newRot = new Quaternion(0, 0, 0, 0);
         }
         player.transform.rotation = newRot;
+    }
+
+    public void Recenter(GameObject target)
+    {
+        Vector3 offset = head.position - origin.position;
+        offset.y = 0;
+        origin.position = target.transform.position + offset;
+        
+        Vector3 targetForward = target.transform.forward;
+        targetForward.y = 0;
+        Vector3 cameraForward = head.forward;
+        cameraForward.y = 0;
+
+        float angle = Vector3.SignedAngle(cameraForward, targetForward, Vector3.up);
+        
+        origin.RotateAround(head.position, Vector3.up, angle);
     }
 
     IEnumerator Cooldown(){

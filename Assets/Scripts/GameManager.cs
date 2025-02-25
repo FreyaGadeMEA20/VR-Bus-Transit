@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     public Waypoint _finalDestination;
     [SerializeField] BusController[] Buses;
     public BusController BusToGetOn;
+    [SerializeField] BusController busAtStop;
 
     [Separator("Information regarding the button input")]
     public InputActionProperty handSwitch;
@@ -76,6 +77,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; internal set; }
     public event Action<GameState> OnStateChange;
 
+    [Separator("Recentering")]
+    [SerializeField] Transform target;
+    public Transform head, origin;
+
     void Awake()
     {
         if (Instance == null)
@@ -104,7 +109,25 @@ public class GameManager : MonoBehaviour
         BusLine = BusToGetOn.vehicleMovement._RouteManager.busLine;
         _finalDestination = BusToGetOn.vehicleMovement._RouteManager.ChooseRandomWaypoint();
 
+        Recenter();
+
         // Set the initial final destination
+    }
+
+    public void Recenter()
+    {
+        Vector3 offset = head.position - origin.position;
+        offset.y = 0;
+        origin.position = target.position + offset;
+        
+        Vector3 targetForward = target.forward;
+        targetForward.y = 0;
+        Vector3 cameraForward = head.forward;
+        cameraForward.y = 0;
+
+        float angle = Vector3.SignedAngle(cameraForward, targetForward, Vector3.up);
+        
+        origin.RotateAround(head.position, Vector3.up, angle);
     }
 
     Coroutine updateTimeCoroutine;
@@ -352,7 +375,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    [SerializeField] BusController busAtStop;
     // to check if the bus has reached the bus stop, we apply the buscontroller that has reached the bus stop
     public void ApplyBusController(BusController applyingBus){
         busAtStop = applyingBus;

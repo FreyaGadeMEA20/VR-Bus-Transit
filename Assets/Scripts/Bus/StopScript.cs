@@ -16,6 +16,7 @@ public class StopScript : MonoBehaviour
     public void StopButton(){
         if(Active){
             busController.StopBus();
+            busController.StopButtonPressed = true; // set the stop button to be pressed
             busScreenController.ApplyStopTexture();       
         }
     }
