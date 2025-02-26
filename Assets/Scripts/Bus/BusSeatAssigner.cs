@@ -30,7 +30,7 @@ public class BusSeatAssigner : MonoBehaviour
     public void GetPlayer(GameObject _player){
         player = _player;
         
-        xrOrigin = player.GetComponent<XROrigin>();
+        xrOrigin = player.GetComponentInChildren<XROrigin>();
     }
     
     // Assigns the player to the given seat
@@ -62,6 +62,7 @@ public class BusSeatAssigner : MonoBehaviour
         
         // Disable the player's movement
         player.layer = LayerMask.NameToLayer("SeatedPlayer");
+        xrOrigin.gameObject.layer = LayerMask.NameToLayer("SeatedPlayer");
         player.GetComponent<DynamicMoveProvider>().moveSpeed = 0;
         
         player.GetComponent<DynamicMoveProvider>().useGravity = false;
@@ -95,11 +96,12 @@ public class BusSeatAssigner : MonoBehaviour
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
         
-        //MoveOffSeat(currentSeat.exitArea);
-        Recenter(currentSeat.exitArea);
+        MoveOffSeat(currentSeat.exitArea);
+        //Recenter(currentSeat.exitArea);
         //xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = true;
 
         player.layer = LayerMask.NameToLayer("Default");
+        xrOrigin.gameObject.layer = LayerMask.NameToLayer("Default");
         // Enable the player's movement
 
         // Disable "get off" button
@@ -140,8 +142,9 @@ public class BusSeatAssigner : MonoBehaviour
 
     public void MoveOffSeat(GameObject target){
         player.transform.position = target.transform.position;
-        
-        //xrOrigin.MoveCameraToWorldLocation(target.transform.position);
+        Debug.Log(target.transform.position);
+
+        xrOrigin.MoveCameraToWorldLocation(target.transform.position);
         xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
 
         Quaternion newRot;
