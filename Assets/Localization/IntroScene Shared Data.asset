@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: IntroScene Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: IntroScene
+  m_TableCollectionNameGuidString: 1c1ae2a6132753344852bd0cca19dbbb
+  m_Entries:
+  - m_Id: 15635705856
+    m_Key: Main_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183722438656
+    m_Key: Main_DescriptionText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17262550839296
+    m_Key: Missed_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17338950086656
+    m_Key: Missed_Description1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17379307679744
+    m_Key: Try_Again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17390003154944
+    m_Key: Wrong_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17441001697280
+    m_Key: Wrong_Description1
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8037311896253104152
+  references:
+    version: 2
+    RefIds:
+    - rid: 8037311896253104152
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1740740095468

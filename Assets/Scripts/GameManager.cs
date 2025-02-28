@@ -288,11 +288,10 @@ public class GameManager : MonoBehaviour
         if(busAtStop != null){
             Debug.Log("Bus has reached the bus stop");
             if(busAtStop._BusState == BusController.BusState.DRIVING && !RejsekortInformation.Instance.GetCheckedIn()){
-                StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1)); // can be made nicer
+                StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(2)); // can be made nicer
                 Debug.Log("Bus has left the bus stop");
             }
         } else {
-            Debug.LogWarning("Bus has not reached the bus stop");
             return;
         }
 
@@ -305,7 +304,7 @@ public class GameManager : MonoBehaviour
             busAtStop.doors.CloseDoors();
         } else {
             Debug.LogWarning("Wrong bus");
-            StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(2));
+            StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(3));
         }
         
     }
