@@ -29,6 +29,7 @@ Library: C:\Users\nialr\IdeaProjects\VR-Bus-Transit\Temp\BurstOutput\tempburstli
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.Universal.Runtime;
 --assembly-defines=Unity.TextMeshPro;
+--assembly-defines=Unity.Timeline;
 --assembly-defines=Unity.XR.CoreUtils;
 --assembly-defines=Unity.XR.Interaction.Toolkit;
 --assembly-defines=Unity.XR.Interaction.Toolkit.Samples.StarterAssets;
@@ -80,6 +81,7 @@ Library: C:\Users\nialr\IdeaProjects\VR-Bus-Transit\Temp\BurstOutput\tempburstli
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.Universal.Runtime;
 --assembly-defines=Unity.TextMeshPro;
+--assembly-defines=Unity.Timeline;
 --assembly-defines=Unity.XR.CoreUtils;
 --assembly-defines=Unity.XR.Interaction.Toolkit;
 --assembly-defines=Unity.XR.Interaction.Toolkit.Samples.StarterAssets;
