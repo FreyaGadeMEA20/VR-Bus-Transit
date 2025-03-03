@@ -78,7 +78,7 @@ public class CollisionDetector : MonoBehaviour
             conditions[0] = false;
         }
 
-        if(_hit.collider.gameObject.transform.GetComponentInParent<VehicleMovement>().isBreaking) {
+        if(_hit.collider.gameObject.transform.GetComponentInParent<VehicleMovement>().Breaks) {
             conditions[1] = false;
         } else {
             conditions[1] = true;

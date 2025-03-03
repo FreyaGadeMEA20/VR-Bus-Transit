@@ -10,51 +10,51 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: IntroScene Shared Data
+  m_Name: MainScene Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: IntroScene
-  m_TableCollectionNameGuidString: 1c1ae2a6132753344852bd0cca19dbbb
+  m_TableCollectionName: MainScene
+  m_TableCollectionNameGuidString: ab5491e3958d687448b7e6936519b991
   m_Entries:
-  - m_Id: 15635705856
-    m_Key: Main_Title
+  - m_Id: 76360839168
+    m_Key: Bus/ChooseSeat
     m_Metadata:
       m_Items: []
-  - m_Id: 183722438656
-    m_Key: Main_DescriptionText
+  - m_Id: 18195120779264
+    m_Key: Phone/Task7
     m_Metadata:
       m_Items: []
-  - m_Id: 17262550839296
-    m_Key: Missed_Title
+  - m_Id: 18486213865472
+    m_Key: Phone/Task6
     m_Metadata:
       m_Items: []
-  - m_Id: 17338950086656
-    m_Key: Missed_Description1
+  - m_Id: 19226160394240
+    m_Key: Phone/Task5
     m_Metadata:
       m_Items: []
-  - m_Id: 17379307679744
-    m_Key: Try_Again
+  - m_Id: 19580797186048
+    m_Key: Phone/Task4
     m_Metadata:
       m_Items: []
-  - m_Id: 17390003154944
-    m_Key: Wrong_Title
+  - m_Id: 20315685384192
+    m_Key: Phone/Task3
     m_Metadata:
       m_Items: []
-  - m_Id: 17441001697280
-    m_Key: Wrong_Description1
+  - m_Id: 20482153115648
+    m_Key: Phone/Task2
     m_Metadata:
       m_Items: []
-  - m_Id: 1135763046920192
-    m_Key: Language
+  - m_Id: 20676835930112
+    m_Key: Phone/Task1
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 8037311896253104152
+    rid: 3428187174871498758
   references:
     version: 2
     RefIds:
-    - rid: 8037311896253104152
+    - rid: 3428187174871498758
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1740740095468
+        m_CustomEpoch: 1741004665804
