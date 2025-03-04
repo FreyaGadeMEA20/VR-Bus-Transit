@@ -17,10 +17,12 @@ public class BusSeatAssigner : MonoBehaviour
     public bool PlayerSeated => currentSeat != null;
 
     XROrigin xrOrigin;
+    List<StopScript> stops;
 
     float seatCooldown;
     void Start() {
         mainCamera = Camera.main;
+        stops = new List<StopScript>(FindObjectsOfType<StopScript>());
         head = GameManager.Instance.head;
         origin = GameManager.Instance.origin;
     }
@@ -70,6 +72,10 @@ public class BusSeatAssigner : MonoBehaviour
         yield return new WaitForSeconds(4);
         // Enable "get off" button
         //getOffButton = seat.GetComponent<Seat>().EnableGetOffButton();
+        foreach (var stop in stops)
+        {
+            stop.Active = true;
+        }
     }
 
 
@@ -81,6 +87,10 @@ public class BusSeatAssigner : MonoBehaviour
     }
 
     IEnumerator GetOffSeat(){
+        foreach (var stop in stops)
+        {
+            stop.Active = false;
+        }
         StartCoroutine(FadeToBlack.Instance.FadeOut());
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
