@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Movement;
 
+// Detection tool to prevent crashing
 public class CollisionDetector : MonoBehaviour
 {
     public int FieldOfView = 45;
@@ -17,6 +18,8 @@ public class CollisionDetector : MonoBehaviour
     void Start()
     {
         elapsedTime = 0f;
+
+        // Gets all the vehicles in the scene
         foreach(var vehicle in GameObject.FindGameObjectsWithTag("Detector")) {
             vehicleTrans.Add(vehicle.transform);
         }
@@ -27,6 +30,7 @@ public class CollisionDetector : MonoBehaviour
     void Update() {
         elapsedTime += Time.deltaTime;
 
+        // Prevents it from running EACH frame
         if(elapsedTime >= detectionRate) {
             foreach(var vehicle in vehicleTrans) {
                 if(DetectVehicle(vehicle)){
@@ -38,20 +42,30 @@ public class CollisionDetector : MonoBehaviour
         }
     }
 
+    // Script to try and mitigate bus crashing
+    // This works by sending a raycast to the vehicle infront of the bus
+    // and then telling the detector there's a vehicle infront
     bool DetectVehicle(Transform vehicle) {
+        // Makes a ray and shoots it towards the given transform
         RaycastHit hit;
         rayDirection = vehicle.position - transform.position;
         
-        vehicle = this.transform;
+        //vehicle = this.transform;
+
+        // Checks to make sure the bus is within the field of view
+        // No need to check behind
         if(Vector3.Angle(rayDirection, transform.forward) < FieldOfView){
-            Debug.Log("Sending Ray");
+            // Checks if the bus is within the view distance
             if(Physics.Raycast(transform.position, rayDirection, out hit, ViewDistance)) {
+                // Checks if the object hit is a detector
+                // Prevents accidental double detection and false positives
                 if(hit.collider.gameObject.tag == "Detector") {
-                    
+                    // Checks if the bus should stop
                     if(DetermineIfBreak(hit)) {
+                        // If the bus should stop, then set the vehicleInfront to true
                         vehicleInfront = true;
                         Debug.Log("Vehicle infront detected");
-                        return true;
+                        return true; // return true to break the loop
                     }
                 } else if (vehicleInfront){
                     vehicleInfront = false;
@@ -59,14 +73,17 @@ public class CollisionDetector : MonoBehaviour
             }
         }
 
-        elapsedTime = 0f;
+        elapsedTime = 0f; // not checking EVERY frame
         return false;
     }
 
     // Bunch of criteria to determine whether or not the bus should stop for the vehicle infront
+    // This works, but is pretty bad.
     bool DetermineIfBreak(RaycastHit _hit){
-        bool breakNow = false;
-        bool[] conditions = new bool[2];
+        bool breakNow = false; // controls whether or not the bus should stop
+        bool[] conditions = new bool[2]; // conditions to determine if it should stop
+
+        // Checks if the bus is driving parallel to it, so it doesn't see a bus it won't hit
         Vector3 otherBusRotation = _hit.collider.gameObject.transform.parent.rotation.eulerAngles;
         Vector3 thisBusRotation = this.transform.parent.parent.rotation.eulerAngles;
         float rotationDifference = Mathf.Abs((thisBusRotation.y % 180)  - (otherBusRotation.y % 180));
@@ -78,6 +95,7 @@ public class CollisionDetector : MonoBehaviour
             conditions[0] = false;
         }
 
+        // checks if the bus infront is holding still
         if(_hit.collider.gameObject.transform.GetComponentInParent<VehicleMovement>().Breaks) {
             conditions[1] = false;
         } else {

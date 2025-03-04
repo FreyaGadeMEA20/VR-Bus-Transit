@@ -35,52 +35,45 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameState currentState;
 
     // -- Objects for checking states -- //
-    public GameObject phone;
-    bool lookedAtPhone = false;
-    [HideInInspector] public GameObject busStopSign;
-    [SerializeField] bool lookedAtSign = false;
+    public GameObject phone; //phone.
+    bool lookedAtPhone = false; // control variable for task 1
+    [HideInInspector] public GameObject busStopSign; // Tracks which bus stop the player should go to
+    bool lookedAtSign = false; // control variable for task 2
+    
     [Separator("Information regarding the bus")]
-    public BusLineSO BusLine;
-    public Waypoint _finalDestination;
-    [SerializeField] BusController[] Buses;
-    public BusController BusToGetOn;
-    [SerializeField] BusController busAtStop;
+    public BusController BusToGetOn; // the bus the player needs to get on
+    public BusLineSO BusLine; // the bus line the player need to take
+    public Waypoint _finalDestination; // where the player needs to get off
+    [SerializeField] BusController[] Buses; // list of all the buses
+    [SerializeField] BusController busAtStop; // the bus at the bus stop the player should reside at
 
     [Separator("Information regarding the button input")]
-    public InputActionProperty handSwitch;
-    public bool buttonPressed = false;
+    public InputActionProperty handSwitch; // the input action for the hand switch. Should be changed to one that tracks both buttons on controller
+    public bool buttonPressed = false; // control variable for phone updating
 
     // Countdown timer variables
     [Separator("Countdown Timer")]
-    private float countdownTimer = 0f;
-    public event OnVariableChangeDelegate OnVariableChange;
-    public delegate void OnVariableChangeDelegate(float newVal);
-    public float CoutndownTimer
-    {
-        get
-        {
-            return countdownTimer;
-        }
-        set
-        {
-            if (countdownTimer == value) return;
-            countdownTimer = value;
-            if (OnVariableChange != null)
-                OnVariableChange(countdownTimer);
-        }
-    }
-    private bool isCountingDown = false;
-    public bool inCorrectStopZone = false;
+    private float countdownTimer = 0f; // the countdown timer to control the visual timer
+    public event OnVariableChangeDelegate OnVariableChange; // event manager everything will listen to, to check what the timer is at
+    public delegate void OnVariableChangeDelegate(float newVal); // together with above. It is used for timer on phone
 
-    public bool CanBusDrive = false;
+    private bool isCountingDown = false; // control variable for the countdown timer
+    public bool inCorrectStopZone = false; // control variable for the bus stop zone for task 3
 
-    public static GameManager Instance { get; internal set; }
-    public event Action<GameState> OnStateChange;
+    public bool CanBusDrive = false; // control variable for the bus driving
+
+    public static GameManager Instance { get; internal set; } // Singleton instance. Everything calls for this
+    public event Action<GameState> OnStateChange; // event manager for the state change, used for other scriptsd to know when task is completed
 
     [Separator("Recentering")]
-    [SerializeField] Transform target;
-    public Transform head, origin;
+    [SerializeField] Transform target; // the target to recenter the player to. To mitigate offset at start
+    public Transform head, origin; // player.
+    
+    Coroutine updateTimeCoroutine; // keeps track if a coroutine is running for the update of time
 
+    bool rotateSkybox = false; // control variable for rotating the skybox
+
+    // makes sure it is singleton
     void Awake()
     {
         if (Instance == null)
@@ -106,14 +99,17 @@ public class GameManager : MonoBehaviour
         if(Buses.Length > 0)
             BusToGetOn = Buses[UnityEngine.Random.Range(0, Buses.Length)];
 
+        // determines final destination and bus line
         BusLine = BusToGetOn.vehicleMovement._RouteManager.busLine;
-        _finalDestination = BusToGetOn.vehicleMovement._RouteManager.ChooseRandomWaypoint();
+        _finalDestination = BusToGetOn.vehicleMovement._RouteManager.ChooseRandomBusStop();
 
         Recenter();
 
         // Set the initial final destination
     }
 
+    // Recenters the player and camera offset at the target location
+    // Done to prevent offset at the start of the experience, from moving around the headset
     public void Recenter()
     {
         Vector3 offset = head.position - origin.position;
@@ -130,13 +126,11 @@ public class GameManager : MonoBehaviour
         origin.RotateAround(head.position, Vector3.up, angle);
     }
 
-    Coroutine updateTimeCoroutine;
-
-    bool rotateSkybox = false;
 
     // Update is called once per frame
     void Update()
     {
+        // Update the time every minute
         if(Mathf.RoundToInt(Time.time % 60) == 0){
             if(updateTimeCoroutine != null){
                 StopCoroutine(updateTimeCoroutine);
@@ -144,6 +138,7 @@ public class GameManager : MonoBehaviour
 
             updateTimeCoroutine = StartCoroutine(UpdateTime());
         }
+        // Rotate the skybox
         if(rotateSkybox){
             RenderSettings.skybox.SetFloat("_Rotation", Time.time * 0.15f);
         }
@@ -188,15 +183,19 @@ public class GameManager : MonoBehaviour
     }
 
     IEnumerator UpdateTime(){
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1); //time is fictional, so it just waits an extra second
 
-        rotateSkybox = true;
+        rotateSkybox = true; // sets the skybox to rotate
         
+        // only updates the time if the bus is driving.
+        // this needs to be looked at in the future, because I think it updates based on GLOBAL time, so it gets into -3 mins easily
         if(CanBusDrive){
             foreach(var busStop in FindObjectsOfType<BusStop>()){
                 busStop.UpdateTime();
             }
         }
+
+        // updates the time on the phone
         PhoneTime.Instance.UpdateTime();
     }
 

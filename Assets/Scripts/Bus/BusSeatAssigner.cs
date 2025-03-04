@@ -17,12 +17,10 @@ public class BusSeatAssigner : MonoBehaviour
     public bool PlayerSeated => currentSeat != null;
 
     XROrigin xrOrigin;
-    List<StopScript> stops;
 
     float seatCooldown;
     void Start() {
         mainCamera = Camera.main;
-        stops = new List<StopScript>(FindObjectsOfType<StopScript>());
         head = GameManager.Instance.head;
         origin = GameManager.Instance.origin;
     }
@@ -70,11 +68,6 @@ public class BusSeatAssigner : MonoBehaviour
         StartCoroutine(FadeToBlack.Instance.FadeIn());
 
         yield return new WaitForSeconds(4);
-        
-        foreach (var stop in stops)
-        {
-            stop.Active = true;
-        }
         // Enable "get off" button
         //getOffButton = seat.GetComponent<Seat>().EnableGetOffButton();
     }
@@ -88,10 +81,6 @@ public class BusSeatAssigner : MonoBehaviour
     }
 
     IEnumerator GetOffSeat(){
-        foreach (var stop in stops)
-        {
-            stop.Active = false;
-        }
         StartCoroutine(FadeToBlack.Instance.FadeOut());
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
@@ -140,23 +129,31 @@ public class BusSeatAssigner : MonoBehaviour
         player.transform.rotation = targetRotation;// * Quaternion.Inverse(cameraRotation);
     }
 
+    // Moves the player off the seat to a target position
     public void MoveOffSeat(GameObject target){
+        // Sets the player's position to the target position
         player.transform.position = target.transform.position;
         Debug.Log(target.transform.position);
 
+        // Moves the camera to the target position
         xrOrigin.MoveCameraToWorldLocation(target.transform.position);
+        // Makes the camera look in the same direction as the target position
         xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
 
+        // Makes the player look in the same direction as the target position
         Quaternion newRot;
-
+        // Depending which way the target position is turned, some different behaviour is needed
         if(target.transform.rotation.w < 0){
             newRot = new Quaternion(0, target.transform.rotation.w, 0, 0);
         }else{
             newRot = new Quaternion(0, 0, 0, 0);
         }
+
+        // Rotates the player to match the rotation
         player.transform.rotation = newRot;
     }
 
+    // Old function for recentering the player on the target position
     public void Recenter(GameObject target)
     {
         Vector3 offset = head.position - origin.position;
@@ -173,12 +170,14 @@ public class BusSeatAssigner : MonoBehaviour
         origin.RotateAround(head.position, Vector3.up, angle);
     }
 
+    // Cooldown to prevent them sitting back down immediately
     IEnumerator Cooldown(){
         seatCooldown = 3;
         yield return new WaitForSeconds(seatCooldown);
         seatCooldown = 0;
     }
 
+    // Disables the seat signs, as they are not needed when seated
     void DisableSeatSigns(){
         foreach (var seat in FindObjectsOfType<Seat>())
         {
@@ -186,6 +185,7 @@ public class BusSeatAssigner : MonoBehaviour
         }
     }
 
+    // Enables the seat signs
     void EnableSeatSigns(){
         foreach (var seat in FindObjectsOfType<Seat>())
         {

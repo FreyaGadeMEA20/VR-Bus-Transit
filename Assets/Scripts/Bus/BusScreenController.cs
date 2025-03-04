@@ -53,6 +53,7 @@ public class BusScreenController : MonoBehaviour
         //newMat.mainTexture = stopList[currentIndex].nextStopDot;
     }
 
+    // Takes the relevant information from the route manager and applies it to the screens
     public void GiveInformation(){
         BusLineID.v1 = routeManager.busStops[0].busStop.busStop.BusStopName;
         BusLineID.v2 = routeManager.busStops[1].busStop.busStop.BusStopName;

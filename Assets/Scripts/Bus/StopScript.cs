@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Nothing of value
 public class StopScript : MonoBehaviour
 {
     public BusScreenController busScreenController;

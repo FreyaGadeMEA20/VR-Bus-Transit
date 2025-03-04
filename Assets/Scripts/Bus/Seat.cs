@@ -14,19 +14,13 @@ public class Seat : MonoBehaviour
     void Awake(){
         seatingArea = gameObject;
     }
-
-    public void DisableButton(){
-        associatedButton.GetComponent<BoxCollider>().enabled = false;
-        associatedButton.GetComponent<Image>().color = Color.red;
-    }
-
-    // - POSSIBLE JUST CHANGE TO A STATIC BUTTON -
     
-    // Creates a get off button for the player at the seat
+    // Disables the seat sign 
     public void DisableScreen(){
         panel.SetActive(false);
     }
 
+    // Enables the seat sign
     public void Enable(){
         panel.SetActive(true);
     }

@@ -4,9 +4,13 @@ using UnityEngine;
 using Movement;
 using System;
 
+// BusController is the main controller for the bus.
+// It controls everything related to the bus, except for movement
+// Screens, doors, everything related to the gamemanager and the bus
 public class BusController : MonoBehaviour
 {
     // -- Outside Attributes --
+    [Header("Other Controllers")]
     public DoorController doors;
     public BusScreenController screens;
     BusSeatAssigner seatAssigner{
@@ -17,19 +21,21 @@ public class BusController : MonoBehaviour
     public BusSeatAssigner SeatAssigner;
     public VehicleMovement vehicleMovement;
 
-    // What is the state of the bus
-    // NOT BASED ON THE VEHICLE MOVEMENT, ONLY FOR WAITING AT STOPS
     public enum BusState {
         DRIVING,
         WAIT,
         STOP_BUTTON_PRESSED,
     }
+    // What is the state of the bus
+    // NOT BASED ON THE VEHICLE MOVEMENT, ONLY FOR WAITING AT STOPS
+    [Header("Bus State")]
     BusState busState;
     public BusState _BusState{
         get{return busState;}
         set{busState = value;}
     }
-
+    
+    [Header("Bus Information")]
     // Are the doors open?
     bool doorsOpen = false;
 
@@ -57,11 +63,14 @@ public class BusController : MonoBehaviour
     }
     public bool HasCheckedIn;
 
+    // Is this the bus the player is supposed to take?
     private bool correctBus{
         get{return CorrectBus;}
         set{CorrectBus = value;}
     }
     public bool CorrectBus;
+
+    // Has the stop button been pressed?
     bool stopButtonPressed = false;
     public bool StopButtonPressed{
         get{return stopButtonPressed;}
@@ -72,16 +81,20 @@ public class BusController : MonoBehaviour
     // Start is called before the first frame update
     void Awake() {
         // Gets and assigns all the relevant information
-        busState = BusState.STOP_BUTTON_PRESSED;
+        busState = BusState.STOP_BUTTON_PRESSED; // tells the bus to stop at the next bus stop
+
+        // Gets the vehicle movement, doors, screens and seat assigner
         vehicleMovement = GetComponent<VehicleMovement>();
         doors = GetComponent<DoorController>();
         screens = GetComponentInChildren<BusScreenController>();
         seatAssigner = GetComponentInChildren<BusSeatAssigner>();
+
+        // Applies the first texture to the bus screen
         screens.GiveInformation();
         screens.ApplyNextTexture();
     }
 
-    // Update is called once per frame. Run in VehicleMovement, so it runs alongside it
+    // Update is called once per frame. Run in VehicleMovement, so it runs alongside it, and lessens amount of update calls
     public void UpdateBusController() {
         switch(busState){
             case BusState.DRIVING:
@@ -162,6 +175,8 @@ public class BusController : MonoBehaviour
         if(!seatAssigner.player)
             doors.CloseDoors();
 
+        screens.ApplyNextTexture(); // change the bus screen texture
+
         vehicleMovement.rb.isKinematic = false; // allow the bus to move again
         
         // wait for 3 seconds before driving the bus
@@ -173,7 +188,6 @@ public class BusController : MonoBehaviour
         busState = BusState.DRIVING;
         doorsOpen = false; // set the doors to be closed
         vehicleMovement.AdvanceToNextWaypoint();
-        screens.ApplyNextTexture(); // change the bus screen texture
     }
 
     void UpdateStopState() {
@@ -189,9 +203,5 @@ public class BusController : MonoBehaviour
         Debug.Log("Stop button pressed"); // log that the bus has stopped
         screens.ApplyStopTexture(); // change the bus screen texture to the stop texture
         busState = BusState.STOP_BUTTON_PRESSED; // set the bus state to be stop button pressed
-    }
-
-    public void WrongBus(){
-        StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1));
     }
 }
