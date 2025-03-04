@@ -86,12 +86,11 @@ namespace Movement {
 
         public Waypoint ChooseRandomWaypoint()
         {
-            int randomIndex = UnityEngine.Random.Range(0, busStops.Count-1);
+            int randomIndex = UnityEngine.Random.Range(1, busStops.Count-1);
             Waypoint randomWaypoint = busStops[randomIndex].busStop;
 
             return randomWaypoint;
         }
-
         /* void Update(){
             if(controller.ReachedDestination){
                 currentWaypoint = currentWaypoint.nextWaypoint;
@@ -116,7 +115,6 @@ namespace Movement {
                 //if (route.doLoop) Gizmos.DrawLine(route.waypoints[route.waypoints.Count - 1].transform.position, route.waypoints[0].transform.position);
             }
         } */
-
         /* public Waypoint GetNextWaypoint(Waypoint currentWaypoint, int routeIndex)
         {
             Route route = routes[routeIndex];

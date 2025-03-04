@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: IntroScene_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: 1c1ae2a6132753344852bd0cca19dbbb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 15635705856
+    m_Localized: "Virtuelle Bus K\xF8rsel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183722438656
+    m_Localized: Start oplevelse ved at tjekke ind med dit rejsekort
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17262550839296
+    m_Localized: "Du n\xE5ede ikke at g\xE5 ind i bussen f\xF8r den skulle videre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17338950086656
+    m_Localized: "N\xE5r bussen ankommer til stoppestedet, skal du g\xE5 p\xE5 bussen
+      inden den k\xF8rer videre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17379307679744
+    m_Localized: "Pr\xF8v igen ved at check in"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17390003154944
+    m_Localized: "Du kom til at stige p\xE5 den forkerte bus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17441001697280
+    m_Localized: "Hold \xF8je om bussen og din telefon er ens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1135763046920192
+    m_Localized: 'Sprog: Dansk'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

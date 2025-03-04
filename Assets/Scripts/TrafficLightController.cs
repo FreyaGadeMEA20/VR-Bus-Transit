@@ -111,6 +111,22 @@ public class TrafficLightController : MonoBehaviour
         
     }
 
+    public void AddVehicles(){
+        foreach(var light in lights){
+            foreach (var wayPoint in light.wayPointsToStop) {
+                wayPoint.GetComponent<Waypoint>().TrafficLightClear = false;
+            }
+        }
+    }
+    
+    public void RemoveVehicles(){
+        foreach(var light in lights){
+            foreach (var wayPoint in light.wayPointsToStop) {
+                wayPoint.GetComponent<Waypoint>().TrafficLightClear = true;
+            }
+        }
+    }
+
     void SwitchTrafficLightState(){
         switch(trafficLightState){
             case Direction.NS:

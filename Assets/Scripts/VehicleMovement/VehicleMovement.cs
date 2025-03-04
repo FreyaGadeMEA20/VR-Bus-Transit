@@ -50,9 +50,20 @@ namespace Movement{
         [SerializeField] float maxSteering = 45f; // The maximum steering angle of the vehicle
         [SerializeField] float breakingForce = 300f; // The breaking force of the vehicle. I.e. how powerful the breaks are
         [SerializeField] float acceleration = 0f; // The acceleration of the vehicle
-        float tempAcc; // Temporary acceleration value. For backing it up
+
+        public float Acceleration
+        {
+            get { return acceleration; }
+        }
+
+        [SerializeField] float tempAcc; // Temporary acceleration value. For backing it up
         [Range(-1,1)][SerializeField] float steering = 0f; //how much it is steering
         [SerializeField] bool breaks = false; // Whether or not the vehicle is breaking
+
+        public bool Breaks
+        {
+            get { return breaks; }
+        }
         [SerializeField] float currentBreakForce = 0f; // The current break force of the vehicle. Checks the above, as breaks are not a bool, but a value
 
         public float[] GearRatio; // The gear ratio of the vehicle
@@ -77,17 +88,18 @@ namespace Movement{
 
         public RouteManager _RouteManager;
 
-        [SerializeField] Waypoint currentWaypoint; // The current waypoint, in which it navigates towards
         int direction = 1; // Control which waypoint to navigate towards. Might be removed in the future
 
         [SerializeField] GameObject collisionDetector; // The collision detectors of the vehicle
         bool BackingUpIntiated = false; // Whether or not the vehicle is backing up
+        public bool TrafficLightClear = false; // Whether or not the traffic light is clear
 
         // Start is called before the first frame update
         void Awake()
         {
             rb = GetComponent<Rigidbody>();
             rb.centerOfMass = Vector3.zero;
+            rb.useGravity = false;
             //currentRoute = waypoints.routes[currentRouteIndex];
             if (entityType == EntityTypes.Bus){
                 busController = this.GetComponent<BusController>();
@@ -101,17 +113,25 @@ namespace Movement{
         }
 
         void Update(){
+            if(!GameManager.Instance.CanBusDrive) 
+                return;
             busController.UpdateBusController();
         }
-
+        bool first = false;
         void FixedUpdate(){
+            if(!GameManager.Instance.CanBusDrive) {
+                return;
+            } else if(!first) {
+                rb.useGravity = true;
+                first = true;
+            }
             // Current movement state keeps track of whether it is supposed to listen for waypoints, or be stopped
             switch(currentMovementState){
                 case MovementState.Moving:
                     if(CheckIfCar()){
                         breaks = true;
                         // TODO: backing up needs more work
-                        //currentMovementState = MovementState.BackingUp;
+                        currentMovementState = MovementState.BackingUp;
                         break;
                     }
                     breaks = false;
@@ -135,6 +155,9 @@ namespace Movement{
                                 reachedBusStop = true;
                                 breaks = true;
                                 routeManager.currentWaypoint.busStop.deathZone.SetActive(false);
+                                if(routeManager.busLine.Equals(GameManager.Instance.BusLine)){
+                                    GameManager.Instance.ApplyBusController(busController);
+                                }
                                 busController.StopBus();
                                 busController.screens.GiveInformation(); // change the bus screen texture
                                 routeManager.SetRoute();
@@ -179,10 +202,11 @@ namespace Movement{
             Move();
         }
 
-        // needs more work
+        // TODO: needs more work
         IEnumerator DriveBackwards(){
             BackingUpIntiated = true;
             acceleration = acceleration*-1f;
+            speedModifier = 3f;
             yield return new WaitForSeconds(4f);
 
             breaks=false;
@@ -255,11 +279,13 @@ namespace Movement{
             steering = RelativeWaypointPosition.x / RelativeWaypointPosition.magnitude;
             steering = (float)Math.Round(steering, 2);
             // now we do the same for torque, but make sure that it doesn't apply any engine torque when going around a sharp turn...
-            if ( Mathf.Abs( steering ) < 0.5f ) {
-                acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering);
+            if ( Mathf.Abs( steering ) < 0.2f ) {
+                acceleration = (float)Math.Round(RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering), 2);
+                speedModifier = 3f;
             } else {
-                acceleration = .45f;
-                speedModifier = 2f;
+                if(!BackingUpIntiated) {
+                    speedModifier = 2f;
+                } 
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
@@ -272,7 +298,10 @@ namespace Movement{
                                 currentMovementState = MovementState.WaitingAtPoint;
                                 break;
                             case Waypoint.TrafficLightState.Green:
-                                AdvanceToNextWaypoint();
+                                if(routeManager.currentWaypoint.EvaluateTrafficLight()){
+                                    AdvanceToNextWaypoint();
+                                }
+                                //AdvanceToNextWaypoint();
                                 break;
                         }
                         break;
@@ -285,6 +314,8 @@ namespace Movement{
                 }
             }
         }
+
+
 
         // Function to advance to the next waypoint
         public void AdvanceToNextWaypoint(){

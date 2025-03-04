@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: MainScene Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: MainScene
+  m_TableCollectionNameGuidString: ab5491e3958d687448b7e6936519b991
+  m_Entries:
+  - m_Id: 76360839168
+    m_Key: Bus/ChooseSeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18195120779264
+    m_Key: Phone/Task7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18486213865472
+    m_Key: Phone/Task6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19226160394240
+    m_Key: Phone/Task5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19580797186048
+    m_Key: Phone/Task4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20315685384192
+    m_Key: Phone/Task3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20482153115648
+    m_Key: Phone/Task2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20676835930112
+    m_Key: Phone/Task1
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3428187174871498758
+  references:
+    version: 2
+    RefIds:
+    - rid: 3428187174871498758
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1741004665804

@@ -7,7 +7,7 @@ using System;
 public class BusController : MonoBehaviour
 {
     // -- Outside Attributes --
-    DoorController doors;
+    public DoorController doors;
     public BusScreenController screens;
     BusSeatAssigner seatAssigner{
         get{return SeatAssigner;}
@@ -24,7 +24,11 @@ public class BusController : MonoBehaviour
         WAIT,
         STOP_BUTTON_PRESSED,
     }
-    [SerializeField] BusState busState;
+    BusState busState;
+    public BusState _BusState{
+        get{return busState;}
+        set{busState = value;}
+    }
 
     // Are the doors open?
     bool doorsOpen = false;
@@ -58,6 +62,12 @@ public class BusController : MonoBehaviour
         set{CorrectBus = value;}
     }
     public bool CorrectBus;
+    bool stopButtonPressed = false;
+    public bool StopButtonPressed{
+        get{return stopButtonPressed;}
+        set{stopButtonPressed = value;}
+    }
+
 
     // Start is called before the first frame update
     void Awake() {
@@ -110,17 +120,19 @@ public class BusController : MonoBehaviour
     int index = 0;
     // Coroutine to control how the bus behaves when it stops
     IEnumerator BusStopAnimations() {
-
-        doors.OpenDoors(); // open the doors
+        if(!seatAssigner.player)
+            doors.OpenDoors(); // open the doors
 
         vehicleMovement.rb.isKinematic = true; // stop the bus from moving
 
         doorsOpen = true;  // set the doors to be open
 
         
-        if(busStopped && seatAssigner.PlayerSeated){
+        if(busStopped && seatAssigner.PlayerSeated && stopButtonPressed){
             seatAssigner.UnassignSeat(); // unassign the player from the seat
-        }
+            stopButtonPressed = false; // set the stop button to be unpressed
+        }  
+
 
         busStopped = false;
 
@@ -147,7 +159,9 @@ public class BusController : MonoBehaviour
 
         // wait for 2 seconds before visually closing the doors
         yield return new WaitForSeconds(2); 
-        doors.CloseDoors();
+        if(!seatAssigner.player)
+            doors.CloseDoors();
+
         vehicleMovement.rb.isKinematic = false; // allow the bus to move again
         
         // wait for 3 seconds before driving the bus
@@ -172,7 +186,7 @@ public class BusController : MonoBehaviour
     // Stops the bus. Gets run when stop button is pressed
     public void StopBus() {
         busStopped = true; // set the bus to be stopped
-        Debug.Log("Bus stopped"); // log that the bus has stopped
+        Debug.Log("Stop button pressed"); // log that the bus has stopped
         screens.ApplyStopTexture(); // change the bus screen texture to the stop texture
         busState = BusState.STOP_BUTTON_PRESSED; // set the bus state to be stop button pressed
     }
