@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     // Countdown timer variables
     [Separator("Countdown Timer")]
     private float countdownTimer = 0f; // the countdown timer to control the visual timer
+    public float Timer = 8f; // timer the countdown should reach
     public event OnVariableChangeDelegate OnVariableChange; // event manager everything will listen to, to check what the timer is at
     public delegate void OnVariableChangeDelegate(float newVal); // together with above. It is used for timer on phone
 
@@ -104,6 +105,8 @@ public class GameManager : MonoBehaviour
         _finalDestination = BusToGetOn.vehicleMovement._RouteManager.ChooseRandomBusStop();
 
         Recenter();
+
+        Timer = 8f;
 
         // Set the initial final destination
     }
@@ -217,8 +220,9 @@ public class GameManager : MonoBehaviour
             //Mathf.Lerp(0,100, countdownTimer);
 
             // once countdown is finished, change state and reset imer
-            if (countdownTimer >= 4f) {
+            if (countdownTimer >= Timer) {
                 countdownTimer = 0f;
+                Timer = 3f;
                 isCountingDown = false;
                 ChangeState(GameState.CHECKED_PHONE);
             }
@@ -300,7 +304,7 @@ public class GameManager : MonoBehaviour
         // add a check to see if it is the correct bus that has been checked in at
         if(BusToGetOn.Equals(RejsekortInformation.Instance.GetBus())){//BusToGetOn.vehicleMovement._RouteManager.busLine.Equals(BusLine)){
             ChangeState(GameState.CHECKED_IN);
-            busAtStop.doors.CloseDoors();
+            //busAtStop.doors.CloseDoors();
         } else {
             Debug.LogWarning("Wrong bus");
             StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(3));
@@ -331,7 +335,6 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("WOWZERS");
-        busAtStop.doors.OpenDoors();
         ChangeState(GameState.CHECKED_OUT);
     }
 

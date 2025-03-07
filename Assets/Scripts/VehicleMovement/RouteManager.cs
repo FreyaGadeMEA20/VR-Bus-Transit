@@ -107,7 +107,7 @@ namespace Movement {
         // Used for the gamemanager to find a bus stop for the player to complete the game at
         public Waypoint ChooseRandomBusStop()
         {
-            int randomIndex = UnityEngine.Random.Range(0, busStops.Count-2);
+            int randomIndex = UnityEngine.Random.Range(1, busStops.Count-2);
             Waypoint randomWaypoint = busStops[randomIndex].busStop;
 
             return randomWaypoint;

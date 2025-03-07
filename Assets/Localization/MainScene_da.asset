@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 76360839168
-    m_Localized: "V\xE6lg en s\xE6de"
+    m_Localized: "V\xE6lg et s\xE6de"
     m_Metadata:
       m_Items: []
   - m_Id: 18486213865472
@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19580797186048
-    m_Localized: "Find et s\xE6de at sidde i"
+    m_Localized: "Find et s\xE6de at sidde p\xE5"
     m_Metadata:
       m_Items: []
   - m_Id: 20315685384192

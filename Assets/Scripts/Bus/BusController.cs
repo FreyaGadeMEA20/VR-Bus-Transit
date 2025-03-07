@@ -133,8 +133,7 @@ public class BusController : MonoBehaviour
     int index = 0;
     // Coroutine to control how the bus behaves when it stops
     IEnumerator BusStopAnimations() {
-        if(!seatAssigner.player)
-            doors.OpenDoors(); // open the doors
+        doors.OpenDoors(); // open the doors
 
         vehicleMovement.rb.isKinematic = true; // stop the bus from moving
 

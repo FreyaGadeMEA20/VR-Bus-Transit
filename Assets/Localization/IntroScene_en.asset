@@ -51,6 +51,10 @@ MonoBehaviour:
     m_Localized: 'Language: English'
     m_Metadata:
       m_Items: []
+  - m_Id: 2519443942273024
+    m_Localized: This phone will be your guide during the experience
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -51,6 +51,10 @@ MonoBehaviour:
     m_Localized: 'Sprog: Dansk'
     m_Metadata:
       m_Items: []
+  - m_Id: 2519443942273024
+    m_Localized: "Denne telefon vil v\xE6re din hj\xE6lper i l\xF8bet af oplevelse"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

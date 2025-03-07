@@ -1048,7 +1048,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692055931}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 51c33745d4aae1e41ada7e6e6c0a0b4d, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: d98f282c869db3f49bb2fd6cf0675ded, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -3514,6 +3514,10 @@ PrefabInstance:
       value: -- PLAYER --
       objectReference: {fileID: 0}
     - target: {fileID: 2395679248077702529, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395679248077702529, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
       propertyPath: phoneAnimator
       value: 
       objectReference: {fileID: 871516161}
@@ -3529,9 +3533,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3998844942835360973, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
+    - target: {fileID: 3803862832936105341, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3998844942835360973, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4687610470907504368, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3552,6 +3560,10 @@ PrefabInstance:
     - target: {fileID: 4687610470907504368, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -71.605
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456572916097367536, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5871783473541903532, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3600,6 +3612,22 @@ PrefabInstance:
     - target: {fileID: 7157570262589598068, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370053386475386671, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 2519443942273024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370053386475386671, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:1c1ae2a6132753344852bd0cca19dbbb
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874983111287301896, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942449312224108584, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8960385728287412260, guid: 0ee0e351d3a3d604eaf46ebcb12d199b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3966,9 +3994,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7305483813971280467, guid: 002c4c16022cf97429dbeb444dadba47, type: 3}
+      propertyPath: m_Volume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305483813971280467, guid: 002c4c16022cf97429dbeb444dadba47, type: 3}
+      propertyPath: Spatialize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305483813971280467, guid: 002c4c16022cf97429dbeb444dadba47, type: 3}
+      propertyPath: MaxDistance
+      value: 13.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305483813971280467, guid: 002c4c16022cf97429dbeb444dadba47, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2451112453422575331, guid: 002c4c16022cf97429dbeb444dadba47, type: 3}
-    - {fileID: 2269004677815710220, guid: 002c4c16022cf97429dbeb444dadba47, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

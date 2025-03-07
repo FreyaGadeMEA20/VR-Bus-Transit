@@ -36,6 +36,10 @@ public class BusSeatAssigner : MonoBehaviour
     // Assigns the player to the given seat
     public void AssignSeat(Seat seat)
     {
+        if(!RejsekortInformation.Instance.GetCheckedIn()){
+            return;
+        }
+        //add check for if player has checked in
         if(PlayerSeated){
             return;
         }

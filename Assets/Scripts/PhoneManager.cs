@@ -19,6 +19,7 @@ public class PhoneManager : MonoBehaviour
     [SerializeField] RectTransform rejseplanenScreen;
     [SerializeField] RectTransform progressSlider;
     [SerializeField] RectTransform checkMark;
+    [SerializeField] AudioSource taskCompleteSound;
 
     [Serializable]
     public class PhoneScreen
@@ -86,12 +87,13 @@ public class PhoneManager : MonoBehaviour
             progressSlider.gameObject.SetActive(true);
         }
         progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value = newVal;
-        Debug.Log($"Slider value: + {progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value:0.0}");
+        //Debug.Log($"Slider value: + {progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value:0.0}");
 
-        if(newVal >=4){
+        if(newVal >= GameManager.Instance.Timer){
             StartCoroutine(TogglePhone());
             progressSlider.gameObject.SetActive(false);
             checkMark.gameObject.SetActive(true);
+            taskCompleteSound.Play();
         }
     }
 
