@@ -12,6 +12,7 @@ TagManager:
   - DeathBox
   - Detector
   - PlayerAttacher
+  - PlayerDettacher
   layers:
   - Default
   - TransparentFX

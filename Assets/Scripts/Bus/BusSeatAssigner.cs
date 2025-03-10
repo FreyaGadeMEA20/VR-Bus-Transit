@@ -29,8 +29,9 @@ public class BusSeatAssigner : MonoBehaviour
     
     public void GetPlayer(GameObject _player){
         player = _player;
+        Debug.Log(player);
         
-        xrOrigin = player.GetComponentInChildren<XROrigin>();
+        if(player != null) xrOrigin = player.GetComponentInChildren<XROrigin>();
     }
     
     // Assigns the player to the given seat
@@ -145,12 +146,13 @@ public class BusSeatAssigner : MonoBehaviour
 
     // Moves the player off the seat to a target position
     public void MoveOffSeat(GameObject target){
+        Debug.Log("Player position: " + player.transform.position + "\nTarget position: " + target.transform.position);
         // Sets the player's position to the target position
-        player.transform.position = target.transform.position;
+        player.transform.position = target.transform.position + new Vector3(0, 0, 0);
         Debug.Log(target.transform.position);
 
         // Moves the camera to the target position
-        xrOrigin.MoveCameraToWorldLocation(target.transform.position);
+        xrOrigin.MoveCameraToWorldLocation(target.transform.position + new Vector3(0, 0, 0));
         // Makes the camera look in the same direction as the target position
         xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
 
@@ -195,7 +197,7 @@ public class BusSeatAssigner : MonoBehaviour
     void DisableSeatSigns(){
         foreach (var seat in FindObjectsOfType<Seat>())
         {
-            seat.DisableScreen();
+            if(seat.panel != null) seat.DisableScreen();
         }
     }
 
@@ -203,7 +205,7 @@ public class BusSeatAssigner : MonoBehaviour
     void EnableSeatSigns(){
         foreach (var seat in FindObjectsOfType<Seat>())
         {
-            seat.Enable();
+            if(seat.panel != null) seat.Enable();
         }
     }
 }

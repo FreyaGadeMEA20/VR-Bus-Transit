@@ -46435,13 +46435,12 @@ MonoBehaviour:
   currentState: 0
   phone: {fileID: 1762066400}
   busStopSign: {fileID: 0}
-  lookedAtSign: 0
+  BusToGetOn: {fileID: 0}
   BusLine: {fileID: 0}
   _finalDestination: {fileID: 0}
   Buses:
   - {fileID: 793360198}
   - {fileID: 2108379587}
-  BusToGetOn: {fileID: 0}
   busAtStop: {fileID: 0}
   handSwitch:
     m_UseReference: 1
@@ -46456,6 +46455,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   buttonPressed: 0
+  Timer: 8
   inCorrectStopZone: 0
   CanBusDrive: 0
   target: {fileID: 780464388}
@@ -70358,6 +70358,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.0049956287
       objectReference: {fileID: 0}
+    - target: {fileID: 3737030080962596849, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737030080962596849, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: associatedButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3740170309002867659, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.99309987
@@ -83462,6 +83470,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.12414021
       objectReference: {fileID: 0}
+    - target: {fileID: 8721393007712692640, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721393007712692640, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+      propertyPath: associatedButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8726687211835416381, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1042104
@@ -84509,6 +84525,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8398500045510702135, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
+    - {fileID: 4674867412952851221, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4986369306879578584, guid: 8971ca091f41b1b43876ea2d8ba3c7b1, type: 3}
       insertIndex: -1
