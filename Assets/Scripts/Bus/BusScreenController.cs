@@ -21,7 +21,7 @@ public class BusScreenController : MonoBehaviour
     }
 
     // Screens for the bus
-    [SerializeField] Screen[] sceens = new Screen[2];
+    [SerializeField] Screen[] screens = new Screen[2];
     [SerializeField] Sprite stopScreen;
     [SerializeField] Sprite dotScreen;
 
@@ -40,7 +40,7 @@ public class BusScreenController : MonoBehaviour
 
     // Fucntion does as name suggests
     public void ApplyNextTexture(){
-        foreach(Screen screen in sceens){
+        foreach(Screen screen in screens){
             screen.nextStation[0].text = BusLineID.v1;
             screen.nextStation[1].text = BusLineID.v1;
             screen.nextNextStation.text = BusLineID.v2;
@@ -53,6 +53,7 @@ public class BusScreenController : MonoBehaviour
         //newMat.mainTexture = stopList[currentIndex].nextStopDot;
     }
 
+    // Takes the relevant information from the route manager and applies it to the screens
     public void GiveInformation(){
         BusLineID.v1 = routeManager.busStops[0].busStop.busStop.BusStopName;
         BusLineID.v2 = routeManager.busStops[1].busStop.busStop.BusStopName;
@@ -62,7 +63,7 @@ public class BusScreenController : MonoBehaviour
 
     // Function does as name suggests
     public void ApplyStopTexture(){
-        foreach(Screen screen in sceens){
+        foreach(Screen screen in screens){
             screen.image.sprite = stopScreen;
         }
     }

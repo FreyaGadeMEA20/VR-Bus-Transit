@@ -56,14 +56,11 @@ namespace Movement{
             get { return acceleration; }
         }
 
-        float tempAcc; // Temporary acceleration value. For backing it up
+        [SerializeField] float tempAcc; // Temporary acceleration value. For backing it up
         [Range(-1,1)][SerializeField] float steering = 0f; //how much it is steering
         [SerializeField] bool breaks = false; // Whether or not the vehicle is breaking
+        public bool Breaks {get { return breaks; } set { breaks = value; } } // public breaks variable
 
-        public bool Breaks
-        {
-            get { return breaks; }
-        }
         [SerializeField] float currentBreakForce = 0f; // The current break force of the vehicle. Checks the above, as breaks are not a bool, but a value
 
         public float[] GearRatio; // The gear ratio of the vehicle
@@ -77,28 +74,28 @@ namespace Movement{
         // Variables for controlling navigation and collision
         [Header("NAVIGATION AND COLLISSION")]
         public bool ReachedBusStop = false; // Variable to control whether or not it has reached the bus stop
-        bool reachedBusStop{
-            get{return ReachedBusStop;}
-            set{ReachedBusStop = value;}
+        bool reachedBusStop{ get{return ReachedBusStop;}set{ReachedBusStop = value;}} // Public reference to the above variable
+        
+        RouteManager routeManager; // The base reference to its starting waypoint
+
+        public RouteManager _RouteManager{
+            get{return routeManager;}
+            set{routeManager = value;}
         }
-        RouteManager routeManager{
-            get{return _RouteManager;}
-            set{_RouteManager = value;}
-        } // The base reference to its starting waypoint
 
-        public RouteManager _RouteManager;
-
-        [SerializeField] Waypoint currentWaypoint; // The current waypoint, in which it navigates towards
         int direction = 1; // Control which waypoint to navigate towards. Might be removed in the future
 
         [SerializeField] GameObject collisionDetector; // The collision detectors of the vehicle
         bool BackingUpIntiated = false; // Whether or not the vehicle is backing up
+        public bool TrafficLightClear = false; // Whether or not the traffic light is clear
+        bool first = false; // Whether or not the vehicle has started moving
 
         // Start is called before the first frame update
         void Awake()
         {
             rb = GetComponent<Rigidbody>();
             rb.centerOfMass = Vector3.zero;
+            rb.useGravity = false;
             //currentRoute = waypoints.routes[currentRouteIndex];
             if (entityType == EntityTypes.Bus){
                 busController = this.GetComponent<BusController>();
@@ -111,18 +108,33 @@ namespace Movement{
             //StartCoroutine(MovementSM());
         }
 
+        // When the vehicle is enabled, it will start the movement state machine
+        //  - GameManager will control when the vehicle is enabled, so it fits the game
         void Update(){
+            if(!GameManager.Instance.CanBusDrive) //can add if tag == bus, to make cars drive? Idk :)
+                return;
             busController.UpdateBusController();
         }
 
+        // controls all movement of the bus
+        // - This is the main function that controls the movement of the vehicle
+        // - Starts when the GameManager tells it to go
         void FixedUpdate(){
+            if(!GameManager.Instance.CanBusDrive) {
+                return;
+            } else if(!first) {
+                // only does this once, no need to do it multiple times.
+                // Just unfreezes it
+                rb.useGravity = true;
+                first = true;
+            }
             // Current movement state keeps track of whether it is supposed to listen for waypoints, or be stopped
             switch(currentMovementState){
                 case MovementState.Moving:
                     if(CheckIfCar()){
                         breaks = true;
                         // TODO: backing up needs more work
-                        //currentMovementState = MovementState.BackingUp;
+                        currentMovementState = MovementState.BackingUp;
                         break;
                     }
                     breaks = false;
@@ -142,10 +154,19 @@ namespace Movement{
                 case MovementState.WaitingAtPoint:
                     switch(routeManager.currentWaypoint.waypointType){
                         case Waypoint.WaypointType.BusStop:
+                            // Stops the bus and tells all the different parts of the bus to do their thing
                             if(entityType == EntityTypes.Bus && !reachedBusStop){
-                                reachedBusStop = true;
-                                breaks = true;
-                                routeManager.currentWaypoint.busStop.deathZone.SetActive(false);
+                                reachedBusStop = true; // variable that is used around the code to check if it has reached the bus stop
+                                breaks = true;         // stops vehicle
+                                routeManager.currentWaypoint.busStop.deathZone.SetActive(false); // lets the player board the bus by disabling the death zone
+
+                                // If the bus stop is the same as the bus line, then apply the bus controller to the bus.
+                                // This is to make sure that the player walks on the correct bus
+                                if(routeManager.busLine.Equals(GameManager.Instance.BusLine)){
+                                    GameManager.Instance.ApplyBusController(busController);
+                                }
+
+                                // Stops the bus, updates the screens and makes a new route
                                 busController.StopBus();
                                 busController.screens.GiveInformation(); // change the bus screen texture
                                 routeManager.SetRoute();
@@ -171,6 +192,7 @@ namespace Movement{
                 case MovementState.BackingUp:
                     // Needs more work
                     // Drive if nothing is in front
+                    // but it works... kinda.
                     
                     if(!CheckIfCar()){
                         currentMovementState = MovementState.Moving;
@@ -190,10 +212,11 @@ namespace Movement{
             Move();
         }
 
-        // needs more work
+        // TODO: needs more work
         IEnumerator DriveBackwards(){
             BackingUpIntiated = true;
             acceleration = acceleration*-1f;
+            speedModifier = 3f;
             yield return new WaitForSeconds(4f);
 
             breaks=false;
@@ -266,11 +289,13 @@ namespace Movement{
             steering = RelativeWaypointPosition.x / RelativeWaypointPosition.magnitude;
             steering = (float)Math.Round(steering, 2);
             // now we do the same for torque, but make sure that it doesn't apply any engine torque when going around a sharp turn...
-            if ( Mathf.Abs( steering ) < 0.5f ) {
-                acceleration = RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering);
+            if ( Mathf.Abs( steering ) < 0.2f ) {
+                acceleration = (float)Math.Round(RelativeWaypointPosition.z / RelativeWaypointPosition.magnitude - Mathf.Abs(steering), 2);
+                speedModifier = 3f;
             } else {
-                acceleration = .45f;
-                speedModifier = 2f;
+                if(!BackingUpIntiated) {
+                    speedModifier = 2f;
+                } 
             }
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
@@ -283,7 +308,10 @@ namespace Movement{
                                 currentMovementState = MovementState.WaitingAtPoint;
                                 break;
                             case Waypoint.TrafficLightState.Green:
-                                AdvanceToNextWaypoint();
+                                if(routeManager.currentWaypoint.EvaluateTrafficLight()){
+                                    AdvanceToNextWaypoint();
+                                }
+                                //AdvanceToNextWaypoint();
                                 break;
                         }
                         break;
@@ -296,6 +324,8 @@ namespace Movement{
                 }
             }
         }
+
+
 
         // Function to advance to the next waypoint
         public void AdvanceToNextWaypoint(){

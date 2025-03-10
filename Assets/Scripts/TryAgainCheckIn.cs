@@ -49,7 +49,7 @@ public class TryAgainCheckIn : MonoBehaviour
 
             yield return new WaitForSeconds(2.0f);
 
-            StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(0));
+            StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1));
 
             yield return new WaitForSeconds(1.0f);
 

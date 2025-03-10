@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: IntroScene_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 1c1ae2a6132753344852bd0cca19dbbb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 15635705856
+    m_Localized: Virtual Bus Ride
+    m_Metadata:
+      m_Items: []
+  - m_Id: 183722438656
+    m_Localized: Start the experience by checking in with your travel card
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17379307679744
+    m_Localized: Try again by checking in
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17338950086656
+    m_Localized: When the bus arrives at the bus stop, remember to get on before
+      it leaves
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17390003154944
+    m_Localized: You accidentally went on the wrong bus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17441001697280
+    m_Localized: Check if the bus and your phone matches
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17262550839296
+    m_Localized: You didn't board the bus before it left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1135763046920192
+    m_Localized: 'Language: English'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2519443942273024
+    m_Localized: This phone will be your guide during the experience
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

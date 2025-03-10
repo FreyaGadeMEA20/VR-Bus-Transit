@@ -21,22 +21,21 @@ public class PlayerAttacher : MonoBehaviour
     //  - triggers when an object enters the area of the box collider
     void OnTriggerEnter(Collider other){
         // Only checking on the tag being the player...
-        if(other.tag == "Player"){
+        if(other.tag == "Player" && this.tag == "PlayerAttacher"){
             // ... then attaches the transform to the bus game object
-            other.transform.parent = bus.transform;
+            other.transform.parent.parent = bus.transform;
             
             busSeatAssigner.GetPlayer(other.gameObject);
         }
-
     }
     
     // On trigger exit
     //  - triggers when an object exits the area of the box collider
     void OnTriggerExit(Collider other){
         // Only checking on the tag being the player...
-        if (other.tag == "Player"){
+        if (other.tag == "Player" && this.tag == "PlayerAttacher"){
             // ... then sets the player to have no parent
-            other.transform.parent = null;
+            other.transform.parent.parent = null;
 
             busSeatAssigner.GetPlayer(null);
         }

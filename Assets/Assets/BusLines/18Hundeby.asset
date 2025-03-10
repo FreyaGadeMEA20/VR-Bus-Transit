@@ -21,9 +21,9 @@ MonoBehaviour:
     v2: "\xD8rneskolen"
     v3: Hundeby Torv
   travelTimes:
-  - 96.11069
-  - 322.52316
-  - 418.64038
-  - 519.32214
-  - 688.7034
-  totalTravelTime: 818.815
+  - 90.141
+  - 261.9984
+  - 339.02982
+  - 426.90216
+  - 577.2738
+  totalTravelTime: 577.2738
