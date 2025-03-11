@@ -23,13 +23,14 @@ public class BusSeatAssigner : MonoBehaviour
     void Start() {
         mainCamera = Camera.main;
         stops = new List<StopScript>(FindObjectsOfType<StopScript>());
-        head = GameManager.Instance.head;
-        origin = GameManager.Instance.origin;
     }
     
     public void GetPlayer(GameObject _player){
         player = _player;
         Debug.Log(player);
+
+        head = GameManager.Instance.head;
+        origin = GameManager.Instance.origin;
         
         if(player != null) xrOrigin = player.GetComponentInChildren<XROrigin>();
     }
@@ -149,10 +150,10 @@ public class BusSeatAssigner : MonoBehaviour
         Debug.Log("Player position: " + player.transform.position + "\nTarget position: " + target.transform.position);
         // Sets the player's position to the target position
         player.transform.position = target.transform.position + new Vector3(0, 0, 0);
-        Debug.Log(target.transform.position);
+        
 
         // Moves the camera to the target position
-        xrOrigin.MoveCameraToWorldLocation(target.transform.position + new Vector3(0, 0, 0));
+        //xrOrigin.MoveCameraToWorldLocation(target.transform.position + new Vector3(0, 0, 0));
         // Makes the camera look in the same direction as the target position
         xrOrigin.MatchOriginUpCameraForward(target.transform.up, target.transform.forward);
 
@@ -167,6 +168,8 @@ public class BusSeatAssigner : MonoBehaviour
 
         // Rotates the player to match the rotation
         player.transform.rotation = newRot;
+
+        Debug.Log("Player position: " + player.transform.position + "\nTarget position: " + target.transform.position);
     }
 
     // Old function for recentering the player on the target position
