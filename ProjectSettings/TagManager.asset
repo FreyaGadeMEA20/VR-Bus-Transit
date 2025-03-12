@@ -13,6 +13,7 @@ TagManager:
   - Detector
   - PlayerAttacher
   - PlayerDettacher
+  - DoorAudio
   layers:
   - Default
   - TransparentFX
