@@ -49,7 +49,7 @@ MonoBehaviour:
   m_ShadowCascadeCount: 4
   m_Cascade2Split: 0.25
   m_Cascade3Split: {x: 0.264, y: 0.3}
-  m_Cascade4Split: {x: 0.0072727273, y: 0.10909091, z: 0.36727273}
+  m_Cascade4Split: {x: 0.08727272, y: 0.2557968, z: 0.5158442}
   m_CascadeBorder: 0.23146068
   m_ShadowDepthBias: 1
   m_ShadowNormalBias: 1
@@ -83,7 +83,7 @@ MonoBehaviour:
     blueNoise64LTex: {fileID: 2800000, guid: e3d24661c1e055f45a7560c033dbb837, type: 3}
     bayerMatrixTex: {fileID: 2800000, guid: f9ee4ed84c1d10c49aabb9b210b0fc44, type: 3}
   m_PrefilteringModeMainLightShadows: 3
-  m_PrefilteringModeAdditionalLight: 3
+  m_PrefilteringModeAdditionalLight: 4
   m_PrefilteringModeAdditionalLightShadows: 2
   m_PrefilterXRKeywords: 0
   m_PrefilteringModeForwardPlus: 0
