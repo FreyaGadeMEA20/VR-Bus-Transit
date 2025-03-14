@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 7400000, guid: 57b5d74da049f444cad9d33a6c0f45a7, type: 2}
-  m_Position: {x: -2.360567, y: 2.5910473, z: -3.3051524}
+  m_Position: {x: -2.360567, y: 1.98, z: -3.3051524}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 7400000, guid: 57b5d74da049f444cad9d33a6c0f45a7, type: 2}
-  m_Position: {x: 2.5021896, y: 3.0883062, z: -7.0935526}
+  m_Position: {x: 2.5021896, y: 2.43, z: -7.0935526}
   m_EulerAngles: {x: 0, y: 180.02, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset(Clone)(Clone)
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 7400000, guid: 57b5d74da049f444cad9d33a6c0f45a7, type: 2}
-  m_Position: {x: -2.2913263, y: 3.917441, z: -13.12322}
+  m_Position: {x: -2.2913263, y: 3.34, z: -13.12322}
   m_EulerAngles: {x: 0, y: 0.034, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 7400000, guid: 57b5d74da049f444cad9d33a6c0f45a7, type: 2}
-  m_Position: {x: 2.286537, y: 2.1119564, z: 4.274006}
+  m_Position: {x: 2.286537, y: 1.53, z: 4.274006}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
@@ -809,7 +809,7 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 7400000, guid: 57b5d74da049f444cad9d33a6c0f45a7, type: 2}
-  m_Position: {x: -2.305052, y: 3.034781, z: -5.066104}
+  m_Position: {x: -2.305052, y: 2.39, z: -5.066104}
   m_EulerAngles: {x: 0, y: 0.028, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
