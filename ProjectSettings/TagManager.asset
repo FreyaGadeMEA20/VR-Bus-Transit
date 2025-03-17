@@ -12,6 +12,9 @@ TagManager:
   - DeathBox
   - Detector
   - PlayerAttacher
+  - Ambience
+  - Bus Chatter
+  - Pedestrians
   layers:
   - Default
   - TransparentFX
