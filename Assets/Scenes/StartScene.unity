@@ -620,6 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c936229b48ddb4f8df6d8aaa6f7897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Slider_NPCAmount: {fileID: 248998532}
 --- !u!1 &253111966
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +740,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -755,7 +756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb5a10a1b1ed9f44c83eb60aef1bdaec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeSlider_Ambience: {fileID: 0}
+  volumeSlider_Ambience: {fileID: 378275311}
 --- !u!1 &393774433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,7 +1342,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.29
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1357,6 +1358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b97362c88c78e4291a76139240217a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeSlider_Chatter: {fileID: 467082811}
 --- !u!1 &497102695
 GameObject:
   m_ObjectHideFlags: 0
