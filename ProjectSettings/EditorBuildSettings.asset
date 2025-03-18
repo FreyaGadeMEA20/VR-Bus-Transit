@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mistake_Scenes/WrongBus.unity
     guid: 6846bce93bfc8294d81eb787aaae68dd
+  - enabled: 1
+    path: Assets/Scenes/UIScene.unity
+    guid: 184ed4de15c1c0740924648a2151f2ed
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b3c63e108e9869746804389f0cafc55e, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: a72c3860ec2a74d49b325a2a46beccda, type: 2}
