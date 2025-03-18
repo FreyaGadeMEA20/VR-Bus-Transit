@@ -14,7 +14,6 @@ public class CameraSwitch : MonoBehaviour
         playerCam.Priority = 1;
         birdPOVCam.Priority = 0;
         followPlayerCam.Priority = 0;
-        Debug.Log("Switched to player cam");
     }
 
     public void SwitchToBirdPOVCam()
@@ -22,7 +21,6 @@ public class CameraSwitch : MonoBehaviour
         playerCam.Priority = 0;
         birdPOVCam.Priority = 1;
         followPlayerCam.Priority = 0;
-        Debug.Log("Switched to bird POV cam");
     }
 
     public void SwitchToFollowPlayerCam()
@@ -30,12 +28,6 @@ public class CameraSwitch : MonoBehaviour
         playerCam.Priority = 0;
         birdPOVCam.Priority = 0;
         followPlayerCam.Priority = 1;
-        Debug.Log("Switched to follow player cam");
-    }
-
-    public void Test()
-    {
-        Debug.Log("Test");
     }
 
     // Start is called before the first frame update
