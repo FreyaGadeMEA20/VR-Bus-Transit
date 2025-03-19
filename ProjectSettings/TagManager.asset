@@ -15,6 +15,7 @@ TagManager:
   - Ambience
   - Bus Chatter
   - Pedestrians
+  - SchoolNPCPair
   layers:
   - Default
   - TransparentFX

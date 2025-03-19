@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Polyperfect.People;
 using UnityEngine;
 
 namespace Movement
@@ -8,7 +6,6 @@ namespace Movement
     public class PedestrianSpawner : MonoBehaviour
     {
         public GameObject[] pedestrianPrefabs;
-
         public int pedestriansToSpawn;
 
         [SerializeField] GameObject Container;
@@ -17,41 +14,18 @@ namespace Movement
 
         void Start()
         {
-            if (Slider_NPCs.Instance != null)
+            if (NPCManager.Instance != null)
             {
-                Slider_NPCs.Instance.SubscribeToNPCAmountChanged(UpdatePedestriansToSpawn);
-                pedestriansToSpawn = Slider_NPCs.Instance.NPCAmount;
-                Debug.Log("PedestrianSpawner initialized with NPCAmount: " + pedestriansToSpawn);
+                pedestriansToSpawn = NPCManager.Instance.NPCAmount;
+                Debug.Log($"PedestrianSpawner initialized with NPCAmount: {pedestriansToSpawn}");
             }
             else
             {
-                pedestriansToSpawn = PlayerPrefs.GetInt("NPCAmount", 0); // Default to 0 if not found
-                Debug.LogWarning("Slider_NPCs instance not found. Retrieved NPCAmount from PlayerPrefs: " + pedestriansToSpawn);
+                pedestriansToSpawn = 100; // Default to 0 if NPCManager is not found
+                Debug.LogWarning("NPCManager instance not found. Defaulting pedestriansToSpawn to 100.");
             }
 
             spawnCoroutine = StartCoroutine(SpawnPedestrians());
-        }
-
-        void UpdatePedestriansToSpawn(int newAmount)
-        {
-            pedestriansToSpawn = newAmount;
-            Debug.Log("PedestrianSpawner updated NPCAmount to: " + pedestriansToSpawn);
-
-            // Restart the spawning coroutine to handle the updated value
-            if (spawnCoroutine != null)
-            {
-                StopCoroutine(spawnCoroutine);
-            }
-            spawnCoroutine = StartCoroutine(SpawnPedestrians());
-        }
-
-        void OnDestroy()
-        {
-            // Unsubscribe from the event to avoid memory leaks
-            if (Slider_NPCs.Instance != null)
-            {
-                Slider_NPCs.Instance.OnNPCAmountChanged -= UpdatePedestriansToSpawn;
-            }
         }
 
         IEnumerator SpawnPedestrians()
@@ -71,18 +45,9 @@ namespace Movement
                 obj.transform.position = child.position;
                 obj.transform.parent = Container.transform;
 
-                StartCoroutine(StopAnimation(obj));
-
                 count++;
                 yield return new WaitForSeconds(0.1f); // Optional delay between spawns
             }
-        }
-
-        IEnumerator StopAnimation(GameObject obj)
-        {
-            yield return new WaitForSeconds(2);
-
-            obj.GetComponent<People_WanderScript>().enabled = false;
         }
     }
 }

@@ -1,43 +1,71 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class AudioManager_Chatter : MonoBehaviour
+public class Chatter_Manager : MonoBehaviour
 {
-    public string audioSourceTag = "Bus Chatter"; // Replace with your actual tag
-    private Slider volumeSlider_Chatter;
+    public static Chatter_Manager Instance { get; private set; }
 
-    void Start()
+    private float chatterVolume = 0.2f; // Default volume
+
+    void Awake()
     {
-        // Find the slider GameObject in the scene
-        volumeSlider_Chatter = FindObjectOfType<AudioSlider_Chatter>().volumeSlider_Chatter;
-
-        // Set the audio source volumes based on the slider value
-        UpdateAudioSourcesVolume(volumeSlider_Chatter.value);
-
-        // Add listener to update volume when slider value changes
-        volumeSlider_Chatter.onValueChanged.AddListener(delegate { OnVolumeChange(); });
-    }
-
-    void OnVolumeChange()
-    {
-        // Update the audio source volumes
-        UpdateAudioSourcesVolume(volumeSlider_Chatter.value);
-    }
-
-    void UpdateAudioSourcesVolume(float volume)
-    {
-        // Find all audio sources with the specified tag
-        GameObject[] audioSources = GameObject.FindGameObjectsWithTag(audioSourceTag);
-        foreach (GameObject audioSourceObject in audioSources)
+        if (Instance == null)
         {
-            AudioSource audioSource = audioSourceObject.GetComponent<AudioSource>();
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Persist across scenes
+            Debug.Log("[Chatter_Manager] Instance initialized.");
+
+            // Subscribe to the sceneLoaded event
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        else
+        {
+            Debug.LogWarning("[Chatter_Manager] Duplicate instance detected. Destroying duplicate.");
+            Destroy(gameObject);
+        }
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe from the sceneLoaded event to avoid memory leaks
+        if (Instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+    }
+
+    public void SetChatterVolume(float volume)
+    {
+        chatterVolume = volume;
+        Debug.Log($"[Chatter_Manager] Chatter volume set to {chatterVolume}");
+
+        // Update all audio sources tagged as "Bus Chatter"
+        UpdateChatterAudioSources();
+    }
+
+    private void UpdateChatterAudioSources()
+    {
+        GameObject[] chatterObjects = GameObject.FindGameObjectsWithTag("Bus Chatter");
+        foreach (GameObject obj in chatterObjects)
+        {
+            AudioSource audioSource = obj.GetComponent<AudioSource>();
             if (audioSource != null)
             {
-                audioSource.volume = volume;
+                audioSource.volume = chatterVolume;
+                Debug.Log($"[Chatter_Manager] Updated volume for {obj.name} to {chatterVolume}");
             }
         }
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log($"[Chatter_Manager] Scene loaded: {scene.name}. Reapplying chatter volume.");
+        UpdateChatterAudioSources();
+    }
 }
+
+
 
