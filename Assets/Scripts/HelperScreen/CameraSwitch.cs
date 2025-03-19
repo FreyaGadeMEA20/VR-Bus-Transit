@@ -12,22 +12,22 @@ public class CameraSwitch : MonoBehaviour
     public void SwitchToPlayerCam()
     {
         playerCam.Priority = 1;
-        birdPOVCam.Priority = 0;
-        followPlayerCam.Priority = 0;
+        if(birdPOVCam != null) birdPOVCam.Priority = 0;
+        if(followPlayerCam != null) followPlayerCam.Priority = 0;
     }
 
     public void SwitchToBirdPOVCam()
     {
         playerCam.Priority = 0;
-        birdPOVCam.Priority = 1;
-        followPlayerCam.Priority = 0;
+        if(birdPOVCam != null) birdPOVCam.Priority = 1;
+        if(followPlayerCam != null) followPlayerCam.Priority = 0;
     }
 
     public void SwitchToFollowPlayerCam()
     {
         playerCam.Priority = 0;
-        birdPOVCam.Priority = 0;
-        followPlayerCam.Priority = 1;
+        if(birdPOVCam != null) birdPOVCam.Priority = 0;
+        if(followPlayerCam != null) followPlayerCam.Priority = 1;
     }
 
     // Start is called before the first frame update
