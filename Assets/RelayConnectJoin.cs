@@ -75,7 +75,6 @@ public class RelayConnectJoin : MonoBehaviour
         UpdateUI();
         
         joinCode = JoinCodeText.text;
-        Debug.Log(joinCode);
 
         if(!error) OnJoin(joinCode);
     }
@@ -90,7 +89,6 @@ public class RelayConnectJoin : MonoBehaviour
 
         try
         {
-            Debug.Log(_joinCode);
             var joinAllocation = await RelayService.Instance.JoinAllocationAsync(_joinCode);
             playerAllocationId = joinAllocation.AllocationId;
             Debug.Log("Player Allocation ID: " + playerAllocationId);
