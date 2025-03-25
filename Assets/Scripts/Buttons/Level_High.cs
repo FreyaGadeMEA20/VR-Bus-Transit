@@ -9,6 +9,19 @@ public class Level_High : MonoBehaviour
     public Slider ambienceSlider;
     public Slider chatterSlider;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        // Optional: Add a listener to the button if needed
+        Debug.Log("[Level_Low] Button initialized.");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
     public void SetHighLevel()
     {
         if (npcSlider != null)
