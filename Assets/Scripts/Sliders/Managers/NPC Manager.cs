@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Movement;
 
@@ -11,8 +10,10 @@ public class NPCManager : MonoBehaviour
 
     public int NPCAmount { get; private set; } // Value to be retrieved by PedestrianSpawner
     public float SchoolNPCValue { get; private set; } // Slider value for school NPC pairs
+    public float BusNPCValue { get; private set; } // Slider value for bus NPCs
 
     private List<GameObject> schoolNPCPairs = new List<GameObject>();
+    private List<GameObject> busNPCs = new List<GameObject>();
 
     void Awake()
     {
@@ -62,6 +63,15 @@ public class NPCManager : MonoBehaviour
         UpdateSchoolNPCPairs();
     }
 
+    public void SetBusNPCValue(float value)
+    {
+        BusNPCValue = value;
+        Debug.Log($"[NPCManager] BusNPCValue set to {BusNPCValue}");
+
+        // Update the bus NPCs
+        UpdateBusNPCs();
+    }
+
     private void UpdateSchoolNPCPairs()
     {
         if (schoolNPCPairs.Count == 0)
@@ -81,20 +91,57 @@ public class NPCManager : MonoBehaviour
         }
     }
 
+    private void UpdateBusNPCs()
+    {
+        if (busNPCs.Count == 0)
+        {
+            Debug.LogWarning("[NPCManager] No bus NPCs found to update.");
+            return;
+        }
+
+        int npcsToEnable = Mathf.Clamp(Mathf.FloorToInt(BusNPCValue / 0.025f), 0, busNPCs.Count);
+        Debug.Log($"[NPCManager] Enabling {npcsToEnable} random bus NPCs.");
+
+        foreach (GameObject npc in busNPCs)
+        {
+            npc.SetActive(false);
+        }
+
+        List<GameObject> shuffledBusNPCs = new List<GameObject>(busNPCs);
+        for (int i = 0; i < shuffledBusNPCs.Count; i++)
+        {
+            int randomIndex = Random.Range(i, shuffledBusNPCs.Count);
+            GameObject temp = shuffledBusNPCs[i];
+            shuffledBusNPCs[i] = shuffledBusNPCs[randomIndex];
+            shuffledBusNPCs[randomIndex] = temp;
+        }
+
+        for (int i = 0; i < npcsToEnable; i++)
+        {
+            shuffledBusNPCs[i].SetActive(true);
+        }
+    }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log($"[NPCManager] Scene loaded: {scene.name}. Reinitializing school NPC pairs.");
+        Debug.Log($"[NPCManager] Scene loaded: {scene.name}. Reinitializing NPCs.");
 
-        // Clear the current list of NPC pairs
+        // Clear the current lists
         schoolNPCPairs.Clear();
+        busNPCs.Clear();
 
         // Find all NPC pairs tagged as "SchoolNPCPair"
-        GameObject[] pairs = GameObject.FindGameObjectsWithTag("SchoolNPCPair");
-        schoolNPCPairs.AddRange(pairs);
-
+        GameObject[] schoolPairs = GameObject.FindGameObjectsWithTag("SchoolNPCPair");
+        schoolNPCPairs.AddRange(schoolPairs);
         Debug.Log($"[NPCManager] Found {schoolNPCPairs.Count} school NPC pairs.");
 
-        // Apply the current SchoolNPCValue to update the pairs
+        // Find all NPCs tagged as "Bus NPC"
+        GameObject[] busNPCObjects = GameObject.FindGameObjectsWithTag("Bus NPC");
+        busNPCs.AddRange(busNPCObjects);
+        Debug.Log($"[NPCManager] Found {busNPCs.Count} bus NPCs.");
+
+        // Apply the current values to update the NPCs
         UpdateSchoolNPCPairs();
+        UpdateBusNPCs();
     }
 }

@@ -16,6 +16,7 @@ TagManager:
   - Bus Chatter
   - Pedestrians
   - SchoolNPCPair
+  - Bus NPC
   layers:
   - Default
   - TransparentFX
