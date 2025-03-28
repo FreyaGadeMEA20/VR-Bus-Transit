@@ -300,7 +300,6 @@ namespace Movement{
             
             // this just checks if the car's position is near enough to a waypoint to count as passing it, if it is, then change the target waypoint to the
             // next in the list.
-            Debug.Log($"Magnitude: {RelativeWaypointPosition.magnitude} \n XYZ: {RelativeWaypointPosition} \n Normalized: {RelativeWaypointPosition.normalized}");
             if ( RelativeWaypointPosition.magnitude < 20 ) {
                 switch(routeManager.currentWaypoint.waypointType) {
                     case Waypoint.WaypointType.TrafficLight:

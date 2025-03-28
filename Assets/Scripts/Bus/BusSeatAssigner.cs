@@ -147,7 +147,6 @@ public class BusSeatAssigner : MonoBehaviour
 
     // Moves the player off the seat to a target position
     public void MoveOffSeat(GameObject target){
-        Debug.Log("Player position: " + player.transform.position + "\nTarget position: " + target.transform.position);
         // Sets the player's position to the target position
         player.transform.position = target.transform.position + new Vector3(0, 0, 0);
         
@@ -168,8 +167,6 @@ public class BusSeatAssigner : MonoBehaviour
 
         // Rotates the player to match the rotation
         player.transform.rotation = newRot;
-
-        Debug.Log("Player position: " + player.transform.position + "\nTarget position: " + target.transform.position);
     }
 
     // Old function for recentering the player on the target position
