@@ -12,6 +12,11 @@ TagManager:
   - DeathBox
   - Detector
   - PlayerAttacher
+  - Ambience
+  - Bus Chatter
+  - Pedestrians
+  - SchoolNPCPair
+  - Bus NPC
   - PlayerDettacher
   - DoorAudio
   layers:
