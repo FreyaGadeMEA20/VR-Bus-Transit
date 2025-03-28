@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Polyperfect.People;
 
 namespace Movement
 {
@@ -9,9 +10,6 @@ namespace Movement
         public int pedestriansToSpawn;
 
         [SerializeField] GameObject Container;
-
-        private Coroutine spawnCoroutine;
-
         void Start()
         {
             if (NPCManager.Instance != null)
@@ -25,17 +23,11 @@ namespace Movement
                 Debug.LogWarning("NPCManager instance not found. Defaulting pedestriansToSpawn to 100.");
             }
 
-            spawnCoroutine = StartCoroutine(SpawnPedestrians());
+            StartCoroutine(SpawnPedestrians());
         }
 
         IEnumerator SpawnPedestrians()
         {
-            // Clear existing NPCs if necessary
-            foreach (Transform child in Container.transform)
-            {
-                Destroy(child.gameObject);
-            }
-
             int count = 0;
             while (count < pedestriansToSpawn)
             {
@@ -45,9 +37,18 @@ namespace Movement
                 obj.transform.position = child.position;
                 obj.transform.parent = Container.transform;
 
+                StartCoroutine(StopAnimation(obj));
+
                 count++;
-                yield return new WaitForSeconds(0.1f); // Optional delay between spawns
             }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        IEnumerator StopAnimation(GameObject obj){
+            yield return new WaitForSeconds(2);
+            
+            obj.GetComponent<People_WanderScript>().enabled = false;
         }
     }
 }

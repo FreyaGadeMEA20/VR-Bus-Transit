@@ -8,9 +8,9 @@ public class NPCManager : MonoBehaviour
 {
     public static NPCManager Instance { get; private set; }
 
-    public int NPCAmount { get; private set; } // Value to be retrieved by PedestrianSpawner
-    public float SchoolNPCValue { get; private set; } // Slider value for school NPC pairs
-    public float BusNPCValue { get; private set; } // Slider value for bus NPCs
+    public int NPCAmount { get; set; } // Value to be retrieved by PedestrianSpawner
+    public float SchoolNPCValue { get; set; } // Slider value for school NPC pairs
+    public float BusNPCValue { get; set; } // Slider value for bus NPCs
 
     private List<GameObject> schoolNPCPairs = new List<GameObject>();
     private List<GameObject> busNPCs = new List<GameObject>();

@@ -16,7 +16,6 @@ public class PhoneTime : MonoBehaviour
         if(Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(this);
         }
         else
         {
