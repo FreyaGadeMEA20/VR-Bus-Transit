@@ -13,7 +13,7 @@ public class Level_Medium : MonoBehaviour
     void Start()
     {
         // Optional: Add a listener to the button if needed
-        Debug.Log("[Level_Low] Button initialized.");
+        Debug.Log("[Level_Medium] Button initialized.");
     }
 
     // Update is called once per frame
