@@ -17,6 +17,8 @@ TagManager:
   - Pedestrians
   - SchoolNPCPair
   - Bus NPC
+  - PlayerDettacher
+  - DoorAudio
   layers:
   - Default
   - TransparentFX

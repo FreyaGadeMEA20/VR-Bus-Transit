@@ -130,10 +130,11 @@ public class BusController : MonoBehaviour
             //index++;
         }
     }
-    int index = 0;
+    
     // Coroutine to control how the bus behaves when it stops
     IEnumerator BusStopAnimations() {
         doors.OpenDoors(); // open the doors
+        PlayDoorAudio(); // play the door audio
 
         vehicleMovement.rb.isKinematic = true; // stop the bus from moving
 
@@ -168,11 +169,10 @@ public class BusController : MonoBehaviour
 
     // Coroutine to close the doors and drive the bus
     IEnumerator CloseDoorsAndDrive() {
-
         // wait for 2 seconds before visually closing the doors
         yield return new WaitForSeconds(2); 
-        if(!seatAssigner.player)
-            doors.CloseDoors();
+        doors.CloseDoors();
+        PlayDoorAudio(); // play the door audio
 
         screens.ApplyNextTexture(); // change the bus screen texture
 
@@ -187,6 +187,16 @@ public class BusController : MonoBehaviour
         busState = BusState.DRIVING;
         doorsOpen = false; // set the doors to be closed
         vehicleMovement.AdvanceToNextWaypoint();
+    }
+
+    void PlayDoorAudio() {
+        var doorAudioSources = GameObject.FindGameObjectsWithTag("DoorAudio");
+        foreach (var source in doorAudioSources) {
+            var audioSource = source.GetComponent<AudioSource>();
+            if (audioSource != null) {
+                audioSource.Play();
+            }
+        }
     }
 
     void UpdateStopState() {

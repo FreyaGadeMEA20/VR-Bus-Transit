@@ -1279,7 +1279,7 @@ MonoBehaviour:
   m_HeadTransform: {fileID: 3166878002558525136}
   m_LeftControllerTransform: {fileID: 8992814558482046661}
   m_RightControllerTransform: {fileID: 5379549783775897538}
-  m_LeftHandMovementDirection: 1
+  m_LeftHandMovementDirection: 0
   m_RightHandMovementDirection: 0
 --- !u!114 &4805983893357458362
 MonoBehaviour:
