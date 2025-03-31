@@ -133,9 +133,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(DataGatherer.Instance != null){
-            DataGatherer.Instance.WriteToCSV(Time.time.ToString(), transform.position.ToString(), currentState.ToString(), _finalDestination.name, BusToGetOn.name);
-        }
+        //if(DataGatherer.Instance != null){
+        //    DataGatherer.Instance.WriteToCSV(Time.time.ToString(), transform.position.ToString(), currentState.ToString(), _finalDestination.name, BusToGetOn.name);
+        //}
         // Update the time every minute
         if(Mathf.RoundToInt(Time.time % 60) == 0){
             if(updateTimeCoroutine != null){

@@ -1844,9 +1844,17 @@ PrefabInstance:
       propertyPath: pulLOutPhone.m_UseReference
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3339240988728263668, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3535473601529558972, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3, type: 3}
       propertyPath: m_Name
       value: Phone
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483273421033763181, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5144230251403343233, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3, type: 3}
       propertyPath: m_AnchorMax.y
