@@ -12,15 +12,15 @@ namespace Movement
         [SerializeField] GameObject Container;
         void Start()
         {
-            if (NPCManager.Instance != null)
+            if (GameSettings.Instance != null)
             {
-                pedestriansToSpawn = NPCManager.Instance.NPCAmount;
+                pedestriansToSpawn = GameSettings.Instance.NPCAmount;
                 Debug.Log($"PedestrianSpawner initialized with NPCAmount: {pedestriansToSpawn}");
             }
             else
             {
-                pedestriansToSpawn = 100; // Default to 0 if NPCManager is not found
-                Debug.LogWarning("NPCManager instance not found. Defaulting pedestriansToSpawn to 100.");
+                pedestriansToSpawn = 100; // Default to 0 if GameSettings is not found
+                Debug.LogWarning("GameSettings instance not found. Defaulting pedestriansToSpawn to 100.");
             }
 
             StartCoroutine(SpawnPedestrians());

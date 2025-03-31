@@ -221,7 +221,6 @@ GameObject:
   - component: {fileID: 23745413}
   - component: {fileID: 23745412}
   - component: {fileID: 23745411}
-  - component: {fileID: 23745414}
   - component: {fileID: 23745415}
   - component: {fileID: 23745416}
   m_Layer: 5
@@ -295,9 +294,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 23745414}
-        m_TargetAssemblyTypeName: Level_Low, Assembly-CSharp
-        m_MethodName: SetLowLevel
+      - m_Target: {fileID: 1275638237}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: SelectDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -345,21 +344,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23745409}
   m_CullTransparentMesh: 1
---- !u!114 &23745414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23745409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b513fd3d68c6664d98ef10aec2edad2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npcSlider: {fileID: 248998532}
-  ambienceSlider: {fileID: 378275311}
-  chatterSlider: {fileID: 467082811}
 --- !u!65 &23745415
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -415,9 +399,9 @@ MonoBehaviour:
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 23745414}
-        m_TargetAssemblyTypeName: Level_Low, Assembly-CSharp
-        m_MethodName: SetLowLevel
+      - m_Target: {fileID: 1275638237}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: SelectDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -508,7 +492,6 @@ GameObject:
   - component: {fileID: 46818339}
   - component: {fileID: 46818338}
   - component: {fileID: 46818337}
-  - component: {fileID: 46818340}
   - component: {fileID: 46818341}
   - component: {fileID: 46818342}
   m_Layer: 5
@@ -582,9 +565,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 46818340}
-        m_TargetAssemblyTypeName: Level_High, Assembly-CSharp
-        m_MethodName: SetHighLevel
+      - m_Target: {fileID: 663560190}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: SelectDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -632,21 +615,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46818335}
   m_CullTransparentMesh: 1
---- !u!114 &46818340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46818335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e7db55ee22d0074dbd1d8ebbf8f2a75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npcSlider: {fileID: 248998532}
-  ambienceSlider: {fileID: 378275311}
-  chatterSlider: {fileID: 467082811}
 --- !u!65 &46818341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -702,9 +670,9 @@ MonoBehaviour:
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 46818340}
-        m_TargetAssemblyTypeName: Level_High, Assembly-CSharp
-        m_MethodName: SetHighLevel
+      - m_Target: {fileID: 663560190}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: SelectDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -941,50 +909,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82481071}
   m_CullTransparentMesh: 1
---- !u!1 &102271129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 102271131}
-  - component: {fileID: 102271130}
-  m_Layer: 0
-  m_Name: Ambience Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &102271130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102271129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1602e9298d5721c4884ee5ddc0d64d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &102271131
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102271129}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.037275, y: 3.9384372, z: -0.6477869}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &126078022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,50 +1231,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.1, y: -2.99}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &216275327
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 216275329}
-  - component: {fileID: 216275328}
-  m_Layer: 0
-  m_Name: NPC Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &216275328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216275327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bb24f2d4f82a654f970068888688583, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &216275329
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216275327}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &248998530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1542,6 @@ GameObject:
   - component: {fileID: 322084973}
   - component: {fileID: 322084972}
   - component: {fileID: 322084971}
-  - component: {fileID: 322084970}
   - component: {fileID: 322084974}
   - component: {fileID: 322084975}
   m_Layer: 5
@@ -1692,21 +1571,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &322084970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322084968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d50fda6ab88d67043a4ff2bc0f0a28c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npcSlider: {fileID: 248998532}
-  ambienceSlider: {fileID: 378275311}
-  chatterSlider: {fileID: 467082811}
 --- !u!114 &322084971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1751,9 +1615,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 322084970}
-        m_TargetAssemblyTypeName: Level_Zero, Assembly-CSharp
-        m_MethodName: SetZeroLevel
+      - m_Target: {fileID: 1465124941}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: SelectDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1856,9 +1720,9 @@ MonoBehaviour:
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 322084970}
-        m_TargetAssemblyTypeName: Level_Zero, Assembly-CSharp
-        m_MethodName: SetZeroLevel
+      - m_Target: {fileID: 1465124941}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: SelectDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3229,50 +3093,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &564791395
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 564791397}
-  - component: {fileID: 564791396}
-  m_Layer: 0
-  m_Name: Chatter Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &564791396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564791395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dde3b345c7b72d84aa691b68f15712ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &564791397
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564791395}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.037275, y: 3.9384372, z: -0.6477869}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &589152741
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,6 +3273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 663560189}
+  - component: {fileID: 663560190}
   m_Layer: 5
   m_Name: Level 3
   m_TagString: Untagged
@@ -3480,6 +3301,22 @@ RectTransform:
   m_AnchoredPosition: {x: 1.35, y: -0.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &663560190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663560188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d402b4afa5599bb40bca9b47a6a7fd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NPCAmount: 100
+  _Ambience: 1
+  _Chatter: 1
+  difficulty: 3
 --- !u!1 &674035921
 GameObject:
   m_ObjectHideFlags: 0
@@ -3527,6 +3364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 687731858}
+  - component: {fileID: 687731859}
   m_Layer: 5
   m_Name: Level 2
   m_TagString: Untagged
@@ -3554,6 +3392,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0.45, y: -0.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &687731859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687731857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d402b4afa5599bb40bca9b47a6a7fd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NPCAmount: 66
+  _Ambience: 0.66
+  _Chatter: 0.66
+  difficulty: 2
 --- !u!1 &692055931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,7 +3962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 0
+  m_text: Level 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6053,6 +5907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1275638236}
+  - component: {fileID: 1275638237}
   m_Layer: 5
   m_Name: Level 1
   m_TagString: Untagged
@@ -6080,6 +5935,22 @@ RectTransform:
   m_AnchoredPosition: {x: -0.45, y: -0.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1275638237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275638235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d402b4afa5599bb40bca9b47a6a7fd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NPCAmount: 33
+  _Ambience: 0.33
+  _Chatter: 0.33
+  difficulty: 1
 --- !u!1 &1299038949
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,7 +6083,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 3
+  m_text: Level 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6937,6 +6808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1465124940}
+  - component: {fileID: 1465124941}
   m_Layer: 5
   m_Name: Level 0
   m_TagString: Untagged
@@ -6964,6 +6836,22 @@ RectTransform:
   m_AnchoredPosition: {x: -1.35, y: -0.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1465124941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465124939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d402b4afa5599bb40bca9b47a6a7fd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NPCAmount: 0
+  _Ambience: 0
+  _Chatter: 0
+  difficulty: 0
 --- !u!1 &1541937624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8115,7 +8003,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 2
+  m_text: Level 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8292,7 +8180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 1
+  m_text: Level 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9757,7 +9645,6 @@ GameObject:
   - component: {fileID: 2034670910}
   - component: {fileID: 2034670909}
   - component: {fileID: 2034670908}
-  - component: {fileID: 2034670911}
   - component: {fileID: 2034670912}
   - component: {fileID: 2034670913}
   m_Layer: 5
@@ -9831,9 +9718,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2034670911}
-        m_TargetAssemblyTypeName: Level_Medium, Assembly-CSharp
-        m_MethodName: SetMediumLevel
+      - m_Target: {fileID: 687731859}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: SelectDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9881,21 +9768,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034670906}
   m_CullTransparentMesh: 1
---- !u!114 &2034670911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034670906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2839d3e5bc0f9d04fa77927f06b117cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npcSlider: {fileID: 248998532}
-  ambienceSlider: {fileID: 378275311}
-  chatterSlider: {fileID: 467082811}
 --- !u!65 &2034670912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9951,9 +9823,9 @@ MonoBehaviour:
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2034670911}
-        m_TargetAssemblyTypeName: Level_Medium, Assembly-CSharp
-        m_MethodName: SetMediumLevel
+      - m_Target: {fileID: 687731859}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: SelectDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10084,6 +9956,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3814059623367585682}
   m_Mesh: {fileID: 7567532504055388576, guid: 7ff7b999fc3a8a242a27ecc83d838b3b, type: 3}
+--- !u!114 &850645946521689237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388987192703265047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f773d27a6fac57a459ba3da72c326b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &1528102355102595581
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10257,6 +10141,38 @@ GameObject:
   - component: {fileID: 2978983115384776883}
   m_Layer: 0
   m_Name: Circle.004
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5680786215760193980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388987192703265047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.4536667, y: 0.6137841, z: 9.862532}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6388987192703265047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5680786215760193980}
+  - component: {fileID: 850645946521689237}
+  m_Layer: 0
+  m_Name: GameSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10501,6 +10417,4 @@ SceneRoots:
   - {fileID: 1984810495}
   - {fileID: 1619232874}
   - {fileID: 2094825535}
-  - {fileID: 216275329}
-  - {fileID: 102271131}
-  - {fileID: 564791397}
+  - {fileID: 5680786215760193980}
