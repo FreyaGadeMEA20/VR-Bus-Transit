@@ -19,6 +19,7 @@ TagManager:
   - Bus NPC
   - PlayerDettacher
   - DoorAudio
+  - Hands
   layers:
   - Default
   - TransparentFX

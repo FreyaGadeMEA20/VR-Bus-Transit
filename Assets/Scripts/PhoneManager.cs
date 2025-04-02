@@ -86,7 +86,9 @@ public class PhoneManager : MonoBehaviour
         } else {
             progressSlider.gameObject.SetActive(true);
         }
-        progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value = Mathf.Clamp(newVal, 0, 4);
+        float clampedValue = Mathf.Lerp(1, 4, newVal/GameManager.Instance.Timer);
+        Debug.Log(clampedValue + "    " + newVal);
+        progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value = clampedValue;
         //Debug.Log($"Slider value: + {progressSlider.GetComponent<UnityProgressBar.ProgressBar>().Value:0.0}");
 
         if(newVal >= GameManager.Instance.Timer){

@@ -2558,8 +2558,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9999997, y: 1.5835001, z: 1.2523434}
-  m_Center: {x: -7.4506096e-10, y: 0.29174998, z: -0.036633786}
+  m_Size: {x: 0.99999976, y: 1.5835001, z: 1.2769847}
+  m_Center: {x: -4.9448157e-10, y: 0.29174995, z: -0.024313098}
 --- !u!114 &1520107210162595552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2574,6 +2574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bus: {fileID: 7407063518324850902}
   busSeatAssigner: {fileID: 5457255907422690771}
+  PlayerDetachable: 0
 --- !u!1 &2155310833765072268
 GameObject:
   m_ObjectHideFlags: 0
@@ -8317,7 +8318,7 @@ Transform:
   m_GameObject: {fileID: 7983440477485490307}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.22, z: 0.35}
+  m_LocalPosition: {x: 0, y: -0.22, z: 0.168}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8400,6 +8401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bus: {fileID: 7407063518324850902}
   busSeatAssigner: {fileID: 5457255907422690771}
+  playerAttacher: {fileID: 1520107210162595552}
 --- !u!1 &8062662833410383020
 GameObject:
   m_ObjectHideFlags: 0

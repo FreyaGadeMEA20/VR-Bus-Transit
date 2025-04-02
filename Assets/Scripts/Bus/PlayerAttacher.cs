@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Localization.Platform.Android;
 using UnityEngine;
 
 public class PlayerAttacher : MonoBehaviour
@@ -7,6 +8,7 @@ public class PlayerAttacher : MonoBehaviour
     [SerializeField] GameObject bus;
 
     [SerializeField] BusSeatAssigner busSeatAssigner;
+    public bool PlayerDetachable = false;
     // On trigger enter
     //  - triggers when an object enters the area of the box collider
     void OnTriggerEnter(Collider other){
@@ -18,6 +20,15 @@ public class PlayerAttacher : MonoBehaviour
             Debug.Log("Player attached to bus");
             
             busSeatAssigner.GetPlayer(other.gameObject);
+
+            PlayerDetachable = false;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if(other.tag == "Player" && this.tag == "PlayerAttacher"){
+            PlayerDetachable = true;
         }
     }
 }
