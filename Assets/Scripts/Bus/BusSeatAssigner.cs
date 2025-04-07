@@ -69,10 +69,10 @@ public class BusSeatAssigner : MonoBehaviour
         // Disable the player's movement
         player.layer = LayerMask.NameToLayer("SeatedPlayer");
         xrOrigin.gameObject.layer = LayerMask.NameToLayer("SeatedPlayer");
-        foreach (var hands in GameObject.FindGameObjectsWithTag("Hands"))
+        /*foreach (var hands in GameObject.FindGameObjectsWithTag("Hands"))
         {
             hands.gameObject.layer = LayerMask.NameToLayer("SeatedPlayer");
-        }
+        }*/
         player.GetComponent<DynamicMoveProvider>().moveSpeed = 0;
         
         player.GetComponent<DynamicMoveProvider>().useGravity = false;
@@ -111,10 +111,10 @@ public class BusSeatAssigner : MonoBehaviour
 
         player.layer = LayerMask.NameToLayer("Default");
         xrOrigin.gameObject.layer = LayerMask.NameToLayer("Default");
-        foreach (var hands in GameObject.FindGameObjectsWithTag("Hands"))
+        /*foreach (var hands in GameObject.FindGameObjectsWithTag("Hands"))
         {
             hands.gameObject.layer = LayerMask.NameToLayer("Default");
-        }
+        }*/
         // Enable the player's movement
 
         // Disable "get off" button
