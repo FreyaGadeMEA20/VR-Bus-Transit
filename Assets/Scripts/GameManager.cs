@@ -222,11 +222,6 @@ public class GameManager : MonoBehaviour
     void UpdateSchoolState() {
         if(lookedAtPhone){
             OnVariableChange(countdownTimer+=Time.deltaTime);
-//            countdownTimer += Time.deltaTime;
-            //Debug.Log($"Player has been by the sign for {(countdownTimer):#.0} seconds");
-            
-            // for phone visuals vvv
-            //Mathf.Lerp(0,100, countdownTimer);
 
             // once countdown is finished, change state and reset imer
             if (countdownTimer >= Timer) {
@@ -262,23 +257,19 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if(IsGameObjectVisibleInViewport(busStopSign) && !lookedAtSign){
+        /*if(IsGameObjectVisibleInViewport(busStopSign) && !lookedAtSign){
             lookedAtSign = true;
         }
 
         if(!lookedAtSign){
             return;
-        }
+        }*/
 
         // Apply information to phone
 
         // Counts down to see how long the player has been by the bus stop
         if (isCountingDown) {
             OnVariableChange(countdownTimer+=Time.deltaTime);
-            Debug.Log($"Player has been by the sign for {(countdownTimer-3)*-1:#.0} seconds");
-            
-            // for phone visuals vvv
-            //Mathf.Lerp(0,100, countdownTimer);
 
             // once countdown is finished, change state and reset imer
             if (countdownTimer >= 4f) {
