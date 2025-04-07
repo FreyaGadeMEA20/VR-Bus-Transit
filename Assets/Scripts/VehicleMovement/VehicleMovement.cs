@@ -294,7 +294,7 @@ namespace Movement{
                 speedModifier = 3f;
             } else {
                 if(!BackingUpIntiated) {
-                    speedModifier = 2f;
+                    speedModifier = 1f;
                 } 
             }
             

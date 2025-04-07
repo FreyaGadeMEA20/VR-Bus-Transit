@@ -154,12 +154,14 @@ public class BusController : MonoBehaviour
 
         // CAN BE CHANGED TO LOOK AT IF THE PLAYER HAS CHECKED IN --
         // If the player has entered the bus:
-        if(seatAssigner.player != null) {
-            // Continously check if the player has sat down, or they have exited the bus
-            while(!seatAssigner.PlayerSeated || seatAssigner.player == null){
-                yield return new WaitForSeconds(1);
+        foreach(var s in FindObjectsOfType<BusSeatAssigner>()){
+            if(s.player != null) {
+                // Continously check if the player has sat down, or they have exited the bus
+                while(!s.PlayerSeated || s.player == null){
+                    yield return new WaitForSeconds(1);
 
-                // TELL THE PLAYER TO SIT DOWN
+                    // TELL THE PLAYER TO SIT DOWN
+                }
             }
         }
 
