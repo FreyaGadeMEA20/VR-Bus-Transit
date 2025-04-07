@@ -7,11 +7,30 @@ using Movement;
 public class GameSettings : MonoBehaviour
 {
     public static GameSettings Instance { get; private set; }
-    public int LevelSelected { get; set; } // Value to be retrieved by LevelSelect
+    public int LevelSelected {
+        get{return levelSelected;}
+        set{levelSelected = value;}
+    } // Value to be retrieved by LevelSelect
+    [SerializeField] int levelSelected = 0; // Default level selected
+
     // NPC settings
-    public int NPCAmount { get; set; } // Value to be retrieved by PedestrianSpawner
-    public float SchoolNPCValue { get; set; } // Slider value for school NPC pairs
-    public float BusNPCValue { get; set; } // Slider value for bus NPCs
+    public int NPCAmount {
+        get{return npcAmount;}
+        set{npcAmount = value;}
+    } // Value to be retrieved by npcAmount
+    [SerializeField] int npcAmount = 0; // Default NPC amount
+
+    public float SchoolNPCValue {
+        get{return schoolNPCAmount;}
+        set{schoolNPCAmount = value;}
+    } // Value to be retrieved by schoolNPCAmount
+    [SerializeField] float schoolNPCAmount = 0; // Default school NPC amount
+
+    public float BusNPCValue {
+        get{return busNPCAmount;}
+        set{busNPCAmount = value;}
+    } // Value to be retrieved by busNPCAmount
+    [SerializeField] float busNPCAmount = 0; // Default bus NPC amount
     private List<GameObject> schoolNPCPairs = new List<GameObject>();
     private List<GameObject> busNPCs = new List<GameObject>();
 
@@ -41,7 +60,6 @@ public class GameSettings : MonoBehaviour
 
     void Start()
     {
-        Debug.Log($"[NPCManager] Start called. Current NPCAmount: {NPCAmount}");
     }
 
     void OnDestroy()
@@ -51,31 +69,14 @@ public class GameSettings : MonoBehaviour
         {
             SceneManager.sceneLoaded -= OnSceneLoaded;
         }
-        Debug.Log($"[NPCManager] Instance destroyed. Instance ID: {GetInstanceID()}");
     }
 
     public void SetNPCAmount(int amount)
     {
         NPCAmount = amount;
+        SchoolNPCValue = amount;
+        BusNPCValue = amount;
         Debug.Log($"[NPCManager] NPCAmount set to {NPCAmount}");
-    }
-
-    public void SetSchoolNPCValue(float value)
-    {
-        SchoolNPCValue = value;
-        Debug.Log($"[NPCManager] SchoolNPCValue set to {SchoolNPCValue}");
-
-        // Update the NPC pairs near the school
-        UpdateSchoolNPCPairs();
-    }
-
-    public void SetBusNPCValue(float value)
-    {
-        BusNPCValue = value;
-        Debug.Log($"[NPCManager] BusNPCValue set to {BusNPCValue}");
-
-        // Update the bus NPCs
-        UpdateBusNPCs();
     }
 
     private void UpdateSchoolNPCPairs()
@@ -87,7 +88,7 @@ public class GameSettings : MonoBehaviour
         }
 
         // Calculate the number of pairs to enable based on the slider value
-        int pairsToEnable = Mathf.Clamp(Mathf.FloorToInt(SchoolNPCValue / 0.09f), 0, schoolNPCPairs.Count);
+        int pairsToEnable = Mathf.Clamp(Mathf.FloorToInt(SchoolNPCValue / 9f), 0, schoolNPCPairs.Count);
         Debug.Log($"[NPCManager] Enabling {pairsToEnable} school NPC pairs.");
 
         // Enable or disable NPC pairs
@@ -105,7 +106,7 @@ public class GameSettings : MonoBehaviour
             return;
         }
 
-        int npcsToEnable = Mathf.Clamp(Mathf.FloorToInt(BusNPCValue / 0.025f), 0, busNPCs.Count);
+        int npcsToEnable = Mathf.Clamp(Mathf.FloorToInt(BusNPCValue / 2.5f), 0, busNPCs.Count);
         Debug.Log($"[NPCManager] Enabling {npcsToEnable} random bus NPCs.");
 
         foreach (GameObject npc in busNPCs)

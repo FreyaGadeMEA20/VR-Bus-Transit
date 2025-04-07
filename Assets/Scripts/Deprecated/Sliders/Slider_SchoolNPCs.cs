@@ -24,7 +24,6 @@ public class AudioSlider_SchoolNPCs : MonoBehaviour
         // Send the value to the NPCManager
         if (GameSettings.Instance != null)
         {
-            GameSettings.Instance.SetSchoolNPCValue(value);
             Debug.Log($"[AudioSlider_SchoolNPCs] Sent value ({value}) to NPCManager.");
         }
         else

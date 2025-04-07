@@ -55,6 +55,10 @@ MonoBehaviour:
     m_Localized: "Denne telefon vil v\xE6re din hj\xE6lper i l\xF8bet af oplevelse"
     m_Metadata:
       m_Items: []
+  - m_Id: 13722327862079488
+    m_Localized: "V\xE6lg et level"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -26,7 +26,6 @@ public class Slider_BusNPCs : MonoBehaviour
         // Send the value to the NPCManager
         if (GameSettings.Instance != null)
         {
-            GameSettings.Instance.SetBusNPCValue(value);
             Debug.Log($"[Slider_BusNPCs] Sent value ({value}) to NPCManager.");
         }
         else

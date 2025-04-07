@@ -55,6 +55,10 @@ MonoBehaviour:
     m_Localized: This phone will be your guide during the experience
     m_Metadata:
       m_Items: []
+  - m_Id: 13722327862079488
+    m_Localized: Choose a level
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
