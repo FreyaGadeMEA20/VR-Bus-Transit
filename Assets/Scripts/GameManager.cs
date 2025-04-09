@@ -104,11 +104,11 @@ public class GameManager : MonoBehaviour
         BusLine = BusToGetOn.vehicleMovement._RouteManager.busLine;
         _finalDestination = BusToGetOn.vehicleMovement._RouteManager.ChooseRandomBusStop();
 
-        Recenter();
+        Recenter(); //makes sure the player is where they should be
 
-        Timer = 8f;
+        Timer = 8f; // Sets the initial timer used for the first state
 
-        // Set the initial final destination
+        RenderSettings.skybox.SetFloat("_Rotation", 0f); // Sets the skybox to 0 at the start
     }
 
     // Recenters the player and camera offset at the target location
@@ -133,6 +133,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Checks if the DataGatherer exists, in order to write data to a csv file
         if(DataGatherer.Instance != null){
             DataGatherer.Instance.WriteToCSV(
                 Time.time.ToString("F2"), 
@@ -142,6 +143,7 @@ public class GameManager : MonoBehaviour
                 BusToGetOn.name
             );
         }
+
         // Update the time every minute
         if(Mathf.RoundToInt(Time.time % 60) == 0){
             if(updateTimeCoroutine != null){
@@ -150,10 +152,10 @@ public class GameManager : MonoBehaviour
 
             updateTimeCoroutine = StartCoroutine(UpdateTime());
         }
+
         // Rotate the skybox
-        if(rotateSkybox){
-            RenderSettings.skybox.SetFloat("_Rotation", Time.time * 0.15f);
-        }
+        RenderSettings.skybox.SetFloat("_Rotation", Time.time * 0.15f);
+        
 
         // Check for state transitions
         switch (currentState) {
@@ -196,14 +198,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator UpdateTime(){
         yield return new WaitForSeconds(1); //time is fictional, so it just waits an extra second
-
-        rotateSkybox = true; // sets the skybox to rotate
         
         // only updates the time if the bus is driving.
         // this needs to be looked at in the future, because I think it updates based on GLOBAL time, so it gets into -3 mins easily
         if(CanBusDrive){
             foreach(var busStop in FindObjectsOfType<BusStop>()){
-                busStop.UpdateTime();
+                busStop.UpdateTime(true);
             }
         }
 

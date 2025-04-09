@@ -114,6 +114,7 @@ public class BusController : MonoBehaviour
         return;
     }
 
+    int index = 0;
     // runs the coroutine to open the doors, and lets that control it the waiting at bus stop
     void UpdateWaitState() {
         if (!doorsOpen && doors != null){
@@ -121,13 +122,13 @@ public class BusController : MonoBehaviour
             
             foreach(var stop in vehicleMovement._RouteManager.busStops){
                 stop.busStop.busStop.BusPassedStop(vehicleMovement._RouteManager.busLine);
-                stop.busStop.busStop.UpdateTime();
+                stop.busStop.busStop.UpdateTime(false);
             }
             
             // For baking time
-            //Debug.Log($"I ran {index} times");
-            //vehicleMovement._RouteManager.busLine.BakeTime(index);
-            //index++;
+            /*Debug.Log($"I ran {index} times");
+            vehicleMovement._RouteManager.busLine.BakeTime(index);
+            index++;*/
         }
     }
     

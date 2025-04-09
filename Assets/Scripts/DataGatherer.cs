@@ -11,6 +11,7 @@ public class DataGatherer : MonoBehaviour
     string rowData;
     StreamWriter streamWriter;
 
+    // Initiatlize the singleton instance of the DataGatherer
     void Awake()
     {
         if (Instance == null)
@@ -27,11 +28,13 @@ public class DataGatherer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Generate a unique file name
         string folderPath = Application.persistentDataPath; // Use persistentDataPath for Meta Quest compatibility
-        string baseFileName = "TestData";
-        string extension = ".csv";
-        int fileNumber = 1;
+        string baseFileName = "TestData"; // Name of file
+        string extension = ".csv"; // File extension
+        int fileNumber = 1; // File number to append to the file name, to seperate the files
 
+        // Check if the file already exists and increment the file number until a unique name is found
         do
         {
             fileName = $"{folderPath}/{baseFileName}{fileNumber}{extension}";
@@ -46,8 +49,11 @@ public class DataGatherer : MonoBehaviour
         streamWriter.Flush();
     }
 
+    // Write data to CSV file
+    // The parameters are the data to be written to the CSV file
     public void WriteToCSV(string time, string position, string gameState, string busEndStation, string busToTake)
     {
+        // save as a temporary array and then writes it to the file
         rowDataTemp[0] = time;
         rowDataTemp[1] = position;
         rowDataTemp[2] = GameSettings.Instance.LevelSelected.ToString();
@@ -55,11 +61,13 @@ public class DataGatherer : MonoBehaviour
         rowDataTemp[4] = busEndStation;
         rowDataTemp[5] = busToTake;
 
+        // Write the data to the CSV file
         rowData = string.Join(",", rowDataTemp);
         streamWriter.WriteLine(rowData);
-        streamWriter.Flush();
+        streamWriter.Flush(); // Ensure data is written immediately
     }
 
+    // Makes sure the device doesn't die by killing the StreamWriter when the application closes
     private void OnDestroy()
     {
         // Ensure the StreamWriter is properly closed when the object is destroyed

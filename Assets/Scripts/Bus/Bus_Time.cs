@@ -12,6 +12,7 @@ public class Bus_Time : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            Debug.Log("Bus Time Instance Created");
             //DontDestroyOnLoad(gameObject);
         }
         else
@@ -20,8 +21,8 @@ public class Bus_Time : MonoBehaviour
         }
     }
 
-    /*void Update()
+    void Update()
     {
         currentTime += Time.deltaTime;
-    }*/
+    }
 }

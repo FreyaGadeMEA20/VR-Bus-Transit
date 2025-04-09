@@ -77,21 +77,21 @@ public class BusStop : MonoBehaviour {
     public void AddBusLine(BusLineSO line){
         associatedLines.Add(line);
 
-        UpdateTime();
+        UpdateTime(false);
     }
 
-    public void UpdateTime(){
+    public void UpdateTime(bool addTime){
         if(updateTimeTableCoroutine != null){
             StopCoroutine(updateTimeTableCoroutine);
         }
 
-        updateTimeTableCoroutine = StartCoroutine(UpdateTimeTable());
+        updateTimeTableCoroutine = StartCoroutine(UpdateTimeTable(addTime));
     }
 
     int timeTillBusArrives = 0;
 
     // TODO: work to match multiple busses at inconsistent times
-    IEnumerator UpdateTimeTable(){
+    IEnumerator UpdateTimeTable(bool addTime){
         yield return new WaitForSeconds(1);
         foreach(var time in timeTable){
             time.parent.SetActive(false);
@@ -101,7 +101,7 @@ public class BusStop : MonoBehaviour {
 
         // Time between the busses arriving to the same stop
         int timeBetween = (Mathf.RoundToInt(associatedLines[lineIndex].totalTravelTime) / 60) - 1;
-        //int TimeToRemove = Mathf.RoundToInt(Bus_Time.Instance.currentTime / 60) - 1;
+        
         int index = 0; // TEMPORARY
         foreach(var time in timeTable){
             time.parent.SetActive(true);
@@ -114,13 +114,15 @@ public class BusStop : MonoBehaviour {
             time.number.text = associatedLines[lineIndex].BusLineID.v1.ToString();
             time.timeTableE.text = associatedLines[lineIndex].BusLineID.v3;
             int timeToAdd = timeBetween * index;
-            int busStopTime = (int)(associatedLines[lineIndex].travelTimes[busStopIndex] / 60) - 1 < 0 ? 0 : (int)(associatedLines[lineIndex].travelTimes[busStopIndex] / 60) - 1;
+            int busStopTime = (int)(associatedLines[lineIndex].travelTimes[busStopIndex] / 60) < 0 ? 0 : (int)(associatedLines[lineIndex].travelTimes[busStopIndex] / 60);
+                        
             time.time.text = (busStopTime + timeToAdd - timeTillBusArrives).ToString();
 
             lineIndex++;
         }
 
-        timeTillBusArrives++;
+        if(addTime)
+            timeTillBusArrives++;
     }
 
     public void BusPassedStop(BusLineSO line){
