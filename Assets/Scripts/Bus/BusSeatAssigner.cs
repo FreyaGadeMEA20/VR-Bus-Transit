@@ -131,6 +131,7 @@ public class BusSeatAssigner : MonoBehaviour
     }
 
     // TODO: Teleport anchor to the target
+    // Might need to also use this in MoveOffSeat. Depends on if it is too much of a recurring issue.
     public void MoveToSeat(GameObject target){
         // Get the target rotation
         Quaternion targetRotation = target.transform.rotation;
