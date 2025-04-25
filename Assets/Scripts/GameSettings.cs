@@ -106,8 +106,11 @@ public class GameSettings : MonoBehaviour
             return;
         }
 
-        int npcsToEnable = Mathf.Clamp(Mathf.FloorToInt(BusNPCValue / 25f), 0, busNPCs.Count);
-        Debug.Log($"[NPCManager] Enabling {npcsToEnable} random bus NPCs.");
+        int npcsToEnable = Mathf.Clamp(Mathf.FloorToInt(BusNPCValue / 12.5f), 0, busNPCs.Count);
+        Debug.Log($"BusNPCValue: {BusNPCValue}, divided by 25 = {BusNPCValue / 25f}. " +
+                  $"BusNPCs.Count: {busNPCs.Count}, clamped to {npcsToEnable}.");
+        
+        //Debug.Log($"[NPCManager] Enabling {npcsToEnable} random bus NPCs.");
 
         foreach (GameObject npc in busNPCs)
         {
