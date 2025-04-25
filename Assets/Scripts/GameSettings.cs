@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Movement;
+using Unity.VisualScripting;
 
 public class GameSettings : MonoBehaviour
 {
@@ -106,30 +107,36 @@ public class GameSettings : MonoBehaviour
             return;
         }
 
-        int npcsToEnable = Mathf.Clamp(Mathf.FloorToInt(BusNPCValue / 12.5f), 0, busNPCs.Count);
+        int npcsToEnable = Mathf.Clamp(Mathf.FloorToInt(BusNPCValue / 25f), 0, 4);
         Debug.Log($"BusNPCValue: {BusNPCValue}, divided by 25 = {BusNPCValue / 25f}. " +
                   $"BusNPCs.Count: {busNPCs.Count}, clamped to {npcsToEnable}.");
         
         //Debug.Log($"[NPCManager] Enabling {npcsToEnable} random bus NPCs.");
 
-        foreach (GameObject npc in busNPCs)
-        {
-            npc.SetActive(false);
-        }
 
         List<GameObject> shuffledBusNPCs = new List<GameObject>(busNPCs);
-        for (int i = 0; i < shuffledBusNPCs.Count; i++)
-        {
-            int randomIndex = Random.Range(i, shuffledBusNPCs.Count);
-            GameObject temp = shuffledBusNPCs[i];
-            shuffledBusNPCs[i] = shuffledBusNPCs[randomIndex];
-            shuffledBusNPCs[randomIndex] = temp;
+        foreach (GameObject group in shuffledBusNPCs){
+            List<GameObject> childrenOfGroup = new List<GameObject>();
+            foreach (Transform npc in group.transform)
+            {
+                npc.gameObject.SetActive(false);
+                childrenOfGroup.Add(npc.gameObject);
+            }
+            for(int i = 0; i < childrenOfGroup.Count; i++)
+            {
+                // Shuffle the list of children
+                int randomIndex = Random.Range(i, childrenOfGroup.Count);
+                GameObject temp = childrenOfGroup[i];
+                childrenOfGroup[i] = childrenOfGroup[randomIndex];
+                childrenOfGroup[randomIndex] = temp;
+            }
+
+            for (int j = 0; j < npcsToEnable; j++)
+            {
+                childrenOfGroup[j].SetActive(true);
+            }
         }
 
-        for (int i = 0; i < npcsToEnable; i++)
-        {
-            shuffledBusNPCs[i].SetActive(true);
-        }
     }
 
     public void SetAmbienceVolume(float volume)

@@ -1004,6 +1004,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5954907947543675791}
+  - {fileID: 2647892157430520158}
   m_Father: {fileID: 3828788715187291001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058534590132392823
@@ -2961,7 +2962,7 @@ GameObject:
   - component: {fileID: 3607848009484064870}
   m_Layer: 9
   m_Name: BusNPC 2
-  m_TagString: Bus NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2985,7 +2986,7 @@ Transform:
   - {fileID: 1006879493133873563}
   - {fileID: 4522038396886615471}
   - {fileID: 518676632026815845}
-  m_Father: {fileID: 3828788715187291001}
+  m_Father: {fileID: 2647892157430520158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2412423002867382030
 GameObject:
@@ -3360,7 +3361,7 @@ GameObject:
   - component: {fileID: 4928785325257971020}
   m_Layer: 9
   m_Name: BusNPC 4
-  m_TagString: Bus NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3382,7 +3383,7 @@ Transform:
   - {fileID: 1794024051997132019}
   - {fileID: 841314952549223003}
   - {fileID: 4888962420076121770}
-  m_Father: {fileID: 3828788715187291001}
+  m_Father: {fileID: 2647892157430520158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2806441265704971612
 GameObject:
@@ -6439,7 +6440,7 @@ GameObject:
   - component: {fileID: 4610745263046549778}
   m_Layer: 9
   m_Name: BusNPC 3
-  m_TagString: Bus NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6462,7 +6463,7 @@ Transform:
   - {fileID: 9217061020815327127}
   - {fileID: 6259806162077864905}
   - {fileID: 6417296043790959052}
-  m_Father: {fileID: 3828788715187291001}
+  m_Father: {fileID: 2647892157430520158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6707207459095260963
 GameObject:
@@ -6475,7 +6476,7 @@ GameObject:
   - component: {fileID: 3604940555424177788}
   m_Layer: 9
   m_Name: BusNPC 1
-  m_TagString: Bus NPC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6496,7 +6497,7 @@ Transform:
   - {fileID: 8552065095386266105}
   - {fileID: 104370202552261102}
   - {fileID: 7180229081348911182}
-  m_Father: {fileID: 3828788715187291001}
+  m_Father: {fileID: 2647892157430520158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6786130497710325285
 GameObject:
@@ -6959,6 +6960,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &6951023952441977307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2647892157430520158}
+  m_Layer: 9
+  m_Name: Passengers
+  m_TagString: Bus NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2647892157430520158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951023952441977307}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 4.3799996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3604940555424177788}
+  - {fileID: 3607848009484064870}
+  - {fileID: 4610745263046549778}
+  - {fileID: 4928785325257971020}
+  m_Father: {fileID: 1830755530781745934}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6952356350542757337
 GameObject:
   m_ObjectHideFlags: 0
@@ -19659,12 +19695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 218885515025566621, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
-        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
-        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
-        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 279504899637936702, guid: e2371fe01bb6e0944b254a03ab87a46e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22035,18 +22066,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a674ca4b4f9bcb4782d591c529fd0ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1830755530781745934}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a674ca4b4f9bcb4782d591c529fd0ff, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3604940555424177788}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a674ca4b4f9bcb4782d591c529fd0ff, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3607848009484064870}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a674ca4b4f9bcb4782d591c529fd0ff, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4610745263046549778}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a674ca4b4f9bcb4782d591c529fd0ff, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4928785325257971020}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a674ca4b4f9bcb4782d591c529fd0ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7877794409865291684}
@@ -26111,12 +26130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1097640102674809782, guid: 283aaf427a7d3d645a2ca789ec63185f, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'ThumbFinger3_R'\n\tTransform 'Ankle_L'\n\tTransform
-        'Eye_L'\n\tTransform 'Scapula_R'\n\tTransform 'MiddleFinger1_L'\n\tTransform
-        'Hip_L'\n\tTransform 'MiddleFinger1_R'\n\tTransform 'MiddleFinger2_L'\n\tTransform
-        'IndexFinger2_R'\n\tTransform 'Chest_M'\n\tand more ..."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1170532084620345152, guid: 283aaf427a7d3d645a2ca789ec63185f, type: 3}
       propertyPath: m_LocalPosition.x
