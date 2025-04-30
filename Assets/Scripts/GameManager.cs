@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
 
 /// <summary>
 /// Manages the logic for the different stages of the VR-Bus-Transit project/// </summary>
@@ -106,6 +107,8 @@ public class GameManager : MonoBehaviour
 
         Recenter(); //makes sure the player is where they should be
 
+        //MoveToSeat(target.gameObject);
+
         Timer = 8f; // Sets the initial timer used for the first state
 
         RenderSettings.skybox.SetFloat("_Rotation", 0f); // Sets the skybox to 0 at the start
@@ -127,6 +130,28 @@ public class GameManager : MonoBehaviour
         float angle = Vector3.SignedAngle(cameraForward, targetForward, Vector3.up);
         
         origin.RotateAround(head.position, Vector3.up, angle);
+    }
+
+    public void MoveToSeat(GameObject target){
+        // Get the target rotation
+        Quaternion targetRotation = target.transform.rotation;
+
+        // Create a TeleportRequest with the target position and rotation
+        TeleportRequest teleportRequest = new TeleportRequest()
+        {
+            destinationPosition = target.transform.position,
+            destinationRotation = targetRotation
+        };
+
+        //Quaternion cameraRotation = Quaternion.Euler(0f, mainCamera.transform.localEulerAngles.y, 0f);
+        TeleportationProvider teleportationProvider = origin.GetComponent<TeleportationProvider>();
+        teleportationProvider.QueueTeleportRequest(teleportRequest);
+
+        // Get the current camera rotation
+        //Quaternion cameraRotation = Quaternion.Euler(0f, mainCamera.transform.localEulerAngles.y, 0f);
+
+        // Rotate the XR Rig's XROrigin to face the correct direction after teleportation, considering camera rotation
+        origin.transform.rotation = targetRotation;// * Quaternion.Inverse(cameraRotation);
     }
 
 
