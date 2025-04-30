@@ -21,6 +21,7 @@ TagManager:
   - DoorAudio
   - Hands
   - LevelButton
+  - StopAudio
   layers:
   - Default
   - TransparentFX

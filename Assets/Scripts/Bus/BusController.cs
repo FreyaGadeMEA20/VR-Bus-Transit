@@ -202,6 +202,16 @@ public class BusController : MonoBehaviour
         }
     }
 
+    void PlayStopAudio() {
+        var stopAudioSources = GameObject.FindGameObjectsWithTag("StopAudio");
+        foreach (var source in stopAudioSources) {
+            var audioSource = source.GetComponent<AudioSource>();
+            if (audioSource != null) {
+                audioSource.Play();
+            }
+        }
+    }
+
     void UpdateStopState() {
         // Stops the bus when the vehicle has reached a bus stop
         if(vehicleMovement.ReachedBusStop) {
@@ -213,6 +223,7 @@ public class BusController : MonoBehaviour
     public void StopBus() {
         busStopped = true; // set the bus to be stopped
         Debug.Log("Stop button pressed"); // log that the bus has stopped
+        PlayStopAudio(); // play the stop audio
         screens.ApplyStopTexture(); // change the bus screen texture to the stop texture
         busState = BusState.STOP_BUTTON_PRESSED; // set the bus state to be stop button pressed
     }
