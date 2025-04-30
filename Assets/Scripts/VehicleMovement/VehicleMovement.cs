@@ -159,7 +159,6 @@ namespace Movement{
                                 reachedBusStop = true; // variable that is used around the code to check if it has reached the bus stop
                                 breaks = true;         // stops vehicle
                                 routeManager.currentWaypoint.busStop.deathZone.SetActive(false); // lets the player board the bus by disabling the death zone
-
                                 // If the bus stop is the same as the bus line, then apply the bus controller to the bus.
                                 // This is to make sure that the player walks on the correct bus
                                 if(routeManager.busLine.Equals(GameManager.Instance.BusLine)){
