@@ -76,6 +76,8 @@ public class PhoneManager : MonoBehaviour
                 screen.screen.gameObject.SetActive(true);
             }
         }
+
+        taskCompleteSound.Play();
     }
 
     void PhoneSlider(float newVal)
@@ -95,7 +97,7 @@ public class PhoneManager : MonoBehaviour
             StartCoroutine(TogglePhone());
             progressSlider.gameObject.SetActive(false);
             checkMark.gameObject.SetActive(true);
-            taskCompleteSound.Play();
+            
         }
     }
 

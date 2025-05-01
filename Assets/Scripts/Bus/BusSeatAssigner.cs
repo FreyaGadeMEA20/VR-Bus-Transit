@@ -8,6 +8,8 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 public class BusSeatAssigner : MonoBehaviour
 {
     public GameObject player;
+    [SerializeField] GameObject insides;
+    [SerializeField] GameObject exitArea;
     Seat currentSeat;
     [SerializeField] Transform head;
     [SerializeField] Transform origin;
@@ -66,13 +68,11 @@ public class BusSeatAssigner : MonoBehaviour
         MoveToSeat(currentSeat.seatingArea);
         //xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = false;
         
-        // Disable the player's movement
+        // Disable the player's movement (NOT THE CAUSE OF FALLING THROUGH THE FLOOR)
         player.layer = LayerMask.NameToLayer("SeatedPlayer");
         xrOrigin.gameObject.layer = LayerMask.NameToLayer("SeatedPlayer");
-        /*foreach (var hands in GameObject.FindGameObjectsWithTag("Hands"))
-        {
-            hands.gameObject.layer = LayerMask.NameToLayer("SeatedPlayer");
-        }*/
+        //insides.SetActive(false);
+
         player.GetComponent<DynamicMoveProvider>().moveSpeed = 0;
         
         player.GetComponent<DynamicMoveProvider>().useGravity = false;
@@ -101,13 +101,14 @@ public class BusSeatAssigner : MonoBehaviour
         {
             stop.Active = false;
         }
+
         StartCoroutine(FadeToBlack.Instance.FadeOut());
+
         yield return new WaitForSeconds(FadeToBlack.Instance.fadeDuration);
         // Move the player to the closest bus exit - ROTATION OF THE AREA IS IMPORTANT
         
-        MoveOffSeat(currentSeat.exitArea);
-        //Recenter(currentSeat.exitArea);
-        //xrOrigin.gameObject.GetComponent<DynamicMoveProvider>().useGravity = true;
+        MoveToSeat(exitArea);
+
 
         player.layer = LayerMask.NameToLayer("Default");
         xrOrigin.gameObject.layer = LayerMask.NameToLayer("Default");
@@ -121,10 +122,10 @@ public class BusSeatAssigner : MonoBehaviour
         //currentSeat.GetComponent<Seat>().DisableGetOffButton();
 
         currentSeat = null;
+        
         StartCoroutine(FadeToBlack.Instance.FadeIn());
         player.GetComponent<DynamicMoveProvider>().moveSpeed = 3;
         player.GetComponent<DynamicMoveProvider>().useGravity = true;
-        
         yield return new WaitForSeconds(3);
 
         EnableSeatSigns();
