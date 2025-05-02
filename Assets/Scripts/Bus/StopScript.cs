@@ -23,7 +23,7 @@ public class StopScript : MonoBehaviour
 
     private IEnumerator DelayedStopButton()
     {
-        yield return new WaitForSeconds(3f); // Wait for 3 seconds
+        yield return new WaitForSeconds(1f); // Wait for 3 seconds
 
         busController.StopBus();
         busController.StopButtonPressed = true; // Set the stop button to be pressed
