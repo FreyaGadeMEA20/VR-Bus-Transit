@@ -36,10 +36,10 @@ public class GameSettings : MonoBehaviour
     private List<GameObject> busNPCs = new List<GameObject>();
 
     // Ambience settings
-    private float ambienceVolume = 0.4f; // Default volume
+    [SerializeField] float ambienceVolume = 0f; // Default volume
 
     // Chatter settings
-    private float chatterVolume = 0.2f; // Default volume
+    [SerializeField] float chatterVolume = 0f; // Default volume
 
     void Awake()
     {
