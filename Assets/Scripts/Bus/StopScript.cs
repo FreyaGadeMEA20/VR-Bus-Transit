@@ -15,18 +15,21 @@ public class StopScript : MonoBehaviour
 
     public void StopButton()
     {
-        if (Active)
-        {
-            StartCoroutine(DelayedStopButton());
-        }
+        Active = true;
+        StartCoroutine(DelayedStopButton());
     }
 
     private IEnumerator DelayedStopButton()
     {
-        yield return new WaitForSeconds(1f); // Wait for 3 seconds
+        yield return new WaitForSeconds(1f);
+        if(Active){
+            busController.StopBus();
+            busController.StopButtonPressed = true; // Set the stop button to be pressed
+            busScreenController.ApplyStopTexture();
+        }
+    }
 
-        busController.StopBus();
-        busController.StopButtonPressed = true; // Set the stop button to be pressed
-        busScreenController.ApplyStopTexture();
+    public void LeaveCollider(){
+        Active = false;
     }
 }
