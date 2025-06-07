@@ -73,7 +73,6 @@ public class GameManager : MonoBehaviour
     
     Coroutine updateTimeCoroutine; // keeps track if a coroutine is running for the update of time
 
-    bool rotateSkybox = false; // control variable for rotating the skybox
 
     // makes sure it is singleton
     void Awake()
@@ -88,9 +87,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
     
-
     // Start is called before the first frame update
     void Start()
     {
@@ -132,29 +129,6 @@ public class GameManager : MonoBehaviour
         origin.RotateAround(head.position, Vector3.up, angle);
     }
 
-    public void MoveToSeat(GameObject target){
-        // Get the target rotation
-        Quaternion targetRotation = target.transform.rotation;
-
-        // Create a TeleportRequest with the target position and rotation
-        TeleportRequest teleportRequest = new TeleportRequest()
-        {
-            destinationPosition = target.transform.position,
-            destinationRotation = targetRotation
-        };
-
-        //Quaternion cameraRotation = Quaternion.Euler(0f, mainCamera.transform.localEulerAngles.y, 0f);
-        TeleportationProvider teleportationProvider = origin.GetComponent<TeleportationProvider>();
-        teleportationProvider.QueueTeleportRequest(teleportRequest);
-
-        // Get the current camera rotation
-        //Quaternion cameraRotation = Quaternion.Euler(0f, mainCamera.transform.localEulerAngles.y, 0f);
-
-        // Rotate the XR Rig's XROrigin to face the correct direction after teleportation, considering camera rotation
-        origin.transform.rotation = targetRotation;// * Quaternion.Inverse(cameraRotation);
-    }
-
-
     // Update is called once per frame
     void Update()
     {
@@ -186,7 +160,7 @@ public class GameManager : MonoBehaviour
         switch (currentState) {
             case GameState.START:
                 // Handle START state logic
-                UpdateSchoolState();
+                UpdateStartState();
                 break;
 
             case GameState.CHECKED_PHONE:
@@ -244,7 +218,7 @@ public class GameManager : MonoBehaviour
     }
 
     // First state just makes them check their phone and confirm they have understood the instructions
-    void UpdateSchoolState() {
+    void UpdateStartState() {
         if(lookedAtPhone){
             OnVariableChange(countdownTimer+=Time.deltaTime);
 
@@ -276,8 +250,10 @@ public class GameManager : MonoBehaviour
 
             StartCoroutine(FadeToBlack.Instance.FadeOutAndLoadScene(1));
         }
+        
         // Check if the player is near the designated bus stop
-        if(!inCorrectStopZone){
+        if (!inCorrectStopZone)
+        {
             Debug.Log("Player is not in the correct stop zone");
             return;
         }

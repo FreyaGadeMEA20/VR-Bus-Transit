@@ -38,9 +38,6 @@ public class PhoneManager : MonoBehaviour
     }
     public RejseplanScreen rejseplanScreen;
 
-    [SerializedTupleLabels("From", "To", "Bus Number", "Get off")]
-    public SerializedTuple<string, string, string, string> RejseplanInfo;
-
     void Start()
     {
         GameManager.Instance.OnStateChange += SwitchToScreen;
@@ -50,7 +47,6 @@ public class PhoneManager : MonoBehaviour
 
         phoneAnimator.SetTrigger("HoldObject");
 
-        // Test data   
         StartCoroutine(FillRejseplanen());
     }
 

@@ -324,8 +324,6 @@ namespace Movement{
             }
         }
 
-
-
         // Function to advance to the next waypoint
         public void AdvanceToNextWaypoint(){
             // Control variables to control whether or not to advance
@@ -344,7 +342,7 @@ namespace Movement{
             // If the vehicle has a set path (i.e. bus route), it will follow that path
             if (routeManager.m_Path != null){
                 routeManager.currentWaypoint = routeManager.GetNextWaypoint(routeManager.currentWaypoint);
-            } else if (shouldBranch) { // Should the bus branch?
+            } else if (shouldBranch) { // Should the vehicle branch?
                 routeManager.currentWaypoint = routeManager.currentWaypoint.branches[UnityEngine.Random.Range(0, routeManager.currentWaypoint.branches.Count)];
             } else { // If the vehicle has no path to follow, and shouldn't branch, it will just continue onwards
                 if(direction == 1){
